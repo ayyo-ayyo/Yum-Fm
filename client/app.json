@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Yum.FM",
-    "slug": "Yum.FM",
+    "name": "yumFM-frontend",
+    "slug": "yumFM-frontend",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
