@@ -14,6 +14,7 @@ export default function TabLayout() {
         tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
         headerShown: false,
       }}>
+      {/* Home Tab */}
       <Tabs.Screen
         name="index"
         options={{
@@ -23,12 +24,25 @@ export default function TabLayout() {
           ),
         }}
       />
+
+      {/* Search Tab */}
       <Tabs.Screen
-        name="explore"
+        name="explore" // keeping the explore name for now since don't have search page set up
         options={{
-          title: 'Explore',
+          title: 'Search',
           tabBarIcon: ({ color, focused }) => (
-            <TabBarIcon name={focused ? 'code-slash' : 'code-slash-outline'} color={color} />
+            <TabBarIcon name={focused ? 'search' : 'search-outline'} color={color} />
+          ),
+        }}
+      />
+
+      {/* Profile Tab */}
+      <Tabs.Screen
+        name="profile"
+        options={{
+          title: 'Profile',
+          tabBarIcon: ({ color, focused }) => (
+            <TabBarIcon name={focused ? 'person' : 'person-outline'} color={color} />
           ),
         }}
       />
