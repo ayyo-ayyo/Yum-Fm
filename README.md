@@ -1,3 +1,6 @@
+# link to set up emulator for development
+https://docs.expo.dev/get-started/set-up-your-environment/?platform=android&device=simulated
+
 # Welcome to your Expo app 👋
 
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
