@@ -1,48 +1,48 @@
 const express = require('express');
 const router = express.Router();
 const mongoose = require('mongoose');
-const User = require('../models/user');
+const Menu = require('../models/menus');
 
-// Adds new user
-router.post('/users', async (req, res) => {
+// Adds new menu
+router.post('/menus', async (req, res) => {
     try {
-        const user = new User({
+        const menu = new Menu({
             _id: new mongoose.Types.ObjectId(),
             ...req.body
         })
 
-        const result = await user.save();
-        res.status(201).json(user);
+        const result = await menu.save();
+        res.status(201).json(menu);
     } catch(error) {
         console.error(error);
         res.status(500).json({ error: error.message });
     }
 });
 
-// Deletes the user based on id
-router.delete('/users/:id', async (req, res) => {
+// Deletes the menu based on id
+router.delete('/menus/:id', async (req, res) => {
     try {
         const { id } = req.params;
         if (!mongoose.Types.ObjectId.isValid(id)) {
-            return res.status(404).json({ error: 'No such user' });
+            return res.status(404).json({ error: 'No such menu' });
         }
-        const result = await User.findByIdAndDelete(id);
+        const result = await Menu.findByIdAndDelete(id);
         if (!result) {
-            return res.status(404).json({ error: 'No such user' });
+            return res.status(404).json({ error: 'No such menu' });
         }
-        res.status(200).send("User deleted");
+        res.status(200).send("Menu deleted");
     } catch (error) {
         console.error(error);
         res.status(500).json({ error: error.message });
     }
 });
 
-// Update an existing user's data
-router.put('/users/:id', async (req, res) => {
+// Update an existing menu's data
+router.put('/menus/:id', async (req, res) => {
     try {
-        const result = await User.findByIdAndUpdate(req.params.id, req.body, { new: true });
+        const result = await Menu.findByIdAndUpdate(req.params.id, req.body, { new: true });
         if (!result) {
-            return res.status(404).json({ error: 'No such user' });
+            return res.status(404).json({ error: 'No such menu' });
         }
         res.status(200).json(result);
     } catch (error) {

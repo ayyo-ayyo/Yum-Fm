@@ -3,7 +3,7 @@ const router = express.Router();
 const mongoose = require('mongoose');
 const Restaurant = require('../models/restaurants');
 
-// Returns all restaurants to client
+// Adds new restaurant
 router.post('/restaurants', async (req, res) => {
     try {
         const restaurant = new Restaurant({
