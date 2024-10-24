@@ -3,22 +3,23 @@ const router = express.Router();
 const mongoose = require('mongoose');
 const Restaurant = require('../models/restaurants');
 
+// Returns all restaurants to client
 router.post('/restaurants', async (req, res) => {
     try {
         const restaurant = new Restaurant({
-        _id: new mongoose.Types.ObjectId(),
-        ...req.body
-    })
+            _id: new mongoose.Types.ObjectId(),
+            ...req.body
+        })
 
-    const result = await restaurant.save();
-    res.status(201).json(restaurant);
+        const result = await restaurant.save();
+        res.status(201).json(restaurant);
     } catch(error) {
         console.error(error);
         res.status(500).json({ error: error.message });
-    }
-    
-})
+    } 
+});
 
+// Deletes the restaurant based on id
 router.delete('/restaurants/:id', async (req, res) => {
     try {
         const { id } = req.params;
@@ -36,6 +37,7 @@ router.delete('/restaurants/:id', async (req, res) => {
     }
 });
 
+// Update an existing restaurants's data
 router.put('/restaurants/:id', async (req, res) => {
     try {
         const result = await Restaurant.findByIdAndUpdate(req.params.id, req.body, { new: true });
@@ -47,8 +49,7 @@ router.put('/restaurants/:id', async (req, res) => {
         console.error(error);
         res.status(500).json({ error: error.message });
     }
-
-})
+});
 
 
 module.exports = router
