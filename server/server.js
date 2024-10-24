@@ -1,9 +1,9 @@
 const express = require('express');
 const connectDB = require('./db');
-const restaurantRoutes = require('./routes/restaurants');
-const userRoutes = require('./routes/user');
-const menuRoutes = require('./routes/menus');
-const menuItemRoutes = require('./routes/menuItems');
+const restaurantRouter = require('./routes/restaurants');
+const userRouter = require('./routes/user');
+const menuRouter = require('./routes/menus');
+const menuItemRouter = require('./routes/menuItems');
 
 
 const app = express();
@@ -18,10 +18,10 @@ app.get('/', (req, res) => {
     res.send('Welcome to my API!');
 });
 
-app.use('/api', restaurantRoutes);
-app.use('/api', userRoutes);
-app.use('/api', menuRoutes);
-app.use('/api', menuItemRoutes);
+app.use('/api', restaurantRouter);
+app.use('/api', userRouter);
+app.use('/api', menuRouter);
+app.use('/api', menuItemRouter);
 
 const PORT = process.env.PORT || 3000;
 
