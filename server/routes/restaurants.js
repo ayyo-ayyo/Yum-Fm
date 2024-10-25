@@ -1,4 +1,6 @@
-const Restaurant = require('../models/restaurants-model');
+const Restaurant = require('../models/restaurant-model');
 const buildDefaultRouter = require('./route-template');
 
-module.exports = buildDefaultRouter('restaurants', Restaurant);
+module.exports = {
+    restaurantRouter: buildDefaultRouter('restaurants', Restaurant)
+};
