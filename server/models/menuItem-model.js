@@ -12,6 +12,6 @@ const menuItemSchema = new Schema({
     item_price: { type: Number }
 });
 
-const menuItem = mongoose.model('RestaurantMenuItem', restaurantMenuItemSchema);
+const menuItem = mongoose.model('RestaurantMenuItem', menuItemSchema);
 
 module.exports = menuItem;
