@@ -15,6 +15,7 @@ export const searchRestaurants = async (query: string): Promise<Restaurant[]> =>
             `http://localhost:8081/api/restaurants/search`, // Replace YOUR_PORT with actual port
             { params: { query } }
         );
+        console.log('API response:', response.data); // Log the response to inspect it
         return response.data;
     } catch (error) {
         console.error('Error fetching restaurants:', error);
