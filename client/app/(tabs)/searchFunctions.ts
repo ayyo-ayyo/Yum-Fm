@@ -8,11 +8,12 @@ interface Restaurant {
     restaurant_desc: string;
 }
 
+const baseURL = process.env.NODE_ENV === 'production' ? 'https://yum-fm.herokuapp.com/api' : 'http://localhost:8081/api';
 // Function to fetch search results based on query
 export const searchRestaurants = async (query: string): Promise<Restaurant[]> => {
     try {
         const response = await axios.get<Restaurant[]>(
-            `http://localhost:8081/api/restaurants/search`, // Replace YOUR_PORT with actual port
+            `${baseURL}/restaurants/search`, 
             { params: { query } }
         );
         console.log('API response:', response.data); // Log the response to inspect it
