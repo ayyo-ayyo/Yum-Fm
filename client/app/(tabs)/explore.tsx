@@ -1,5 +1,6 @@
-import React, { useEffect, useState } from 'react';
-import { View, TextInput, Text, FlatList, TouchableOpacity, StyleSheet } from 'react-native';
+import React, { useState } from 'react';
+import { View, TextInput, Text, FlatList, TouchableOpacity, StyleSheet, Keyboard } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
 import { searchRestaurants } from './searchFunctions';
 
@@ -24,7 +25,7 @@ export default function ExploreTab() {
     }, [query]);
 
     return (
-        <View style={styles.container}>
+        <SafeAreaView style={styles.container}>
             {/* Top bar with camera, search bar, and map icons */}
             <View style={styles.topBar}>
                 <TouchableOpacity style={styles.iconButton}>
@@ -53,7 +54,7 @@ export default function ExploreTab() {
                 )}
                 contentContainerStyle={styles.resultsContainer}
             />
-        </View>
+        </SafeAreaView>
     );
 }
 
