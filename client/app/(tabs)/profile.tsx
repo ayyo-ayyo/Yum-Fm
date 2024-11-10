@@ -1,7 +1,6 @@
-// app/profile.tsx
 import React, { useState } from 'react';
 import Ionicons from '@expo/vector-icons/Ionicons';
-import { View, Text, StyleSheet, Image, Platform, Button, TouchableOpacity, Switch } from 'react-native'; // Make sure StyleSheet is from 'react-native'
+import { View, Text, StyleSheet, Image, Button, TouchableOpacity, Switch, SafeAreaView } from 'react-native'; // Import SafeAreaView
 import { Collapsible } from '@/components/Collapsible';
 import { ExternalLink } from '@/components/ExternalLink';
 import ParallaxScrollView from '@/components/ParallaxScrollView';
@@ -13,58 +12,62 @@ export default function ProfileScreen() {
   const [filtersEnabled, setFiltersEnabled] = useState(false);
 
   return (
-    <View style={styles.container}>
-      {/* Header */}
-      <Text style={styles.header}>Yum.FM</Text>
+    <SafeAreaView style={styles.safeArea}>
+      <View style={styles.container}>
+        {/* Header */}
+        <Text style={styles.header}>Yum.FM</Text>
 
-      {/* Tabs */}
-      <View style={styles.tabContainer}>
-        <TouchableOpacity onPress={() => setActiveTab('account')}>
-          <Text style={[styles.tabText, activeTab === 'account' && styles.activeTab]}>Account</Text>
-        </TouchableOpacity>
-        <TouchableOpacity onPress={() => setActiveTab('filters')}>
-          <Text style={[styles.tabText, activeTab === 'filters' && styles.activeTab]}>Filters</Text>
-        </TouchableOpacity>
-      </View>
-
-      {/* Content based on active tab */}
-      {activeTab === 'account' && (
-        <View style={styles.accountSection}>
-          <Image style={styles.profileImage} source={{ uri: 'https://via.placeholder.com/100' }} />
-          <Text style={styles.nameText}>IO Mighty</Text>
-          <View style={styles.infoContainer}>
-            <Text style={styles.infoText}>📞 (123) 456 7890</Text>
-            <Text style={styles.infoText}>📧 iothemighty@youtube.com</Text>
-            <Text style={styles.infoText}>📍 Sylvan</Text>
-          </View>
-          <TouchableOpacity style={styles.editButton}>
-            <Text style={styles.editButtonText}>Edit Details</Text>
+        {/* Tabs */}
+        <View style={styles.tabContainer}>
+          <TouchableOpacity onPress={() => setActiveTab('account')}>
+            <Text style={[styles.tabText, activeTab === 'account' && styles.activeTab]}>Account</Text>
+          </TouchableOpacity>
+          <TouchableOpacity onPress={() => setActiveTab('filters')}>
+            <Text style={[styles.tabText, activeTab === 'filters' && styles.activeTab]}>Filters</Text>
           </TouchableOpacity>
         </View>
-      )}
 
-      {activeTab === 'filters' && (
-        <View style={styles.filtersSection}>
-          <Text style={styles.filtersText}>Filter Preferences</Text>
-          <View style={styles.switchContainer}>
-            <Text style={styles.switchLabel}>Enable Dietary Filters</Text>
-            <Switch
-              value={filtersEnabled}
-              onValueChange={(value) => setFiltersEnabled(value)}
-            />
+        {/* Content based on active tab */}
+        {activeTab === 'account' && (
+          <View style={styles.accountSection}>
+            <Image style={styles.profileImage} source={{ uri: 'https://via.placeholder.com/100' }} />
+            <Text style={styles.nameText}>IO Mighty</Text>
+            <View style={styles.infoContainer}>
+              <Text style={styles.infoText}>📞 (123) 456 7890</Text>
+              <Text style={styles.infoText}>📧 iothemighty@youtube.com</Text>
+              <Text style={styles.infoText}>📍 Sylvan</Text>
+            </View>
+            <TouchableOpacity style={styles.editButton}>
+              <Text style={styles.editButtonText}>Edit Details</Text>
+            </TouchableOpacity>
           </View>
-          {/* Additional filters can be added here */}
-        </View>
-      )}
-    </View>
+        )}
+
+        {activeTab === 'filters' && (
+          <View style={styles.filtersSection}>
+            <Text style={styles.filtersText}>Filter Preferences</Text>
+            <View style={styles.switchContainer}>
+              <Text style={styles.switchLabel}>Enable Dietary Filters</Text>
+              <Switch
+                value={filtersEnabled}
+                onValueChange={(value) => setFiltersEnabled(value)}
+              />
+            </View>
+          </View>
+        )}
+      </View>
+    </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
+  safeArea: {
+    flex: 1,
+    backgroundColor: '#F4D4A3',
+  },
   container: {
     flex: 1,
     padding: 20,
-    backgroundColor: '#F4D4A3',
   },
   header: {
     fontSize: 24,
