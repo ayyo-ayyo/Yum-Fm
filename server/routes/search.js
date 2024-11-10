@@ -48,6 +48,7 @@ function atlasSearch(type, queryStr) {
             return Promise.reject({err_code: 400, reason: 'Invalid "type" parameter'});
     }
 
+    /*
     return ModelType.aggregate().search({
         index: indexName,
         text: {
@@ -55,6 +56,15 @@ function atlasSearch(type, queryStr) {
             path: fieldName
         }
     }).exec();
+    */
+
+    return ModelType.aggregate().search({
+        index: 'complete',
+        autocomplete: {
+            query: queryStr,
+            path: fieldName
+        }
+    });
 }
 
 module.exports = router;
