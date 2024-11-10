@@ -4,6 +4,8 @@ const MenuItem = require('../models/menuItem-model');
 const router = express.Router();
 
 // Handles requests in the form "/search/type=restaurant&q=[query here]"
+// Optionally can include "mfilters=[list of mandatory filters separated by comma]"
+// Optionally can include "pfilters=[list of preferred filters separated by comma]"
 router.get('/search', (req, res) => {
     if (!('type' in req.query)) {
         res.status(400).send('"type" parameter must be provided in search query');
@@ -45,6 +47,7 @@ function atlasSearch(type, queryStr, mfilters, pfilters) {
     let ModelType;
     let indexName;
     let fieldName;
+    let filterName;
 
     // TODO: Find a better way of grouping together related information for each data type 
     //       (ie. the Model, index name, and field to search)
@@ -52,30 +55,24 @@ function atlasSearch(type, queryStr, mfilters, pfilters) {
     switch (type) {
         case 'restaurant':
             ModelType = Restaurant;
-            indexName = 'restaurant_index';
+            indexName = 'restaurant_autocomplete';
             fieldName = 'restaurant_name';
+            filterName = 'rest_fulfilled_filters';
             break;
         case 'menuitem':
             ModelType = MenuItem;
-            indexName = 'menuitem_index';
+            indexName = 'menuitem_autocomplete';
             fieldName = 'item_name';
+            filterName = 'item_fulfilled_filters';
             break;
         default:
             return Promise.reject({err_code: 400, reason: 'Invalid "type" parameter'});
     }
 
-    /*
-    return ModelType.aggregate().search({
-        index: indexName,
-        text: {
-            query: queryStr,
-            path: fieldName
-        }
-    }).exec();
-    */
-
+    // Construct the database query that will return entries that match the name and mandatory filters, 
+    // and then sort results by preferred filters
     let searchAggregate = ModelType.aggregate().search({ // Do the initial search
-        index: 'complete',
+        index: indexName,
         autocomplete: {
             query: queryStr,
             path: fieldName
@@ -84,19 +81,17 @@ function atlasSearch(type, queryStr, mfilters, pfilters) {
 
     if (mfilters.length > 0) { // If there are mandatory filters, include only results that have them
         searchAggregate = searchAggregate.match({
-            rest_fulfilled_filters: {
+            [filterName]: {
                 $all: mfilters
             }
         });
     }
 
-    // TODO: Generalize so this works for more than just restaurant filters
-
     if (pfilters.length > 0) {
         searchAggregate = searchAggregate.addFields({
             num_matched_pfilters: {
                 $size: {
-                    $setIntersection: ['$rest_fulfilled_filters', pfilters]
+                    $setIntersection: ['$' + filterName, pfilters]
                 }
             }
         }).sort({
