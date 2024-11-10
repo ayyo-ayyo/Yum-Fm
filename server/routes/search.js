@@ -13,8 +13,13 @@ router.get('/search', (req, res) => {
         res.status(400).send('"q" parameter must be provided in search query');
         return;
     }
+
+    mfilters = []
+    if ('mfilters' in req.query) {
+        mfilters = req.query.mfilters.split(',') // Get the mandatory filters from the search parameters
+    }
     
-    atlasSearch(req.query.type, req.query.q)
+    atlasSearch(req.query.type, req.query.q, mfilters)
         .then((queryResult) => {
             res.status(200).json(queryResult);
         })
@@ -24,7 +29,13 @@ router.get('/search', (req, res) => {
         });
 });
 
-function atlasSearch(type, queryStr) {
+/*
+    Find documents to match the search query
+        - type: Either restaurant or menuitem
+        - queryStr: The name to search for in the database
+        - mfilters: The mandatory filters that each of these items must fulfill
+*/
+function atlasSearch(type, queryStr, mfilters) {
     let ModelType;
     let indexName;
     let fieldName;
@@ -32,7 +43,6 @@ function atlasSearch(type, queryStr) {
     // TODO: Find a better way of grouping together related information for each data type 
     //       (ie. the Model, index name, and field to search)
     
-    console.log(type);
     switch (type) {
         case 'restaurant':
             ModelType = Restaurant;
@@ -58,17 +68,23 @@ function atlasSearch(type, queryStr) {
     }).exec();
     */
 
-    return ModelType.aggregate().search({ // Do the initial search
+    let searchAggregate = ModelType.aggregate().search({ // Do the initial search
         index: 'complete',
         autocomplete: {
             query: queryStr,
             path: fieldName
         }
-    }).match({
-        rest_fulfilled_filters: {
-            $in: ['test_filter_3', 'test_filter_1']
-        }
     });
+
+    if (mfilters.length > 0) { // If there are mandatory filters, include only results that have them
+        searchAggregate = searchAggregate.match({
+            rest_fulfilled_filters: {
+                $all: mfilters
+            }
+        });
+    }
+
+    return searchAggregate;
 }
 
 module.exports = router;
