@@ -13,7 +13,7 @@ router.get('/search', (req, res) => {
         res.status(400).send('"q" parameter must be provided in search query');
         return;
     }
-
+    
     atlasSearch(req.query.type, req.query.q)
         .then((queryResult) => {
             res.status(200).json(queryResult);
@@ -58,11 +58,15 @@ function atlasSearch(type, queryStr) {
     }).exec();
     */
 
-    return ModelType.aggregate().search({
+    return ModelType.aggregate().search({ // Do the initial search
         index: 'complete',
         autocomplete: {
             query: queryStr,
             path: fieldName
+        }
+    }).match({
+        rest_fulfilled_filters: {
+            $in: ['test_filter_3', 'test_filter_1']
         }
     });
 }
