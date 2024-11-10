@@ -18,8 +18,13 @@ router.get('/search', (req, res) => {
     if ('mfilters' in req.query) {
         mfilters = req.query.mfilters.split(',') // Get the mandatory filters from the search parameters
     }
+
+    pfilters = []
+    if ('pfilters' in req.query) {
+        pfilters = req.query.pfilters.split(',') // Get the preferred filters to sort results by
+    }
     
-    atlasSearch(req.query.type, req.query.q, mfilters)
+    atlasSearch(req.query.type, req.query.q, mfilters, pfilters)
         .then((queryResult) => {
             res.status(200).json(queryResult);
         })
@@ -34,8 +39,9 @@ router.get('/search', (req, res) => {
         - type: Either restaurant or menuitem
         - queryStr: The name to search for in the database
         - mfilters: The mandatory filters that each of these items must fulfill
+        - pfilters: User preferred filters that are not mandatory, used to sort results
 */
-function atlasSearch(type, queryStr, mfilters) {
+function atlasSearch(type, queryStr, mfilters, pfilters) {
     let ModelType;
     let indexName;
     let fieldName;
@@ -81,6 +87,20 @@ function atlasSearch(type, queryStr, mfilters) {
             rest_fulfilled_filters: {
                 $all: mfilters
             }
+        });
+    }
+
+    // TODO: Generalize so this works for more than just restaurant filters
+
+    if (pfilters.length > 0) {
+        searchAggregate = searchAggregate.addFields({
+            num_matched_pfilters: {
+                $size: {
+                    $setIntersection: ['$rest_fulfilled_filters', pfilters]
+                }
+            }
+        }).sort({
+            num_matched_pfilters: -1 // Sort the results so that restaurants with the most matched filters appear first in results
         });
     }
 
