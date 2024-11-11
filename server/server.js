@@ -21,7 +21,18 @@ app.get('/', (req, res) => {
 
 app.use('/api', restaurantRouter, userRouter, menuRouter, menuItemRouter, searchRouter);
 
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`);
-});
+// const PORT = process.env.PORT || 3000;
+// app.listen(PORT, () => {
+//     console.log(`Server running on port ${PORT}`);
+// });
+
+module.exports = app;
+
+// Only start the server if we're running this file directly (not during testing or if already running)
+if (require.main === module && !global.serverIsRunning) {
+    const PORT = process.env.PORT || 3000;
+    app.listen(PORT, () => {
+        console.log(`Server running on port ${PORT}`);
+        global.serverIsRunning = true;  // Set the flag to indicate the server is running
+    });
+}
