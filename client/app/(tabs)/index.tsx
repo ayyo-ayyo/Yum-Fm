@@ -58,7 +58,9 @@ const HomeScreen: React.FC = () => {
 
   const renderCategory = (title: string, data: Restaurant[]) => (
     <View style={styles.categoryContainer}>
-      <Text style={styles.categoryTitle}>{title}</Text>
+      <View style={styles.categoryTitleContainer}>
+        <Text style={styles.categoryTitle}>{title}</Text>
+      </View>
       <ScrollView horizontal showsHorizontalScrollIndicator={false}>
         {data.map((restaurant) => (
           <RestaurantCard
@@ -108,11 +110,14 @@ const styles = StyleSheet.create({
     fontSize: 20,
     fontWeight: 'bold',
     color: 'white', // Text color set to white
-    marginBottom: 8,
-    backgroundColor: '#D74938', // Solid background color for the category box
-    padding: 12, // Padding for better spacing
     width: '100%', // Ensures the box spans the entire width
     textAlign: 'left', // Centers the text
-    borderRadius: 15
+  },
+  categoryTitleContainer: {
+    backgroundColor: '#D74938',
+    borderRadius: 15,
+    padding: 10,
+    width: '100%',
+    marginBottom: 8
   },
 });
