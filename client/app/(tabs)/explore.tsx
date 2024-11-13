@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { View, TextInput, Text, FlatList, TouchableOpacity, StyleSheet, Keyboard } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
+import { router } from 'expo-router';
 
 // Define type of Restaurant for TypeScript
 interface Restaurant {
@@ -38,7 +39,10 @@ export default function ExploreTab() {
             {/* Top bar with camera, search bar, and map icons */}
             <View style={styles.topBar}>
                 <TouchableOpacity style={styles.iconButton}>
-                    <Ionicons name="camera-outline" size={24} color="#333" />
+                    <Ionicons name="camera-outline" size={24} color="#333" onPress={() => {
+                        router.push('/camera');
+
+                     }} />
                 </TouchableOpacity>
                 <TextInput
                     style={styles.searchBar}

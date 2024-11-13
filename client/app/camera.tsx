@@ -1,13 +1,19 @@
 // USE: https://docs.expo.dev/versions/latest/sdk/camera/ 
 // documentation for using expo-camera
 
-import { CameraView, CameraType, useCameraPermissions } from 'expo-camera';
+import Ionicons from '@expo/vector-icons/Ionicons';
+import { Camera, CameraView, CameraType, useCameraPermissions } from 'expo-camera';
+import { router } from 'expo-router';
+import React from 'react';
 import { useState } from 'react';
-import { Button, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { Button, StyleSheet, Text, TouchableOpacity, View, Image } from 'react-native';
 
 export default function App() {
   const [facing, setFacing] = useState<CameraType>('back');
   const [permission, requestPermission] = useCameraPermissions();
+  const [images, setImages] = useState<string[]>([]);
+  
+  const cameraRef = React.useRef<CameraView>(null);
 
   if (!permission) {
     // Camera permissions are still loading.
@@ -28,13 +34,39 @@ export default function App() {
     setFacing(current => (current === 'back' ? 'front' : 'back'));
   }
 
+  const takePhoto = async () => {
+    if (cameraRef.current) {
+      const photo = await cameraRef.current.takePictureAsync();
+      photo && setImages([...images, photo.uri]);
+    }
+  }
+  
+
   return (
     <View style={styles.container}>
-      <CameraView style={styles.camera} facing={facing}>
+      <CameraView style={styles.camera} facing={facing} ref={cameraRef}>
         <View style={styles.buttonContainer}>
           <TouchableOpacity style={styles.button} onPress={toggleCameraFacing}>
-            <Text style={styles.text}>Flip Camera</Text>
+            <Ionicons name="camera-reverse-outline" size={48} color="white" />
           </TouchableOpacity>
+          <TouchableOpacity style={styles.button} onPress={takePhoto}>
+            <Ionicons name="camera-outline" size={48} color="white" />
+          </TouchableOpacity>
+          <TouchableOpacity style={styles.button}  onPress={() => setImages([])}>
+            <Ionicons name="trash-outline" size={48} color="white" />
+          </TouchableOpacity>
+          <TouchableOpacity style={styles.button} onPress={() => {
+            images.length > 0 && router.push({ pathname: '../menu', params: { imageList: images} })}}>
+            <Ionicons name="checkmark-outline" size={48} color="white" />
+          </TouchableOpacity>
+        </View>
+        <View style={{ flex: 1, flexDirection: 'row', overflow: 'scroll', position: 'absolute', bottom: 50}}>
+          {images.map((image, index) => (
+            <View key={index} style={{ borderColor: 'white', borderWidth: 1}} onTouchEnd={
+              () => router.push({ pathname: '/image', params: { uri: image, imageList: images} })}>
+              <Image source={{ uri: image }} style={{ width: 100, height: 100 }}></Image>
+            </View>
+          ))}
         </View>
       </CameraView>
     </View>
@@ -57,12 +89,14 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: 'row',
     backgroundColor: 'transparent',
-    margin: 64,
+    position: 'absolute',
+    bottom: 0,
   },
   button: {
     flex: 1,
     alignSelf: 'flex-end',
     alignItems: 'center',
+    paddingLeft: 5,
   },
   text: {
     fontSize: 24,
