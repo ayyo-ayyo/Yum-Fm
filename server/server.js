@@ -6,6 +6,7 @@ const userRouter = require('./routes/user');
 const menuRouter = require('./routes/menus');
 const menuItemRouter = require('./routes/menuItems');
 const searchRouter = require('./routes/search');
+const loginRouter = require('./routes/login');
 
 const app = express();
 
@@ -14,12 +15,7 @@ app.use(cors());  // Enable CORS
 app.use(express.json());  // JSON parsing
 connectDB();  // Connect to the database
 
-// Routes
-app.get('/', (req, res) => {
-    res.send('Welcome to my API!');
-});
-
-app.use('/api', restaurantRouter, userRouter, menuRouter, menuItemRouter, searchRouter);
+app.use('/api', restaurantRouter, userRouter, menuRouter, menuItemRouter, searchRouter, loginRouter);
 
 // const PORT = process.env.PORT || 3000;
 // app.listen(PORT, () => {
