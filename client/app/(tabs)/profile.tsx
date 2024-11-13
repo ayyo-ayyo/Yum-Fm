@@ -1,11 +1,28 @@
-// app/profile.tsx
 import React, { useState } from 'react';
-import { View, Text, StyleSheet, TouchableOpacity, Image, Switch, SafeAreaView } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity, Image, Switch, SafeAreaView, TextInput, Modal } from 'react-native';
 import { FontAwesome } from '@expo/vector-icons';
 
 export default function ProfileScreen() {
   const [activeTab, setActiveTab] = useState<'account' | 'filters'>('account');
   const [filtersEnabled, setFiltersEnabled] = useState(false);
+  const [isEditing, setIsEditing] = useState(false);
+  const [name, setName] = useState("Monkey D. Luffy");
+  const [phone, setPhone] = useState("+1 435 783 1730");
+  const [email, setEmail] = useState("yummy@email.com");
+  const [isFavoritesModalVisible, setIsFavoritesModalVisible] = useState(false); // State for modal visibility
+
+  const handleEditToggle = () => {
+    setIsEditing(!isEditing);
+  };
+
+  const handleSave = () => {
+    setIsEditing(false);
+    // Here, you could add additional logic to save the changes to a backend or local storage if needed.
+  };
+
+  const toggleFavoritesModal = () => {
+    setIsFavoritesModalVisible(!isFavoritesModalVisible);
+  };
 
   return (
     <SafeAreaView style={styles.container}>
@@ -29,20 +46,62 @@ export default function ProfileScreen() {
       {/* Content based on active tab */}
       {activeTab === 'account' && (
         <View style={styles.accountSection}>
-          <Image style={styles.profileImage} source={{ uri: 'https://via.placeholder.com/100' }} />
-          <Text style={styles.nameText}>John Brito</Text>
-          <View style={styles.infoContainer}>
-            <Text style={styles.infoText}>📞 +1 435 783 1730</Text>
-            <Text style={styles.infoText}>📧 yummy@email.com</Text>
-            <Text style={styles.infoText}>📍 221B, Baker Street</Text>
-          </View>
-          <TouchableOpacity style={styles.editButton}>
-            <Text style={styles.editButtonText}>Edit Details</Text>
-          </TouchableOpacity>
+          {/* Profile Image */}
+          <Image
+            style={styles.profileImage}
+            source={{ uri: 'https://wallpapers.com/images/featured/luffy-smile-os5fogrcl2bylfkf.jpg' }}
+          />
+
+          {isEditing ? (
+            <>
+              {/* Editable fields in edit mode */}
+              <TextInput
+                style={styles.input}
+                value={name}
+                onChangeText={setName}
+                placeholder="Name"
+              />
+              <TextInput
+                style={styles.input}
+                value={phone}
+                onChangeText={setPhone}
+                placeholder="Phone"
+                keyboardType="phone-pad"
+              />
+              <TextInput
+                style={styles.input}
+                value={email}
+                onChangeText={setEmail}
+                placeholder="Email"
+                keyboardType="email-address"
+              />
+              <View style={styles.editButtonsContainer}>
+                <TouchableOpacity style={styles.saveButton} onPress={handleSave}>
+                  <Text style={styles.editButtonText}>Save</Text>
+                </TouchableOpacity>
+                <TouchableOpacity style={styles.cancelButton} onPress={handleEditToggle}>
+                  <Text style={styles.editButtonText}>Cancel</Text>
+                </TouchableOpacity>
+              </View>
+            </>
+          ) : (
+            <>
+              {/* Display fields in view mode */}
+              <Text style={styles.nameText}>{name}</Text>
+              <View style={styles.infoContainer}>
+                <Text style={styles.infoText}>📞 {phone}</Text>
+                <Text style={styles.infoText}>📧 {email}</Text>
+                <Text style={styles.infoText}>📍 221B, Baker Street</Text>
+              </View>
+              <TouchableOpacity style={styles.editButton} onPress={handleEditToggle}>
+                <Text style={styles.editButtonText}>Edit Details</Text>
+              </TouchableOpacity>
+            </>
+          )}
 
           {/* Centered Options Section */}
           <View style={styles.centeredOptionsContainer}>
-            <TouchableOpacity style={styles.optionButton}>
+            <TouchableOpacity style={styles.optionButton} onPress={toggleFavoritesModal}>
               <FontAwesome name="heart" size={24} color="#D74938" style={styles.icon} />
               <Text style={styles.optionText}>Your Favorites</Text>
             </TouchableOpacity>
@@ -54,7 +113,7 @@ export default function ProfileScreen() {
 
           {/* Log Out Button - Visible Only on Account Tab */}
           <TouchableOpacity style={styles.logoutButton}>
-            <FontAwesome name="power-off" size={24} color="#D74938" style={styles.icon} />
+            <FontAwesome name="sign-out" size={24} color="#D74938" style={styles.icon} />
             <Text style={styles.logoutButtonText}>Log Out</Text>
           </TouchableOpacity>
         </View>
@@ -74,6 +133,30 @@ export default function ProfileScreen() {
           </View>
         </View>
       )}
+
+      {/* Modal for Favorites */}
+      <Modal
+        visible={isFavoritesModalVisible}
+        animationType="slide"
+        transparent={true}
+        onRequestClose={toggleFavoritesModal}
+      >
+        <View style={styles.modalOverlay}>
+          <View style={styles.modalContainer}>
+            <Text style={styles.modalTitle}>
+              <FontAwesome name="heart" size={24} color="#D74938" /> Your Favorites
+            </Text>
+            {/* Add content for favorites here */}
+            <View style={styles.modalContent}>
+              <Text style={styles.modalText}>Here are your favorite items!</Text>
+              {/* Additional content */}
+            </View>
+            <TouchableOpacity style={styles.closeButton} onPress={toggleFavoritesModal}>
+              <Text style={styles.closeButtonText}>Close</Text>
+            </TouchableOpacity>
+          </View>
+        </View>
+      </Modal>
     </SafeAreaView>
   );
 }
@@ -105,8 +188,8 @@ const styles = StyleSheet.create({
     paddingBottom: 10,
   },
   activeTab: {
-    fontWeight: 'bold', // Bold text for active tab
-    fontSize: 20, // Slightly larger font size for active tab
+    fontWeight: 'bold',
+    fontSize: 20,
   },
   accountSection: {
     alignItems: 'center',
@@ -120,6 +203,7 @@ const styles = StyleSheet.create({
     marginBottom: 10,
     borderWidth: 2,
     borderColor: '#D74938',
+    resizeMode: 'cover', // Ensure the image is fully centered and covers the view
   },
   nameText: {
     fontSize: 22,
@@ -149,6 +233,33 @@ const styles = StyleSheet.create({
   editButtonText: {
     color: '#fff',
     fontWeight: '600',
+  },
+  input: {
+    width: '80%',
+    padding: 10,
+    borderWidth: 1,
+    borderColor: '#D74938',
+    borderRadius: 8,
+    marginBottom: 10,
+    textAlign: 'center',
+  },
+  editButtonsContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    width: '100%',
+    marginTop: 10,
+  },
+  saveButton: {
+    backgroundColor: '#D74938',
+    paddingVertical: 10,
+    paddingHorizontal: 20,
+    borderRadius: 8,
+  },
+  cancelButton: {
+    backgroundColor: '#555',
+    paddingVertical: 10,
+    paddingHorizontal: 20,
+    borderRadius: 8,
   },
   centeredOptionsContainer: {
     width: '100%',
@@ -200,5 +311,47 @@ const styles = StyleSheet.create({
   switchLabel: {
     fontSize: 16,
     color: '#555',
+  },
+
+  // Modal styles
+  modalOverlay: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+  },
+  modalContainer: {
+    backgroundColor: 'white',
+    padding: 20,
+    borderRadius: 10,
+    width: '80%',
+  },
+  modalTitle: {
+    fontSize: 22,
+    fontWeight: '600',
+    color: '#D74938',
+    marginBottom: 10,
+    textAlign: 'center',
+  },
+  modalContent: {
+    marginBottom: 20,
+    alignItems: 'center',
+  },
+  modalText: {
+    fontSize: 18,
+    color: '#333',
+    textAlign: 'center',
+  },
+  closeButton: {
+    backgroundColor: '#D74938',
+    paddingVertical: 10,
+    paddingHorizontal: 20,
+    borderRadius: 8,
+    marginTop: 10,
+  },
+  closeButtonText: {
+    color: '#fff',
+    fontWeight: '600',
+    textAlign: 'center',
   },
 });
