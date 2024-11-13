@@ -1,0 +1,188 @@
+{
+  "name": "Fried Chicken Sandwich",
+  "price": "12.99",
+  "options": [
+    {
+      "type": "Side Choice",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "French Fries",
+          "price": "0.00"
+        },
+        {
+          "name": "Plain Waffle Fries",
+          "price": "1.00"
+        },
+        {
+          "name": "Cajun Waffle Fries",
+          "price": "1.00"
+        },
+        {
+          "name": "Garlic Parmesan Waffle Fries",
+          "price": "1.00"
+        },
+        {
+          "name": "Lemon Pepper Waffle Fries",
+          "price": "1.00"
+        },
+        {
+          "name": "Mustang Ranch Waffle Fries",
+          "price": "1.00"
+        },
+        {
+          "name": "Mesquite Waffle Fries",
+          "price": "1.00"
+        },
+        {
+          "name": "Onion Rings",
+          "price": "2.00"
+        },
+        {
+          "name": "Tater Tots",
+          "price": "2.00"
+        },
+        {
+          "name": "Side Salad with Sweet Honey Mustard Dressing",
+          "price": "3.00"
+        },
+        {
+          "name": "Side Salad with Caesar Dressing",
+          "price": "3.00"
+        },
+        {
+          "name": "Side Salad with 1000 Island Dressing",
+          "price": "3.00"
+        },
+        {
+          "name": "Side Salad with Italian Dressing",
+          "price": "3.00"
+        },
+        {
+          "name": "Side Salad with Bleu Cheese Dressing",
+          "price": "3.00"
+        },
+        {
+          "name": "Side Salad with Fat-Free Zinfandel Vinaigrette Dressing",
+          "price": "3.00"
+        },
+        {
+          "name": "Side Salad with Ranch Dressing",
+          "price": "3.00"
+        }
+      ]
+    },
+    {
+      "type": "Flavor Choice",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Wimpy (Buffalo)",
+          "price": "0.00"
+        },
+        {
+          "name": "Cruisin\u2019 Altitude (Buffalo)",
+          "price": "0.00"
+        },
+        {
+          "name": "Red Alert (Buffalo)",
+          "price": "0.00"
+        },
+        {
+          "name": "Jet Fuel (Buffalo)",
+          "price": "0.00"
+        },
+        {
+          "name": "Afterburner (Buffalo)",
+          "price": "0.00"
+        },
+        {
+          "name": "BBQ",
+          "price": "0.00"
+        },
+        {
+          "name": "Honey BBQ",
+          "price": "0.00"
+        },
+        {
+          "name": "Golden BBQ",
+          "price": "0.00"
+        },
+        {
+          "name": "Kickin\u2019 BBQ",
+          "price": "0.00"
+        },
+        {
+          "name": "Cajun BBQ",
+          "price": "0.00"
+        },
+        {
+          "name": "Sweet Onion BBQ",
+          "price": "0.00"
+        },
+        {
+          "name": "Citrus Chipotle BBQ",
+          "price": "0.00"
+        },
+        {
+          "name": "Teriyaki",
+          "price": "0.00"
+        },
+        {
+          "name": "Spicy Teriyaki",
+          "price": "0.00"
+        },
+        {
+          "name": "Cajun Teriyaki",
+          "price": "0.00"
+        },
+        {
+          "name": "Srirachayaki",
+          "price": "0.00"
+        },
+        {
+          "name": "Mustang Ranch (Dry Rubs)",
+          "price": "0.00"
+        },
+        {
+          "name": "Cajun Blackened (Dry Rubs)",
+          "price": "0.00"
+        },
+        {
+          "name": "Garlic Parmesan (Dry Rubs)",
+          "price": "0.00"
+        },
+        {
+          "name": "West Texas Mesquite (Dry Rubs)",
+          "price": "0.00"
+        },
+        {
+          "name": "Lemon Pepper (Dry Rubs)",
+          "price": "0.00"
+        },
+        {
+          "name": "Honey Mustard",
+          "price": "0.00"
+        },
+        {
+          "name": "Hot Garlic",
+          "price": "0.00"
+        },
+        {
+          "name": "Jamaican Jerk",
+          "price": "0.00"
+        },
+        {
+          "name": "Sweet Chili",
+          "price": "0.00"
+        },
+        {
+          "name": "Mango Habanero",
+          "price": "0.00"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "name": "French Fries",
+  "price": "6.89",
+  "options": [
+    {
+      "type": "Select Size",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Small",
+          "price": "0.00"
+        },
+        {
+          "name": "Medium",
+          "price": "1.20"
+        },
+        {
+          "name": "Large",
+          "price": "2.20"
+        }
+      ]
+    },
+    {
+      "type": "Remove from French Fries",
+      "required": 0,
+      "upto": 1,
+      "features": [
+        {
+          "name": "No Salt",
+          "price": "0.00"
+        }
+      ]
+    }
+  ]
+}

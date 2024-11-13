@@ -1,0 +1,117 @@
+{
+  "name": "Hotcakes and Steak",
+  "price": "7.49",
+  "options": [
+    {
+      "type": "Remove from Hotcakes and Steak",
+      "required": 0,
+      "upto": 3,
+      "features": [
+        {
+          "name": "No Hotcakes",
+          "price": "0.00"
+        },
+        {
+          "name": "No Slivered Onions",
+          "price": "0.00"
+        },
+        {
+          "name": "No Steak",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Extra for Hotcakes and Steak",
+      "required": 0,
+      "upto": 2,
+      "features": [
+        {
+          "name": "Extra Slivered Onions",
+          "price": "0.00"
+        },
+        {
+          "name": "Extra Steak",
+          "price": "2.59"
+        }
+      ]
+    },
+    {
+      "type": "Recommended Beverages",
+      "required": 0,
+      "upto": 5,
+      "features": [
+        {
+          "name": "Minute Maid\u00ae Orange Juice",
+          "price": "3.39"
+        },
+        {
+          "name": "Iced Coffee",
+          "price": "3.89"
+        },
+        {
+          "name": "Mocha Frapp\u00e9",
+          "price": "3.79"
+        },
+        {
+          "name": "Caramel Frapp\u00e9",
+          "price": "3.79"
+        },
+        {
+          "name": "Iced Caramel Coffee",
+          "price": "3.89"
+        }
+      ]
+    },
+    {
+      "type": "Recommended Desserts",
+      "required": 0,
+      "upto": 4,
+      "features": [
+        {
+          "name": "Apple Pie",
+          "price": "2.59"
+        },
+        {
+          "name": "13 Cookie Tote",
+          "price": "5.39"
+        },
+        {
+          "name": "1 Cookie",
+          "price": "1.49"
+        },
+        {
+          "name": "OREO\u00ae McFlurry\u00ae",
+          "price": "3.99"
+        }
+      ]
+    },
+    {
+      "type": "Recommended Sides And Apps",
+      "required": 0,
+      "upto": 5,
+      "features": [
+        {
+          "name": "Hash Browns",
+          "price": "4.39"
+        },
+        {
+          "name": "Sausage",
+          "price": "2.65"
+        },
+        {
+          "name": "2 Half Strips Bacon",
+          "price": "3.33"
+        },
+        {
+          "name": "Apple Slices",
+          "price": "1.79"
+        },
+        {
+          "name": "Scrambled Eggs",
+          "price": "3.32"
+        }
+      ]
+    }
+  ]
+}

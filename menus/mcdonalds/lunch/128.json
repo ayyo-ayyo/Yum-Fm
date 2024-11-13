@@ -1,0 +1,133 @@
+{
+  "name": "Hot 'N Spicy McChicken\u00ae",
+  "price": "4.19",
+  "options": [
+    {
+      "type": "Remove from Hot 'N Spicy McChicken\u00ae",
+      "required": 0,
+      "upto": 3,
+      "features": [
+        {
+          "name": "No Mayonnaise",
+          "price": "0.00"
+        },
+        {
+          "name": "No Shredded Lettuce",
+          "price": "0.00"
+        },
+        {
+          "name": "No Regular Bun",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Extra for Hot 'N Spicy McChicken\u00ae",
+      "required": 0,
+      "upto": 8,
+      "features": [
+        {
+          "name": "Extra Mayonnaise",
+          "price": "0.00"
+        },
+        {
+          "name": "Extra Shredded Lettuce",
+          "price": "0.00"
+        },
+        {
+          "name": "Add 2 Half Strips Bacon",
+          "price": "3.33"
+        },
+        {
+          "name": "Add American Cheese",
+          "price": "2.02"
+        },
+        {
+          "name": "Add Pickle",
+          "price": "0.00"
+        },
+        {
+          "name": "Add Roma Tomato - 2 Slices",
+          "price": "0.45"
+        },
+        {
+          "name": "Add Mustard",
+          "price": "0.00"
+        },
+        {
+          "name": "Add Ketchup",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Recommended Beverages",
+      "required": 0,
+      "upto": 5,
+      "features": [
+        {
+          "name": "Coke\u00ae",
+          "price": "2.49"
+        },
+        {
+          "name": "Diet Coke\u00ae",
+          "price": "2.49"
+        },
+        {
+          "name": "Sprite\u00ae",
+          "price": "2.49"
+        },
+        {
+          "name": "Dr Pepper\u00ae",
+          "price": "2.49"
+        },
+        {
+          "name": "Caramel Frapp\u00e9",
+          "price": "3.79"
+        }
+      ]
+    },
+    {
+      "type": "Recommended Desserts",
+      "required": 0,
+      "upto": 4,
+      "features": [
+        {
+          "name": "OREO\u00ae McFlurry\u00ae",
+          "price": "3.99"
+        },
+        {
+          "name": "2 Cookies",
+          "price": "2.39"
+        },
+        {
+          "name": "Vanilla Shake",
+          "price": "4.89"
+        },
+        {
+          "name": "Apple Pie",
+          "price": "2.59"
+        }
+      ]
+    },
+    {
+      "type": "Recommended Sides And Apps",
+      "required": 0,
+      "upto": 3,
+      "features": [
+        {
+          "name": "French Fries",
+          "price": "4.69"
+        },
+        {
+          "name": "3 Half Strips Bacon",
+          "price": "3.33"
+        },
+        {
+          "name": "Apple Slices",
+          "price": "1.79"
+        }
+      ]
+    }
+  ]
+}

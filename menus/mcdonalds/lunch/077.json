@@ -1,0 +1,107 @@
+{
+  "name": "Sugar Free Vanilla Cappuccino",
+  "price": "4.98",
+  "options": [
+    {
+      "type": "Select Size",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Small",
+          "price": "0.00"
+        },
+        {
+          "name": "Medium",
+          "price": "1.97"
+        },
+        {
+          "name": "Large",
+          "price": "2.48"
+        }
+      ]
+    },
+    {
+      "type": "Remove from Sugar Free Vanilla Cappuccino",
+      "required": 0,
+      "upto": 3,
+      "features": [
+        {
+          "name": "No Sugar-Free French Vanilla Syrup",
+          "price": "0.00"
+        },
+        {
+          "name": "No Espresso Shot",
+          "price": "0.00"
+        },
+        {
+          "name": "No Whole Milk",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Extra for Sugar Free Vanilla Cappuccino",
+      "required": 0,
+      "upto": 14,
+      "features": [
+        {
+          "name": "Extra Sugar-Free French Vanilla Syrup",
+          "price": "0.00"
+        },
+        {
+          "name": "Extra Espresso Shot",
+          "price": "0.74"
+        },
+        {
+          "name": "Extra Whole Milk",
+          "price": "0.00"
+        },
+        {
+          "name": "Add Cream",
+          "price": "0.00"
+        },
+        {
+          "name": "Add Sugar",
+          "price": "0.00"
+        },
+        {
+          "name": "Add Equal",
+          "price": "0.00"
+        },
+        {
+          "name": "Add Splenda",
+          "price": "0.00"
+        },
+        {
+          "name": "Add French Vanilla Syrup",
+          "price": "0.00"
+        },
+        {
+          "name": "Add Caramel Syrup",
+          "price": "0.00"
+        },
+        {
+          "name": "Add Chocolate Syrup",
+          "price": "0.00"
+        },
+        {
+          "name": "Add Liquid Sugar",
+          "price": "0.00"
+        },
+        {
+          "name": "Add Whipped Cream",
+          "price": "0.00"
+        },
+        {
+          "name": "Add Chocolate Drizzle",
+          "price": "0.59"
+        },
+        {
+          "name": "Add Caramel Drizzle",
+          "price": "0.59"
+        }
+      ]
+    }
+  ]
+}

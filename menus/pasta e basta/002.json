@@ -1,0 +1,21 @@
+{
+  "name": "Italian Fries",
+  "price": "0.00",
+  "options": [
+    {
+      "type": "Size",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Small",
+          "price": "9.00"
+        },
+        {
+          "name": "Large",
+          "price": "14.00"
+        }
+      ]
+    }
+  ]
+}

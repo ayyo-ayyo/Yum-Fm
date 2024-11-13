@@ -1,0 +1,51 @@
+{
+  "name": "Sweet Iced Tea",
+  "price": "3.19",
+  "options": [
+    {
+      "type": "Select Size",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Small",
+          "price": "0.00"
+        },
+        {
+          "name": "Medium",
+          "price": "0.20"
+        },
+        {
+          "name": "Large",
+          "price": "1.20"
+        }
+      ]
+    },
+    {
+      "type": "Remove from Sweet Iced Tea",
+      "required": 0,
+      "upto": 1,
+      "features": [
+        {
+          "name": "No Ice",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Extra for Sweet Iced Tea",
+      "required": 0,
+      "upto": 2,
+      "features": [
+        {
+          "name": "Extra Ice",
+          "price": "0.00"
+        },
+        {
+          "name": "Add Lemon",
+          "price": "0.00"
+        }
+      ]
+    }
+  ]
+}

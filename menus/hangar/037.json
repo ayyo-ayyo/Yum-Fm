@@ -1,0 +1,60 @@
+{
+  "name": "Cheesy Waffle Fries",
+  "price": "9.99",
+  "options": [
+    {
+      "type": "Waffle Fries Flavor",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "West Texas Mesquite",
+          "price": "0.00"
+        },
+        {
+          "name": "Mustang Ranch",
+          "price": "0.00"
+        },
+        {
+          "name": "Cajun Blackened",
+          "price": "0.00"
+        },
+        {
+          "name": "Plain",
+          "price": "0.00"
+        },
+        {
+          "name": "Garlic Parmesan",
+          "price": "0.00"
+        },
+        {
+          "name": "Lemon Pepper",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Cheesy Waffle Fries Options",
+      "required": 0,
+      "upto": null,
+      "features": [
+        {
+          "name": "Extra Side Sour Cream",
+          "price": "0.50"
+        },
+        {
+          "name": "Large Side Gravy",
+          "price": "1.00"
+        },
+        {
+          "name": "Side Chili",
+          "price": "1.00"
+        },
+        {
+          "name": "Small Side Gravy",
+          "price": "0.50"
+        }
+      ]
+    }
+  ]
+}

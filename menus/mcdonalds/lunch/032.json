@@ -1,0 +1,21 @@
+{
+  "name": "Apple Pie",
+  "price": "2.59",
+  "options": [
+    {
+      "type": "Select Size",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Single",
+          "price": "0.00"
+        },
+        {
+          "name": "2 Pack",
+          "price": "0.93"
+        }
+      ]
+    }
+  ]
+}

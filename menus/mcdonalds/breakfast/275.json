@@ -1,0 +1,29 @@
+{
+  "name": "Sausage Burrito",
+  "price": "3.39",
+  "options": [
+    {
+      "type": "Select Sauce",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Hot Picante Salsa",
+          "price": "0.00"
+        },
+        {
+          "name": "Mild Picante Salsa",
+          "price": "0.00"
+        },
+        {
+          "name": "Ketchup Packet",
+          "price": "0.00"
+        },
+        {
+          "name": "No Sauce",
+          "price": "0.00"
+        }
+      ]
+    }
+  ]
+}

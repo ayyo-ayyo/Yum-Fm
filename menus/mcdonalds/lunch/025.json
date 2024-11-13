@@ -1,0 +1,47 @@
+{
+  "name": "Vanilla Shake",
+  "price": "4.89",
+  "options": [
+    {
+      "type": "Select Size",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Small",
+          "price": "0.00"
+        },
+        {
+          "name": "Medium",
+          "price": "0.90"
+        },
+        {
+          "name": "Large",
+          "price": "1.60"
+        }
+      ]
+    },
+    {
+      "type": "Remove from Vanilla Shake",
+      "required": 0,
+      "upto": 1,
+      "features": [
+        {
+          "name": "No Whipped Cream",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Extra for Vanilla Shake",
+      "required": 0,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Extra Whipped Cream",
+          "price": "0.00"
+        }
+      ]
+    }
+  ]
+}

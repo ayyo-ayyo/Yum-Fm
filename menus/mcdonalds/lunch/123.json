@@ -1,0 +1,36 @@
+{
+  "name": "Hot Tea",
+  "price": "1.73",
+  "options": [
+    {
+      "type": "Select Size",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Small",
+          "price": "0.00"
+        },
+        {
+          "name": "Medium",
+          "price": "0.30"
+        },
+        {
+          "name": "Large",
+          "price": "0.44"
+        }
+      ]
+    },
+    {
+      "type": "Extra for Hot Tea",
+      "required": 0,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Add Milk",
+          "price": "0.00"
+        }
+      ]
+    }
+  ]
+}

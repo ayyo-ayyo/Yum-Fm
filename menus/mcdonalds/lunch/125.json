@@ -1,0 +1,51 @@
+{
+  "name": "Diet Coke\u00ae",
+  "price": "2.49",
+  "options": [
+    {
+      "type": "Select Size",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Small",
+          "price": "0.00"
+        },
+        {
+          "name": "Medium",
+          "price": "0.90"
+        },
+        {
+          "name": "Large",
+          "price": "1.70"
+        }
+      ]
+    },
+    {
+      "type": "Remove from Diet Coke\u00ae",
+      "required": 0,
+      "upto": 1,
+      "features": [
+        {
+          "name": "No Ice",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Extra for Diet Coke\u00ae",
+      "required": 0,
+      "upto": 2,
+      "features": [
+        {
+          "name": "Extra Ice",
+          "price": "0.00"
+        },
+        {
+          "name": "Add Lemon",
+          "price": "0.00"
+        }
+      ]
+    }
+  ]
+}

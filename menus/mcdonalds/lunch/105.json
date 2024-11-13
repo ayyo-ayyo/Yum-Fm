@@ -1,0 +1,36 @@
+{
+  "name": "Strawberry Banana Smoothie",
+  "price": "6.59",
+  "options": [
+    {
+      "type": "Select Size",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Small",
+          "price": "0.00"
+        },
+        {
+          "name": "Medium",
+          "price": "2.30"
+        },
+        {
+          "name": "Large",
+          "price": "2.80"
+        }
+      ]
+    },
+    {
+      "type": "Extra for Strawberry Banana Smoothie",
+      "required": 0,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Add Whipped Cream",
+          "price": "0.00"
+        }
+      ]
+    }
+  ]
+}

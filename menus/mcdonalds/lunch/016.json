@@ -1,0 +1,290 @@
+{
+  "name": "Bacon Quarter Pounder\u00ae with Cheese Meal",
+  "price": "13.89",
+  "options": [
+    {
+      "type": "Select Size",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Medium",
+          "price": "0.00"
+        },
+        {
+          "name": "Large",
+          "price": "0.70"
+        }
+      ]
+    },
+    {
+      "type": "Select Side",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "French Fries",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Select Drink",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Sprite\u00ae",
+          "price": "0.00"
+        },
+        {
+          "name": "Coke\u00ae",
+          "price": "0.00"
+        },
+        {
+          "name": "Diet Coke\u00ae",
+          "price": "0.00"
+        },
+        {
+          "name": "Coca-Cola\u00ae Zero Sugar",
+          "price": "0.00"
+        },
+        {
+          "name": "Dr Pepper\u00ae",
+          "price": "0.00"
+        },
+        {
+          "name": "Fanta\u00ae Orange",
+          "price": "0.00"
+        },
+        {
+          "name": "Hi-C\u00ae Orange",
+          "price": "0.00"
+        },
+        {
+          "name": "Lemonade",
+          "price": "0.50"
+        },
+        {
+          "name": "Sweet Tea Lemonade",
+          "price": "0.37"
+        },
+        {
+          "name": "Unsweetened Tea Lemonade",
+          "price": "0.37"
+        },
+        {
+          "name": "Sweet Iced Tea",
+          "price": "0.00"
+        },
+        {
+          "name": "Unsweetened Iced Tea",
+          "price": "0.00"
+        },
+        {
+          "name": "Minute Maid\u00ae Orange Juice",
+          "price": "0.90"
+        },
+        {
+          "name": "Premium Roast Coffee",
+          "price": "0.00"
+        },
+        {
+          "name": "Decaf Coffee",
+          "price": "0.00"
+        },
+        {
+          "name": "Frozen Fanta\u00ae Wild Cherry",
+          "price": "0.90"
+        },
+        {
+          "name": "Frozen Fanta\u00ae Blue Raspberry",
+          "price": "0.90"
+        },
+        {
+          "name": "Frozen Coca-Cola\u00ae",
+          "price": "0.90"
+        },
+        {
+          "name": "Honest Kids\u00ae Organic Apple Juice Drink",
+          "price": "0.00"
+        },
+        {
+          "name": "Mocha Frapp\u00e9",
+          "price": "2.90"
+        },
+        {
+          "name": "Caramel Frapp\u00e9",
+          "price": "2.90"
+        },
+        {
+          "name": "Dulce de Leche Frapp\u00e9",
+          "price": "0.80"
+        },
+        {
+          "name": "Hot Tea",
+          "price": "0.00"
+        },
+        {
+          "name": "DASANI\u00ae Bottled Water",
+          "price": "0.00"
+        },
+        {
+          "name": "Milk",
+          "price": "0.00"
+        },
+        {
+          "name": "Chocolate Milk",
+          "price": "0.00"
+        },
+        {
+          "name": "Chocolate Shake",
+          "price": "3.10"
+        },
+        {
+          "name": "Vanilla Shake",
+          "price": "3.10"
+        },
+        {
+          "name": "Strawberry Shake",
+          "price": "3.10"
+        },
+        {
+          "name": "Strawberry Banana Smoothie",
+          "price": "3.20"
+        },
+        {
+          "name": "Mango Pineapple Smoothie",
+          "price": "3.20"
+        }
+      ]
+    },
+    {
+      "type": "Remove from Bacon Quarter Pounder\u00ae with Cheese",
+      "required": 0,
+      "upto": 9,
+      "features": [
+        {
+          "name": "No Mustard",
+          "price": "0.00"
+        },
+        {
+          "name": "No Ketchup",
+          "price": "0.00"
+        },
+        {
+          "name": "No Slivered Onions",
+          "price": "0.00"
+        },
+        {
+          "name": "No Pickle",
+          "price": "0.00"
+        },
+        {
+          "name": "No American Cheese",
+          "price": "0.00"
+        },
+        {
+          "name": "No 3 Half Strips Bacon",
+          "price": "0.00"
+        },
+        {
+          "name": "No 1/4 Lb Beef",
+          "price": "0.00"
+        },
+        {
+          "name": "No Salt",
+          "price": "0.00"
+        },
+        {
+          "name": "No Sesame Seed Bun",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Extra for Bacon Quarter Pounder\u00ae with Cheese",
+      "required": 0,
+      "upto": 11,
+      "features": [
+        {
+          "name": "Extra Mustard",
+          "price": "0.00"
+        },
+        {
+          "name": "Extra Ketchup",
+          "price": "0.00"
+        },
+        {
+          "name": "Extra Slivered Onions",
+          "price": "0.00"
+        },
+        {
+          "name": "Extra Pickle",
+          "price": "0.00"
+        },
+        {
+          "name": "Extra American Cheese",
+          "price": "2.02"
+        },
+        {
+          "name": "Extra 3 Half Strips Bacon",
+          "price": "3.33"
+        },
+        {
+          "name": "Extra 1/4 Lb Beef",
+          "price": "2.59"
+        },
+        {
+          "name": "Extra Salt",
+          "price": "0.00"
+        },
+        {
+          "name": "Add Shredded Lettuce",
+          "price": "0.00"
+        },
+        {
+          "name": "Add Roma Tomato - 3 Slices",
+          "price": "0.63"
+        },
+        {
+          "name": "Add Mayonnaise",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Remove from French Fries",
+      "required": 0,
+      "upto": 1,
+      "features": [
+        {
+          "name": "No Salt",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Extra for French Fries",
+      "required": 0,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Extra Salt",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Extra for Select Drink",
+      "required": 0,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Extra Ice",
+          "price": "0.00"
+        }
+      ]
+    }
+  ]
+}

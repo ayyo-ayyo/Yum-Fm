@@ -1,0 +1,21 @@
+{
+  "name": "Holiday Pie",
+  "price": "2.89",
+  "options": [
+    {
+      "type": "Select Size",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Single",
+          "price": "0.00"
+        },
+        {
+          "name": "2 Pack",
+          "price": "1.60"
+        }
+      ]
+    }
+  ]
+}
