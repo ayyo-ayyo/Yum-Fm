@@ -41,6 +41,4 @@ Now the server should be able to access the database, and you can run the server
 
     node server
 
-[test link](../README.md)
-
 ## Features
