@@ -1,0 +1,36 @@
+{
+  "name": "French Fries",
+  "price": "4.99",
+  "options": [
+    {
+      "type": "Size Choice",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Large",
+          "price": "1.00"
+        },
+        {
+          "name": "Regular",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "French Fries Options",
+      "required": 0,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Add Large Side Gravy",
+          "price": "1.00"
+        },
+        {
+          "name": "Extra Crispy Fries",
+          "price": "0.00"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,379 @@
+{
+  "name": "40 pc. Chicken McNuggets\u00ae & 2 Large Fries",
+  "price": "21.49",
+  "options": [
+    {
+      "type": "Select Sauce 1/6",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Tangy BBQ Dipping Sauce",
+          "price": "0.00"
+        },
+        {
+          "name": "Sweet N Sour Dipping Sauce",
+          "price": "0.00"
+        },
+        {
+          "name": "Honey Packet",
+          "price": "0.00"
+        },
+        {
+          "name": "Creamy Ranch Sauce",
+          "price": "0.00"
+        },
+        {
+          "name": "Hot Picante Salsa",
+          "price": "0.00"
+        },
+        {
+          "name": "Mild Picante Salsa",
+          "price": "0.00"
+        },
+        {
+          "name": "Ketchup Packet",
+          "price": "0.00"
+        },
+        {
+          "name": "Honey Mustard",
+          "price": "0.00"
+        },
+        {
+          "name": "Spicy Buffalo",
+          "price": "0.00"
+        },
+        {
+          "name": "No Sauce",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Select Sauce 2/6",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Tangy BBQ Dipping Sauce",
+          "price": "0.00"
+        },
+        {
+          "name": "Sweet N Sour Dipping Sauce",
+          "price": "0.00"
+        },
+        {
+          "name": "Honey Packet",
+          "price": "0.00"
+        },
+        {
+          "name": "Creamy Ranch Sauce",
+          "price": "0.00"
+        },
+        {
+          "name": "Hot Picante Salsa",
+          "price": "0.00"
+        },
+        {
+          "name": "Mild Picante Salsa",
+          "price": "0.00"
+        },
+        {
+          "name": "Ketchup Packet",
+          "price": "0.00"
+        },
+        {
+          "name": "Honey Mustard",
+          "price": "0.00"
+        },
+        {
+          "name": "Spicy Buffalo",
+          "price": "0.00"
+        },
+        {
+          "name": "No Sauce",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Select Sauce 3/6",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Tangy BBQ Dipping Sauce",
+          "price": "0.00"
+        },
+        {
+          "name": "Sweet N Sour Dipping Sauce",
+          "price": "0.00"
+        },
+        {
+          "name": "Honey Packet",
+          "price": "0.00"
+        },
+        {
+          "name": "Creamy Ranch Sauce",
+          "price": "0.00"
+        },
+        {
+          "name": "Hot Picante Salsa",
+          "price": "0.00"
+        },
+        {
+          "name": "Mild Picante Salsa",
+          "price": "0.00"
+        },
+        {
+          "name": "Ketchup Packet",
+          "price": "0.00"
+        },
+        {
+          "name": "Honey Mustard",
+          "price": "0.00"
+        },
+        {
+          "name": "Spicy Buffalo",
+          "price": "0.00"
+        },
+        {
+          "name": "No Sauce",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Select Sauce 4/6",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Tangy BBQ Dipping Sauce",
+          "price": "0.00"
+        },
+        {
+          "name": "Sweet N Sour Dipping Sauce",
+          "price": "0.00"
+        },
+        {
+          "name": "Honey Packet",
+          "price": "0.00"
+        },
+        {
+          "name": "Creamy Ranch Sauce",
+          "price": "0.00"
+        },
+        {
+          "name": "Hot Picante Salsa",
+          "price": "0.00"
+        },
+        {
+          "name": "Mild Picante Salsa",
+          "price": "0.00"
+        },
+        {
+          "name": "Ketchup Packet",
+          "price": "0.00"
+        },
+        {
+          "name": "Honey Mustard",
+          "price": "0.00"
+        },
+        {
+          "name": "Spicy Buffalo",
+          "price": "0.00"
+        },
+        {
+          "name": "No Sauce",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Select Sauce 5/6",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Tangy BBQ Dipping Sauce",
+          "price": "0.00"
+        },
+        {
+          "name": "Sweet N Sour Dipping Sauce",
+          "price": "0.00"
+        },
+        {
+          "name": "Honey Packet",
+          "price": "0.00"
+        },
+        {
+          "name": "Creamy Ranch Sauce",
+          "price": "0.00"
+        },
+        {
+          "name": "Hot Picante Salsa",
+          "price": "0.00"
+        },
+        {
+          "name": "Mild Picante Salsa",
+          "price": "0.00"
+        },
+        {
+          "name": "Ketchup Packet",
+          "price": "0.00"
+        },
+        {
+          "name": "Honey Mustard",
+          "price": "0.00"
+        },
+        {
+          "name": "Spicy Buffalo",
+          "price": "0.00"
+        },
+        {
+          "name": "No Sauce",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Select Sauce 6/6",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Tangy BBQ Dipping Sauce",
+          "price": "0.00"
+        },
+        {
+          "name": "Sweet N Sour Dipping Sauce",
+          "price": "0.00"
+        },
+        {
+          "name": "Honey Packet",
+          "price": "0.00"
+        },
+        {
+          "name": "Creamy Ranch Sauce",
+          "price": "0.00"
+        },
+        {
+          "name": "Hot Picante Salsa",
+          "price": "0.00"
+        },
+        {
+          "name": "Mild Picante Salsa",
+          "price": "0.00"
+        },
+        {
+          "name": "Ketchup Packet",
+          "price": "0.00"
+        },
+        {
+          "name": "Honey Mustard",
+          "price": "0.00"
+        },
+        {
+          "name": "Spicy Buffalo",
+          "price": "0.00"
+        },
+        {
+          "name": "No Sauce",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Remove from Large French Fries",
+      "required": 0,
+      "upto": 1,
+      "features": [
+        {
+          "name": "No Salt",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Extra for Large French Fries",
+      "required": 0,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Extra Salt",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Recommended Beverages",
+      "required": 0,
+      "upto": 5,
+      "features": [
+        {
+          "name": "Coke\u00ae",
+          "price": "2.49"
+        },
+        {
+          "name": "Diet Coke\u00ae",
+          "price": "2.49"
+        },
+        {
+          "name": "Sprite\u00ae",
+          "price": "2.49"
+        },
+        {
+          "name": "Dr Pepper\u00ae",
+          "price": "2.49"
+        },
+        {
+          "name": "Caramel Frapp\u00e9",
+          "price": "3.79"
+        }
+      ]
+    },
+    {
+      "type": "Recommended Desserts",
+      "required": 0,
+      "upto": 4,
+      "features": [
+        {
+          "name": "OREO\u00ae McFlurry\u00ae",
+          "price": "3.99"
+        },
+        {
+          "name": "2 Cookies",
+          "price": "2.39"
+        },
+        {
+          "name": "Vanilla Shake",
+          "price": "4.89"
+        },
+        {
+          "name": "Apple Pie",
+          "price": "2.59"
+        }
+      ]
+    },
+    {
+      "type": "Recommended Sides And Apps",
+      "required": 0,
+      "upto": 3,
+      "features": [
+        {
+          "name": "French Fries",
+          "price": "4.69"
+        },
+        {
+          "name": "3 Half Strips Bacon",
+          "price": "3.33"
+        },
+        {
+          "name": "Apple Slices",
+          "price": "1.79"
+        }
+      ]
+    }
+  ]
+}

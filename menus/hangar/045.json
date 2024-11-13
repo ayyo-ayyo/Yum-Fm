@@ -1,0 +1,119 @@
+{
+  "name": "Buffalo Wrap",
+  "price": "11.49",
+  "options": [
+    {
+      "type": "Flavor Choice",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Wimpy",
+          "price": "0.00"
+        },
+        {
+          "name": "Cruisin\u2019 Altitude",
+          "price": "0.00"
+        },
+        {
+          "name": "Red Alert",
+          "price": "0.00"
+        },
+        {
+          "name": "Jet Fuel",
+          "price": "0.00"
+        },
+        {
+          "name": "Afterburner",
+          "price": "0.00"
+        },
+        {
+          "name": "Limited Flavor: Old Bay",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Side Choice",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "French Fries",
+          "price": "0.00"
+        },
+        {
+          "name": "Plain Waffle Fries",
+          "price": "1.00"
+        },
+        {
+          "name": "Cajun Waffle Fries",
+          "price": "1.00"
+        },
+        {
+          "name": "Garlic Parmesan Waffle Fries",
+          "price": "1.00"
+        },
+        {
+          "name": "Lemon Pepper Waffle Fries",
+          "price": "1.00"
+        },
+        {
+          "name": "Mustang Ranch Waffle Fries",
+          "price": "1.00"
+        },
+        {
+          "name": "Mesquite Waffle Fries",
+          "price": "1.00"
+        },
+        {
+          "name": "Onion Rings",
+          "price": "2.00"
+        },
+        {
+          "name": "Tater Tots",
+          "price": "2.00"
+        },
+        {
+          "name": "Side Salad with Sweet Honey Mustard Dressing",
+          "price": "3.00"
+        },
+        {
+          "name": "Side Salad with Caesar Dressing",
+          "price": "3.00"
+        },
+        {
+          "name": "Side Salad with 1000 Island Dressing",
+          "price": "3.00"
+        },
+        {
+          "name": "Side Salad with Italian Dressing",
+          "price": "3.00"
+        },
+        {
+          "name": "Side Salad with Bleu Cheese Dressing",
+          "price": "3.00"
+        },
+        {
+          "name": "Side Salad with Fat-Free Zinfandel Vinaigrette Dressing",
+          "price": "3.00"
+        },
+        {
+          "name": "Side Salad with Ranch Dressing",
+          "price": "3.00"
+        }
+      ]
+    },
+    {
+      "type": "Style Choice",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Fried Chicken",
+          "price": "0.00"
+        }
+      ]
+    }
+  ]
+}

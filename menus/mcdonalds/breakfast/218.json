@@ -1,0 +1,28 @@
+{
+  "name": "Hot Fudge Sundae",
+  "price": "5.49",
+  "options": [
+    {
+      "type": "Remove from Hot Fudge Sundae",
+      "required": 0,
+      "upto": 1,
+      "features": [
+        {
+          "name": "No Hot Fudge Topping",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Extra for Hot Fudge Sundae",
+      "required": 0,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Extra Hot Fudge Topping",
+          "price": "0.58"
+        }
+      ]
+    }
+  ]
+}

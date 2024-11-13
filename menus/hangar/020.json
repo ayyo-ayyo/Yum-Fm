@@ -1,0 +1,25 @@
+{
+  "name": "Fried Pickle Chips",
+  "price": "10.99",
+  "options": [
+    {
+      "type": "Fried Pickle Dressing Choice",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Honey Mustard",
+          "price": "0.00"
+        },
+        {
+          "name": "Ranch",
+          "price": "0.00"
+        },
+        {
+          "name": "Ranch & Honey Mustard",
+          "price": "0.50"
+        }
+      ]
+    }
+  ]
+}

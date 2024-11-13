@@ -1,0 +1,76 @@
+{
+  "name": "Decaf Coffee",
+  "price": "2.29",
+  "options": [
+    {
+      "type": "Select Size",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Small",
+          "price": "0.00"
+        },
+        {
+          "name": "Medium",
+          "price": "0.31"
+        },
+        {
+          "name": "Large",
+          "price": "0.61"
+        }
+      ]
+    },
+    {
+      "type": "Extra for Decaf Coffee",
+      "required": 0,
+      "upto": 11,
+      "features": [
+        {
+          "name": "Add Cream",
+          "price": "0.00"
+        },
+        {
+          "name": "Add Milk",
+          "price": "0.00"
+        },
+        {
+          "name": "Add Sugar",
+          "price": "0.00"
+        },
+        {
+          "name": "Add Equal",
+          "price": "0.00"
+        },
+        {
+          "name": "Add Splenda",
+          "price": "0.00"
+        },
+        {
+          "name": "Add Ice",
+          "price": "0.00"
+        },
+        {
+          "name": "Add Espresso Shot",
+          "price": "0.74"
+        },
+        {
+          "name": "Add French Vanilla Syrup",
+          "price": "0.00"
+        },
+        {
+          "name": "Add Sugar-Free French Vanilla Syrup",
+          "price": "0.00"
+        },
+        {
+          "name": "Add Caramel Syrup",
+          "price": "0.00"
+        },
+        {
+          "name": "Add Liquid Sugar",
+          "price": "0.00"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "name": "Tater Tots",
+  "price": "8.99",
+  "options": [
+    {
+      "type": "Tater Tot Options",
+      "required": 0,
+      "upto": null,
+      "features": [
+        {
+          "name": "Extra Crispy Tater Tots",
+          "price": "0.00"
+        },
+        {
+          "name": "Side Bacon",
+          "price": "1.00"
+        },
+        {
+          "name": "Side Homemade Cheese Sauce",
+          "price": "2.00"
+        },
+        {
+          "name": "Side Ranch Dressing",
+          "price": "0.50"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "name": "B-17 Bomber Bone-In Wings",
+  "price": "57.99",
+  "options": [
+    {
+      "type": "Dressing?",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Bleu Cheese Dressing",
+          "price": "0.00"
+        },
+        {
+          "name": "Ranch Dressing",
+          "price": "0.00"
+        },
+        {
+          "name": "Ranch & Bleu Cheese Dressing",
+          "price": "0.00"
+        },
+        {
+          "name": "No Dressing",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "4 Flavor Options",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Cajun BBQ",
+          "price": "0.00"
+        },
+        {
+          "name": "Wimpy",
+          "price": "0.00"
+        },
+        {
+          "name": "BBQ",
+          "price": "0.00"
+        },
+        {
+          "name": "Teriyaki",
+          "price": "0.00"
+        },
+        {
+          "name": "Citrus Chipotle BBQ",
+          "price": "0.00"
+        },
+        {
+          "name": "Afterburner",
+          "price": "0.00"
+        },
+        {
+          "name": "Golden BBQ",
+          "price": "0.00"
+        },
+        {
+          "name": "Sweet Onion BBQ",
+          "price": "0.00"
+        },
+        {
+          "name": "Cruisin' Altitude",
+          "price": "0.00"
+        },
+        {
+          "name": "Cajun Teriyaki",
+          "price": "0.00"
+        },
+        {
+          "name": "Cajun Blackened",
+          "price": "0.00"
+        },
+        {
+          "name": "Spicy Teriyaki",
+          "price": "0.00"
+        },
+        {
+          "name": "West Texas Mesquite",
+          "price": "0.00"
+        },
+        {
+          "name": "Sweet Chili",
+          "price": "0.00"
+        },
+        {
+          "name": "Jamaican Jerk",
+          "price": "0.00"
+        },
+        {
+          "name": "Srirachayaki",
+          "price": "0.00"
+        },
+        {
+          "name": "Red Alert",
+          "price": "0.00"
+        },
+        {
+          "name": "Mustang Ranch",
+          "price": "0.00"
+        },
+        {
+          "name": "Jet Fuel",
+          "price": "0.00"
+        },
+        {
+          "name": "Kickin' BBQ",
+          "price": "0.00"
+        },
+        {
+          "name": "Honey Mustard",
+          "price": "0.00"
+        },
+        {
+          "name": "Plain",
+          "price": "0.00"
+        },
+        {
+          "name": "Hot Garlic",
+          "price": "0.00"
+        },
+        {
+          "name": "Lemon Pepper",
+          "price": "0.00"
+        },
+        {
+          "name": "Honey BBQ",
+          "price": "0.00"
+        },
+        {
+          "name": "Mango Habanero",
+          "price": "0.00"
+        },
+        {
+          "name": "Garlic Parmesan",
+          "price": "0.00"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,145 @@
+{
+  "name": "Bacon Egg Cheese Bagel",
+  "price": "8.09",
+  "options": [
+    {
+      "type": "Remove from Bacon Egg Cheese Bagel",
+      "required": 0,
+      "upto": 6,
+      "features": [
+        {
+          "name": "No Butter",
+          "price": "0.00"
+        },
+        {
+          "name": "No American Cheese",
+          "price": "0.00"
+        },
+        {
+          "name": "No 2 Half Strips Bacon",
+          "price": "0.00"
+        },
+        {
+          "name": "No Folded Egg",
+          "price": "0.00"
+        },
+        {
+          "name": "No Breakfast Sauce",
+          "price": "0.00"
+        },
+        {
+          "name": "No Bagel",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Extra for Bacon Egg Cheese Bagel",
+      "required": 0,
+      "upto": 6,
+      "features": [
+        {
+          "name": "Extra Butter",
+          "price": "0.00"
+        },
+        {
+          "name": "Extra American Cheese",
+          "price": "2.02"
+        },
+        {
+          "name": "Extra 2 Half Strips Bacon",
+          "price": "3.33"
+        },
+        {
+          "name": "Extra Folded Egg",
+          "price": "2.55"
+        },
+        {
+          "name": "Extra Breakfast Sauce",
+          "price": "0.59"
+        },
+        {
+          "name": "Add Round Egg",
+          "price": "2.55"
+        }
+      ]
+    },
+    {
+      "type": "Recommended Beverages",
+      "required": 0,
+      "upto": 5,
+      "features": [
+        {
+          "name": "Minute Maid\u00ae Orange Juice",
+          "price": "3.39"
+        },
+        {
+          "name": "Iced Coffee",
+          "price": "3.89"
+        },
+        {
+          "name": "Mocha Frapp\u00e9",
+          "price": "3.79"
+        },
+        {
+          "name": "Caramel Frapp\u00e9",
+          "price": "3.79"
+        },
+        {
+          "name": "Iced Caramel Coffee",
+          "price": "3.89"
+        }
+      ]
+    },
+    {
+      "type": "Recommended Desserts",
+      "required": 0,
+      "upto": 4,
+      "features": [
+        {
+          "name": "Apple Pie",
+          "price": "2.59"
+        },
+        {
+          "name": "13 Cookie Tote",
+          "price": "5.39"
+        },
+        {
+          "name": "1 Cookie",
+          "price": "1.49"
+        },
+        {
+          "name": "OREO\u00ae McFlurry\u00ae",
+          "price": "3.99"
+        }
+      ]
+    },
+    {
+      "type": "Recommended Sides And Apps",
+      "required": 0,
+      "upto": 5,
+      "features": [
+        {
+          "name": "Hash Browns",
+          "price": "4.39"
+        },
+        {
+          "name": "Sausage",
+          "price": "2.65"
+        },
+        {
+          "name": "2 Half Strips Bacon",
+          "price": "3.33"
+        },
+        {
+          "name": "Apple Slices",
+          "price": "1.79"
+        },
+        {
+          "name": "Scrambled Eggs",
+          "price": "3.32"
+        }
+      ]
+    }
+  ]
+}

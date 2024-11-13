@@ -1,0 +1,44 @@
+{
+  "name": "Supersonic",
+  "price": "12.99",
+  "options": [
+    {
+      "type": "Protein Additions",
+      "required": 0,
+      "upto": null,
+      "features": [
+        {
+          "name": "Add Buffalo Chicken",
+          "price": "3.00"
+        }
+      ]
+    },
+    {
+      "type": "Nacho Toppings",
+      "required": 0,
+      "upto": 5,
+      "features": [
+        {
+          "name": "No Lettuce",
+          "price": "0.00"
+        },
+        {
+          "name": "No Olives",
+          "price": "0.00"
+        },
+        {
+          "name": "No Jalapenos",
+          "price": "0.00"
+        },
+        {
+          "name": "No Tomatoes",
+          "price": "0.00"
+        },
+        {
+          "name": "Salsa instead of Chili",
+          "price": "0.00"
+        }
+      ]
+    }
+  ]
+}

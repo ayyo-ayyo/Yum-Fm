@@ -1,0 +1,21 @@
+{
+  "name": "Mozzarella Sticks",
+  "price": "9.49",
+  "options": [
+    {
+      "type": "Mozzarella Options",
+      "required": 0,
+      "upto": null,
+      "features": [
+        {
+          "name": "Extra Marinara",
+          "price": "0.50"
+        },
+        {
+          "name": "No Marinara",
+          "price": "0.00"
+        }
+      ]
+    }
+  ]
+}

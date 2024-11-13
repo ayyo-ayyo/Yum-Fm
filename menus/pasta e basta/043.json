@@ -1,0 +1,131 @@
+{
+  "name": "Kids Pepperoni",
+  "price": "15.00",
+  "options": [
+    {
+      "type": "Kids Add-Ons",
+      "required": 0,
+      "upto": null,
+      "features": [
+        {
+          "name": "Basil",
+          "price": "0.25"
+        },
+        {
+          "name": "Broccoli",
+          "price": "1.25"
+        },
+        {
+          "name": "Capers",
+          "price": "0.75"
+        },
+        {
+          "name": "Chicken",
+          "price": "3.00"
+        },
+        {
+          "name": "Diced Tomato",
+          "price": "1.00"
+        },
+        {
+          "name": "Fresh Peppers",
+          "price": "1.25"
+        },
+        {
+          "name": "Meatballs",
+          "price": "Includes customization"
+        },
+        {
+          "name": "Mixed Veggies",
+          "price": "2.00"
+        },
+        {
+          "name": "Mozzarella",
+          "price": "2.00"
+        },
+        {
+          "name": "Mushrooms",
+          "price": "1.50"
+        },
+        {
+          "name": "Onions",
+          "price": "0.75"
+        },
+        {
+          "name": "Roasted Peppers",
+          "price": "1.75"
+        },
+        {
+          "name": "Salami",
+          "price": "2.00"
+        },
+        {
+          "name": "Sausage",
+          "price": "2.50"
+        },
+        {
+          "name": "Shrimp",
+          "price": "5.00"
+        },
+        {
+          "name": "Spicy",
+          "price": "0.00"
+        },
+        {
+          "name": "Spinach",
+          "price": "2.00"
+        },
+        {
+          "name": "Sundried Tomato",
+          "price": "0.75"
+        }
+      ]
+    },
+    {
+      "type": "Recommended Sides And Apps",
+      "required": 0,
+      "upto": 5,
+      "features": [
+        {
+          "name": "Extra Bread",
+          "price": "1.20"
+        },
+        {
+          "name": "Breaded Raviolis",
+          "price": "8.40"
+        },
+        {
+          "name": "Small Cup of Dipping Oil",
+          "price": "1.80"
+        },
+        {
+          "name": "Italian Fries",
+          "price": "0.00"
+        },
+        {
+          "name": "Bruschetta",
+          "price": "12.00"
+        }
+      ]
+    },
+    {
+      "type": "Recommended Desserts",
+      "required": 0,
+      "upto": 3,
+      "features": [
+        {
+          "name": "Tiramisu",
+          "price": "10.00"
+        },
+        {
+          "name": "Lavender Olive Oil Cake",
+          "price": "11.00"
+        },
+        {
+          "name": "Cannoli",
+          "price": "7.00"
+        }
+      ]
+    }
+  ]
+}
