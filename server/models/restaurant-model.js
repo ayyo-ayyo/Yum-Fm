@@ -6,7 +6,6 @@ const restaurantSchema = new Schema({
     restaurant_id: { type: Number, required: true, unique: true },
     restaurant_name: { type: String, required: true },
     restaurant_desc: { type: String },
-    menu_ids: [Number],
     rest_fulfilled_filters: [String]
 });
 
