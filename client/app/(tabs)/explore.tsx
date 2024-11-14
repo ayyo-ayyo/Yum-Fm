@@ -19,9 +19,10 @@ export default function ExploreTab() {
 
   // Handle fetching of search results when pressing "Enter"
   const handleSearch = async () => {
+    const baseURL = process.env.baseUrl;
     if (query) {
       try {
-        const response = await fetch(`https://yum-fm-90558e78d331.herokuapp.com/api/search?type=restaurant&q=${query}`);
+        const response = await fetch(`${baseURL}search?type=restaurant&q=${query}`);
         if (!response.ok) {
           throw new Error(`Error: ${response.status}`);
         }
