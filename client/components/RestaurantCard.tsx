@@ -1,6 +1,4 @@
-// RestaurantCard.tsx
-
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, Animated, Modal, Dimensions, ScrollView } from 'react-native';
 
 interface Restaurant {
@@ -9,10 +7,16 @@ interface Restaurant {
   restaurant_desc: string;
 }
 
+interface MenuItem {
+  _id: string;
+  item_name: string;
+  item_price: number;
+}
+
 interface RestaurantCardProps {
   restaurant: Restaurant;
   onAddToFavorites: (id: number) => void;
-  size?: 'small' | 'large'; // Add size prop with default 'small'
+  size?: 'small' | 'large';
 }
 
 const RestaurantCard: React.FC<RestaurantCardProps> = ({ restaurant, onAddToFavorites, size = 'small' }) => {
@@ -20,7 +24,17 @@ const RestaurantCard: React.FC<RestaurantCardProps> = ({ restaurant, onAddToFavo
   const [modalVisible, setModalVisible] = useState(false);
   const [activeTab, setActiveTab] = useState<'info' | 'menu'>('info');
   const [isFavorite, setIsFavorite] = useState(false);
+  const [menuItems, setMenuItems] = useState<MenuItem[]>([]);
   const animation = useState(new Animated.Value(1))[0];
+
+  useEffect(() => {
+    if (activeTab === 'menu') {
+      fetch(`https://yum-fm-90558e78d331.herokuapp.com/api/by-restaurant/${restaurant.restaurant_id}`)
+        .then((response) => response.json())
+        .then((data) => setMenuItems(data))
+        .catch((error) => console.error('Error fetching menu items:', error));
+    }
+  }, [activeTab, restaurant.restaurant_id]);
 
   const handlePressIn = () => {
     Animated.spring(animation, {
@@ -56,6 +70,11 @@ const RestaurantCard: React.FC<RestaurantCardProps> = ({ restaurant, onAddToFavo
   const toggleFavorite = () => {
     setIsFavorite(!isFavorite);
     onAddToFavorites(restaurant.restaurant_id);
+  };
+
+  const onUploadMenu = () => {
+    console.log('Upload menu functionality triggered.');
+    // Add code to handle the upload, such as opening a file picker or navigating to an upload page.
   };
 
   return (
@@ -110,7 +129,24 @@ const RestaurantCard: React.FC<RestaurantCardProps> = ({ restaurant, onAddToFavo
                 )}
                 {activeTab === 'menu' && (
                   <View style={styles.menuContent}>
-                    <Text>This is the menu</Text>
+                    {menuItems.length > 0 ? (
+                      menuItems
+                        .slice() // create a shallow copy to avoid modifying the original array
+                        .sort((a, b) => a.item_price - b.item_price) // sort by item_price in ascending order
+                        .map((item) => (
+                          <View key={item._id} style={styles.menuItem}>
+                            <Text style={styles.menuItemName}>{item.item_name}</Text>
+                            <Text style={styles.menuItemPrice}>${item.item_price.toFixed(2)}</Text>
+                          </View>
+                        ))
+                    ) : (
+                      <View style={styles.emptyMenuContent}>
+                        <Text style={styles.noMenuText}>There is no menu for this restaurant currently.</Text>
+                        <TouchableOpacity style={styles.uploadButton} onPress={onUploadMenu}>
+                          <Text style={styles.uploadButtonText}>Upload Menu</Text>
+                        </TouchableOpacity>
+                      </View>
+                    )}
                   </View>
                 )}
               </ScrollView>
@@ -133,7 +169,7 @@ const styles = StyleSheet.create({
     marginRight: 10,
   },
   largeRestaurantBox: {
-    width: '90%', // Full width for explore screen
+    width: '90%',
     marginHorizontal: 10,
   },
   restaurantName: {
@@ -194,5 +230,37 @@ const styles = StyleSheet.create({
   },
   menuContent: {
     padding: 10,
+  },
+  menuItem: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    paddingVertical: 5,
+  },
+  menuItemName: {
+    fontSize: 16,
+    color: '#333',
+  },
+  menuItemPrice: {
+    fontSize: 16,
+    color: '#333',
+  },
+  emptyMenuContent: {
+    alignItems: 'center',
+    marginTop: 20,
+  },
+  noMenuText: {
+    fontSize: 16,
+    color: '#333',
+    marginBottom: 10,
+  },
+  uploadButton: {
+    backgroundColor: '#D74938',
+    paddingVertical: 10,
+    paddingHorizontal: 20,
+    borderRadius: 5,
+  },
+  uploadButtonText: {
+    color: '#fff',
+    fontSize: 16,
   },
 });
