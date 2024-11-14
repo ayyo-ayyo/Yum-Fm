@@ -99,7 +99,7 @@ function atlasSearch(type, queryStr, mfilters, pfilters) {
         });
     }
 
-    return searchAggregate;
+    return searchAggregate.exec();
 }
 
 module.exports = router;
