@@ -1,52 +1,47 @@
-# Welcome to your Expo app 👋
+# Beta Release Notes
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+This document will provide an overview of where to find instructions for building and running the app/server. These will include any necessary assumptions and prerequisites. This document will also describe where to find our repository and how to view file change logs. Finally, it will identify our issue-tracking database.
 
-## Get started
+## Overview
+1. [Client App Documentation](#client-app-documentation)
+2. [Server Documentation](#server-documentation)
+3. [Our Repository](#our-repository)
+4. [Issue Tracking](#issue-tracking)
 
-1. Install dependencies
+## Client App Documentation & Release Notes
+## Server Documentation & Release Notes
+[Backend Release Notes and Documentation](./documentation/BackendReleaseNotes.md)
 
-   ```bash
-   npm install expo
-   ```
+## Our Repository
 
-2. Start the app
-   
-   ```bash
-    cd client
-    npx expo start
-   ```
+The release notes should also identify the source code repository and how to look at file change logs. 
 
-In the output, you'll find options to open the app in a
+Our repository can be found at https://github.com/ishaan-shetty/Yum-Fm
 
-- [set up on phones/emulators]https://docs.expo.dev/get-started/set-up-your-environment/?platform=android&device=simulated
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+To view file change logs, navigate to the desired file on the Github page. Click on the file, and navigate to the History button near the top of the page. From there, you can view how the file as changed over time by commit and who was responsible for the changes.
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## Issue Tracking
 
-## Get a fresh project
+Our team uses Jira as our primary bug-tracking tool to document, monitor, and address issues, missing features, and bugs in our system. This platform enables us to track feature development, monitor the alpha release progress, and maintain a record of tasks and bug resolutions. Each task is typically assigned to one or two team members, ensuring responsibility for task progress, bug identification, and resolution.
+### How to Access and Navigate Our Bug-Tracking System
+1. Accessing Jira:
+To review our bug-tracking system, please visit our Jira board at the following link: https://ishetty.atlassian.net/jira/software/projects/KAN/boards/1
 
-When you're ready, run:
+2. Bug Overview on the Kanban Board:
+   * On our Kanban board, we have a designated “Bugs” column. This column lists all current bugs, each with an associated timeline for resolution. Bugs are labeled to identify the related code area (e.g., frontend, backend, database) and assigned a priority level:
+      * Priority is indicated by exclamation marks, from low (!) to critical (!!!!).
+   * By selecting any bug entry, you can view the bug’s description, the proposed initial solution, the due date for resolution, and the assigned team member(s).
+3. Steps for Filing a New Bug:
+   * To add a new bug:
+      * Hover over the “Bugs” column and click "+ Create Issue."
+      * Enter a brief description of the bug.
+      * In the "Type" dropdown, select "Bug."
+   * Once created, double-click the bug entry to provide additional details:
+      * Description: A detailed explanation of the bug.
+      * Priority: Set the priority level using the exclamation marks.
+      * Due Date: Specify a resolution target date.
+      * Assignee: Assign the bug to a team member if appropriate.
+   * Following these steps ensures the bug is fully documented and ready for the team to address.
 
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+### Customer and Team Usage
+These instructions are designed for both our development team and customer group to access, track, and contribute to the bug resolution process, ensuring transparency and collaboration.
