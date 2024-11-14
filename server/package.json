@@ -2,11 +2,13 @@
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
+    "esbuild": "^0.24.0",
     "express": "^4.21.1",
     "mongodb": "^6.10.0",
     "mongoose": "^8.7.2"
   },
   "scripts": {
-  "test": "jest"
+    "build": "esbuild server.js --bundle --platform=node --outfile=server-out.js",
+    "test": "jest"
   }
 }
