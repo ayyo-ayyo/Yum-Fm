@@ -9,6 +9,8 @@ This document will provide an overview of where to find instructions for buildin
 4. [Issue Tracking](#issue-tracking)
 
 ## Client App Documentation & Release Notes
+**TODO**: NEEDS TO BE DONE
+[Frontend Release Notes and Documentation](./documentation/FrontendReleaseNotes.md)
 ## Server Documentation & Release Notes
 [Backend Release Notes and Documentation](./documentation/BackendReleaseNotes.md)
 
