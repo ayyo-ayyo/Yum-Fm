@@ -21,7 +21,7 @@ Begin by opening the terminal, and navigating to the directory where the project
 
 Navigate into the newly created folder, and into the server subfolder with
 
-    cd Yum-FM/server
+    cd Yum-Fm/server
     
 Install the required Node packages by running
 
