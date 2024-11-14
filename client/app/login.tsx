@@ -112,6 +112,7 @@ const styles = StyleSheet.create({
     height: 350,
     resizeMode: 'contain',
     alignSelf: 'center',
+    marginLeft: 27,
     marginBottom: 20,
   },
   input: {
