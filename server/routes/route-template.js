@@ -90,6 +90,7 @@ function buildDefaultRouter(routeNameStr, ModelType) {
     // Define the PUT /routeNameStr/<id> route, which will update the ModelType document with the specified _id
     router.put(`/${routeNameStr}/:id`, async (req, res) => {
         try {
+            await ModelType.validate(req.body);
             const result = await ModelType.findByIdAndUpdate(req.params.id, req.body, { new: true }); // Attempt to update the document, and create a new one if needed
             if (!result) { // On error,
                 return res.status(404).json({ error: 'No such route: ' +  routeNameStr}); // Report that the operation was unsuccessful
