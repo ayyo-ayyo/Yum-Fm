@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, Image, Switch, SafeAreaView, TextInput, Modal } from 'react-native';
 import { FontAwesome } from '@expo/vector-icons';
+import { useNavigation } from '@react-navigation/native';
 
 export default function ProfileScreen() {
   const [activeTab, setActiveTab] = useState<'account' | 'filters'>('account');
@@ -9,7 +10,10 @@ export default function ProfileScreen() {
   const [name, setName] = useState("Monkey D. Luffy");
   const [phone, setPhone] = useState("+1 435 783 1730");
   const [email, setEmail] = useState("yummy@email.com");
-  const [isFavoritesModalVisible, setIsFavoritesModalVisible] = useState(false); // State for modal visibility
+  const [isFavoritesModalVisible, setIsFavoritesModalVisible] = useState(false); // State for favorites modal visibility
+  const [isLogoutModalVisible, setIsLogoutModalVisible] = useState(false); // State for logout modal visibility
+
+  const navigation = useNavigation();
 
   const handleEditToggle = () => {
     setIsEditing(!isEditing);
@@ -22,6 +26,16 @@ export default function ProfileScreen() {
 
   const toggleFavoritesModal = () => {
     setIsFavoritesModalVisible(!isFavoritesModalVisible);
+  };
+
+  const toggleLogoutModal = () => {
+    setIsLogoutModalVisible(!isLogoutModalVisible);
+  };
+
+  const handleLogout = () => {
+    setIsLogoutModalVisible(!isLogoutModalVisible);
+    // setIsLogoutModalVisible(false);
+    // navigation.navigate('login');
   };
 
   return (
@@ -112,7 +126,7 @@ export default function ProfileScreen() {
           </View>
 
           {/* Log Out Button - Visible Only on Account Tab */}
-          <TouchableOpacity style={styles.logoutButton}>
+          <TouchableOpacity style={styles.logoutButton} onPress={toggleLogoutModal}>
             <FontAwesome name="sign-out" size={24} color="#D74938" style={styles.icon} />
             <Text style={styles.logoutButtonText}>Log Out</Text>
           </TouchableOpacity>
@@ -157,6 +171,31 @@ export default function ProfileScreen() {
           </View>
         </View>
       </Modal>
+
+      {/* Modal for Logout Confirmation */}
+      <Modal
+        visible={isLogoutModalVisible}
+        animationType="slide"
+        transparent={true}
+        onRequestClose={toggleLogoutModal}
+      >
+        <View style={styles.modalOverlay}>
+          <View style={styles.logoutModalContainer}>
+            <Text style={styles.modalTitle}>Are you sure you want to logout?</Text>
+            <View style={styles.modalContent}>
+            <View style={{ flexDirection:"row" }}>
+              <TouchableOpacity style={styles.closeButton} onPress={handleLogout}>
+                <Text style={styles.closeButtonText}>Yes</Text>
+              </TouchableOpacity>
+              <View style={styles.space} />
+              <TouchableOpacity style={styles.closeButton} onPress={toggleLogoutModal}>
+                <Text style={styles.closeButtonText}>No</Text>
+              </TouchableOpacity>
+              </View>
+            </View>
+          </View>
+        </View>
+      </Modal>
     </SafeAreaView>
   );
 }
@@ -166,6 +205,10 @@ const styles = StyleSheet.create({
     flex: 1,
     padding: 20,
     backgroundColor: '#F3E2CF',
+  },
+  space: {
+    width: 20,
+    height: 20,
   },
   header: {
     fontSize: 30,
@@ -325,6 +368,13 @@ const styles = StyleSheet.create({
     padding: 20,
     borderRadius: 10,
     width: '80%',
+  },
+  logoutModalContainer: {
+    backgroundColor: 'white',
+    paddingTop: 20,
+    paddingBottom: 6,
+    borderRadius: 10,
+    width: '90%',
   },
   modalTitle: {
     fontSize: 22,
