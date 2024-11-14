@@ -45,43 +45,6 @@ Now the server should be able to access the database, and you can run the server
 
 For the beta release, the server implements several HTTP endpoints/routes that allow the client access to the MongoDB database. 
 
-### Testing the Backend 
-There are several unit tests written in the `server\__tests__` folder. These tests can be executed with the following steps:
-
-1. Open up the project repo and create a new terminal.
-
-2. Navigate to the server folder
-       
-        cd server
-
-3. Run all tests 
-
-        npm test
-
-The tests are run through Jest, and results will display in the terminal, indicating passing, failing tests, and any assertion errors.
-
-#### Test Coverage Summary
-* **Route Tests:** Checks that all routes are functioning.
-
-    * Ensures that each database route is able to fetch from the corresponding database table, and returning an error code of 404 or 200 depending on the existence of data in the table.
-* **General Search Tests:** Verifies that all required query parameters are present.
-
-    * Ensures that requests without a query (q) parameter or type (type) parameter return a 400 status code for invalid requests.
-* **Restaurant Search Tests:** Checks search functionality specifically for restaurant results.
-
-    * Tests that a search with a full restaurant name returns the expected restaurant with the correct name and description.
-    * Confirms that a partial search term (e.g., Oce) returns results that include the target restaurant ("Ocean Restaurant").
-    * Ensures that a search with a non-existent restaurant name returns an empty array, indicating no results.
-    * Validates that searches with filter parameters (mfilters) return only the results matching those filter conditions.*
-
-* **Menu Item Search Tests:** Checks search functionality for menu items.
-
-    * Ensures that a search with a full menu item name returns the correct item with the expected name and price.
-    * Verifies that a partial search term (e.g., sa) returns results that include the target item ("sandwich").
-    * Confirms that a search with a non-existent menu item name returns an empty array, indicating no results.
-
-These tests provide coverage for valid and invalid inputs across the /search endpoint, ensuring the server’s correct response to various search queries and filter conditions.
-
 ### New/Modified in Beta Release
 The following have been added following the alpha release:
 
@@ -129,3 +92,40 @@ The remaining were implemented in the alpha release.
 * **Description:** Update the document for the specified type by the given _id with the values given in the body of the request
 
 * **Supported Types:** restaurants, menu items, menus, preferences, restrictions, users
+
+## Testing the Backend 
+There are several unit tests written in the `server\__tests__` folder. These tests can be executed with the following steps:
+
+1. Open up the project repo and create a new terminal.
+
+2. Navigate to the server folder
+       
+        cd server
+
+3. Run all tests 
+
+        npm test
+
+The tests are run through Jest, and results will display in the terminal, indicating passing, failing tests, and any assertion errors.
+
+### Test Coverage Summary
+* **Route Tests:** Checks that all routes are functioning.
+
+    * Ensures that each database route is able to fetch from the corresponding database table, and returning an error code of 404 or 200 depending on the existence of data in the table.
+* **General Search Tests:** Verifies that all required query parameters are present.
+
+    * Ensures that requests without a query (q) parameter or type (type) parameter return a 400 status code for invalid requests.
+* **Restaurant Search Tests:** Checks search functionality specifically for restaurant results.
+
+    * Tests that a search with a full restaurant name returns the expected restaurant with the correct name and description.
+    * Confirms that a partial search term (e.g., Oce) returns results that include the target restaurant ("Ocean Restaurant").
+    * Ensures that a search with a non-existent restaurant name returns an empty array, indicating no results.
+    * Validates that searches with filter parameters (mfilters) return only the results matching those filter conditions.*
+
+* **Menu Item Search Tests:** Checks search functionality for menu items.
+
+    * Ensures that a search with a full menu item name returns the correct item with the expected name and price.
+    * Verifies that a partial search term (e.g., sa) returns results that include the target item ("sandwich").
+    * Confirms that a search with a non-existent menu item name returns an empty array, indicating no results.
+
+These tests provide coverage for valid and invalid inputs across the /search endpoint, ensuring the server’s correct response to various search queries and filter conditions.

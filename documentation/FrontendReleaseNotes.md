@@ -39,7 +39,38 @@ You're all set to enjoy a complete and robust experience with Yum.FM. Enjoy!
 
 For the beta release, the client application has various improved UI changes and functionalities implemented. 
 
-### Testing the Frontend 
+### New/Modified in Beta Release
+The following have been added following the alpha release:
+
+#### **1\. Login Page + Create Account Page**
+There is now a login page for the application. Here a user will be prompted to enter their email and password to login. Currently, we don't store user profiles in the database, so as long as you enter valid email and password according to the string regex, then you can access the application. In the future, we will require that you account is stored in the database, in order to gain a token to open the application.
+
+#### **2\. Home Page Categories**
+The functionality of the home page has been completely re-imagined. Instead of listing out the restaurants in a single flat list, we have a few different categories where the restaurants can be placed in based off their relation to the user. For example, we have a "Restaurants Closest To You" category which will display the restaurants closest to the user. Another category called "Restaurants For You", which will have its first criteria as satisfying as many of the user's filters, then the rest of the criteria follows in priority. These categories are currently non-trivially being sorted and don't have legitimate functionality, but in the future we will implement these filtering options. We believe users will like this feature as it allows them to find what they are searching for quicker, and browse with more ease.
+
+#### **3\. Improved Search Feature**
+Previously, the search feature required that you enter a word which belongs to the restaurant name that a user is searching for. This is unintuitive and requires extensive prior knowledge of the user in some scenarios. The improved search feature now only requires 2 letters to search and also is capable of taking in restriction and preference filters. However, since the filters haven't been implemented yet, that functionality isn't available in the search yet. In the future, we plan on improving the search feature even further to provide the "most likely" restaurants they are looking for, in the case that none of the key letters even match.
+
+#### **4\. Restaurant Cards**
+Throughout the application, restaurants are now displayed as "card" objects. This means whenever they are clicked on, it pulls up the restaurant card popup which stores the information about the restaurant. Here, a user can add the restaurant to their favorites, view basic information about the restaurant, or scroll through the menu items available there. If a menu is not available for the restaurant, then the user can add a menu for the restaurant. 
+We do not yet have the functionality for adding restaurants to favorites list, or allowing the user to add a menu for the restaurant, but they are coming up in the next release.
+
+#### **5\. Profile Page**
+The UI on the profile page has been updated quite a bit with multiple buttons added for favorites list, sharing profile and logout. However, their actual functionalities have not been fully completed yet. However, on the profile page, a user is able to edit their basic information.
+
+### Known Issues + Future Improvements
+
+1. Camera and map buttons on the search page are not functioning. 
+2. User cannot edit or import their own image on the profile page. 
+3. Favoriting a restaurant does not actually add the restaurant to the favorites list.
+4. Clicking upload menu when a restaurant doesn't contain a menu, does not do anything.
+5. The keyboard on the login page blocks the view of the login details and box where the user can type. This makes it impossible to see what you are typing while the keyboard is open.
+
+These are just some of the bugs + improvements which will be addressed by our team in the near future, we keep track of these using our Jira which is linked here:
+ https://ishetty.atlassian.net/jira/software/projects/KAN/boards/1
+
+
+## Testing the Frontend 
 There are tests written in multiple folders through the client code. These tests can be executed with the following steps:
 
 1. Open up the project repo and create a new terminal.
