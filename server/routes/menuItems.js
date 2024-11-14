@@ -2,6 +2,10 @@ const express = require('express');
 const MenuItem = require('../models/menuItem-model');
 const Menu = require('../models/menu-model');
 
+/*
+    This file defines the routes necessary for MenuItems
+*/
+
 const buildDefaultRouter = require('./route-template');
 const router = buildDefaultRouter('menuItems', MenuItem);
 

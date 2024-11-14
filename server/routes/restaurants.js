@@ -2,7 +2,8 @@ const Restaurant = require('../models/restaurant-model');
 const buildDefaultRouter = require('./route-template');
 const mongoose = require('mongoose');
 
-module.exports = {
-    restaurantRouter: buildDefaultRouter('restaurants', Restaurant)
-};
+/*
+    This file defines the routes necessary for Restaurants
+*/
+module.exports = buildDefaultRouter('restaurants', Restaurant)
 

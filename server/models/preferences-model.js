@@ -3,6 +3,10 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
+/*
+    This file defines the format/schema that all Preferences must fit in the database.
+*/
+
 const preferencesSchema = new Schema({
     preference_id: {type: Number, required: true, unique: true},
     user_id: {type: Number, required: true, ref: "Restriction"},
