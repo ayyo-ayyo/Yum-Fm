@@ -2,11 +2,10 @@ import React, { useEffect, useState } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, Image, SafeAreaView, TextInput, Modal, Alert, Switch } from 'react-native';
 import { FontAwesome } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
-import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 
 interface User {
   _id: string;
-  username: string;
+  user_name: string;
   phone_number: string;
   email: string;
   address: string;
@@ -38,7 +37,7 @@ export default function ProfileScreen() {
       const response = await fetch(`http://localhost:3000/api/users/${userId}`); 
       if (!response.ok) throw new Error('Failed to fetch user data');
       const userData: User = await response.json();
-      setName(userData.username || '');  // use empty string if data is missing
+      setName(userData.user_name || '');  // use empty string if data is missing
       setPhone(userData.phone_number || '');
       setEmail(userData.email || '');
       setAddress(userData.address || '');
@@ -58,13 +57,13 @@ export default function ProfileScreen() {
       const response = await fetch(`http://localhost:3000/api/users/${userId}`, {
         method: 'PUT',
         headers: {
-          'Content-Type': 'application/json',
+          'Content-Type': 'application/json'
         },
         body: JSON.stringify({
-          username: name,
+          user_name: name,
           phone_number: phone,
-          email,
-          address,
+          email: email,
+          address: address,
         }),
       });
 
