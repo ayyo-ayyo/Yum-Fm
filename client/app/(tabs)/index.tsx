@@ -99,13 +99,15 @@ export default HomeScreen;
 const styles = StyleSheet.create({
   safeContainer: {
     flex: 1,
-    backgroundColor: '#F3E2CF',
+    backgroundColor: '#F3E2CF'
   },
   container: {
     padding: 16,
+    flex: 1
   },
   categoryContainer: {
     marginBottom: 10,
+    flex:1
   },
   categoryTitle: {
     fontSize: 20,
