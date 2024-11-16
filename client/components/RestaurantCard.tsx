@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { View, Text, StyleSheet, TouchableOpacity, Animated, Modal, Dimensions, ScrollView } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity, Animated, Modal, Dimensions, ScrollView, Image } from 'react-native';
 
 interface Restaurant {
   restaurant_id: number;
@@ -84,6 +84,12 @@ const RestaurantCard: React.FC<RestaurantCardProps> = ({ restaurant, onAddToFavo
         onPressOut={handlePressOut}
         onPress={handlePress}
       >
+        <Image 
+          source={{uri: 'https://img.cdn4dd.com/p/fit=contain,width=200,height=200,format=auto,quality=95/media/restaurant/cover_square/The_Hangar_Pub_and_Grill_logo.jpg'}}
+          width={50}
+          height={50}
+          borderRadius={25}
+        />
         <Text style={styles.restaurantName}>{restaurant.restaurant_name}</Text>
         <Text style={styles.restaurantDesc}>{restaurant.restaurant_desc}</Text>
       </TouchableOpacity>

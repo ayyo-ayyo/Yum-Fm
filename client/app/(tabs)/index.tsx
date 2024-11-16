@@ -1,7 +1,7 @@
 //index.tsx
 
 import React, { useEffect, useState } from 'react';
-import { StyleSheet, ScrollView, View, Text, ActivityIndicator } from 'react-native';
+import { StyleSheet, ScrollView, View, Text, ActivityIndicator, Image } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import * as Location from 'expo-location';
 import RestaurantCard from '../../components/RestaurantCard';
@@ -63,11 +63,12 @@ const HomeScreen: React.FC = () => {
       </View>
       <ScrollView horizontal showsHorizontalScrollIndicator={false}>
         {data.map((restaurant) => (
-          <RestaurantCard
-            key={restaurant.restaurant_id}
-            restaurant={restaurant}
-            onAddToFavorites={handleAddToFavorites}
-          />
+  
+            <RestaurantCard
+              key={restaurant.restaurant_id}
+              restaurant={restaurant}
+              onAddToFavorites={handleAddToFavorites}
+            />
         ))}
       </ScrollView>
     </View>
