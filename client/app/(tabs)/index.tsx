@@ -10,6 +10,7 @@ interface Restaurant {
   restaurant_id: number;
   restaurant_name: string;
   restaurant_desc: string;
+  restaurant_img: string;
 }
 
 const HomeScreen: React.FC = () => {
@@ -63,7 +64,6 @@ const HomeScreen: React.FC = () => {
       </View>
       <ScrollView horizontal showsHorizontalScrollIndicator={false}>
         {data.map((restaurant) => (
-  
             <RestaurantCard
               key={restaurant.restaurant_id}
               restaurant={restaurant}

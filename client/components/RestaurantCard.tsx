@@ -5,6 +5,7 @@ interface Restaurant {
   restaurant_id: number;
   restaurant_name: string;
   restaurant_desc: string;
+  restaurant_img: string;
 }
 
 interface MenuItem {
@@ -86,7 +87,7 @@ const RestaurantCard: React.FC<RestaurantCardProps> = ({ restaurant, onAddToFavo
         >
           <Image 
             style={{flex:1}}
-            source={{uri: 'https://img.cdn4dd.com/p/fit=contain,width=200,height=200,format=auto,quality=95/media/restaurant/cover_square/The_Hangar_Pub_and_Grill_logo.jpg'}}
+            source={{uri: restaurant.restaurant_img}}
             width={50}
             borderTopLeftRadius={15}
             borderBottomLeftRadius={15}
