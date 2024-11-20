@@ -6,6 +6,7 @@ This document provides the necessary resources to get the backend server install
 1. [Prerequisites](#prerequisites) 
 2. [Installation](#installation)
 3. [Features and Release Notes](#features--release-notes)
+4. [Testing](#test-coverage-summary)
 
 ## Prerequisites
 The following are assumed to be installed/available. Instructions to install each can be found at the corresponding link.
