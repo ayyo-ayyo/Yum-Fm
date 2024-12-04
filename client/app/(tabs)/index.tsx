@@ -102,7 +102,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#F3E2CF'
   },
   container: {
-    padding: 16,
+    padding: 4,
     flex: 1
   },
   categoryContainer: {
