@@ -13,8 +13,6 @@ export default function ProfileScreen() {
   const [isFavoritesModalVisible, setIsFavoritesModalVisible] = useState(false); // State for favorites modal visibility
   const [isLogoutModalVisible, setIsLogoutModalVisible] = useState(false); // State for logout modal visibility
 
-  const navigation = useNavigation();
-
   const handleEditToggle = () => {
     setIsEditing(!isEditing);
   };

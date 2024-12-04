@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { View, Text, StyleSheet, TouchableOpacity, Animated, Modal, Dimensions, ScrollView } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity, Animated, Modal, Dimensions, ScrollView, Image } from 'react-native';
 
 interface Restaurant {
   restaurant_id: number;
   restaurant_name: string;
   restaurant_desc: string;
+  restaurant_img: string;
 }
 
 interface MenuItem {
@@ -78,83 +79,92 @@ const RestaurantCard: React.FC<RestaurantCardProps> = ({ restaurant, onAddToFavo
   };
 
   return (
-    <Animated.View style={[styles.restaurantBox, size === 'large' && styles.largeRestaurantBox, { transform: [{ scale: animation }] }]}>
-      <TouchableOpacity
-        onPressIn={handlePressIn}
-        onPressOut={handlePressOut}
-        onPress={handlePress}
-      >
-        <Text style={styles.restaurantName}>{restaurant.restaurant_name}</Text>
-        <Text style={styles.restaurantDesc}>{restaurant.restaurant_desc}</Text>
-      </TouchableOpacity>
-
-      {modalVisible && (
-        <Modal
-          transparent
-          visible={modalVisible}
-          animationType="slide"
-          onRequestClose={handleCloseModal}
+      <Animated.View style={[styles.restaurantBox, size === 'large' && styles.largeRestaurantBox, { transform: [{ scale: animation }] }]}>
+        <TouchableOpacity style={{flex:1, flexDirection:'row'}}
+          onPressIn={handlePressIn}
+          onPressOut={handlePressOut}
+          onPress={handlePress}
         >
-          <TouchableOpacity style={styles.modalOverlay} onPress={handleCloseModal}>
-            <View style={styles.modalContent} onTouchStart={(e) => e.stopPropagation()}>
-              <TouchableOpacity style={styles.favoriteButton} onPress={toggleFavorite}>
-                <Text style={styles.favoriteButtonText}>
-                  {isFavorite ? '★' : '☆'}
-                </Text>
-              </TouchableOpacity>
+          <Image 
+            style={{flex:1}}
+            source={{uri: restaurant.restaurant_img}}
+            width={50}
+            borderTopLeftRadius={15}
+            borderBottomLeftRadius={15}
+           />
+          <View style={{flex:2, marginLeft:5}}>
+            <Text style={styles.restaurantName}>{restaurant.restaurant_name}</Text>
+            <Text style={styles.restaurantDesc}>{restaurant.restaurant_desc}</Text>
+          </View>
+        </TouchableOpacity>
 
-              <Text style={styles.restaurantName}>{restaurant.restaurant_name}</Text>
+        {modalVisible && (
+          <Modal
+            transparent
+            visible={modalVisible}
+            animationType="slide"
+            onRequestClose={handleCloseModal}
+          >
+            <TouchableOpacity style={styles.modalOverlay} onPress={handleCloseModal}>
+              <View style={styles.modalContent} onTouchStart={(e) => e.stopPropagation()}>
+                <TouchableOpacity style={styles.favoriteButton} onPress={toggleFavorite}>
+                  <Text style={styles.favoriteButtonText}>
+                    {isFavorite ? '★' : '☆'}
+                  </Text>
+                </TouchableOpacity>
 
-              <View style={styles.tabs}>
-                <TouchableOpacity
-                  style={[styles.tab, activeTab === 'info' && styles.activeTab]}
-                  onPress={() => handleTabSwitch('info')}
-                >
-                  <Text style={styles.tabText}>Basic Info</Text>
-                </TouchableOpacity>
-                <TouchableOpacity
-                  style={[styles.tab, activeTab === 'menu' && styles.activeTab]}
-                  onPress={() => handleTabSwitch('menu')}
-                >
-                  <Text style={styles.tabText}>Menu</Text>
-                </TouchableOpacity>
+                <Text style={styles.restaurantName}>{restaurant.restaurant_name}</Text>
+
+                <View style={styles.tabs}>
+                  <TouchableOpacity
+                    style={[styles.tab, activeTab === 'info' && styles.activeTab]}
+                    onPress={() => handleTabSwitch('info')}
+                  >
+                    <Text style={styles.tabText}>Basic Info</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                    style={[styles.tab, activeTab === 'menu' && styles.activeTab]}
+                    onPress={() => handleTabSwitch('menu')}
+                  >
+                    <Text style={styles.tabText}>Menu</Text>
+                  </TouchableOpacity>
+                </View>
+
+                <ScrollView contentContainerStyle={styles.tabContent}>
+                  {activeTab === 'info' && (
+                    <View style={styles.infoContent}>
+                      <Text style={styles.restaurantName}>Restaurant Info</Text>
+                      <Text>{restaurant.restaurant_desc}</Text>
+                    </View>
+                  )}
+                  {activeTab === 'menu' && (
+                    <View style={styles.menuContent}>
+                      {menuItems.length > 0 ? (
+                        menuItems
+                          .slice() // create a shallow copy to avoid modifying the original array
+                          .sort((a, b) => a.item_price - b.item_price) // sort by item_price in ascending order
+                          .map((item) => (
+                            <View key={item._id} style={styles.menuItem}>
+                              <Text style={styles.menuItemName}>{item.item_name}</Text>
+                              <Text style={styles.menuItemPrice}>${item.item_price.toFixed(2)}</Text>
+                            </View>
+                          ))
+                      ) : (
+                        <View style={styles.emptyMenuContent}>
+                          <Text style={styles.noMenuText}>There is no menu for this restaurant currently.</Text>
+                          <TouchableOpacity style={styles.uploadButton} onPress={onUploadMenu}>
+                            <Text style={styles.uploadButtonText}>Upload Menu</Text>
+                          </TouchableOpacity>
+                        </View>
+                      )}
+                    </View>
+                  )}
+                </ScrollView>
               </View>
-
-              <ScrollView contentContainerStyle={styles.tabContent}>
-                {activeTab === 'info' && (
-                  <View style={styles.infoContent}>
-                    <Text style={styles.restaurantName}>Restaurant Info</Text>
-                    <Text>{restaurant.restaurant_desc}</Text>
-                  </View>
-                )}
-                {activeTab === 'menu' && (
-                  <View style={styles.menuContent}>
-                    {menuItems.length > 0 ? (
-                      menuItems
-                        .slice() // create a shallow copy to avoid modifying the original array
-                        .sort((a, b) => a.item_price - b.item_price) // sort by item_price in ascending order
-                        .map((item) => (
-                          <View key={item._id} style={styles.menuItem}>
-                            <Text style={styles.menuItemName}>{item.item_name}</Text>
-                            <Text style={styles.menuItemPrice}>${item.item_price.toFixed(2)}</Text>
-                          </View>
-                        ))
-                    ) : (
-                      <View style={styles.emptyMenuContent}>
-                        <Text style={styles.noMenuText}>There is no menu for this restaurant currently.</Text>
-                        <TouchableOpacity style={styles.uploadButton} onPress={onUploadMenu}>
-                          <Text style={styles.uploadButtonText}>Upload Menu</Text>
-                        </TouchableOpacity>
-                      </View>
-                    )}
-                  </View>
-                )}
-              </ScrollView>
-            </View>
-          </TouchableOpacity>
-        </Modal>
-      )}
-    </Animated.View>
+            </TouchableOpacity>
+          </Modal>
+        )}
+      </Animated.View>
   );
 };
 
@@ -163,9 +173,9 @@ export default RestaurantCard;
 const styles = StyleSheet.create({
   restaurantBox: {
     backgroundColor: 'rgba(255, 255, 255, 0.9)',
-    padding: 16,
+    //padding: 16,
     borderRadius: 15,
-    width: 200,
+    width: 300,
     marginRight: 10,
   },
   largeRestaurantBox: {
