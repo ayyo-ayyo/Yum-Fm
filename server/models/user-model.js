@@ -8,8 +8,16 @@ const Schema = mongoose.Schema;
 
 const userSchema = new Schema({
     user_id: { type: Number, required: true, unique: true },
-    user_name: { type: String, required: true },
-    password: {type: String, required: true}
+    email: { type: String, required: true },
+    password: {type: String, required: true},
+    address: {type: String, required: false},
+    phone_number: {type: String, required: false},
+    user_name: {type: String, required: true},
+    favorites_list: { 
+        type: [Number], 
+        required: true,
+        default: [] 
+    }
 });
 
 const user = mongoose.model('User', userSchema);

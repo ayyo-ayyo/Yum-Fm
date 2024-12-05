@@ -1,32 +1,113 @@
-import React, { useState } from 'react';
-import { View, Text, StyleSheet, TouchableOpacity, Image, Switch, SafeAreaView, TextInput, Modal } from 'react-native';
+import React, { useEffect, useState } from 'react';
+import { View, Text, StyleSheet, TouchableOpacity, Image, SafeAreaView, TextInput, Modal, Alert, Switch } from 'react-native';
 import { FontAwesome } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
+import RestaurantCard from '../../components/RestaurantCard';
+
+interface User {
+  _id: string;
+  user_name: string;
+  phone_number: string;
+  email: string;
+  address: string;
+  favorites_list: number[];
+}
 
 export default function ProfileScreen() {
   const [activeTab, setActiveTab] = useState<'account' | 'filters'>('account');
-  const [filtersEnabled, setFiltersEnabled] = useState(false);
-  const [isEditing, setIsEditing] = useState(false);
-  const [name, setName] = useState("Monkey D. Luffy");
-  const [phone, setPhone] = useState("+1 435 783 1730");
-  const [email, setEmail] = useState("yummy@email.com");
-  const [isFavoritesModalVisible, setIsFavoritesModalVisible] = useState(false); // State for favorites modal visibility
-  const [isLogoutModalVisible, setIsLogoutModalVisible] = useState(false); // State for logout modal visibility
+  const [filtersEnabled, setFiltersEnabled] = useState<boolean>(false);
+  const [isEditing, setIsEditing] = useState<boolean>(false);
+  const [name, setName] = useState<string>('');
+  const [phone, setPhone] = useState<string>('');
+  const [email, setEmail] = useState<string>('');
+  const [address, setAddress] = useState<string>('');
+  const [isFavoritesModalVisible, setIsFavoritesModalVisible] = useState<boolean>(false);
+  const [isLogoutModalVisible, setIsLogoutModalVisible] = useState<boolean>(false);
+  const [favoriteRestaurants, setFavoriteRestaurants] = useState<any[]>([]);
 
-  const handleEditToggle = () => {
+  const userId = '6734ee0c95789f1ef59cc007'; // hardcoded user ID for this example
+  const navigation = useNavigation();
+
+  useEffect(() => {
+    fetchUserData();
+  }, []);
+
+  // `http://localhost:3000/api/users/${userId}`
+  // `https://yum-fm-90558e78d331.herokuapp.com/api/users/${userId}`
+
+  const fetchUserData = async (): Promise<void> => {
+    try {
+      const response = await fetch(`http://localhost:3000/api/users/${userId}`); // switch to heroku link after updating
+      if (!response.ok) throw new Error('Failed to fetch user data');
+      const userData: User = await response.json();
+      setName(userData.user_name || '');  // use empty string if data is missing
+      setPhone(userData.phone_number || '');
+      setEmail(userData.email || '');
+      setAddress(userData.address || '');
+      setFavoriteRestaurants(userData.favorites_list || []);
+      console.log(userData.favorites_list)
+    } catch (error) {
+      Alert.alert('Error', 'Failed to load user data.');
+    }
+  };
+
+  const handleEditToggle = (): void => {
     setIsEditing(!isEditing);
   };
 
-  const handleSave = () => {
-    setIsEditing(false);
-    // Here, you could add additional logic to save the changes to a backend or local storage if needed.
+  const handleSave = async (): Promise<void> => {
+    try {
+      console.log("Saving user data:", { name, phone, email, address });
+
+      const response = await fetch(`http://localhost:3000/api/users/${userId}`, { // switch to heroku link after updating
+        method: 'PUT',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          user_name: name,
+          phone_number: phone,
+          email: email,
+          address: address,
+        }),
+      });
+
+      if (!response.ok) {
+        const errorText = await response.text();
+        console.error("Error saving user data:", errorText);
+        throw new Error('Failed to save user data');
+      }
+
+      Alert.alert('Success', 'Profile updated successfully.');
+      setIsEditing(false);
+    } catch (error) {
+      console.error("Save error:", error);
+      Alert.alert('Error', 'Failed to save changes.');
+    }
   };
 
-  const toggleFavoritesModal = () => {
+  const toggleFavoritesModal = async (): Promise<void> => {
+    if (!isFavoritesModalVisible) {
+      try {
+        const restaurantDetails = await Promise.all(
+          favoriteRestaurants.map((id) =>
+            fetch(`http://localhost:3000/api/restaurants/${id}`).then((res) => {
+              if (!res.ok) throw new Error(`Failed to fetch restaurant with ID: ${id}`);
+              return res.json();
+            })
+          )
+        );
+        setFavoriteRestaurants(restaurantDetails);
+      } catch (error) {
+        console.error('Error fetching favorite restaurants:', error);
+        Alert.alert('Error', 'Failed to load favorite restaurants.');
+      }
+    }
     setIsFavoritesModalVisible(!isFavoritesModalVisible);
   };
+  
 
-  const toggleLogoutModal = () => {
+  const toggleLogoutModal = (): void => {
     setIsLogoutModalVisible(!isLogoutModalVisible);
   };
 
@@ -87,6 +168,12 @@ export default function ProfileScreen() {
                 placeholder="Email"
                 keyboardType="email-address"
               />
+              <TextInput
+                style={styles.input}
+                value={address}
+                onChangeText={setAddress}
+                placeholder="Address"
+              />
               <View style={styles.editButtonsContainer}>
                 <TouchableOpacity style={styles.saveButton} onPress={handleSave}>
                   <Text style={styles.editButtonText}>Save</Text>
@@ -103,7 +190,7 @@ export default function ProfileScreen() {
               <View style={styles.infoContainer}>
                 <Text style={styles.infoText}>📞 {phone}</Text>
                 <Text style={styles.infoText}>📧 {email}</Text>
-                <Text style={styles.infoText}>📍 221B, Baker Street</Text>
+                <Text style={styles.infoText}>📍 {address}</Text>
               </View>
               <TouchableOpacity style={styles.editButton} onPress={handleEditToggle}>
                 <Text style={styles.editButtonText}>Edit Details</Text>
@@ -146,29 +233,38 @@ export default function ProfileScreen() {
         </View>
       )}
 
-      {/* Modal for Favorites */}
-      <Modal
-        visible={isFavoritesModalVisible}
-        animationType="slide"
-        transparent={true}
-        onRequestClose={toggleFavoritesModal}
-      >
-        <View style={styles.modalOverlay}>
-          <View style={styles.modalContainer}>
-            <Text style={styles.modalTitle}>
-              <FontAwesome name="heart" size={24} color="#D74938" /> Your Favorites
-            </Text>
-            {/* Add content for favorites here */}
-            <View style={styles.modalContent}>
-              <Text style={styles.modalText}>Here are your favorite items!</Text>
-              {/* Additional content */}
-            </View>
-            <TouchableOpacity style={styles.closeButton} onPress={toggleFavoritesModal}>
-              <Text style={styles.closeButtonText}>Close</Text>
-            </TouchableOpacity>
+    {/* Modal for Favorites */}
+    <Modal
+      visible={isFavoritesModalVisible}
+      animationType="slide"
+      transparent={true}
+      onRequestClose={toggleFavoritesModal}
+    >
+      <View style={styles.modalOverlay}>
+        <View style={styles.modalContainer}>
+          <Text style={styles.modalTitle}>
+            <FontAwesome name="heart" size={24} color="#D74938" /> Your Favorites
+          </Text>
+          <View style={styles.modalContent}>
+            {/* Check if favorites are loaded */}
+            {favoriteRestaurants.length > 0 ? (
+              favoriteRestaurants.map((restaurant, index) => (
+                <View key={index} style={styles.favoriteItem}>
+                  <Text style={styles.modalText}>{restaurant.name}</Text>
+                  <Text style={styles.modalSubText}>{restaurant.location}</Text>
+                </View>
+              ))
+            ) : (
+              <Text style={styles.modalText}>No favorites found.</Text>
+            )}
           </View>
+          <TouchableOpacity style={styles.closeButton} onPress={toggleFavoritesModal}>
+            <Text style={styles.closeButtonText}>Close</Text>
+          </TouchableOpacity>
         </View>
-      </Modal>
+      </View>
+    </Modal>
+
 
       {/* Modal for Logout Confirmation */}
       <Modal
@@ -402,4 +498,15 @@ const styles = StyleSheet.create({
     fontWeight: '600',
     textAlign: 'center',
   },
+  favoriteItem: {
+    marginBottom: 10,
+    padding: 10,
+    backgroundColor: '#F3E2CF',
+    borderRadius: 8,
+  },
+  modalSubText: {
+    fontSize: 14,
+    color: '#777',
+  },
+  
 });

@@ -12,7 +12,7 @@ const loginRouter = express.Router();
 // Requires the mandatory parameters /login?user_name=<username here>&password=<password here>
 loginRouter.get('/login', (req, res) => {
     // Ensure the mandatory parameters are given
-    if (!('user_name' in req.query)) {
+    if (!('email' in req.query)) {
         res.status(400).send('"user_name" parameter must be provided for login');
         return;
     }
