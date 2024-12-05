@@ -10,6 +10,7 @@ const restaurantSchema = new Schema({
     restaurant_id: { type: Number, required: true, unique: true },
     restaurant_name: { type: String, required: true },
     restaurant_desc: { type: String },
+    restaurant_img: {type: String},
     rest_fulfilled_filters: [String]
 });
 
