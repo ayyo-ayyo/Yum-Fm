@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, Image, SafeAreaView, TextInput, Modal, Alert, Switch } from 'react-native';
 import { FontAwesome } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
+import RestaurantCard from '../../components/RestaurantCard';
 
 interface User {
   _id: string;
@@ -9,6 +10,7 @@ interface User {
   phone_number: string;
   email: string;
   address: string;
+  favorites_list: number[];
 }
 
 export default function ProfileScreen() {
@@ -21,6 +23,7 @@ export default function ProfileScreen() {
   const [address, setAddress] = useState<string>('');
   const [isFavoritesModalVisible, setIsFavoritesModalVisible] = useState<boolean>(false);
   const [isLogoutModalVisible, setIsLogoutModalVisible] = useState<boolean>(false);
+  const [favoriteRestaurants, setFavoriteRestaurants] = useState<any[]>([]);
 
   const userId = '6734ee0c95789f1ef59cc007'; // hardcoded user ID for this example
   const navigation = useNavigation();
@@ -34,13 +37,15 @@ export default function ProfileScreen() {
 
   const fetchUserData = async (): Promise<void> => {
     try {
-      const response = await fetch(`http://localhost:3000/api/users/${userId}`); 
+      const response = await fetch(`http://localhost:3000/api/users/${userId}`); // switch to heroku link after updating
       if (!response.ok) throw new Error('Failed to fetch user data');
       const userData: User = await response.json();
       setName(userData.user_name || '');  // use empty string if data is missing
       setPhone(userData.phone_number || '');
       setEmail(userData.email || '');
       setAddress(userData.address || '');
+      setFavoriteRestaurants(userData.favorites_list || []);
+      console.log(userData.favorites_list)
     } catch (error) {
       Alert.alert('Error', 'Failed to load user data.');
     }
@@ -54,7 +59,7 @@ export default function ProfileScreen() {
     try {
       console.log("Saving user data:", { name, phone, email, address });
 
-      const response = await fetch(`http://localhost:3000/api/users/${userId}`, {
+      const response = await fetch(`http://localhost:3000/api/users/${userId}`, { // switch to heroku link after updating
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json'
@@ -81,9 +86,26 @@ export default function ProfileScreen() {
     }
   };
 
-  const toggleFavoritesModal = (): void => {
+  const toggleFavoritesModal = async (): Promise<void> => {
+    if (!isFavoritesModalVisible) {
+      try {
+        const restaurantDetails = await Promise.all(
+          favoriteRestaurants.map((id) =>
+            fetch(`http://localhost:3000/api/restaurants/${id}`).then((res) => {
+              if (!res.ok) throw new Error(`Failed to fetch restaurant with ID: ${id}`);
+              return res.json();
+            })
+          )
+        );
+        setFavoriteRestaurants(restaurantDetails);
+      } catch (error) {
+        console.error('Error fetching favorite restaurants:', error);
+        Alert.alert('Error', 'Failed to load favorite restaurants.');
+      }
+    }
     setIsFavoritesModalVisible(!isFavoritesModalVisible);
   };
+  
 
   const toggleLogoutModal = (): void => {
     setIsLogoutModalVisible(!isLogoutModalVisible);
@@ -146,7 +168,7 @@ export default function ProfileScreen() {
                 placeholder="Email"
                 keyboardType="email-address"
               />
-                            <TextInput
+              <TextInput
                 style={styles.input}
                 value={address}
                 onChangeText={setAddress}
@@ -211,29 +233,38 @@ export default function ProfileScreen() {
         </View>
       )}
 
-      {/* Modal for Favorites */}
-      <Modal
-        visible={isFavoritesModalVisible}
-        animationType="slide"
-        transparent={true}
-        onRequestClose={toggleFavoritesModal}
-      >
-        <View style={styles.modalOverlay}>
-          <View style={styles.modalContainer}>
-            <Text style={styles.modalTitle}>
-              <FontAwesome name="heart" size={24} color="#D74938" /> Your Favorites
-            </Text>
-            {/* Add content for favorites here */}
-            <View style={styles.modalContent}>
-              <Text style={styles.modalText}>Here are your favorite items!</Text>
-              {/* Additional content */}
-            </View>
-            <TouchableOpacity style={styles.closeButton} onPress={toggleFavoritesModal}>
-              <Text style={styles.closeButtonText}>Close</Text>
-            </TouchableOpacity>
+    {/* Modal for Favorites */}
+    <Modal
+      visible={isFavoritesModalVisible}
+      animationType="slide"
+      transparent={true}
+      onRequestClose={toggleFavoritesModal}
+    >
+      <View style={styles.modalOverlay}>
+        <View style={styles.modalContainer}>
+          <Text style={styles.modalTitle}>
+            <FontAwesome name="heart" size={24} color="#D74938" /> Your Favorites
+          </Text>
+          <View style={styles.modalContent}>
+            {/* Check if favorites are loaded */}
+            {favoriteRestaurants.length > 0 ? (
+              favoriteRestaurants.map((restaurant, index) => (
+                <View key={index} style={styles.favoriteItem}>
+                  <Text style={styles.modalText}>{restaurant.name}</Text>
+                  <Text style={styles.modalSubText}>{restaurant.location}</Text>
+                </View>
+              ))
+            ) : (
+              <Text style={styles.modalText}>No favorites found.</Text>
+            )}
           </View>
+          <TouchableOpacity style={styles.closeButton} onPress={toggleFavoritesModal}>
+            <Text style={styles.closeButtonText}>Close</Text>
+          </TouchableOpacity>
         </View>
-      </Modal>
+      </View>
+    </Modal>
+
 
       {/* Modal for Logout Confirmation */}
       <Modal
@@ -467,4 +498,15 @@ const styles = StyleSheet.create({
     fontWeight: '600',
     textAlign: 'center',
   },
+  favoriteItem: {
+    marginBottom: 10,
+    padding: 10,
+    backgroundColor: '#F3E2CF',
+    borderRadius: 8,
+  },
+  modalSubText: {
+    fontSize: 14,
+    color: '#777',
+  },
+  
 });

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { View, Text, TextInput, StyleSheet, TouchableOpacity, Alert, Modal } from 'react-native';
-import { Router, useRouter } from 'expo-router';
+import { View, Text, TextInput, StyleSheet, TouchableOpacity, Modal } from 'react-native';
+import { useRouter } from 'expo-router';
 
 export default function CreateAccountScreen() {
   const router = useRouter();
@@ -22,7 +22,6 @@ export default function CreateAccountScreen() {
       setModalVisible(true);
       return;
     }
-    
 
     // Simulate account creation logic
     setTimeout(() => {
@@ -35,27 +34,40 @@ export default function CreateAccountScreen() {
 
   return (
     <View style={styles.container}>
+      {/* Page Header */}
       <Text style={styles.header}>Create Account</Text>
+
+      {/* Email Input */}
       <TextInput
         style={styles.input}
         placeholder="Email"
+        placeholderTextColor="#aaa"
         value={email}
         onChangeText={setEmail}
+        keyboardType="email-address"
+        autoCapitalize="none"
       />
+
+      {/* Password Input */}
       <TextInput
         style={styles.input}
         placeholder="Password"
+        placeholderTextColor="#aaa"
         secureTextEntry
         value={password}
         onChangeText={setPassword}
       />
+
+      {/* Create Account Button */}
       <TouchableOpacity style={styles.createButton} onPress={handleCreateAccount}>
-        <Text style={styles.createButtonText}>Sign Up</Text>
+        <Text style={styles.buttonText}>Sign Up</Text>
       </TouchableOpacity>
 
+      {/* Back to Login */}
       <TouchableOpacity onPress={() => router.replace('/login')}>
         <Text style={styles.backToLogin}>Back to Login</Text>
       </TouchableOpacity>
+
       {/* Error Modal */}
       <Modal
         animationType="fade"
@@ -91,39 +103,54 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     padding: 20,
-    backgroundColor: '#F4D4A3',
+    backgroundColor: '#F3E2CF', // Same as Login screen background
   },
   header: {
     fontSize: 28,
     fontWeight: 'bold',
     textAlign: 'center',
-    marginBottom: 20,
+    marginBottom: 30,
+    color: '#D74938', // Match primary color
   },
   input: {
     backgroundColor: '#fff',
     padding: 15,
-    borderRadius: 8,
+    borderRadius: 12,
     marginBottom: 15,
+    fontSize: 16,
+    color: '#000',
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.2,
+    shadowRadius: 2,
+    elevation: 3,
   },
   createButton: {
-    backgroundColor: '#e74c3c',
-    padding: 15,
-    borderRadius: 8,
+    backgroundColor: '#D74938',
+    paddingVertical: 12,
+    borderRadius: 10,
     alignItems: 'center',
-    marginBottom: 10,
+    marginBottom: 15,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.3,
+    shadowRadius: 3,
+    elevation: 4,
   },
-  createButtonText: {
+  buttonText: {
     color: '#fff',
-    fontWeight: 'bold',
+    fontSize: 16,
+    fontWeight: '600',
   },
   backToLogin: {
-    color: '#e74c3c',
+    color: '#D74938', // Make the text red
+    fontSize: 16,
+    fontWeight: '600',
     textAlign: 'center',
-    textDecorationLine: 'underline',
   },
   modalOverlay: {
     flex: 1,
-    backgroundColor: 'rgba(0, 0, 0, 0.5)', // Semi-transparent background
+    backgroundColor: 'rgba(0, 0, 0, 0.5)',
     justifyContent: 'center',
     alignItems: 'center',
   },
@@ -131,27 +158,30 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     width: '80%',
     padding: 25,
-    borderRadius: 10,
+    borderRadius: 15,
     alignItems: 'center',
   },
   modalTitle: {
     fontSize: 22,
     fontWeight: 'bold',
+    color: '#D74938',
     marginBottom: 15,
   },
   modalMessage: {
     fontSize: 16,
     textAlign: 'center',
-    marginBottom: 25,
+    marginBottom: 20,
+    color: '#333',
   },
   modalButton: {
-    backgroundColor: '#e74c3c',
+    backgroundColor: '#D74938',
     paddingVertical: 12,
     paddingHorizontal: 25,
-    borderRadius: 8,
+    borderRadius: 10,
   },
   modalButtonText: {
     color: '#fff',
     fontWeight: 'bold',
+    fontSize: 16,
   },
 });

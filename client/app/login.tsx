@@ -72,7 +72,7 @@ export default function LoginScreen() {
 
         {/* Create Account Button */}
         <TouchableOpacity style={styles.createAccountButton} onPress={handleCreateAccount}>
-          <Text style={styles.buttonText}>Create Account</Text>
+          <Text style={styles.buttonTextCreateAccount}>Don't have an account? Click here to sign up!</Text>
         </TouchableOpacity>
       </View>
 
@@ -129,17 +129,15 @@ const styles = StyleSheet.create({
     elevation: 3,
   },
   buttonContainer: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
+    flexDirection: 'column', // Arrange buttons vertically
     marginTop: 15,
   },
   loginButton: {
-    flex: 1,
     backgroundColor: '#D74938',
     paddingVertical: 12,
     borderRadius: 10,
     alignItems: 'center',
-    marginRight: 10,
+    marginBottom: 10, // Add margin for spacing
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.3,
@@ -147,19 +145,16 @@ const styles = StyleSheet.create({
     elevation: 4,
   },
   createAccountButton: {
-    flex: 1,
-    backgroundColor: '#D74938',
     paddingVertical: 12,
-    borderRadius: 10,
     alignItems: 'center',
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.3,
-    shadowRadius: 3,
-    elevation: 4,
   },
   buttonText: {
     color: '#fff',
+    fontSize: 16,
+    fontWeight: '600',
+  },
+  buttonTextCreateAccount: {
+    color: '#D74938', // Make the text red
     fontSize: 16,
     fontWeight: '600',
   },

@@ -12,7 +12,12 @@ const userSchema = new Schema({
     password: {type: String, required: true},
     address: {type: String, required: false},
     phone_number: {type: String, required: false},
-    user_name: {type: String, required: false},
+    user_name: {type: String, required: true},
+    favorites_list: { 
+        type: [Number], 
+        required: true,
+        default: [] 
+    }
 });
 
 const user = mongoose.model('User', userSchema);
