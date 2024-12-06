@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
-import { View, Text, StyleSheet, TextInput, TouchableOpacity, ActivityIndicator, Modal, Image } from 'react-native';
+import { View, Text, StyleSheet, TextInput, TouchableOpacity, ActivityIndicator, Modal, Image, ScrollView } from 'react-native';
 import { useRouter } from 'expo-router';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { FloatingAction } from 'react-native-floating-action';
-
+import Markdown from 'react-native-markdown-display';
 
 export default function LoginScreen() {
   const router = useRouter();
@@ -12,6 +11,8 @@ export default function LoginScreen() {
   const [loading, setLoading] = useState(false);
   const [modalVisible, setModalVisible] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
+  const [helpVisible, setHelpVisible] = useState(false);
+
 
   const handleLogin = async () => {
     const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
@@ -21,6 +22,8 @@ export default function LoginScreen() {
       setModalVisible(true);
       return;
     }
+
+    console.log(require('./assets/files/test.txt'));
 
     setLoading(true);
 
@@ -100,7 +103,48 @@ export default function LoginScreen() {
         </View>
       </Modal>
 
-      <FloatingAction color="#D74938"/>
+      <Modal
+        animationType="fade"
+        transparent={true}
+        visible={helpVisible}
+        onRequestClose={() => setHelpVisible(!helpVisible)}
+
+      >
+        <View style={styles.modalOverlay}>
+          <View style={[styles.modalContent, {height: "70%"}]}>
+            <ScrollView style={{marginBottom: 20}}>
+              <Text>
+
+              </Text>
+            </ScrollView>
+            <TouchableOpacity
+              style={styles.modalButton}
+              onPress={() => {
+                setHelpVisible(false)
+              }}
+            >
+              <Text style={styles.modalButtonText}>Close</Text>
+            </TouchableOpacity>
+          </View>
+        </View>
+      </Modal>
+
+      <TouchableOpacity
+        style={[styles.modalButton, {
+          paddingHorizontal: 0, 
+          paddingVertical: 0, 
+          justifyContent: 'center', 
+          alignItems: 'center', 
+          width: 50, height: 50, 
+          borderRadius: 35,
+          position: "absolute",
+          bottom: 50,
+          right: 20
+        }]}
+        onPress={() => setHelpVisible(true)}
+      >
+        <Text style={styles.modalButtonText}>?</Text>
+      </TouchableOpacity>
     </SafeAreaView>
   );
 }
