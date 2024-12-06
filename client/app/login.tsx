@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { View, Text, StyleSheet, TextInput, TouchableOpacity, ActivityIndicator, Modal, Image } from 'react-native';
 import { useRouter } from 'expo-router';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import { FloatingAction } from 'react-native-floating-action';
+
 
 export default function LoginScreen() {
   const router = useRouter();
@@ -97,6 +99,8 @@ export default function LoginScreen() {
           </View>
         </View>
       </Modal>
+
+      <FloatingAction color="#D74938"/>
     </SafeAreaView>
   );
 }
