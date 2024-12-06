@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, TextInput, StyleSheet, TouchableOpacity, Keyboard, SafeAreaView, FlatList } from 'react-native';
+import { View, TextInput, StyleSheet, TouchableOpacity, Keyboard, SafeAreaView, FlatList, Text } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import RestaurantCard from '../../components/RestaurantCard';
 
@@ -8,6 +8,7 @@ interface Restaurant {
   restaurant_id: number;
   restaurant_name: string;
   restaurant_desc: string;
+  restaurant_img: string;
 }
 
 export default function ExploreTab() {

@@ -3,6 +3,9 @@ import { View, Text, StyleSheet, TextInput, TouchableOpacity, ActivityIndicator,
 import { useRouter } from 'expo-router';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import Markdown from 'react-native-markdown-display';
+import { loginHelp } from '@/constants/Help';
+import HelpButton from '@/components/HelpButton';
+import HelpModal from '@/components/HelpModal';
 
 export default function LoginScreen() {
   const router = useRouter();
@@ -22,8 +25,6 @@ export default function LoginScreen() {
       setModalVisible(true);
       return;
     }
-
-    console.log(require('./assets/files/test.txt'));
 
     setLoading(true);
 
@@ -103,48 +104,14 @@ export default function LoginScreen() {
         </View>
       </Modal>
 
-      <Modal
-        animationType="fade"
-        transparent={true}
+      {/* Help text modal */}
+      <HelpModal 
+        showModal={setHelpVisible} 
+        text={loginHelp}
         visible={helpVisible}
-        onRequestClose={() => setHelpVisible(!helpVisible)}
+      />
+      <HelpButton showModal={setHelpVisible}/>
 
-      >
-        <View style={styles.modalOverlay}>
-          <View style={[styles.modalContent, {height: "70%"}]}>
-            <ScrollView style={{marginBottom: 20}}>
-              <Text>
-
-              </Text>
-            </ScrollView>
-            <TouchableOpacity
-              style={styles.modalButton}
-              onPress={() => {
-                setHelpVisible(false)
-              }}
-            >
-              <Text style={styles.modalButtonText}>Close</Text>
-            </TouchableOpacity>
-          </View>
-        </View>
-      </Modal>
-
-      <TouchableOpacity
-        style={[styles.modalButton, {
-          paddingHorizontal: 0, 
-          paddingVertical: 0, 
-          justifyContent: 'center', 
-          alignItems: 'center', 
-          width: 50, height: 50, 
-          borderRadius: 35,
-          position: "absolute",
-          bottom: 50,
-          right: 20
-        }]}
-        onPress={() => setHelpVisible(true)}
-      >
-        <Text style={styles.modalButtonText}>?</Text>
-      </TouchableOpacity>
     </SafeAreaView>
   );
 }
@@ -189,6 +156,22 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     alignItems: 'center',
     marginRight: 10,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.3,
+    shadowRadius: 3,
+    elevation: 4,
+  },
+  helpButton: {
+    paddingHorizontal: 0, 
+    paddingVertical: 0, 
+    justifyContent: 'center', 
+    alignItems: 'center', 
+    width: 50, height: 50, 
+    borderRadius: 35,
+    position: "absolute",
+    bottom: 50,
+    right: 20,
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.3,
