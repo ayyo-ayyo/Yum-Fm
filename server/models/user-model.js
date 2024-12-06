@@ -1,4 +1,5 @@
 // user.js
+const { ObjectId } = require('mongodb');
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
@@ -14,7 +15,7 @@ const userSchema = new Schema({
     phone_number: {type: String, required: false},
     user_name: {type: String, required: true},
     favorites_list: { 
-        type: [Number], 
+        type: [ObjectId], 
         required: true,
         default: [] 
     }

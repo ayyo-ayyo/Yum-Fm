@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import { View, Text, StyleSheet, TouchableOpacity, Image, SafeAreaView, TextInput, Modal, Alert, Switch } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity, Image, SafeAreaView, TextInput, Modal, Alert, Switch, ScrollView } from 'react-native';
 import { FontAwesome } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
 import RestaurantCard from '../../components/RestaurantCard';
+import { ObjectId } from 'mongodb';
 
 interface User {
   _id: string;
@@ -10,8 +11,9 @@ interface User {
   phone_number: string;
   email: string;
   address: string;
-  favorites_list: number[];
+  favorites_list: String[];
 }
+
 
 export default function ProfileScreen() {
   const [activeTab, setActiveTab] = useState<'account' | 'filters'>('account');
@@ -23,7 +25,8 @@ export default function ProfileScreen() {
   const [address, setAddress] = useState<string>('');
   const [isFavoritesModalVisible, setIsFavoritesModalVisible] = useState<boolean>(false);
   const [isLogoutModalVisible, setIsLogoutModalVisible] = useState<boolean>(false);
-  const [favoriteRestaurants, setFavoriteRestaurants] = useState<any[]>([]);
+  const [favoriteRestaurantsID, setFavoriteRestaurants] = useState<any[]>([]);
+  const [favRestaurantDetails, setFavoriteRestaurantsDetails] = useState<any[]>([]);
 
   const userId = '6734ee0c95789f1ef59cc007'; // hardcoded user ID for this example
   const navigation = useNavigation();
@@ -45,7 +48,8 @@ export default function ProfileScreen() {
       setEmail(userData.email || '');
       setAddress(userData.address || '');
       setFavoriteRestaurants(userData.favorites_list || []);
-      console.log(userData.favorites_list)
+      console.log(userData);
+      console.log(userData.favorites_list);
     } catch (error) {
       Alert.alert('Error', 'Failed to load user data.');
     }
@@ -89,15 +93,16 @@ export default function ProfileScreen() {
   const toggleFavoritesModal = async (): Promise<void> => {
     if (!isFavoritesModalVisible) {
       try {
-        const restaurantDetails = await Promise.all(
-          favoriteRestaurants.map((id) =>
-            fetch(`http://localhost:3000/api/restaurants/${id}`).then((res) => {
+        const favRestaurantDetails = await Promise.all(
+          favoriteRestaurantsID.map((id) =>
+            fetch(`https://yum-fm-90558e78d331.herokuapp.com/api/restaurants/${id}`).then((res) => {
               if (!res.ok) throw new Error(`Failed to fetch restaurant with ID: ${id}`);
               return res.json();
             })
           )
         );
-        setFavoriteRestaurants(restaurantDetails);
+        console.log(favRestaurantDetails);
+        setFavoriteRestaurantsDetails(favRestaurantDetails); // Full details of restaurants
       } catch (error) {
         console.error('Error fetching favorite restaurants:', error);
         Alert.alert('Error', 'Failed to load favorite restaurants.');
@@ -105,7 +110,6 @@ export default function ProfileScreen() {
     }
     setIsFavoritesModalVisible(!isFavoritesModalVisible);
   };
-  
 
   const toggleLogoutModal = (): void => {
     setIsLogoutModalVisible(!isLogoutModalVisible);
@@ -246,14 +250,17 @@ export default function ProfileScreen() {
             <FontAwesome name="heart" size={24} color="#D74938" /> Your Favorites
           </Text>
           <View style={styles.modalContent}>
-            {/* Check if favorites are loaded */}
-            {favoriteRestaurants.length > 0 ? (
-              favoriteRestaurants.map((restaurant, index) => (
-                <View key={index} style={styles.favoriteItem}>
-                  <Text style={styles.modalText}>{restaurant.name}</Text>
-                  <Text style={styles.modalSubText}>{restaurant.location}</Text>
-                </View>
-              ))
+            {favRestaurantDetails.length > 0 ? (
+              <ScrollView>
+                {favRestaurantDetails.map((restaurant) => (
+                  <RestaurantCard
+                    key={restaurant._id}
+                    restaurant={restaurant}
+                    onAddToFavorites={(id) => console.log(`Add to favorites: ${id}`)}
+                    size="large"
+                  />
+                ))}
+              </ScrollView>
             ) : (
               <Text style={styles.modalText}>No favorites found.</Text>
             )}
@@ -264,6 +271,8 @@ export default function ProfileScreen() {
         </View>
       </View>
     </Modal>
+
+
 
 
       {/* Modal for Logout Confirmation */}
@@ -459,7 +468,7 @@ const styles = StyleSheet.create({
   },
   modalContainer: {
     backgroundColor: 'white',
-    padding: 20,
+    padding: 40,
     borderRadius: 10,
     width: '80%',
   },

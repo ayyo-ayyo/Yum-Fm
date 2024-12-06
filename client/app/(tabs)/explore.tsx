@@ -8,6 +8,7 @@ interface Restaurant {
   restaurant_id: number;
   restaurant_name: string;
   restaurant_desc: string;
+  restaurant_img: string;
 }
 
 export default function ExploreTab() {

@@ -20,6 +20,8 @@ interface RestaurantCardProps {
   size?: 'small' | 'large';
 }
 
+const userId = '6734ee0c95789f1ef59cc007'; 
+
 const RestaurantCard: React.FC<RestaurantCardProps> = ({ restaurant, onAddToFavorites, size = 'small' }) => {
   const [isExpanded, setIsExpanded] = useState(false);
   const [modalVisible, setModalVisible] = useState(false);
