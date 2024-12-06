@@ -17,8 +17,8 @@ export default function HelpModal(props: HelpModalProps) {
         >
             <View style={styles.modalOverlay}>
             <View style={[styles.modalContent, {height: "70%", alignItems: "flex-start"}]}>
-                <ScrollView style={{marginBottom: 20}}>
-                <Markdown>
+                <ScrollView style={{marginBottom: 20, width: "100%"}}>
+                <Markdown style={{heading1: {justifyContent: "center"}}}>
                     {props.text}
                 </Markdown>
                 </ScrollView>

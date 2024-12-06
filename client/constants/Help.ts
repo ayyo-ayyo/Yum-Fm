@@ -17,3 +17,11 @@ If this is your first time using YumFM, read the "**Signing Up**" section. If yo
 3. Tap **Login**
 4. If the credentials were correct, you will be signed in and redirected to the explore page, otherwise try re-entering your information or signing up 
 `;
+
+export const indexHelp = `
+# The Explore Page
+---
+
+The explore page contains several sections of restaurants based on your preferences, favorites, and location.
+
+`;

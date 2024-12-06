@@ -7,7 +7,7 @@ import * as Location from 'expo-location';
 import RestaurantCard from '../../components/RestaurantCard';
 import HelpModal from '@/components/HelpModal';
 import HelpButton from '@/components/HelpButton';
-import { loginHelp } from '@/constants/Help';
+import { indexHelp } from '@/constants/Help';
 
 interface Restaurant {
   restaurant_id: number;
@@ -96,7 +96,7 @@ const HomeScreen: React.FC = () => {
         {renderCategory("Favorites List", categories.favorites)}
       </ScrollView>
 
-      <HelpModal showModal={setHelpVisible} visible={helpVisible} text={loginHelp}></HelpModal>
+      <HelpModal showModal={setHelpVisible} visible={helpVisible} text={indexHelp}></HelpModal>
       <HelpButton showModal={setHelpVisible}></HelpButton>
     </SafeAreaView>
   );
