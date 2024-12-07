@@ -7,6 +7,7 @@ import { router } from 'expo-router';
 import React from 'react';
 import { useState } from 'react';
 import { Button, StyleSheet, Text, TouchableOpacity, View, Image } from 'react-native';
+import * as FileSystem from 'expo-file-system';
 
 export default function App() {
   const [facing, setFacing] = useState<CameraType>('back');
@@ -55,8 +56,37 @@ export default function App() {
           <TouchableOpacity style={styles.button}  onPress={() => setImages([])}>
             <Ionicons name="trash-outline" size={48} color="white" />
           </TouchableOpacity>
-          <TouchableOpacity style={styles.button} onPress={() => {
-            images.length > 0 && router.push({ pathname: '../menu', params: { imageList: images} })}}>
+          <TouchableOpacity style={styles.button} onPress={ async() => {
+            const imgurImages = await Promise.all(
+              images.map(async (image, index) => {
+                try {
+                  const formData = new FormData();
+                  const localFile = {
+                    uri: image,
+                    name: `image${index + 1}.jpg`,
+                    type: 'image/jpeg',
+                  }
+                  formData.append('image', localFile as any);
+                  formData.append('type', 'file');
+                  formData.append('title', `Image ${index + 1}`);
+                  formData.append('description', `Description ${index + 1}`);
+                  
+                  return await fetch("https://api.imgur.com/3/image", {
+                    method: "POST",
+                    headers: {
+                      Authorization: `Client-ID ${process.env.EXPO_PUBLIC_IMGUR_CLIENT_ID}`
+                    },
+                    body: formData,
+                  }).then((response) => {return response.json()})
+                    .then((data) => data.data.link)
+                } catch (error) {
+                  console.log('Error reading image:', error);
+                  return null;
+                }
+              })
+            );
+            
+            images.length > 0 && router.push(`../menu?imageList=${imgurImages.join(",")}`)}}>
             <Ionicons name="checkmark-outline" size={48} color="white" />
           </TouchableOpacity>
         </View>
