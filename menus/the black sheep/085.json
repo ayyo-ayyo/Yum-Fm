@@ -1,0 +1,21 @@
+{
+  "name": "Goldthread Plant-Based Tonic",
+  "price": "6.25",
+  "options": [
+    {
+      "type": "Flavor Choice",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Turmeric Radiance",
+          "price": "0.00"
+        },
+        {
+          "name": "Elderberry Defense",
+          "price": "0.00"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "name": "Jarritos (Self serve)",
+  "price": "3.30",
+  "options": [
+    {
+      "type": "Choose from the following",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Guava",
+          "price": "0.00"
+        },
+        {
+          "name": "Fruit Punch",
+          "price": "0.00"
+        },
+        {
+          "name": "Pineapple",
+          "price": "0.00"
+        },
+        {
+          "name": "Lime",
+          "price": "0.00"
+        },
+        {
+          "name": "Tamarind",
+          "price": "0.00"
+        },
+        {
+          "name": "Strawberry",
+          "price": "0.00"
+        },
+        {
+          "name": "Mango",
+          "price": "0.00"
+        },
+        {
+          "name": "Mandarin",
+          "price": "0.00"
+        }
+      ]
+    }
+  ]
+}

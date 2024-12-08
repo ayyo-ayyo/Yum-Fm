@@ -1,0 +1,21 @@
+{
+  "name": "NEW! Classic Cold Brew",
+  "price": "4.59",
+  "options": [
+    {
+      "type": "Choose",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Large",
+          "price": "5.29"
+        },
+        {
+          "name": "Small",
+          "price": "4.59"
+        }
+      ]
+    }
+  ]
+}

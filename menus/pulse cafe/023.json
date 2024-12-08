@@ -1,0 +1,121 @@
+{
+  "name": "Full House Salad",
+  "price": "14.50",
+  "options": [
+    {
+      "type": "Salad Greens Serving Choice",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Regular",
+          "price": "0.00"
+        },
+        {
+          "name": "With Kale",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Salad Add-ons",
+      "required": 0,
+      "upto": 2,
+      "features": [
+        {
+          "name": "Extra Dressing",
+          "price": "0.75"
+        },
+        {
+          "name": "Avocado",
+          "price": "2.00"
+        },
+        {
+          "name": "Guacamole",
+          "price": "2.00"
+        },
+        {
+          "name": "Apricot BBQ Glazed Tofu",
+          "price": "2.75"
+        },
+        {
+          "name": "Soy Drumsticks",
+          "price": "5.50"
+        },
+        {
+          "name": "Smoked Tofu GF",
+          "price": "3.00"
+        },
+        {
+          "name": "Seitan Strips",
+          "price": "3.00"
+        },
+        {
+          "name": "Soy chicken GF",
+          "price": "3.00"
+        },
+        {
+          "name": "BBQ Tempeh GF",
+          "price": "3.00"
+        },
+        {
+          "name": "Buffalo chicken",
+          "price": "3.00"
+        }
+      ]
+    },
+    {
+      "type": "Dressing Preparation Option",
+      "required": 0,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Dressing on The Side",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Dressing Option",
+      "required": 0,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Mediterranean Dressing",
+          "price": "0.00"
+        },
+        {
+          "name": "Miso Dressing",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Recommended Beverages",
+      "required": 0,
+      "upto": 5,
+      "features": [
+        {
+          "name": "Green Jolly Smoothie",
+          "price": "9.50"
+        },
+        {
+          "name": "Pina Colada",
+          "price": "9.50"
+        },
+        {
+          "name": "Acai",
+          "price": "9.50"
+        },
+        {
+          "name": "Strawberry Mango Banana",
+          "price": "9.50"
+        },
+        {
+          "name": "Almond Joy",
+          "price": "9.50"
+        }
+      ]
+    }
+  ]
+}

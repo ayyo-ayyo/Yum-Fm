@@ -1,0 +1,94 @@
+{
+  "name": "CAESAR SALAD",
+  "price": "10.79",
+  "options": [
+    {
+      "type": "SELECT DRESSING",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "CRANBERRY VINAIGRETTE",
+          "price": "0.00"
+        },
+        {
+          "name": "WHITE BALSAMIC VINAIGRETTE",
+          "price": "0.00"
+        },
+        {
+          "name": "HONEY LEMON VINAIGRETTE",
+          "price": "0.00"
+        },
+        {
+          "name": "BUTTERMILK RANCH DRESSING",
+          "price": "0.00"
+        },
+        {
+          "name": "CHIPOTLE RANCH DRESSING",
+          "price": "0.00"
+        },
+        {
+          "name": "CREAMY CAESAR DRESSING",
+          "price": "0.00"
+        },
+        {
+          "name": "OIL & VINEGAR",
+          "price": "0.00"
+        },
+        {
+          "name": "NO DRESSING",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "ADD MEAT",
+      "required": 0,
+      "upto": 1,
+      "features": [
+        {
+          "name": "ADD CHICKEN",
+          "price": "3.75"
+        },
+        {
+          "name": "ADD HAM",
+          "price": "3.75"
+        },
+        {
+          "name": "ADD TURKEY",
+          "price": "3.75"
+        },
+        {
+          "name": "ADD TUNA",
+          "price": "3.75"
+        }
+      ]
+    },
+    {
+      "type": "Recommended Desserts",
+      "required": 0,
+      "upto": 2,
+      "features": [
+        {
+          "name": "COOKIE",
+          "price": "3.75"
+        },
+        {
+          "name": "DESSERT BAR",
+          "price": "3.75"
+        }
+      ]
+    },
+    {
+      "type": "Recommended Side And App",
+      "required": 0,
+      "upto": null,
+      "features": [
+        {
+          "name": "KETTLE CHIPS",
+          "price": "1.75"
+        }
+      ]
+    }
+  ]
+}

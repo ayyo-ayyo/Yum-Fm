@@ -1,0 +1,83 @@
+{
+  "name": "Sample Plater",
+  "price": "14.99",
+  "options": [
+    {
+      "type": "Ingredient Addition",
+      "required": 0,
+      "upto": 7,
+      "features": [
+        {
+          "name": "Buffalo Wings (2)",
+          "price": "0.00"
+        },
+        {
+          "name": "Chicken Fingers (2)",
+          "price": "0.00"
+        },
+        {
+          "name": "Potato Skins (2)",
+          "price": "0.00"
+        },
+        {
+          "name": "Meat Sauce",
+          "price": "0.00"
+        },
+        {
+          "name": "Mozzarella (2)",
+          "price": "0.00"
+        },
+        {
+          "name": "Sour Cream",
+          "price": "0.00"
+        },
+        {
+          "name": "Bleu Cheese",
+          "price": "0.75"
+        }
+      ]
+    },
+    {
+      "type": "Preparation Option",
+      "required": 0,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Well Done",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Remove Option",
+      "required": 0,
+      "upto": 6,
+      "features": [
+        {
+          "name": "Meat Sauce",
+          "price": "0.00"
+        },
+        {
+          "name": "Mozzarella (2)",
+          "price": "0.00"
+        },
+        {
+          "name": "Potato Skins (2)",
+          "price": "0.00"
+        },
+        {
+          "name": "Sour Cream",
+          "price": "0.00"
+        },
+        {
+          "name": "Buffalo Wings (2)",
+          "price": "0.00"
+        },
+        {
+          "name": "Chicken Fingers (2)",
+          "price": "0.00"
+        }
+      ]
+    }
+  ]
+}

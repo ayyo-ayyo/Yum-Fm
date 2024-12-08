@@ -1,0 +1,60 @@
+{
+  "name": "Spinach & Garlic Quesadilla",
+  "price": "15.80",
+  "options": [
+    {
+      "type": "Recommended Sides And Apps",
+      "required": 0,
+      "upto": 5,
+      "features": [
+        {
+          "name": "Tortilla Chips",
+          "price": "3.55"
+        },
+        {
+          "name": "Side of Guacamole",
+          "price": "3.90"
+        },
+        {
+          "name": "Three Grilled Jalapenos",
+          "price": "7.80"
+        },
+        {
+          "name": "Side of Spanish Rice",
+          "price": "3.30"
+        },
+        {
+          "name": "Side of Black Beans",
+          "price": "3.30"
+        }
+      ]
+    },
+    {
+      "type": "Recommended Beverages",
+      "required": 0,
+      "upto": 5,
+      "features": [
+        {
+          "name": "Jarritos (Self serve)",
+          "price": "3.30"
+        },
+        {
+          "name": "Fountain Soda (Self serve)",
+          "price": "3.90"
+        },
+        {
+          "name": "Izze Soda (Self serve)",
+          "price": "4.20"
+        },
+        {
+          "name": "Nantucket Nectar (Self serve)",
+          "price": "4.20"
+        },
+        {
+          "name": "Spindrift Sparkling (Self serve)",
+          "price": "3.55"
+        }
+      ]
+    }
+  ]
+}

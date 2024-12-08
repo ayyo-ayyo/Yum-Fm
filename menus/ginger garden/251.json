@@ -1,0 +1,21 @@
+{
+  "name": "Dumpling Sauce",
+  "price": "0.25",
+  "options": [
+    {
+      "type": "Size For Sauce",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Small",
+          "price": "0.00"
+        },
+        {
+          "name": "Large",
+          "price": "1.75"
+        }
+      ]
+    }
+  ]
+}

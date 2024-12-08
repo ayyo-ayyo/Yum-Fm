@@ -1,0 +1,21 @@
+{
+  "name": "Toast",
+  "price": "2.25",
+  "options": [
+    {
+      "type": "Toast MOD",
+      "required": 0,
+      "upto": 1,
+      "features": [
+        {
+          "name": "DRY Toast",
+          "price": "0.00"
+        },
+        {
+          "name": "DARK Toast",
+          "price": "0.00"
+        }
+      ]
+    }
+  ]
+}

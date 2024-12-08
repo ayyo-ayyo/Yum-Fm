@@ -1,0 +1,76 @@
+{
+  "name": "Pu Pu Platter (For 2)",
+  "price": "22.00",
+  "options": [
+    {
+      "type": "No",
+      "required": 0,
+      "upto": 1,
+      "features": [
+        {
+          "name": "No Beef Stick",
+          "price": "0.00"
+        },
+        {
+          "name": "No Boneless Spare Ribs",
+          "price": "0.00"
+        },
+        {
+          "name": "No Crab Rangoon",
+          "price": "0.00"
+        },
+        {
+          "name": "No Chicken Finger",
+          "price": "0.00"
+        },
+        {
+          "name": "No Chicken Wing",
+          "price": "0.00"
+        },
+        {
+          "name": "No Egg Roll",
+          "price": "0.00"
+        },
+        {
+          "name": "No Spring Roll",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Pu Pu Platter For 1 Substitution(Please Select The Meal To Be Replaced From The No Group)",
+      "required": 0,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Sub To Beef Stick",
+          "price": "1.00"
+        },
+        {
+          "name": "Sub To Boneless Spare Ribs",
+          "price": "1.00"
+        },
+        {
+          "name": "Sub To Crab Rangoon",
+          "price": "1.00"
+        },
+        {
+          "name": "Sub To Chicken Finger",
+          "price": "1.00"
+        },
+        {
+          "name": "Sub To Chicken Wing",
+          "price": "1.00"
+        },
+        {
+          "name": "Sub To Egg Roll",
+          "price": "1.00"
+        },
+        {
+          "name": "Extra Spring Roll",
+          "price": "1.00"
+        }
+      ]
+    }
+  ]
+}

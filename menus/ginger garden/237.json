@@ -1,0 +1,21 @@
+{
+  "name": "White Rice",
+  "price": "1.50",
+  "options": [
+    {
+      "type": "Size",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "S",
+          "price": "0.00"
+        },
+        {
+          "name": "L",
+          "price": "1.50"
+        }
+      ]
+    }
+  ]
+}

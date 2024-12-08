@@ -1,0 +1,32 @@
+{
+  "name": "Miso Soup",
+  "price": "3.00",
+  "options": [
+    {
+      "type": "Size",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Small",
+          "price": "0.00"
+        },
+        {
+          "name": "Large",
+          "price": "2.00"
+        }
+      ]
+    },
+    {
+      "type": "Allergy Notice",
+      "required": 0,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Can Not Make Gluten Free",
+          "price": "0.00"
+        }
+      ]
+    }
+  ]
+}

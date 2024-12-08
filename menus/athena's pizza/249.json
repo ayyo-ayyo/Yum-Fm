@@ -1,0 +1,259 @@
+{
+  "name": "Plain Calzone",
+  "price": "15.99",
+  "options": [
+    {
+      "type": "Preparation Option",
+      "required": 0,
+      "upto": 3,
+      "features": [
+        {
+          "name": "Cut in Half",
+          "price": "0.00"
+        },
+        {
+          "name": "Cut in Thirds",
+          "price": "0.00"
+        },
+        {
+          "name": "Well Done",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Sauce Option",
+      "required": 0,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Side Meat Sauce",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Remove Option",
+      "required": 0,
+      "upto": 3,
+      "features": [
+        {
+          "name": "Side Marinara",
+          "price": "0.00"
+        },
+        {
+          "name": "Cheese",
+          "price": "0.00"
+        },
+        {
+          "name": "Ricotta",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Topping Addition",
+      "required": 0,
+      "upto": 30,
+      "features": [
+        {
+          "name": "Alfredo",
+          "price": "1.30"
+        },
+        {
+          "name": "Anchovy",
+          "price": "1.30"
+        },
+        {
+          "name": "Artichoke",
+          "price": "1.99"
+        },
+        {
+          "name": "B.B.Q Chicken",
+          "price": "1.80"
+        },
+        {
+          "name": "Bacon",
+          "price": "1.99"
+        },
+        {
+          "name": "Breaded Chicken",
+          "price": "1.49"
+        },
+        {
+          "name": "Broccoli",
+          "price": "1.30"
+        },
+        {
+          "name": "Buffalo Chicken",
+          "price": "1.80"
+        },
+        {
+          "name": "Chicken",
+          "price": "1.99"
+        },
+        {
+          "name": "Eggplant",
+          "price": "1.30"
+        },
+        {
+          "name": "Feta",
+          "price": "1.30"
+        },
+        {
+          "name": "Garlic",
+          "price": "1.30"
+        },
+        {
+          "name": "Gyro Meat",
+          "price": "1.99"
+        },
+        {
+          "name": "Ham",
+          "price": "1.99"
+        },
+        {
+          "name": "Hamburg",
+          "price": "1.30"
+        },
+        {
+          "name": "Jalape\u00f1o",
+          "price": "1.30"
+        },
+        {
+          "name": "Kielbasa",
+          "price": "1.30"
+        },
+        {
+          "name": "Meat Ball",
+          "price": "1.99"
+        },
+        {
+          "name": "Mushroom",
+          "price": "1.30"
+        },
+        {
+          "name": "Olives",
+          "price": "1.30"
+        },
+        {
+          "name": "Onion",
+          "price": "1.30"
+        },
+        {
+          "name": "Pepper",
+          "price": "1.30"
+        },
+        {
+          "name": "Pepperoni",
+          "price": "1.49"
+        },
+        {
+          "name": "Pesto",
+          "price": "1.30"
+        },
+        {
+          "name": "Pineapple",
+          "price": "1.30"
+        },
+        {
+          "name": "Salami",
+          "price": "1.30"
+        },
+        {
+          "name": "Sausage",
+          "price": "1.30"
+        },
+        {
+          "name": "Spinach",
+          "price": "1.30"
+        },
+        {
+          "name": "Steak",
+          "price": "1.99"
+        },
+        {
+          "name": "Tomato",
+          "price": "1.30"
+        }
+      ]
+    },
+    {
+      "type": "Recommended Beverages",
+      "required": 0,
+      "upto": 5,
+      "features": [
+        {
+          "name": "Pepsi",
+          "price": "3.75"
+        },
+        {
+          "name": "Root Beer",
+          "price": "3.75"
+        },
+        {
+          "name": "Diet Pepsi",
+          "price": "3.75"
+        },
+        {
+          "name": "Ginger Al",
+          "price": "3.75"
+        },
+        {
+          "name": "Pure Leaf Tea",
+          "price": "3.75"
+        }
+      ]
+    },
+    {
+      "type": "Recommended Sides And Apps",
+      "required": 0,
+      "upto": 5,
+      "features": [
+        {
+          "name": "Spicy Curly Fries",
+          "price": "9.25"
+        },
+        {
+          "name": "Mozz Sticks",
+          "price": "12.99"
+        },
+        {
+          "name": "Potato Skins",
+          "price": "13.25"
+        },
+        {
+          "name": "Chicken Fingers",
+          "price": "14.49"
+        },
+        {
+          "name": "Super Fries",
+          "price": "13.99"
+        }
+      ]
+    },
+    {
+      "type": "Recommended Desserts",
+      "required": 0,
+      "upto": 4,
+      "features": [
+        {
+          "name": "Chocolate Cake",
+          "price": "6.99"
+        },
+        {
+          "name": "Baklava",
+          "price": "5.49"
+        },
+        {
+          "name": "Fried Dough",
+          "price": "8.49"
+        },
+        {
+          "name": "Cheese Cake",
+          "price": "6.49"
+        }
+      ]
+    }
+  ]
+}

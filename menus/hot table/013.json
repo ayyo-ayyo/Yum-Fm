@@ -1,0 +1,25 @@
+{
+  "name": "KETTLE CHIPS",
+  "price": "1.75",
+  "options": [
+    {
+      "type": "CHIP SELECTION",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "PLAIN CHIP",
+          "price": "0.00"
+        },
+        {
+          "name": "ALL MIXED UP CHIP",
+          "price": "0.00"
+        },
+        {
+          "name": "HONEY BBQ CHIP",
+          "price": "0.00"
+        }
+      ]
+    }
+  ]
+}

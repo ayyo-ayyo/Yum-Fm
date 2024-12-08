@@ -1,0 +1,60 @@
+{
+  "name": "Cannoli French Toast",
+  "price": "15.70",
+  "options": [
+    {
+      "type": "Cannoli French Toast MOD",
+      "required": 0,
+      "upto": null,
+      "features": [
+        {
+          "name": "NO Cannoli Filling",
+          "price": "0.00"
+        },
+        {
+          "name": "NO Whip",
+          "price": "0.00"
+        },
+        {
+          "name": "No Cannoli Shells",
+          "price": "0.00"
+        },
+        {
+          "name": "No Powdered Sugar",
+          "price": "0.00"
+        },
+        {
+          "name": "SUB Gluten Free",
+          "price": "1.15"
+        }
+      ]
+    },
+    {
+      "type": "Recommended Sides And Apps",
+      "required": 0,
+      "upto": 5,
+      "features": [
+        {
+          "name": "Bacon",
+          "price": "4.50"
+        },
+        {
+          "name": "Single Pancake",
+          "price": "5.60"
+        },
+        {
+          "name": "Hash",
+          "price": "6.75"
+        },
+        {
+          "name": "Homies",
+          "price": "4.50"
+        },
+        {
+          "name": "Sausage",
+          "price": "4.50"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "name": "Breakfast Burrito",
+  "price": "15.50",
+  "options": [
+    {
+      "type": "Breakfast Burrito Preparation Choice",
+      "required": 0,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Gluten Free Brown Rice Bowl",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Recommended Beverages",
+      "required": 0,
+      "upto": 5,
+      "features": [
+        {
+          "name": "Green Jolly Smoothie",
+          "price": "9.50"
+        },
+        {
+          "name": "Pina Colada",
+          "price": "9.50"
+        },
+        {
+          "name": "Acai",
+          "price": "9.50"
+        },
+        {
+          "name": "Strawberry Mango Banana",
+          "price": "9.50"
+        },
+        {
+          "name": "Almond Joy",
+          "price": "9.50"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "name": "Fountain Soda (Self serve)",
+  "price": "3.90",
+  "options": [
+    {
+      "type": "Choose from the following",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Coca Cola",
+          "price": "0.00"
+        },
+        {
+          "name": "Diet Coke",
+          "price": "0.00"
+        },
+        {
+          "name": "Sprite",
+          "price": "0.00"
+        },
+        {
+          "name": "Root Beer",
+          "price": "0.00"
+        },
+        {
+          "name": "Pink Lemonade",
+          "price": "0.00"
+        },
+        {
+          "name": "Orange Soda",
+          "price": "0.00"
+        }
+      ]
+    }
+  ]
+}

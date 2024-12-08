@@ -1,0 +1,160 @@
+{
+  "name": "Caf\u00e9 Au Lait",
+  "price": "3.75",
+  "options": [
+    {
+      "type": "Size Choice",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "12 Oz",
+          "price": "0.00"
+        },
+        {
+          "name": "16 Oz",
+          "price": "0.25"
+        },
+        {
+          "name": "20 Oz",
+          "price": "0.50"
+        }
+      ]
+    },
+    {
+      "type": "Coffee Choice",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Black Sheep Blend",
+          "price": "0.00"
+        },
+        {
+          "name": "Sumatran French Roast",
+          "price": "0.00"
+        },
+        {
+          "name": "Ahab's Revenge",
+          "price": "0.00"
+        },
+        {
+          "name": "Decaf - Peru French Roast",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Milk Choice",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Black",
+          "price": "0.00"
+        },
+        {
+          "name": "Whole Milk",
+          "price": "0.00"
+        },
+        {
+          "name": "Half and Half",
+          "price": "0.00"
+        },
+        {
+          "name": "Almond Milk",
+          "price": "0.00"
+        },
+        {
+          "name": "Oat Milk",
+          "price": "0.00"
+        },
+        {
+          "name": "Skim Milk",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Sweetener Addition",
+      "required": 0,
+      "upto": 6,
+      "features": [
+        {
+          "name": "Simple Syrup",
+          "price": "0.00"
+        },
+        {
+          "name": "White Sugar",
+          "price": "0.00"
+        },
+        {
+          "name": "Cane Sugar",
+          "price": "0.00"
+        },
+        {
+          "name": "Splenda",
+          "price": "0.00"
+        },
+        {
+          "name": "Equal",
+          "price": "0.00"
+        },
+        {
+          "name": "Honey",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Sweet Level Option",
+      "required": 0,
+      "upto": 1,
+      "features": [
+        {
+          "name": "1 Pack/Pump",
+          "price": "0.00"
+        },
+        {
+          "name": "2 Packs/Pump",
+          "price": "0.00"
+        },
+        {
+          "name": "3 Packs/Pump",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Flavor Addition",
+      "required": 0,
+      "upto": 6,
+      "features": [
+        {
+          "name": "Pumpkin Spice",
+          "price": "0.50"
+        },
+        {
+          "name": "Peppermint",
+          "price": "0.50"
+        },
+        {
+          "name": "Hazelnut",
+          "price": "0.50"
+        },
+        {
+          "name": "Caramel",
+          "price": "0.50"
+        },
+        {
+          "name": "Vanilla",
+          "price": "0.50"
+        },
+        {
+          "name": "Salted Caramel",
+          "price": "0.50"
+        }
+      ]
+    }
+  ]
+}

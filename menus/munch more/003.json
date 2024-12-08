@@ -1,0 +1,25 @@
+{
+  "name": "Chicken Over Rice Platter",
+  "price": "12.99",
+  "options": [
+    {
+      "type": "Drink Choice",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Cola",
+          "price": "0.00"
+        },
+        {
+          "name": "Diet Cola",
+          "price": "0.00"
+        },
+        {
+          "name": "Lemon-Lime",
+          "price": "0.00"
+        }
+      ]
+    }
+  ]
+}

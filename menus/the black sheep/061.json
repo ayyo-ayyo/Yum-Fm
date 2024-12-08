@@ -1,0 +1,87 @@
+{
+  "name": "Iced Coffee",
+  "price": "3.75",
+  "options": [
+    {
+      "type": "Milk Choice",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Black",
+          "price": "0.00"
+        },
+        {
+          "name": "Whole Milk",
+          "price": "0.00"
+        },
+        {
+          "name": "Half and Half",
+          "price": "0.00"
+        },
+        {
+          "name": "Almond Milk",
+          "price": "0.00"
+        },
+        {
+          "name": "Oat Milk",
+          "price": "0.00"
+        },
+        {
+          "name": "Skim Milk",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Size Choice",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "16 Oz",
+          "price": "0.00"
+        },
+        {
+          "name": "20 Oz",
+          "price": "0.25"
+        },
+        {
+          "name": "24 Oz",
+          "price": "0.50"
+        }
+      ]
+    },
+    {
+      "type": "Flavor Addition",
+      "required": 0,
+      "upto": 6,
+      "features": [
+        {
+          "name": "Pumpkin Spice",
+          "price": "0.50"
+        },
+        {
+          "name": "Peppermint",
+          "price": "0.50"
+        },
+        {
+          "name": "Hazelnut",
+          "price": "0.50"
+        },
+        {
+          "name": "Caramel",
+          "price": "0.50"
+        },
+        {
+          "name": "Vanilla",
+          "price": "0.50"
+        },
+        {
+          "name": "Salted Caramel",
+          "price": "0.50"
+        }
+      ]
+    }
+  ]
+}

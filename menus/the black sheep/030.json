@@ -1,0 +1,299 @@
+{
+  "name": "The Santa Fe",
+  "price": "8.50",
+  "options": [
+    {
+      "type": "Substitute Bread",
+      "required": 0,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Baguette",
+          "price": "0.00"
+        },
+        {
+          "name": "Whole Wheat",
+          "price": "0.00"
+        },
+        {
+          "name": "Sourdough",
+          "price": "0.00"
+        },
+        {
+          "name": "Udi's Gluten-Free",
+          "price": "2.00"
+        },
+        {
+          "name": "Croissant",
+          "price": "0.00"
+        },
+        {
+          "name": "Plain Wrap (Whole Only)",
+          "price": "0.00"
+        },
+        {
+          "name": "Whole Wheat Wrap (Whole Only)",
+          "price": "0.00"
+        },
+        {
+          "name": "Rye",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Spread Addition",
+      "required": 0,
+      "upto": 19,
+      "features": [
+        {
+          "name": "Guacamole",
+          "price": "1.75"
+        },
+        {
+          "name": "Hummus",
+          "price": "1.75"
+        },
+        {
+          "name": "Basil Pesto (Contains Pine Nuts)",
+          "price": "1.75"
+        },
+        {
+          "name": "Dijon Mustard",
+          "price": "0.00"
+        },
+        {
+          "name": "Honeycup Mustard",
+          "price": "0.00"
+        },
+        {
+          "name": "Whole Grain Country Style Mustard",
+          "price": "0.00"
+        },
+        {
+          "name": "Brown Deli Style Mustard",
+          "price": "0.00"
+        },
+        {
+          "name": "Plain Mayo",
+          "price": "0.00"
+        },
+        {
+          "name": "Spicy Mayo",
+          "price": "0.00"
+        },
+        {
+          "name": "Herb and Garlic Mayo",
+          "price": "0.00"
+        },
+        {
+          "name": "Ketchup",
+          "price": "0.00"
+        },
+        {
+          "name": "Hot Sauce",
+          "price": "0.00"
+        },
+        {
+          "name": "Salt and Pepper",
+          "price": "0.00"
+        },
+        {
+          "name": "Oil",
+          "price": "0.00"
+        },
+        {
+          "name": "Balsamic Vinegar",
+          "price": "0.00"
+        },
+        {
+          "name": "Butter",
+          "price": "0.00"
+        },
+        {
+          "name": "Peanut Butter",
+          "price": "0.00"
+        },
+        {
+          "name": "Jam",
+          "price": "0.00"
+        },
+        {
+          "name": "Sun-Dried Pesto",
+          "price": "1.75"
+        }
+      ]
+    },
+    {
+      "type": "Bagel Spread Addition",
+      "required": 0,
+      "upto": 7,
+      "features": [
+        {
+          "name": "Butter",
+          "price": "0.60"
+        },
+        {
+          "name": "Earth Balance",
+          "price": "0.60"
+        },
+        {
+          "name": "Plain Cream Cheese",
+          "price": "1.75"
+        },
+        {
+          "name": "Garlic Herb Cream Cheese",
+          "price": "1.85"
+        },
+        {
+          "name": "Hummus",
+          "price": "1.85"
+        },
+        {
+          "name": "Peanut Butter",
+          "price": "1.85"
+        },
+        {
+          "name": "Veggie Cream Cheese",
+          "price": "1.85"
+        },
+        {
+          "name": "Nova 1 Slice",
+          "price": "2.75"
+        },
+        {
+          "name": "Nova 2 Slice",
+          "price": "5.50"
+        }
+      ]
+    },
+    {
+      "type": "Veggie Addition",
+      "required": 0,
+      "upto": 13,
+      "features": [
+        {
+          "name": "Lettuce",
+          "price": "0.50"
+        },
+        {
+          "name": "Tomatoes",
+          "price": "0.50"
+        },
+        {
+          "name": "Olives",
+          "price": "0.50"
+        },
+        {
+          "name": "Carrots, Shredded",
+          "price": "0.50"
+        },
+        {
+          "name": "Roasted Red Peppers",
+          "price": "0.50"
+        },
+        {
+          "name": "Hot Peppers",
+          "price": "0.50"
+        },
+        {
+          "name": "Pickles",
+          "price": "0.50"
+        },
+        {
+          "name": "Banana Peppers",
+          "price": "0.50"
+        },
+        {
+          "name": "Portabellos",
+          "price": "1.75"
+        },
+        {
+          "name": "Cucumber",
+          "price": "0.50"
+        },
+        {
+          "name": "Spinach",
+          "price": "0.50"
+        },
+        {
+          "name": "Red Onion",
+          "price": "0.50"
+        },
+        {
+          "name": "Capers",
+          "price": "0.50"
+        }
+      ]
+    },
+    {
+      "type": "Recommended Desserts",
+      "required": 0,
+      "upto": 5,
+      "features": [
+        {
+          "name": "Cookies",
+          "price": "3.75"
+        },
+        {
+          "name": "Cannoli",
+          "price": "3.75"
+        },
+        {
+          "name": "Brownie",
+          "price": "4.75"
+        },
+        {
+          "name": "Lemon Square",
+          "price": "4.75"
+        },
+        {
+          "name": "Chocolate Mousse Cup",
+          "price": "5.75"
+        }
+      ]
+    },
+    {
+      "type": "Recommended Beverages",
+      "required": 0,
+      "upto": 5,
+      "features": [
+        {
+          "name": "Iced Latt\u00e9",
+          "price": "4.75"
+        },
+        {
+          "name": "Latt\u00e9",
+          "price": "4.75"
+        },
+        {
+          "name": "Iced Chai Latt\u00e9",
+          "price": "4.75"
+        },
+        {
+          "name": "San Pellegrino Sparkling Italian Drink",
+          "price": "3.25"
+        },
+        {
+          "name": "Joe Tea",
+          "price": "3.75"
+        }
+      ]
+    },
+    {
+      "type": "Recommended Sides And Apps",
+      "required": 0,
+      "upto": 2,
+      "features": [
+        {
+          "name": "Chips",
+          "price": "2.75"
+        },
+        {
+          "name": "Cabot chips",
+          "price": "3.60"
+        }
+      ]
+    }
+  ]
+}

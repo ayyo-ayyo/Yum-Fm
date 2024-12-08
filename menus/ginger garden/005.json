@@ -1,0 +1,75 @@
+{
+  "name": "Seafood Hot & Sour Soup",
+  "price": "10.00",
+  "options": [
+    {
+      "type": "Extras",
+      "required": 0,
+      "upto": 3,
+      "features": [
+        {
+          "name": "Extra Baby Shrimp-",
+          "price": "2.00"
+        },
+        {
+          "name": "Extra Vegetable-",
+          "price": "2.00"
+        },
+        {
+          "name": "Extra Scallop/Pcs",
+          "price": "3.00"
+        }
+      ]
+    },
+    {
+      "type": "No1",
+      "required": 0,
+      "upto": 6,
+      "features": [
+        {
+          "name": "No Baby Shrimp",
+          "price": "0.00"
+        },
+        {
+          "name": "No Scallop",
+          "price": "0.00"
+        },
+        {
+          "name": "No Asparagus",
+          "price": "0.00"
+        },
+        {
+          "name": "No Crabstick",
+          "price": "0.00"
+        },
+        {
+          "name": "No Egg",
+          "price": "0.00"
+        },
+        {
+          "name": "No Cilantro",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Spicy",
+      "required": 0,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Extra Spicy",
+          "price": "0.00"
+        },
+        {
+          "name": "Less Spicy",
+          "price": "0.00"
+        },
+        {
+          "name": "No Spicy",
+          "price": "0.00"
+        }
+      ]
+    }
+  ]
+}

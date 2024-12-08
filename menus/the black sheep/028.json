@@ -1,0 +1,333 @@
+{
+  "name": "Gouda Morning Breakfast Sandwich",
+  "price": "8.50",
+  "options": [
+    {
+      "type": "Preparation Choice",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Toasted",
+          "price": "0.00"
+        },
+        {
+          "name": "Not Toasted",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Bread Choice",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Baguette",
+          "price": "0.00"
+        },
+        {
+          "name": "Sourdough Bread",
+          "price": "0.00"
+        },
+        {
+          "name": "Whole Wheat Bread",
+          "price": "0.00"
+        },
+        {
+          "name": "Rye Bread",
+          "price": "0.00"
+        },
+        {
+          "name": "Plain Bagel",
+          "price": "0.00"
+        },
+        {
+          "name": "Everything Bagel",
+          "price": "0.00"
+        },
+        {
+          "name": "Croissant",
+          "price": "0.00"
+        },
+        {
+          "name": "Homemade Biscuit",
+          "price": "0.00"
+        },
+        {
+          "name": "Plain Wrap - Whole Sandwich Only",
+          "price": "0.00"
+        },
+        {
+          "name": "Whole Wheat Wrap - Whole Sandwich Only",
+          "price": "0.00"
+        },
+        {
+          "name": "Udi's Gluten-Free Bagel",
+          "price": "2.00"
+        },
+        {
+          "name": "Udi's Gluten-Free Bread",
+          "price": "2.25"
+        }
+      ]
+    },
+    {
+      "type": "Substitute Bread",
+      "required": 0,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Homemade Biscuit",
+          "price": "0.00"
+        },
+        {
+          "name": "Baguette",
+          "price": "0.00"
+        },
+        {
+          "name": "Udi's Gluten-Free Bagel",
+          "price": "2.25"
+        },
+        {
+          "name": "Udi's Gluten-Free Bread",
+          "price": "2.00"
+        },
+        {
+          "name": "Plain Wrap - Whole Sandwich Only",
+          "price": "0.00"
+        },
+        {
+          "name": "Whole Wheat Wrap - Whole Sandwich Only",
+          "price": "0.00"
+        },
+        {
+          "name": "Croissant",
+          "price": "0.00"
+        },
+        {
+          "name": "Everything Bagel",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Spread Addition",
+      "required": 0,
+      "upto": 18,
+      "features": [
+        {
+          "name": "Guacamole",
+          "price": "1.75"
+        },
+        {
+          "name": "Hummus",
+          "price": "1.75"
+        },
+        {
+          "name": "Basil Pesto (Contains Pine Nuts)",
+          "price": "1.75"
+        },
+        {
+          "name": "Dijon Mustard",
+          "price": "0.00"
+        },
+        {
+          "name": "Honeycup Mustard",
+          "price": "0.00"
+        },
+        {
+          "name": "Brown Deli Style Mustard",
+          "price": "0.00"
+        },
+        {
+          "name": "Plain Mayo",
+          "price": "0.00"
+        },
+        {
+          "name": "Spicy Mayo",
+          "price": "0.00"
+        },
+        {
+          "name": "Herb and Garlic Mayo",
+          "price": "0.00"
+        },
+        {
+          "name": "Ketchup",
+          "price": "0.00"
+        },
+        {
+          "name": "Hot Sauce",
+          "price": "0.00"
+        },
+        {
+          "name": "Salt and Pepper",
+          "price": "0.00"
+        },
+        {
+          "name": "Oil",
+          "price": "0.00"
+        },
+        {
+          "name": "Balsamic Vinegar",
+          "price": "0.00"
+        },
+        {
+          "name": "Butter",
+          "price": "0.00"
+        },
+        {
+          "name": "Peanut Butter",
+          "price": "0.00"
+        },
+        {
+          "name": "Jam",
+          "price": "0.00"
+        },
+        {
+          "name": "Sun-Dried Pesto",
+          "price": "1.75"
+        }
+      ]
+    },
+    {
+      "type": "Veggie Addition",
+      "required": 0,
+      "upto": 13,
+      "features": [
+        {
+          "name": "Lettuce",
+          "price": "0.50"
+        },
+        {
+          "name": "Tomatoes",
+          "price": "0.50"
+        },
+        {
+          "name": "Olives",
+          "price": "0.50"
+        },
+        {
+          "name": "Carrots, Shredded",
+          "price": "0.50"
+        },
+        {
+          "name": "Roasted Red Peppers",
+          "price": "0.50"
+        },
+        {
+          "name": "Hot Peppers",
+          "price": "0.50"
+        },
+        {
+          "name": "Pickles",
+          "price": "0.50"
+        },
+        {
+          "name": "Banana Peppers",
+          "price": "0.50"
+        },
+        {
+          "name": "Portabellos",
+          "price": "1.75"
+        },
+        {
+          "name": "Cucumber",
+          "price": "0.50"
+        },
+        {
+          "name": "Spinach",
+          "price": "0.50"
+        },
+        {
+          "name": "Red Onion",
+          "price": "0.50"
+        },
+        {
+          "name": "Capers",
+          "price": "0.50"
+        }
+      ]
+    },
+    {
+      "type": "Preparation Option",
+      "required": 0,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Non Gluten-Free",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Recommended Desserts",
+      "required": 0,
+      "upto": 5,
+      "features": [
+        {
+          "name": "Cookies",
+          "price": "3.75"
+        },
+        {
+          "name": "Cannoli",
+          "price": "3.75"
+        },
+        {
+          "name": "Brownie",
+          "price": "4.75"
+        },
+        {
+          "name": "Lemon Square",
+          "price": "4.75"
+        },
+        {
+          "name": "Chocolate Mousse Cup",
+          "price": "5.75"
+        }
+      ]
+    },
+    {
+      "type": "Recommended Beverages",
+      "required": 0,
+      "upto": 5,
+      "features": [
+        {
+          "name": "Iced Latt\u00e9",
+          "price": "4.75"
+        },
+        {
+          "name": "Latt\u00e9",
+          "price": "4.75"
+        },
+        {
+          "name": "Iced Chai Latt\u00e9",
+          "price": "4.75"
+        },
+        {
+          "name": "San Pellegrino Sparkling Italian Drink",
+          "price": "3.25"
+        },
+        {
+          "name": "Joe Tea",
+          "price": "3.75"
+        }
+      ]
+    },
+    {
+      "type": "Recommended Sides And Apps",
+      "required": 0,
+      "upto": 2,
+      "features": [
+        {
+          "name": "Chips",
+          "price": "2.75"
+        },
+        {
+          "name": "Cabot chips",
+          "price": "3.60"
+        }
+      ]
+    }
+  ]
+}

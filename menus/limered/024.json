@@ -1,0 +1,65 @@
+{
+  "name": "French Macaron",
+  "price": "3.60",
+  "options": [
+    {
+      "type": "Flavor Choice",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Caramel",
+          "price": "0.00"
+        },
+        {
+          "name": "Coconut",
+          "price": "0.00"
+        },
+        {
+          "name": "Earl Grey",
+          "price": "0.00"
+        },
+        {
+          "name": "Espresso",
+          "price": "0.00"
+        },
+        {
+          "name": "Pistachio",
+          "price": "0.00"
+        },
+        {
+          "name": "Rose",
+          "price": "0.00"
+        },
+        {
+          "name": "Tiramisu",
+          "price": "0.00"
+        },
+        {
+          "name": "White Chocolate",
+          "price": "0.00"
+        },
+        {
+          "name": "Wedding Almond",
+          "price": "0.00"
+        },
+        {
+          "name": "Vanilla",
+          "price": "0.00"
+        },
+        {
+          "name": "Fruity Cereal (Seasonal)",
+          "price": "0.00"
+        },
+        {
+          "name": "Blackberry Violette",
+          "price": "0.00"
+        },
+        {
+          "name": "Matcha",
+          "price": "0.00"
+        }
+      ]
+    }
+  ]
+}

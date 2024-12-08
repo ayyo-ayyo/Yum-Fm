@@ -1,0 +1,3964 @@
+[
+    {
+        "name": "Margherita Pizza",
+        "price": "16.00",
+        "options": [
+            {
+                "type": "Cheese Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Regular Cheese",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Violife Cheese (Nut Free)",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Pizza Addons",
+                "required": 0,
+                "upto": null,
+                "features": [
+                    {
+                        "name": "Artichokes",
+                        "price": "1.75"
+                    },
+                    {
+                        "name": "Arugula",
+                        "price": "1.75"
+                    },
+                    {
+                        "name": "Basil",
+                        "price": "1.75"
+                    },
+                    {
+                        "name": "BBQ Tempeh",
+                        "price": "2.75"
+                    },
+                    {
+                        "name": "Bell Peppers",
+                        "price": "1.75"
+                    },
+                    {
+                        "name": "Black Olives",
+                        "price": "1.75"
+                    },
+                    {
+                        "name": "Broccoli",
+                        "price": "1.75"
+                    },
+                    {
+                        "name": "Buffalo Chicken",
+                        "price": "2.75"
+                    },
+                    {
+                        "name": "Chorizo",
+                        "price": "2.75"
+                    },
+                    {
+                        "name": "Eggplant",
+                        "price": "1.75"
+                    },
+                    {
+                        "name": "Extra Cheese",
+                        "price": "1.75"
+                    },
+                    {
+                        "name": "Garlic",
+                        "price": "1.75"
+                    },
+                    {
+                        "name": "Jalapeno",
+                        "price": "1.75"
+                    },
+                    {
+                        "name": "Kalamata Olives",
+                        "price": "1.75"
+                    },
+                    {
+                        "name": "Kale",
+                        "price": "1.75"
+                    },
+                    {
+                        "name": "Kielbasa",
+                        "price": "2.75"
+                    },
+                    {
+                        "name": "Mushrooms",
+                        "price": "1.75"
+                    },
+                    {
+                        "name": "Onions",
+                        "price": "1.75"
+                    },
+                    {
+                        "name": "Other Veggie",
+                        "price": "1.75"
+                    },
+                    {
+                        "name": "Pepperoni",
+                        "price": "2.75"
+                    },
+                    {
+                        "name": "Seitan Strips",
+                        "price": "2.75"
+                    },
+                    {
+                        "name": "Smoked Tofu",
+                        "price": "2.75"
+                    },
+                    {
+                        "name": "Soy Chicken",
+                        "price": "2.75"
+                    },
+                    {
+                        "name": "Spinach",
+                        "price": "1.75"
+                    },
+                    {
+                        "name": "Tomatoes",
+                        "price": "1.75"
+                    }
+                ]
+            },
+            {
+                "type": "Recommended Beverages",
+                "required": 0,
+                "upto": 5,
+                "features": [
+                    {
+                        "name": "Green Jolly Smoothie",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Pina Colada",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Acai",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Strawberry Mango Banana",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Almond Joy",
+                        "price": "9.50"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Crimini Calzone",
+        "price": "18.00",
+        "options": [
+            {
+                "type": "Calzone Preparation Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Regular Cheese",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Violife Cheese (Nut Free)",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Pizza Addons",
+                "required": 0,
+                "upto": null,
+                "features": [
+                    {
+                        "name": "Artichokes",
+                        "price": "1.75"
+                    },
+                    {
+                        "name": "Arugula",
+                        "price": "1.75"
+                    },
+                    {
+                        "name": "Basil",
+                        "price": "1.75"
+                    },
+                    {
+                        "name": "BBQ Tempeh",
+                        "price": "2.75"
+                    },
+                    {
+                        "name": "Bell Peppers",
+                        "price": "1.75"
+                    },
+                    {
+                        "name": "Black Olives",
+                        "price": "1.75"
+                    },
+                    {
+                        "name": "Broccoli",
+                        "price": "1.75"
+                    },
+                    {
+                        "name": "Buffalo Chicken",
+                        "price": "2.75"
+                    },
+                    {
+                        "name": "Chorizo",
+                        "price": "2.75"
+                    },
+                    {
+                        "name": "Eggplant",
+                        "price": "1.75"
+                    },
+                    {
+                        "name": "Extra Cheese",
+                        "price": "1.75"
+                    },
+                    {
+                        "name": "Garlic",
+                        "price": "1.75"
+                    },
+                    {
+                        "name": "Jalapeno",
+                        "price": "1.75"
+                    },
+                    {
+                        "name": "Kalamata Olives",
+                        "price": "1.75"
+                    },
+                    {
+                        "name": "Kale",
+                        "price": "1.75"
+                    },
+                    {
+                        "name": "Kielbasa",
+                        "price": "2.75"
+                    },
+                    {
+                        "name": "Mushrooms",
+                        "price": "1.75"
+                    },
+                    {
+                        "name": "Onions",
+                        "price": "1.75"
+                    },
+                    {
+                        "name": "Other Veggie",
+                        "price": "1.75"
+                    },
+                    {
+                        "name": "Pepperoni",
+                        "price": "2.75"
+                    },
+                    {
+                        "name": "Seitan Strips",
+                        "price": "2.75"
+                    },
+                    {
+                        "name": "Smoked Tofu",
+                        "price": "2.75"
+                    },
+                    {
+                        "name": "Soy Chicken",
+                        "price": "2.75"
+                    },
+                    {
+                        "name": "Spinach",
+                        "price": "1.75"
+                    },
+                    {
+                        "name": "Tomatoes",
+                        "price": "1.75"
+                    }
+                ]
+            },
+            {
+                "type": "Recommended Beverages",
+                "required": 0,
+                "upto": 5,
+                "features": [
+                    {
+                        "name": "Green Jolly Smoothie",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Pina Colada",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Acai",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Strawberry Mango Banana",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Almond Joy",
+                        "price": "9.50"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Large Buffalo Pizza",
+        "price": "25.00",
+        "options": [
+            {
+                "type": "Cheese Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Regular Cheese",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Violife Cheese (Nut Free)",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "LG Crust Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Gluten Free",
+                        "price": "3.25"
+                    },
+                    {
+                        "name": "White Wheat",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "LG Pizza toppings",
+                "required": 0,
+                "upto": 5,
+                "features": [
+                    {
+                        "name": "Eggplant",
+                        "price": "3.25"
+                    },
+                    {
+                        "name": "Artichokes",
+                        "price": "3.25"
+                    },
+                    {
+                        "name": "Kale",
+                        "price": "3.25"
+                    },
+                    {
+                        "name": "Black Olives",
+                        "price": "3.25"
+                    },
+                    {
+                        "name": "Mushrooms",
+                        "price": "3.25"
+                    },
+                    {
+                        "name": "Jalapeno",
+                        "price": "3.25"
+                    },
+                    {
+                        "name": "Tomatoes",
+                        "price": "3.25"
+                    },
+                    {
+                        "name": "Arugula",
+                        "price": "3.25"
+                    },
+                    {
+                        "name": "Kalamata Olives",
+                        "price": "3.25"
+                    },
+                    {
+                        "name": "Broccoli",
+                        "price": "3.25"
+                    },
+                    {
+                        "name": "Bell Peppers",
+                        "price": "3.25"
+                    },
+                    {
+                        "name": "Garlic",
+                        "price": "3.25"
+                    },
+                    {
+                        "name": "Spinach",
+                        "price": "3.25"
+                    },
+                    {
+                        "name": "Onions",
+                        "price": "3.25"
+                    },
+                    {
+                        "name": "Basil",
+                        "price": "3.25"
+                    },
+                    {
+                        "name": "Seitan Strips",
+                        "price": "4.00"
+                    },
+                    {
+                        "name": "Smoked Tofu GF",
+                        "price": "4.00"
+                    },
+                    {
+                        "name": "BBQ Tempeh GF",
+                        "price": "4.00"
+                    },
+                    {
+                        "name": "Buffalo Chicken",
+                        "price": "4.00"
+                    },
+                    {
+                        "name": "Chorizo GF",
+                        "price": "4.00"
+                    },
+                    {
+                        "name": "Kielbasa",
+                        "price": "4.00"
+                    },
+                    {
+                        "name": "Soy Chicken GF",
+                        "price": "4.00"
+                    },
+                    {
+                        "name": "Pepperoni",
+                        "price": "4.00"
+                    },
+                    {
+                        "name": "Extra Cheese",
+                        "price": "1.75"
+                    }
+                ]
+            },
+            {
+                "type": "Recommended Beverages",
+                "required": 0,
+                "upto": 5,
+                "features": [
+                    {
+                        "name": "Green Jolly Smoothie",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Pina Colada",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Acai",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Strawberry Mango Banana",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Almond Joy",
+                        "price": "9.50"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Pepperoni Pizza",
+        "price": "17.00",
+        "options": [
+            {
+                "type": "Crust Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Gluten Free",
+                        "price": "2.75"
+                    },
+                    {
+                        "name": "White Wheat",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Cheese Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Regular Cheese",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Violife Cheese (Nut Free)",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Pizza Addons",
+                "required": 0,
+                "upto": null,
+                "features": [
+                    {
+                        "name": "Artichokes",
+                        "price": "1.75"
+                    },
+                    {
+                        "name": "Arugula",
+                        "price": "1.75"
+                    },
+                    {
+                        "name": "Basil",
+                        "price": "1.75"
+                    },
+                    {
+                        "name": "BBQ Tempeh",
+                        "price": "2.75"
+                    },
+                    {
+                        "name": "Bell Peppers",
+                        "price": "1.75"
+                    },
+                    {
+                        "name": "Black Olives",
+                        "price": "1.75"
+                    },
+                    {
+                        "name": "Broccoli",
+                        "price": "1.75"
+                    },
+                    {
+                        "name": "Buffalo Chicken",
+                        "price": "2.75"
+                    },
+                    {
+                        "name": "Chorizo",
+                        "price": "2.75"
+                    },
+                    {
+                        "name": "Eggplant",
+                        "price": "1.75"
+                    },
+                    {
+                        "name": "Extra Cheese",
+                        "price": "1.75"
+                    },
+                    {
+                        "name": "Garlic",
+                        "price": "1.75"
+                    },
+                    {
+                        "name": "Jalapeno",
+                        "price": "1.75"
+                    },
+                    {
+                        "name": "Kalamata Olives",
+                        "price": "1.75"
+                    },
+                    {
+                        "name": "Kale",
+                        "price": "1.75"
+                    },
+                    {
+                        "name": "Kielbasa",
+                        "price": "2.75"
+                    },
+                    {
+                        "name": "Mushrooms",
+                        "price": "1.75"
+                    },
+                    {
+                        "name": "Onions",
+                        "price": "1.75"
+                    },
+                    {
+                        "name": "Other Veggie",
+                        "price": "1.75"
+                    },
+                    {
+                        "name": "Pepperoni",
+                        "price": "2.75"
+                    },
+                    {
+                        "name": "Seitan Strips",
+                        "price": "2.75"
+                    },
+                    {
+                        "name": "Smoked Tofu",
+                        "price": "2.75"
+                    },
+                    {
+                        "name": "Soy Chicken",
+                        "price": "2.75"
+                    },
+                    {
+                        "name": "Spinach",
+                        "price": "1.75"
+                    },
+                    {
+                        "name": "Tomatoes",
+                        "price": "1.75"
+                    }
+                ]
+            },
+            {
+                "type": "Recommended Beverages",
+                "required": 0,
+                "upto": 5,
+                "features": [
+                    {
+                        "name": "Green Jolly Smoothie",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Pina Colada",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Acai",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Strawberry Mango Banana",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Almond Joy",
+                        "price": "9.50"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Large Margherita pizza",
+        "price": "22.00",
+        "options": [
+            {
+                "type": "Crust Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "White Wheat",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Gluten Free",
+                        "price": "3.25"
+                    }
+                ]
+            },
+            {
+                "type": "Cheese Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Regular Cheese",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Violife Cheese (Nut Free)",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "LG Pizza toppings",
+                "required": 0,
+                "upto": 5,
+                "features": [
+                    {
+                        "name": "Eggplant",
+                        "price": "3.25"
+                    },
+                    {
+                        "name": "Artichokes",
+                        "price": "3.25"
+                    },
+                    {
+                        "name": "Kale",
+                        "price": "3.25"
+                    },
+                    {
+                        "name": "Black Olives",
+                        "price": "3.25"
+                    },
+                    {
+                        "name": "Mushrooms",
+                        "price": "3.25"
+                    },
+                    {
+                        "name": "Jalapeno",
+                        "price": "3.25"
+                    },
+                    {
+                        "name": "Tomatoes",
+                        "price": "3.25"
+                    },
+                    {
+                        "name": "Arugula",
+                        "price": "3.25"
+                    },
+                    {
+                        "name": "Kalamata Olives",
+                        "price": "3.25"
+                    },
+                    {
+                        "name": "Broccoli",
+                        "price": "3.25"
+                    },
+                    {
+                        "name": "Bell Peppers",
+                        "price": "3.25"
+                    },
+                    {
+                        "name": "Garlic",
+                        "price": "3.25"
+                    },
+                    {
+                        "name": "Spinach",
+                        "price": "3.25"
+                    },
+                    {
+                        "name": "Onions",
+                        "price": "3.25"
+                    },
+                    {
+                        "name": "Basil",
+                        "price": "3.25"
+                    },
+                    {
+                        "name": "Seitan Strips",
+                        "price": "4.00"
+                    },
+                    {
+                        "name": "Smoked Tofu GF",
+                        "price": "4.00"
+                    },
+                    {
+                        "name": "BBQ Tempeh GF",
+                        "price": "4.00"
+                    },
+                    {
+                        "name": "Buffalo Chicken",
+                        "price": "4.00"
+                    },
+                    {
+                        "name": "Chorizo GF",
+                        "price": "4.00"
+                    },
+                    {
+                        "name": "Kielbasa",
+                        "price": "4.00"
+                    },
+                    {
+                        "name": "Soy Chicken GF",
+                        "price": "4.00"
+                    },
+                    {
+                        "name": "Pepperoni",
+                        "price": "4.00"
+                    },
+                    {
+                        "name": "Extra Cheese",
+                        "price": "1.75"
+                    }
+                ]
+            },
+            {
+                "type": "Recommended Beverages",
+                "required": 0,
+                "upto": 5,
+                "features": [
+                    {
+                        "name": "Green Jolly Smoothie",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Pina Colada",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Acai",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Strawberry Mango Banana",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Almond Joy",
+                        "price": "9.50"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Large Blanca Pizza",
+        "price": "24.00",
+        "options": [
+            {
+                "type": "Cheese Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Regular Cheese",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Violife Cheese (Nut Free)",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "LG Crust Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Gluten Free",
+                        "price": "3.25"
+                    },
+                    {
+                        "name": "White Wheat",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "LG Pizza toppings",
+                "required": 0,
+                "upto": 5,
+                "features": [
+                    {
+                        "name": "Eggplant",
+                        "price": "3.25"
+                    },
+                    {
+                        "name": "Artichokes",
+                        "price": "3.25"
+                    },
+                    {
+                        "name": "Kale",
+                        "price": "3.25"
+                    },
+                    {
+                        "name": "Black Olives",
+                        "price": "3.25"
+                    },
+                    {
+                        "name": "Mushrooms",
+                        "price": "3.25"
+                    },
+                    {
+                        "name": "Jalapeno",
+                        "price": "3.25"
+                    },
+                    {
+                        "name": "Tomatoes",
+                        "price": "3.25"
+                    },
+                    {
+                        "name": "Arugula",
+                        "price": "3.25"
+                    },
+                    {
+                        "name": "Kalamata Olives",
+                        "price": "3.25"
+                    },
+                    {
+                        "name": "Broccoli",
+                        "price": "3.25"
+                    },
+                    {
+                        "name": "Bell Peppers",
+                        "price": "3.25"
+                    },
+                    {
+                        "name": "Garlic",
+                        "price": "3.25"
+                    },
+                    {
+                        "name": "Spinach",
+                        "price": "3.25"
+                    },
+                    {
+                        "name": "Onions",
+                        "price": "3.25"
+                    },
+                    {
+                        "name": "Basil",
+                        "price": "3.25"
+                    },
+                    {
+                        "name": "Seitan Strips",
+                        "price": "4.00"
+                    },
+                    {
+                        "name": "Smoked Tofu GF",
+                        "price": "4.00"
+                    },
+                    {
+                        "name": "BBQ Tempeh GF",
+                        "price": "4.00"
+                    },
+                    {
+                        "name": "Buffalo Chicken",
+                        "price": "4.00"
+                    },
+                    {
+                        "name": "Chorizo GF",
+                        "price": "4.00"
+                    },
+                    {
+                        "name": "Kielbasa",
+                        "price": "4.00"
+                    },
+                    {
+                        "name": "Soy Chicken GF",
+                        "price": "4.00"
+                    },
+                    {
+                        "name": "Pepperoni",
+                        "price": "4.00"
+                    },
+                    {
+                        "name": "Extra Cheese",
+                        "price": "1.75"
+                    }
+                ]
+            },
+            {
+                "type": "Recommended Beverages",
+                "required": 0,
+                "upto": 5,
+                "features": [
+                    {
+                        "name": "Green Jolly Smoothie",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Pina Colada",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Acai",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Strawberry Mango Banana",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Almond Joy",
+                        "price": "9.50"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Large Pepperoni Pizza",
+        "price": "23.00",
+        "options": [
+            {
+                "type": "LG Crust Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Gluten Free",
+                        "price": "3.25"
+                    },
+                    {
+                        "name": "White Wheat",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Cheese Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Regular Cheese",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Violife Cheese (Nut Free)",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "LG Pizza toppings",
+                "required": 0,
+                "upto": 5,
+                "features": [
+                    {
+                        "name": "Eggplant",
+                        "price": "3.25"
+                    },
+                    {
+                        "name": "Artichokes",
+                        "price": "3.25"
+                    },
+                    {
+                        "name": "Kale",
+                        "price": "3.25"
+                    },
+                    {
+                        "name": "Black Olives",
+                        "price": "3.25"
+                    },
+                    {
+                        "name": "Mushrooms",
+                        "price": "3.25"
+                    },
+                    {
+                        "name": "Jalapeno",
+                        "price": "3.25"
+                    },
+                    {
+                        "name": "Tomatoes",
+                        "price": "3.25"
+                    },
+                    {
+                        "name": "Arugula",
+                        "price": "3.25"
+                    },
+                    {
+                        "name": "Kalamata Olives",
+                        "price": "3.25"
+                    },
+                    {
+                        "name": "Broccoli",
+                        "price": "3.25"
+                    },
+                    {
+                        "name": "Bell Peppers",
+                        "price": "3.25"
+                    },
+                    {
+                        "name": "Garlic",
+                        "price": "3.25"
+                    },
+                    {
+                        "name": "Spinach",
+                        "price": "3.25"
+                    },
+                    {
+                        "name": "Onions",
+                        "price": "3.25"
+                    },
+                    {
+                        "name": "Basil",
+                        "price": "3.25"
+                    },
+                    {
+                        "name": "Seitan Strips",
+                        "price": "4.00"
+                    },
+                    {
+                        "name": "Smoked Tofu GF",
+                        "price": "4.00"
+                    },
+                    {
+                        "name": "BBQ Tempeh GF",
+                        "price": "4.00"
+                    },
+                    {
+                        "name": "Buffalo Chicken",
+                        "price": "4.00"
+                    },
+                    {
+                        "name": "Chorizo GF",
+                        "price": "4.00"
+                    },
+                    {
+                        "name": "Kielbasa",
+                        "price": "4.00"
+                    },
+                    {
+                        "name": "Soy Chicken GF",
+                        "price": "4.00"
+                    },
+                    {
+                        "name": "Pepperoni",
+                        "price": "4.00"
+                    },
+                    {
+                        "name": "Extra Cheese",
+                        "price": "1.75"
+                    }
+                ]
+            },
+            {
+                "type": "Item Additions",
+                "required": 0,
+                "upto": null,
+                "features": [
+                    {
+                        "name": "Eggplant",
+                        "price": "2.50"
+                    },
+                    {
+                        "name": "Artichokes",
+                        "price": "2.50"
+                    },
+                    {
+                        "name": "Kale",
+                        "price": "2.50"
+                    },
+                    {
+                        "name": "Black Olives",
+                        "price": "2.50"
+                    },
+                    {
+                        "name": "Mushrooms",
+                        "price": "2.50"
+                    },
+                    {
+                        "name": "Jalapeno",
+                        "price": "2.50"
+                    },
+                    {
+                        "name": "Tomatoes",
+                        "price": "2.50"
+                    },
+                    {
+                        "name": "Arugula",
+                        "price": "2.50"
+                    },
+                    {
+                        "name": "Kalamata Olives",
+                        "price": "2.50"
+                    },
+                    {
+                        "name": "Broccoli",
+                        "price": "2.50"
+                    },
+                    {
+                        "name": "Bell Peppers",
+                        "price": "2.50"
+                    },
+                    {
+                        "name": "Garlic",
+                        "price": "2.50"
+                    },
+                    {
+                        "name": "Spinach",
+                        "price": "2.50"
+                    },
+                    {
+                        "name": "Onions",
+                        "price": "2.50"
+                    },
+                    {
+                        "name": "Basil",
+                        "price": "2.50"
+                    },
+                    {
+                        "name": "Seitan Strips",
+                        "price": "4.00"
+                    },
+                    {
+                        "name": "Smoked Tofu",
+                        "price": "4.00"
+                    },
+                    {
+                        "name": "BBQ Tempeh",
+                        "price": "4.00"
+                    },
+                    {
+                        "name": "Buffalo Chicken",
+                        "price": "4.00"
+                    },
+                    {
+                        "name": "Chorizo",
+                        "price": "4.00"
+                    },
+                    {
+                        "name": "Kielbasa",
+                        "price": "4.00"
+                    },
+                    {
+                        "name": "Soy Chicken",
+                        "price": "4.00"
+                    },
+                    {
+                        "name": "Pepperoni",
+                        "price": "4.00"
+                    }
+                ]
+            },
+            {
+                "type": "Recommended Beverages",
+                "required": 0,
+                "upto": 5,
+                "features": [
+                    {
+                        "name": "Green Jolly Smoothie",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Pina Colada",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Acai",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Strawberry Mango Banana",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Almond Joy",
+                        "price": "9.50"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Blanca Pizza",
+        "price": "18.00",
+        "options": [
+            {
+                "type": "Cheese Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Regular Cheese",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Violife Cheese (Nut Free)",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Crust Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Gluten Free",
+                        "price": "2.00"
+                    },
+                    {
+                        "name": "White Wheat",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Pizza Addons",
+                "required": 0,
+                "upto": null,
+                "features": [
+                    {
+                        "name": "Artichokes",
+                        "price": "1.75"
+                    },
+                    {
+                        "name": "Arugula",
+                        "price": "1.75"
+                    },
+                    {
+                        "name": "Basil",
+                        "price": "1.75"
+                    },
+                    {
+                        "name": "BBQ Tempeh",
+                        "price": "2.75"
+                    },
+                    {
+                        "name": "Bell Peppers",
+                        "price": "1.75"
+                    },
+                    {
+                        "name": "Black Olives",
+                        "price": "1.75"
+                    },
+                    {
+                        "name": "Broccoli",
+                        "price": "1.75"
+                    },
+                    {
+                        "name": "Buffalo Chicken",
+                        "price": "2.75"
+                    },
+                    {
+                        "name": "Chorizo",
+                        "price": "2.75"
+                    },
+                    {
+                        "name": "Eggplant",
+                        "price": "1.75"
+                    },
+                    {
+                        "name": "Extra Cheese",
+                        "price": "1.75"
+                    },
+                    {
+                        "name": "Garlic",
+                        "price": "1.75"
+                    },
+                    {
+                        "name": "Jalapeno",
+                        "price": "1.75"
+                    },
+                    {
+                        "name": "Kalamata Olives",
+                        "price": "1.75"
+                    },
+                    {
+                        "name": "Kale",
+                        "price": "1.75"
+                    },
+                    {
+                        "name": "Kielbasa",
+                        "price": "2.75"
+                    },
+                    {
+                        "name": "Mushrooms",
+                        "price": "1.75"
+                    },
+                    {
+                        "name": "Onions",
+                        "price": "1.75"
+                    },
+                    {
+                        "name": "Other Veggie",
+                        "price": "1.75"
+                    },
+                    {
+                        "name": "Pepperoni",
+                        "price": "2.75"
+                    },
+                    {
+                        "name": "Seitan Strips",
+                        "price": "2.75"
+                    },
+                    {
+                        "name": "Smoked Tofu",
+                        "price": "2.75"
+                    },
+                    {
+                        "name": "Soy Chicken",
+                        "price": "2.75"
+                    },
+                    {
+                        "name": "Spinach",
+                        "price": "1.75"
+                    },
+                    {
+                        "name": "Tomatoes",
+                        "price": "1.75"
+                    }
+                ]
+            },
+            {
+                "type": "Recommended Beverages",
+                "required": 0,
+                "upto": 5,
+                "features": [
+                    {
+                        "name": "Green Jolly Smoothie",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Pina Colada",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Acai",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Strawberry Mango Banana",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Almond Joy",
+                        "price": "9.50"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Buffalo Chicken Pizza",
+        "price": "18.00",
+        "options": [
+            {
+                "type": "Cheese Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Regular Cheese",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Violife Cheese (Nut Free)",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Crust Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Gluten Free",
+                        "price": "2.00"
+                    },
+                    {
+                        "name": "White Wheat",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Pizza Addons",
+                "required": 0,
+                "upto": null,
+                "features": [
+                    {
+                        "name": "Artichokes",
+                        "price": "1.75"
+                    },
+                    {
+                        "name": "Arugula",
+                        "price": "1.75"
+                    },
+                    {
+                        "name": "Basil",
+                        "price": "1.75"
+                    },
+                    {
+                        "name": "BBQ Tempeh",
+                        "price": "2.75"
+                    },
+                    {
+                        "name": "Bell Peppers",
+                        "price": "1.75"
+                    },
+                    {
+                        "name": "Black Olives",
+                        "price": "1.75"
+                    },
+                    {
+                        "name": "Broccoli",
+                        "price": "1.75"
+                    },
+                    {
+                        "name": "Buffalo Chicken",
+                        "price": "2.75"
+                    },
+                    {
+                        "name": "Chorizo",
+                        "price": "2.75"
+                    },
+                    {
+                        "name": "Eggplant",
+                        "price": "1.75"
+                    },
+                    {
+                        "name": "Extra Cheese",
+                        "price": "1.75"
+                    },
+                    {
+                        "name": "Garlic",
+                        "price": "1.75"
+                    },
+                    {
+                        "name": "Jalapeno",
+                        "price": "1.75"
+                    },
+                    {
+                        "name": "Kalamata Olives",
+                        "price": "1.75"
+                    },
+                    {
+                        "name": "Kale",
+                        "price": "1.75"
+                    },
+                    {
+                        "name": "Kielbasa",
+                        "price": "2.75"
+                    },
+                    {
+                        "name": "Mushrooms",
+                        "price": "1.75"
+                    },
+                    {
+                        "name": "Onions",
+                        "price": "1.75"
+                    },
+                    {
+                        "name": "Other Veggie",
+                        "price": "1.75"
+                    },
+                    {
+                        "name": "Pepperoni",
+                        "price": "2.75"
+                    },
+                    {
+                        "name": "Seitan Strips",
+                        "price": "2.75"
+                    },
+                    {
+                        "name": "Smoked Tofu",
+                        "price": "2.75"
+                    },
+                    {
+                        "name": "Soy Chicken",
+                        "price": "2.75"
+                    },
+                    {
+                        "name": "Spinach",
+                        "price": "1.75"
+                    },
+                    {
+                        "name": "Tomatoes",
+                        "price": "1.75"
+                    }
+                ]
+            },
+            {
+                "type": "Recommended Beverages",
+                "required": 0,
+                "upto": 5,
+                "features": [
+                    {
+                        "name": "Green Jolly Smoothie",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Pina Colada",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Acai",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Strawberry Mango Banana",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Almond Joy",
+                        "price": "9.50"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Eggplant Calzone",
+        "price": "18.00",
+        "options": [
+            {
+                "type": "Calzone Preparation Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Regular Cheese",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Violife Cheese (Nut Free)",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Pizza Addons",
+                "required": 0,
+                "upto": null,
+                "features": [
+                    {
+                        "name": "Artichokes",
+                        "price": "1.75"
+                    },
+                    {
+                        "name": "Arugula",
+                        "price": "1.75"
+                    },
+                    {
+                        "name": "Basil",
+                        "price": "1.75"
+                    },
+                    {
+                        "name": "BBQ Tempeh",
+                        "price": "2.75"
+                    },
+                    {
+                        "name": "Bell Peppers",
+                        "price": "1.75"
+                    },
+                    {
+                        "name": "Black Olives",
+                        "price": "1.75"
+                    },
+                    {
+                        "name": "Broccoli",
+                        "price": "1.75"
+                    },
+                    {
+                        "name": "Buffalo Chicken",
+                        "price": "2.75"
+                    },
+                    {
+                        "name": "Chorizo",
+                        "price": "2.75"
+                    },
+                    {
+                        "name": "Eggplant",
+                        "price": "1.75"
+                    },
+                    {
+                        "name": "Extra Cheese",
+                        "price": "1.75"
+                    },
+                    {
+                        "name": "Garlic",
+                        "price": "1.75"
+                    },
+                    {
+                        "name": "Jalapeno",
+                        "price": "1.75"
+                    },
+                    {
+                        "name": "Kalamata Olives",
+                        "price": "1.75"
+                    },
+                    {
+                        "name": "Kale",
+                        "price": "1.75"
+                    },
+                    {
+                        "name": "Kielbasa",
+                        "price": "2.75"
+                    },
+                    {
+                        "name": "Mushrooms",
+                        "price": "1.75"
+                    },
+                    {
+                        "name": "Onions",
+                        "price": "1.75"
+                    },
+                    {
+                        "name": "Other Veggie",
+                        "price": "1.75"
+                    },
+                    {
+                        "name": "Pepperoni",
+                        "price": "2.75"
+                    },
+                    {
+                        "name": "Seitan Strips",
+                        "price": "2.75"
+                    },
+                    {
+                        "name": "Smoked Tofu",
+                        "price": "2.75"
+                    },
+                    {
+                        "name": "Soy Chicken",
+                        "price": "2.75"
+                    },
+                    {
+                        "name": "Spinach",
+                        "price": "1.75"
+                    },
+                    {
+                        "name": "Tomatoes",
+                        "price": "1.75"
+                    }
+                ]
+            },
+            {
+                "type": "Recommended Beverages",
+                "required": 0,
+                "upto": 5,
+                "features": [
+                    {
+                        "name": "Green Jolly Smoothie",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Pina Colada",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Acai",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Strawberry Mango Banana",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Almond Joy",
+                        "price": "9.50"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Pulse Burger",
+        "price": "18.00",
+        "options": [
+            {
+                "type": "Potatoes Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Regular",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Bun Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Gluten Free",
+                        "price": "2.00"
+                    },
+                    {
+                        "name": "No Bun",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Regular",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Patty Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "New Breed Patty",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Impossible Patty",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Black Bean Patty",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Item Additions",
+                "required": 0,
+                "upto": 3,
+                "features": [
+                    {
+                        "name": "Mushrooms",
+                        "price": "1.25"
+                    },
+                    {
+                        "name": "Guacamole",
+                        "price": "2.50"
+                    },
+                    {
+                        "name": "Avocado",
+                        "price": "2.50"
+                    }
+                ]
+            },
+            {
+                "type": "Salad Additions",
+                "required": 0,
+                "upto": null,
+                "features": [
+                    {
+                        "name": "Side Caesar Salad",
+                        "price": "4.00"
+                    },
+                    {
+                        "name": "Side Kale Salad",
+                        "price": "3.50"
+                    },
+                    {
+                        "name": "Side Salad",
+                        "price": "2.00"
+                    }
+                ]
+            },
+            {
+                "type": "Sauce Choice",
+                "required": 0,
+                "upto": null,
+                "features": [
+                    {
+                        "name": "No Sauce",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Extra Garlic Aioli",
+                        "price": "0.75"
+                    },
+                    {
+                        "name": "Extra Thousand Sauce",
+                        "price": "0.75"
+                    },
+                    {
+                        "name": "Extra Chipotle Aioli",
+                        "price": "0.75"
+                    },
+                    {
+                        "name": "Extra Chimi",
+                        "price": "0.75"
+                    }
+                ]
+            },
+            {
+                "type": "Recommended Beverages",
+                "required": 0,
+                "upto": 5,
+                "features": [
+                    {
+                        "name": "Green Jolly Smoothie",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Pina Colada",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Acai",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Strawberry Mango Banana",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Almond Joy",
+                        "price": "9.50"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Tex Mex Burger",
+        "price": "18.50",
+        "options": [
+            {
+                "type": "Sauce Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Extra Chimi",
+                        "price": "0.75"
+                    },
+                    {
+                        "name": "Extra Chipotle Aioli",
+                        "price": "0.75"
+                    },
+                    {
+                        "name": "Extra Garlic Aioli",
+                        "price": "0.75"
+                    },
+                    {
+                        "name": "Extra Thousand Sauce",
+                        "price": "0.75"
+                    },
+                    {
+                        "name": "No Sauce",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Potatoes Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Regular",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Bun Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Gluten Free",
+                        "price": "2.00"
+                    },
+                    {
+                        "name": "No Bun",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Regular",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Patty Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Impossible Patty",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "New Breed Patty",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Black Bean Patty",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Item Additions",
+                "required": 0,
+                "upto": 3,
+                "features": [
+                    {
+                        "name": "Mushrooms",
+                        "price": "1.25"
+                    },
+                    {
+                        "name": "Guacamole",
+                        "price": "2.50"
+                    },
+                    {
+                        "name": "Avocado",
+                        "price": "2.50"
+                    }
+                ]
+            },
+            {
+                "type": "Burger Salad Additions",
+                "required": 0,
+                "upto": null,
+                "features": [
+                    {
+                        "name": "Side Caesar Salad",
+                        "price": "4.00"
+                    },
+                    {
+                        "name": "Side Kale Salad",
+                        "price": "3.50"
+                    },
+                    {
+                        "name": "Side Salad",
+                        "price": "2.00"
+                    }
+                ]
+            },
+            {
+                "type": "Sauce Choice",
+                "required": 0,
+                "upto": null,
+                "features": [
+                    {
+                        "name": "No Sauce",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Extra Garlic Aioli",
+                        "price": "0.75"
+                    },
+                    {
+                        "name": "Extra Thousand Sauce",
+                        "price": "0.75"
+                    },
+                    {
+                        "name": "Extra Chipotle Aioli",
+                        "price": "0.75"
+                    },
+                    {
+                        "name": "Extra Chimi",
+                        "price": "0.75"
+                    }
+                ]
+            },
+            {
+                "type": "Recommended Beverages",
+                "required": 0,
+                "upto": 5,
+                "features": [
+                    {
+                        "name": "Green Jolly Smoothie",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Pina Colada",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Acai",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Strawberry Mango Banana",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Almond Joy",
+                        "price": "9.50"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Chimichurri Burger",
+        "price": "18.00",
+        "options": [
+            {
+                "type": "Potatoes Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Regular",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Bun Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Gluten Free",
+                        "price": "2.00"
+                    },
+                    {
+                        "name": "No Bun",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Regular",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Patty Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Impossible Patty",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "New Breed Patty",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Black Bean Patty",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Salad Additions",
+                "required": 0,
+                "upto": null,
+                "features": [
+                    {
+                        "name": "Side Caesar Salad",
+                        "price": "4.00"
+                    },
+                    {
+                        "name": "Side Kale Salad",
+                        "price": "3.50"
+                    },
+                    {
+                        "name": "Side Salad",
+                        "price": "2.00"
+                    }
+                ]
+            },
+            {
+                "type": "Sauce Choice",
+                "required": 0,
+                "upto": null,
+                "features": [
+                    {
+                        "name": "No Sauce",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Extra Garlic Aioli",
+                        "price": "0.75"
+                    },
+                    {
+                        "name": "Extra Thousand Sauce",
+                        "price": "0.75"
+                    },
+                    {
+                        "name": "Extra Chipotle Aioli",
+                        "price": "0.75"
+                    },
+                    {
+                        "name": "Extra Chimi",
+                        "price": "0.75"
+                    }
+                ]
+            },
+            {
+                "type": "Recommended Beverages",
+                "required": 0,
+                "upto": 5,
+                "features": [
+                    {
+                        "name": "Green Jolly Smoothie",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Pina Colada",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Acai",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Strawberry Mango Banana",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Almond Joy",
+                        "price": "9.50"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Pulse Scramble",
+        "price": "16.50",
+        "options": [
+            {
+                "type": "Pulse Scramble Preparation Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Gluten Free",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Regular",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Recommended Beverages",
+                "required": 0,
+                "upto": 5,
+                "features": [
+                    {
+                        "name": "Green Jolly Smoothie",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Pina Colada",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Acai",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Strawberry Mango Banana",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Almond Joy",
+                        "price": "9.50"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Chk\u2019n & Waffle",
+        "price": "16.00",
+        "options": [
+            {
+                "type": "Waffle Preparation Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Nut Free",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Regular",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Serving Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "With Cashew Gravy",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "With Warm Local Maple Syrup",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Recommended Beverages",
+                "required": 0,
+                "upto": 5,
+                "features": [
+                    {
+                        "name": "Green Jolly Smoothie",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Pina Colada",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Acai",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Strawberry Mango Banana",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Almond Joy",
+                        "price": "9.50"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Blueberry Pancakes",
+        "price": "15.00",
+        "options": [
+            {
+                "type": "Recommended Beverages",
+                "required": 0,
+                "upto": 5,
+                "features": [
+                    {
+                        "name": "Green Jolly Smoothie",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Pina Colada",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Acai",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Strawberry Mango Banana",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Almond Joy",
+                        "price": "9.50"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Breakfast Burrito",
+        "price": "15.50",
+        "options": [
+            {
+                "type": "Breakfast Burrito Preparation Choice",
+                "required": 0,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Gluten Free Brown Rice Bowl",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Recommended Beverages",
+                "required": 0,
+                "upto": 5,
+                "features": [
+                    {
+                        "name": "Green Jolly Smoothie",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Pina Colada",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Acai",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Strawberry Mango Banana",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Almond Joy",
+                        "price": "9.50"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Belgian Waffle",
+        "price": "15.50",
+        "options": [
+            {
+                "type": "Recommended Beverages",
+                "required": 0,
+                "upto": 5,
+                "features": [
+                    {
+                        "name": "Green Jolly Smoothie",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Pina Colada",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Acai",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Strawberry Mango Banana",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Almond Joy",
+                        "price": "9.50"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Cubano Panini",
+        "price": "17.00",
+        "options": [
+            {
+                "type": "Recommended Beverages",
+                "required": 0,
+                "upto": 5,
+                "features": [
+                    {
+                        "name": "Green Jolly Smoothie",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Pina Colada",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Acai",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Strawberry Mango Banana",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Almond Joy",
+                        "price": "9.50"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Sweet Corn Tamales",
+        "price": "13.00",
+        "options": [
+            {
+                "type": "Recommended Beverages",
+                "required": 0,
+                "upto": 5,
+                "features": [
+                    {
+                        "name": "Green Jolly Smoothie",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Pina Colada",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Acai",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Strawberry Mango Banana",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Almond Joy",
+                        "price": "9.50"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Avocado Toast",
+        "price": "8.50",
+        "options": [
+            {
+                "type": "Toast Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Regular",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Recommended Beverages",
+                "required": 0,
+                "upto": 5,
+                "features": [
+                    {
+                        "name": "Green Jolly Smoothie",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Pina Colada",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Acai",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Strawberry Mango Banana",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Almond Joy",
+                        "price": "9.50"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Roasted Potatoes",
+        "price": "8.00",
+        "options": []
+    },
+    {
+        "name": "Full House Salad",
+        "price": "14.50",
+        "options": [
+            {
+                "type": "Salad Greens Serving Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Regular",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "With Kale",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Salad Add-ons",
+                "required": 0,
+                "upto": 2,
+                "features": [
+                    {
+                        "name": "Extra Dressing",
+                        "price": "0.75"
+                    },
+                    {
+                        "name": "Avocado",
+                        "price": "2.00"
+                    },
+                    {
+                        "name": "Guacamole",
+                        "price": "2.00"
+                    },
+                    {
+                        "name": "Apricot BBQ Glazed Tofu",
+                        "price": "2.75"
+                    },
+                    {
+                        "name": "Soy Drumsticks",
+                        "price": "5.50"
+                    },
+                    {
+                        "name": "Smoked Tofu GF",
+                        "price": "3.00"
+                    },
+                    {
+                        "name": "Seitan Strips",
+                        "price": "3.00"
+                    },
+                    {
+                        "name": "Soy chicken GF",
+                        "price": "3.00"
+                    },
+                    {
+                        "name": "BBQ Tempeh GF",
+                        "price": "3.00"
+                    },
+                    {
+                        "name": "Buffalo chicken",
+                        "price": "3.00"
+                    }
+                ]
+            },
+            {
+                "type": "Dressing Preparation Option",
+                "required": 0,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Dressing on The Side",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Dressing Option",
+                "required": 0,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Mediterranean Dressing",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Miso Dressing",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Recommended Beverages",
+                "required": 0,
+                "upto": 5,
+                "features": [
+                    {
+                        "name": "Green Jolly Smoothie",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Pina Colada",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Acai",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Strawberry Mango Banana",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Almond Joy",
+                        "price": "9.50"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Half Caesar Salad",
+        "price": "9.50",
+        "options": [
+            {
+                "type": "Salad Greens Serving Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Regular",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "With Kale",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Caesar Salad Preparation Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Gluten Free",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Regular",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Dressing Preparation Option",
+                "required": 0,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Dressing on The Side",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Dressing Option",
+                "required": 0,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Mediterranean Dressing",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Miso Dressing",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Salad Add-ons",
+                "required": 0,
+                "upto": 2,
+                "features": [
+                    {
+                        "name": "Extra Dressing",
+                        "price": "0.75"
+                    },
+                    {
+                        "name": "Avocado",
+                        "price": "2.00"
+                    },
+                    {
+                        "name": "Guacamole",
+                        "price": "2.00"
+                    },
+                    {
+                        "name": "Apricot BBQ Glazed Tofu",
+                        "price": "2.75"
+                    },
+                    {
+                        "name": "Soy Drumsticks",
+                        "price": "5.50"
+                    },
+                    {
+                        "name": "Smoked Tofu GF",
+                        "price": "3.00"
+                    },
+                    {
+                        "name": "Seitan Strips",
+                        "price": "3.00"
+                    },
+                    {
+                        "name": "Soy chicken GF",
+                        "price": "3.00"
+                    },
+                    {
+                        "name": "BBQ Tempeh GF",
+                        "price": "3.00"
+                    },
+                    {
+                        "name": "Buffalo chicken",
+                        "price": "3.00"
+                    }
+                ]
+            },
+            {
+                "type": "Recommended Beverages",
+                "required": 0,
+                "upto": 5,
+                "features": [
+                    {
+                        "name": "Green Jolly Smoothie",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Pina Colada",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Acai",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Strawberry Mango Banana",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Almond Joy",
+                        "price": "9.50"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Half Mediterranean Kale",
+        "price": "9.00",
+        "options": [
+            {
+                "type": "Preparation Option",
+                "required": 0,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Dressing on The Side",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Dressing Option",
+                "required": 0,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Mediterranean Dressing",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Miso Dressing",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Salad Add-ons",
+                "required": 0,
+                "upto": 2,
+                "features": [
+                    {
+                        "name": "Extra Dressing",
+                        "price": "0.75"
+                    },
+                    {
+                        "name": "Avocado",
+                        "price": "2.00"
+                    },
+                    {
+                        "name": "Guacamole",
+                        "price": "2.00"
+                    },
+                    {
+                        "name": "Apricot BBQ Glazed Tofu",
+                        "price": "2.75"
+                    },
+                    {
+                        "name": "Soy Drumsticks",
+                        "price": "5.50"
+                    },
+                    {
+                        "name": "Smoked Tofu GF",
+                        "price": "3.00"
+                    },
+                    {
+                        "name": "Seitan Strips",
+                        "price": "3.00"
+                    },
+                    {
+                        "name": "Soy chicken GF",
+                        "price": "3.00"
+                    },
+                    {
+                        "name": "BBQ Tempeh GF",
+                        "price": "3.00"
+                    },
+                    {
+                        "name": "Buffalo chicken",
+                        "price": "3.00"
+                    }
+                ]
+            },
+            {
+                "type": "Recommended Beverages",
+                "required": 0,
+                "upto": 5,
+                "features": [
+                    {
+                        "name": "Green Jolly Smoothie",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Pina Colada",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Acai",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Strawberry Mango Banana",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Almond Joy",
+                        "price": "9.50"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Half House Salad",
+        "price": "9.00",
+        "options": [
+            {
+                "type": "Salad Greens Serving Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Regular",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "With Kale",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Dressing Preparation Option",
+                "required": 0,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Dressing on The Side",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Dressing Option",
+                "required": 0,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Mediterranean Dressing",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Miso Dressing",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Salad Add-ons",
+                "required": 0,
+                "upto": 2,
+                "features": [
+                    {
+                        "name": "Extra Dressing",
+                        "price": "0.75"
+                    },
+                    {
+                        "name": "Avocado",
+                        "price": "2.00"
+                    },
+                    {
+                        "name": "Guacamole",
+                        "price": "2.00"
+                    },
+                    {
+                        "name": "Apricot BBQ Glazed Tofu",
+                        "price": "2.75"
+                    },
+                    {
+                        "name": "Soy Drumsticks",
+                        "price": "5.50"
+                    },
+                    {
+                        "name": "Smoked Tofu GF",
+                        "price": "3.00"
+                    },
+                    {
+                        "name": "Seitan Strips",
+                        "price": "3.00"
+                    },
+                    {
+                        "name": "Soy chicken GF",
+                        "price": "3.00"
+                    },
+                    {
+                        "name": "BBQ Tempeh GF",
+                        "price": "3.00"
+                    },
+                    {
+                        "name": "Buffalo chicken",
+                        "price": "3.00"
+                    }
+                ]
+            },
+            {
+                "type": "Recommended Beverages",
+                "required": 0,
+                "upto": 5,
+                "features": [
+                    {
+                        "name": "Green Jolly Smoothie",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Pina Colada",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Acai",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Strawberry Mango Banana",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Almond Joy",
+                        "price": "9.50"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Full Caesar Salad",
+        "price": "14.50",
+        "options": [
+            {
+                "type": "Salad Greens Serving Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Regular",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "With Kale",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Caesar Salad Preparation Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Gluten Free",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Regular",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Dressing Option",
+                "required": 0,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Mediterranean Dressing",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Miso Dressing",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Dressing Preparation Option",
+                "required": 0,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Dressing on The Side",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Salad Add-ons",
+                "required": 0,
+                "upto": 2,
+                "features": [
+                    {
+                        "name": "Extra Dressing",
+                        "price": "0.75"
+                    },
+                    {
+                        "name": "Avocado",
+                        "price": "2.00"
+                    },
+                    {
+                        "name": "Guacamole",
+                        "price": "2.00"
+                    },
+                    {
+                        "name": "Apricot BBQ Glazed Tofu",
+                        "price": "2.75"
+                    },
+                    {
+                        "name": "Soy Drumsticks",
+                        "price": "5.50"
+                    },
+                    {
+                        "name": "Smoked Tofu GF",
+                        "price": "3.00"
+                    },
+                    {
+                        "name": "Seitan Strips",
+                        "price": "3.00"
+                    },
+                    {
+                        "name": "Soy chicken GF",
+                        "price": "3.00"
+                    },
+                    {
+                        "name": "BBQ Tempeh GF",
+                        "price": "3.00"
+                    },
+                    {
+                        "name": "Buffalo chicken",
+                        "price": "3.00"
+                    }
+                ]
+            },
+            {
+                "type": "Recommended Beverages",
+                "required": 0,
+                "upto": 5,
+                "features": [
+                    {
+                        "name": "Green Jolly Smoothie",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Pina Colada",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Acai",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Strawberry Mango Banana",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Almond Joy",
+                        "price": "9.50"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Full Kale Salad",
+        "price": "14.50",
+        "options": [
+            {
+                "type": "Dressing Preparation Option",
+                "required": 0,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Dressing on The Side",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Dressing Option",
+                "required": 0,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Mediterranean Dressing",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Miso Dressing",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Salad Add-ons",
+                "required": 0,
+                "upto": 2,
+                "features": [
+                    {
+                        "name": "Extra Dressing",
+                        "price": "0.75"
+                    },
+                    {
+                        "name": "Avocado",
+                        "price": "2.00"
+                    },
+                    {
+                        "name": "Guacamole",
+                        "price": "2.00"
+                    },
+                    {
+                        "name": "Apricot BBQ Glazed Tofu",
+                        "price": "2.75"
+                    },
+                    {
+                        "name": "Soy Drumsticks",
+                        "price": "5.50"
+                    },
+                    {
+                        "name": "Smoked Tofu GF",
+                        "price": "3.00"
+                    },
+                    {
+                        "name": "Seitan Strips",
+                        "price": "3.00"
+                    },
+                    {
+                        "name": "Soy chicken GF",
+                        "price": "3.00"
+                    },
+                    {
+                        "name": "BBQ Tempeh GF",
+                        "price": "3.00"
+                    },
+                    {
+                        "name": "Buffalo chicken",
+                        "price": "3.00"
+                    }
+                ]
+            },
+            {
+                "type": "Recommended Beverages",
+                "required": 0,
+                "upto": 5,
+                "features": [
+                    {
+                        "name": "Green Jolly Smoothie",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Pina Colada",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Acai",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Strawberry Mango Banana",
+                        "price": "9.50"
+                    },
+                    {
+                        "name": "Almond Joy",
+                        "price": "9.50"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Bowl - Acai",
+        "price": "14.50",
+        "options": [
+            {
+                "type": "Item Additions",
+                "required": 0,
+                "upto": null,
+                "features": [
+                    {
+                        "name": "Strawberries",
+                        "price": "1.25"
+                    },
+                    {
+                        "name": "Chia",
+                        "price": "1.25"
+                    },
+                    {
+                        "name": "Lucuma",
+                        "price": "1.25"
+                    },
+                    {
+                        "name": "Protein Powder",
+                        "price": "1.25"
+                    },
+                    {
+                        "name": "Spirulina",
+                        "price": "1.25"
+                    },
+                    {
+                        "name": "Flaxseeds",
+                        "price": "1.25"
+                    },
+                    {
+                        "name": "Almond Butter",
+                        "price": "1.25"
+                    },
+                    {
+                        "name": "Peanut Butter",
+                        "price": "1.25"
+                    },
+                    {
+                        "name": "Extra",
+                        "price": "1.25"
+                    }
+                ]
+            },
+            {
+                "type": "Item Removals",
+                "required": 0,
+                "upto": 4,
+                "features": [
+                    {
+                        "name": "No Agave",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "No Banana At All",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "No Banana Slices",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "No Blueberry",
+                        "price": "0.00"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Pina Colada",
+        "price": "9.50",
+        "options": [
+            {
+                "type": "Pina Colada Smoothie Preparation Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Drink By Itself",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Regular",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Item Removals",
+                "required": 0,
+                "upto": 2,
+                "features": [
+                    {
+                        "name": "No Agave",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "No Banana Slices",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Item Additions",
+                "required": 0,
+                "upto": null,
+                "features": [
+                    {
+                        "name": "Chia",
+                        "price": "1.25"
+                    },
+                    {
+                        "name": "Lucuma",
+                        "price": "1.25"
+                    },
+                    {
+                        "name": "Spirulina",
+                        "price": "1.25"
+                    },
+                    {
+                        "name": "Flaxseeds",
+                        "price": "1.25"
+                    },
+                    {
+                        "name": "Almond Butter",
+                        "price": "1.25"
+                    },
+                    {
+                        "name": "Peanut Butter",
+                        "price": "1.25"
+                    },
+                    {
+                        "name": "Extra",
+                        "price": "1.25"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Acai",
+        "price": "9.50",
+        "options": [
+            {
+                "type": "Acai Smoothie Preparation Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Drink By Itself",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Regular",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Item Removals",
+                "required": 0,
+                "upto": 2,
+                "features": [
+                    {
+                        "name": "No Agave",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "No Banana Slices",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Item Additions",
+                "required": 0,
+                "upto": null,
+                "features": [
+                    {
+                        "name": "Chia",
+                        "price": "1.25"
+                    },
+                    {
+                        "name": "Lucuma",
+                        "price": "1.25"
+                    },
+                    {
+                        "name": "Spirulina",
+                        "price": "1.25"
+                    },
+                    {
+                        "name": "Flaxseeds",
+                        "price": "1.25"
+                    },
+                    {
+                        "name": "Almond Butter",
+                        "price": "1.25"
+                    },
+                    {
+                        "name": "Peanut Butter",
+                        "price": "1.25"
+                    },
+                    {
+                        "name": "Extra",
+                        "price": "1.25"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Triple Berry",
+        "price": "9.50",
+        "options": [
+            {
+                "type": "Triple Berry Smoothie Preparation Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Drink By Itself",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Regular",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Item Removals",
+                "required": 0,
+                "upto": 2,
+                "features": [
+                    {
+                        "name": "No Agave",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "No Banana Slices",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Item Additions",
+                "required": 0,
+                "upto": null,
+                "features": [
+                    {
+                        "name": "Chia",
+                        "price": "1.25"
+                    },
+                    {
+                        "name": "Lucuma",
+                        "price": "1.25"
+                    },
+                    {
+                        "name": "Spirulina",
+                        "price": "1.25"
+                    },
+                    {
+                        "name": "Flaxseeds",
+                        "price": "1.25"
+                    },
+                    {
+                        "name": "Almond Butter",
+                        "price": "1.25"
+                    },
+                    {
+                        "name": "Peanut Butter",
+                        "price": "1.25"
+                    },
+                    {
+                        "name": "Extra",
+                        "price": "1.25"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Almond Joy",
+        "price": "9.50",
+        "options": []
+    },
+    {
+        "name": "Strawberry Mango Banana",
+        "price": "9.50",
+        "options": [
+            {
+                "type": "SMB Smoothie Preparation Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Drink By Itself",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Regular",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Item Removals",
+                "required": 0,
+                "upto": 2,
+                "features": [
+                    {
+                        "name": "No Agave",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "No Banana Slices",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Item Additions",
+                "required": 0,
+                "upto": null,
+                "features": [
+                    {
+                        "name": "Chia",
+                        "price": "1.25"
+                    },
+                    {
+                        "name": "Lucuma",
+                        "price": "1.25"
+                    },
+                    {
+                        "name": "Spirulina",
+                        "price": "1.25"
+                    },
+                    {
+                        "name": "Flaxseeds",
+                        "price": "1.25"
+                    },
+                    {
+                        "name": "Almond Butter",
+                        "price": "1.25"
+                    },
+                    {
+                        "name": "Peanut Butter",
+                        "price": "1.25"
+                    },
+                    {
+                        "name": "Extra",
+                        "price": "1.25"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Green Jolly Smoothie",
+        "price": "9.50",
+        "options": [
+            {
+                "type": "Item Additions",
+                "required": 0,
+                "upto": null,
+                "features": [
+                    {
+                        "name": "Chia",
+                        "price": "1.25"
+                    },
+                    {
+                        "name": "Lucuma",
+                        "price": "1.25"
+                    },
+                    {
+                        "name": "Spirulina",
+                        "price": "1.25"
+                    },
+                    {
+                        "name": "Flaxseeds",
+                        "price": "1.25"
+                    },
+                    {
+                        "name": "Almond Butter",
+                        "price": "1.25"
+                    },
+                    {
+                        "name": "Peanut Butter",
+                        "price": "1.25"
+                    },
+                    {
+                        "name": "Extra",
+                        "price": "1.25"
+                    }
+                ]
+            },
+            {
+                "type": "Item Removals",
+                "required": 0,
+                "upto": 2,
+                "features": [
+                    {
+                        "name": "No Agave",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "No Banana Slices",
+                        "price": "0.00"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "PB & J Smoothie",
+        "price": "9.50",
+        "options": [
+            {
+                "type": "Item Removals",
+                "required": 0,
+                "upto": 2,
+                "features": [
+                    {
+                        "name": "No Agave",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "No Banana Slices",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Item Additions",
+                "required": 0,
+                "upto": null,
+                "features": [
+                    {
+                        "name": "Chia",
+                        "price": "1.25"
+                    },
+                    {
+                        "name": "Lucuma",
+                        "price": "1.25"
+                    },
+                    {
+                        "name": "Spirulina",
+                        "price": "1.25"
+                    },
+                    {
+                        "name": "Flaxseeds",
+                        "price": "1.25"
+                    },
+                    {
+                        "name": "Almond Butter",
+                        "price": "1.25"
+                    },
+                    {
+                        "name": "Peanut Butter",
+                        "price": "1.25"
+                    },
+                    {
+                        "name": "Extra",
+                        "price": "1.25"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Orzo Brewed",
+        "price": "4.50",
+        "options": [
+            {
+                "type": "Flavor Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Sweetened",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Unsweetened",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Serving Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Drink By Itself",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Regular",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Orzo Preparation Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Gluten Free",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Regular",
+                        "price": "0.00"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Large Rishi",
+        "price": "4.50",
+        "options": [
+            {
+                "type": "Tea Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Berry Blush",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Ginger",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Ginger Lime Rooibos",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Golden Chamomile Blossoms",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Mushroom Hero",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Mystic Mint",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Omija Beauty Berry",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Patagonia Super Berry",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Patagonia Wild Guava",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Peppermint",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Rooibos",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Scarlett",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "White Ginseng Detox",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Serving Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Drink By Itself",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Regular",
+                        "price": "0.00"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Orzo Latte",
+        "price": "5.50",
+        "options": [
+            {
+                "type": "Flavor Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Sweetened",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Unsweetened",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Serving Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Drink By Itself",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Regular",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Orzo Latte Preparation Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Regular",
+                        "price": "0.00"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Turmeric Latte",
+        "price": "6.00",
+        "options": [
+            {
+                "type": "Flavor Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Sweetened",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Unsweetened",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Turmeric Latte Preparation Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Drink By Itself",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Regular",
+                        "price": "0.00"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Raspberry Lemonade",
+        "price": "6.00",
+        "options": [
+            {
+                "type": "Serving Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Drink By Itself",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Regular",
+                        "price": "0.00"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Wild Berry Hibiscus Tea",
+        "price": "5.50",
+        "options": []
+    }
+]

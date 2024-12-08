@@ -1,0 +1,86 @@
+{
+  "name": "Chicken Cheesesteak",
+  "price": "11.99",
+  "options": [
+    {
+      "type": "Combo Option",
+      "required": 0,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Fries & Can Cola",
+          "price": "3.99"
+        },
+        {
+          "name": "Fries & Can Diet Cola",
+          "price": "3.99"
+        },
+        {
+          "name": "Fries & Can Lemon-Lime",
+          "price": "3.99"
+        }
+      ]
+    },
+    {
+      "type": "Recommended Sides And Apps",
+      "required": 0,
+      "upto": 5,
+      "features": [
+        {
+          "name": "Mozzarella Sticks",
+          "price": "8.99"
+        },
+        {
+          "name": "Cheese Fries",
+          "price": "7.99"
+        },
+        {
+          "name": "Seasoned Fries",
+          "price": "6.99"
+        },
+        {
+          "name": "Onion Rings",
+          "price": "5.99"
+        },
+        {
+          "name": "Falafel",
+          "price": "6.99"
+        }
+      ]
+    },
+    {
+      "type": "Recommended Beverage",
+      "required": 0,
+      "upto": null,
+      "features": [
+        {
+          "name": "Water",
+          "price": "1.99"
+        }
+      ]
+    },
+    {
+      "type": "Recommended Desserts",
+      "required": 0,
+      "upto": 4,
+      "features": [
+        {
+          "name": "Fried Oreos",
+          "price": "7.99"
+        },
+        {
+          "name": "OREO cake",
+          "price": "5.99"
+        },
+        {
+          "name": "Carrot Cake",
+          "price": "5.99"
+        },
+        {
+          "name": "Cheesecake",
+          "price": "5.99"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "name": "BLT Benny",
+  "price": "14.60",
+  "options": [
+    {
+      "type": "Breakfast Sides",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Homies",
+          "price": "Includes customization"
+        },
+        {
+          "name": "Side Salad",
+          "price": "Includes customization"
+        },
+        {
+          "name": "SUB Tots",
+          "price": "2.25"
+        },
+        {
+          "name": "SUB Fries",
+          "price": "2.25"
+        },
+        {
+          "name": "SUB Fruit",
+          "price": "3.40"
+        },
+        {
+          "name": "SUB Sliced Tomato",
+          "price": "0.00"
+        },
+        {
+          "name": "SUB Beans",
+          "price": "0.00"
+        },
+        {
+          "name": "NO Side",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "BLT Benny MOD",
+      "required": 0,
+      "upto": null,
+      "features": [
+        {
+          "name": "NO Bacon",
+          "price": "0.00"
+        },
+        {
+          "name": "NO Romaine",
+          "price": "0.00"
+        },
+        {
+          "name": "NO Tomato",
+          "price": "0.00"
+        },
+        {
+          "name": "NO Old Bay",
+          "price": "0.00"
+        },
+        {
+          "name": "NO Holly",
+          "price": "0.00"
+        },
+        {
+          "name": "Extra Holly",
+          "price": "1.15"
+        },
+        {
+          "name": "Holy On The Side",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Recommended Sides And Apps",
+      "required": 0,
+      "upto": 4,
+      "features": [
+        {
+          "name": "Bacon",
+          "price": "4.50"
+        },
+        {
+          "name": "Single Pancake",
+          "price": "5.60"
+        },
+        {
+          "name": "Hash",
+          "price": "6.75"
+        },
+        {
+          "name": "Sausage",
+          "price": "4.50"
+        }
+      ]
+    }
+  ]
+}

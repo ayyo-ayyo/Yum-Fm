@@ -1,0 +1,21 @@
+{
+  "name": "Hal's Spring Seltzer",
+  "price": "2.99",
+  "options": [
+    {
+      "type": "Flavor Choice",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Lemon",
+          "price": "0.00"
+        },
+        {
+          "name": "Plain",
+          "price": "0.00"
+        }
+      ]
+    }
+  ]
+}

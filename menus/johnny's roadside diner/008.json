@@ -1,0 +1,143 @@
+{
+  "name": "Cornbread Waffle",
+  "price": "14.60",
+  "options": [
+    {
+      "type": "Topping Options",
+      "required": 0,
+      "upto": null,
+      "features": [
+        {
+          "name": "Chocolate Chip",
+          "price": "1.15"
+        },
+        {
+          "name": "Blueberry",
+          "price": "1.15"
+        },
+        {
+          "name": "Strawberry",
+          "price": "1.15"
+        },
+        {
+          "name": "Banana",
+          "price": "1.15"
+        },
+        {
+          "name": "Whip",
+          "price": "1.15"
+        },
+        {
+          "name": "Walnuts",
+          "price": "1.15"
+        },
+        {
+          "name": "Strawberry Sauce",
+          "price": "1.15"
+        },
+        {
+          "name": "PB Sauce",
+          "price": "1.15"
+        },
+        {
+          "name": "Caramel",
+          "price": "1.15"
+        },
+        {
+          "name": "Chocolate Sauce",
+          "price": "1.15"
+        },
+        {
+          "name": "Nutella",
+          "price": "1.15"
+        },
+        {
+          "name": "Sweet Cinnamon Butter",
+          "price": "1.15"
+        },
+        {
+          "name": "Local Syrup",
+          "price": "2.80"
+        },
+        {
+          "name": "NO Powdered Sugar",
+          "price": "0.00"
+        },
+        {
+          "name": "NO Butter",
+          "price": "0.00"
+        },
+        {
+          "name": "ALL ON TOP",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Cornbread Waffle MOD",
+      "required": 0,
+      "upto": null,
+      "features": [
+        {
+          "name": "no cinnamon butter",
+          "price": "0.00"
+        },
+        {
+          "name": "no strawberry",
+          "price": "0.00"
+        },
+        {
+          "name": "no blueberry",
+          "price": "0.00"
+        },
+        {
+          "name": "no whip",
+          "price": "0.00"
+        },
+        {
+          "name": "sub reg. waffle",
+          "price": "2.25"
+        },
+        {
+          "name": "Local Syrup",
+          "price": "2.80"
+        },
+        {
+          "name": "whip on side",
+          "price": "0.00"
+        },
+        {
+          "name": "berries on side",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Recommended Sides And Apps",
+      "required": 0,
+      "upto": 5,
+      "features": [
+        {
+          "name": "Bacon",
+          "price": "4.50"
+        },
+        {
+          "name": "Single Pancake",
+          "price": "5.60"
+        },
+        {
+          "name": "Hash",
+          "price": "6.75"
+        },
+        {
+          "name": "Homies",
+          "price": "4.50"
+        },
+        {
+          "name": "Sausage",
+          "price": "4.50"
+        }
+      ]
+    }
+  ]
+}

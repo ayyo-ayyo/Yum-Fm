@@ -1,0 +1,111 @@
+{
+  "name": "Cowboy",
+  "price": "12.35",
+  "options": [
+    {
+      "type": "Breakfast Sides",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Homies",
+          "price": "Includes customization"
+        },
+        {
+          "name": "Side Salad",
+          "price": "Includes customization"
+        },
+        {
+          "name": "SUB Tots",
+          "price": "2.25"
+        },
+        {
+          "name": "SUB Fries",
+          "price": "2.25"
+        },
+        {
+          "name": "SUB Fruit",
+          "price": "3.40"
+        },
+        {
+          "name": "SUB Sliced Tomato",
+          "price": "0.00"
+        },
+        {
+          "name": "SUB Beans",
+          "price": "0.00"
+        },
+        {
+          "name": "NO Side",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Cowboy MOD",
+      "required": 0,
+      "upto": null,
+      "features": [
+        {
+          "name": "NO Cheese",
+          "price": "0.00"
+        },
+        {
+          "name": "NO Bacon",
+          "price": "0.00"
+        },
+        {
+          "name": "NO Tomato",
+          "price": "0.00"
+        },
+        {
+          "name": "No Guac",
+          "price": "0.00"
+        },
+        {
+          "name": "No Chipotle S.C.",
+          "price": "0.00"
+        },
+        {
+          "name": "Chipotle S.C. On Side",
+          "price": "0.00"
+        },
+        {
+          "name": "SUB English",
+          "price": "0.00"
+        },
+        {
+          "name": "SUB Bagel",
+          "price": "1.15"
+        },
+        {
+          "name": "SUB Sourdough",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Recommended Sides And Apps",
+      "required": 0,
+      "upto": 4,
+      "features": [
+        {
+          "name": "Bacon",
+          "price": "4.50"
+        },
+        {
+          "name": "Single Pancake",
+          "price": "5.60"
+        },
+        {
+          "name": "Hash",
+          "price": "6.75"
+        },
+        {
+          "name": "Sausage",
+          "price": "4.50"
+        }
+      ]
+    }
+  ]
+}

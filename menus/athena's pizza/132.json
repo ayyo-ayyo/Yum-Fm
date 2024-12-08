@@ -1,0 +1,447 @@
+{
+  "name": "Special (Family)",
+  "price": "33.99",
+  "options": [
+    {
+      "type": "Preparation Option",
+      "required": 0,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Light Cooked",
+          "price": "0.00"
+        },
+        {
+          "name": "Well Done",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Serving Option",
+      "required": 0,
+      "upto": 2,
+      "features": [
+        {
+          "name": "Cut in 8",
+          "price": "0.00"
+        },
+        {
+          "name": "Cut Square",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Whole Sauce & Cheese Addition",
+      "required": 0,
+      "upto": 2,
+      "features": [
+        {
+          "name": "Cheese",
+          "price": "3.25"
+        },
+        {
+          "name": "Sauce",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "2nd Half Sauce & Cheese Addition",
+      "required": 0,
+      "upto": 2,
+      "features": [
+        {
+          "name": "Cheese",
+          "price": "3.25"
+        },
+        {
+          "name": "Sauce",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "1st Half Sauce & Cheese Addition",
+      "required": 0,
+      "upto": 2,
+      "features": [
+        {
+          "name": "Cheese",
+          "price": "3.25"
+        },
+        {
+          "name": "Sauce",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Whole Topping Addition",
+      "required": 0,
+      "upto": 22,
+      "features": [
+        {
+          "name": "Artichoke",
+          "price": "1.95"
+        },
+        {
+          "name": "Hamburger",
+          "price": "0.95"
+        },
+        {
+          "name": "Anchovy",
+          "price": "0.95"
+        },
+        {
+          "name": "Bacon",
+          "price": "3.00"
+        },
+        {
+          "name": "Broccoli",
+          "price": "0.95"
+        },
+        {
+          "name": "Chicken",
+          "price": "1.95"
+        },
+        {
+          "name": "Eggplant",
+          "price": "1.95"
+        },
+        {
+          "name": "Feta",
+          "price": "0.95"
+        },
+        {
+          "name": "Garlic",
+          "price": "0.95"
+        },
+        {
+          "name": "Ham",
+          "price": "0.95"
+        },
+        {
+          "name": "Jalape\u00f1o",
+          "price": "0.95"
+        },
+        {
+          "name": "Mushroom",
+          "price": "0.95"
+        },
+        {
+          "name": "Olives",
+          "price": "0.95"
+        },
+        {
+          "name": "Onion",
+          "price": "0.95"
+        },
+        {
+          "name": "Pepper",
+          "price": "0.95"
+        },
+        {
+          "name": "Pepperoni",
+          "price": "0.95"
+        },
+        {
+          "name": "Pineapple",
+          "price": "0.95"
+        },
+        {
+          "name": "Ricotta",
+          "price": "0.95"
+        },
+        {
+          "name": "Salami",
+          "price": "0.95"
+        },
+        {
+          "name": "Sausage",
+          "price": "0.95"
+        },
+        {
+          "name": "Spinach",
+          "price": "0.95"
+        },
+        {
+          "name": "Tomato",
+          "price": "0.95"
+        }
+      ]
+    },
+    {
+      "type": "2nd Half Topping Addition",
+      "required": 0,
+      "upto": 22,
+      "features": [
+        {
+          "name": "Artichoke",
+          "price": "0.95"
+        },
+        {
+          "name": "Hamburger",
+          "price": "0.95"
+        },
+        {
+          "name": "Anchovy",
+          "price": "0.95"
+        },
+        {
+          "name": "Bacon",
+          "price": "1.50"
+        },
+        {
+          "name": "Broccoli",
+          "price": "0.95"
+        },
+        {
+          "name": "Chicken",
+          "price": "0.95"
+        },
+        {
+          "name": "Eggplant",
+          "price": "0.95"
+        },
+        {
+          "name": "Feta",
+          "price": "0.95"
+        },
+        {
+          "name": "Garlic",
+          "price": "0.95"
+        },
+        {
+          "name": "Ham",
+          "price": "0.95"
+        },
+        {
+          "name": "Jalape\u00f1o",
+          "price": "0.95"
+        },
+        {
+          "name": "Mushroom",
+          "price": "0.95"
+        },
+        {
+          "name": "Olives",
+          "price": "0.95"
+        },
+        {
+          "name": "Onion",
+          "price": "0.95"
+        },
+        {
+          "name": "Pepper",
+          "price": "0.95"
+        },
+        {
+          "name": "Pepperoni",
+          "price": "0.95"
+        },
+        {
+          "name": "Pineapple",
+          "price": "0.95"
+        },
+        {
+          "name": "Ricotta",
+          "price": "0.95"
+        },
+        {
+          "name": "Salami",
+          "price": "0.95"
+        },
+        {
+          "name": "Sausage",
+          "price": "0.95"
+        },
+        {
+          "name": "Spinach",
+          "price": "0.95"
+        },
+        {
+          "name": "Tomato",
+          "price": "0.95"
+        }
+      ]
+    },
+    {
+      "type": "1st Half Topping Addition",
+      "required": 0,
+      "upto": 23,
+      "features": [
+        {
+          "name": "Artichoke",
+          "price": "0.95"
+        },
+        {
+          "name": "Hamburger",
+          "price": "0.95"
+        },
+        {
+          "name": "Anchovy",
+          "price": "0.95"
+        },
+        {
+          "name": "Bacon",
+          "price": "1.50"
+        },
+        {
+          "name": "Broccoli",
+          "price": "0.95"
+        },
+        {
+          "name": "Chicken",
+          "price": "0.95"
+        },
+        {
+          "name": "Eggplant",
+          "price": "0.95"
+        },
+        {
+          "name": "Feta",
+          "price": "0.95"
+        },
+        {
+          "name": "Garlic",
+          "price": "0.95"
+        },
+        {
+          "name": "Ham",
+          "price": "0.95"
+        },
+        {
+          "name": "Jalape\u00f1o",
+          "price": "0.95"
+        },
+        {
+          "name": "Mushroom",
+          "price": "0.95"
+        },
+        {
+          "name": "Olives",
+          "price": "0.95"
+        },
+        {
+          "name": "Onion",
+          "price": "0.95"
+        },
+        {
+          "name": "Pepper",
+          "price": "0.95"
+        },
+        {
+          "name": "Pepperoni",
+          "price": "0.95"
+        },
+        {
+          "name": "Pineapple",
+          "price": "0.95"
+        },
+        {
+          "name": "Ricotta",
+          "price": "0.95"
+        },
+        {
+          "name": "Salami",
+          "price": "0.95"
+        },
+        {
+          "name": "Sausage",
+          "price": "0.95"
+        },
+        {
+          "name": "Spinach",
+          "price": "0.95"
+        },
+        {
+          "name": "Spinach",
+          "price": "0.95"
+        },
+        {
+          "name": "Tomato",
+          "price": "0.95"
+        }
+      ]
+    },
+    {
+      "type": "Recommended Beverages",
+      "required": 0,
+      "upto": 5,
+      "features": [
+        {
+          "name": "Pepsi",
+          "price": "3.75"
+        },
+        {
+          "name": "Root Beer",
+          "price": "3.75"
+        },
+        {
+          "name": "Diet Pepsi",
+          "price": "3.75"
+        },
+        {
+          "name": "Ginger Al",
+          "price": "3.75"
+        },
+        {
+          "name": "Pure Leaf Tea",
+          "price": "3.75"
+        }
+      ]
+    },
+    {
+      "type": "Recommended Sides And Apps",
+      "required": 0,
+      "upto": 5,
+      "features": [
+        {
+          "name": "Spicy Curly Fries",
+          "price": "9.25"
+        },
+        {
+          "name": "Mozz Sticks",
+          "price": "12.99"
+        },
+        {
+          "name": "Potato Skins",
+          "price": "13.25"
+        },
+        {
+          "name": "Chicken Fingers",
+          "price": "14.49"
+        },
+        {
+          "name": "Super Fries",
+          "price": "13.99"
+        }
+      ]
+    },
+    {
+      "type": "Recommended Desserts",
+      "required": 0,
+      "upto": 4,
+      "features": [
+        {
+          "name": "Chocolate Cake",
+          "price": "6.99"
+        },
+        {
+          "name": "Baklava",
+          "price": "5.49"
+        },
+        {
+          "name": "Fried Dough",
+          "price": "8.49"
+        },
+        {
+          "name": "Cheese Cake",
+          "price": "6.49"
+        }
+      ]
+    }
+  ]
+}

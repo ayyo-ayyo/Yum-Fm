@@ -1,0 +1,29 @@
+{
+  "name": "Juices",
+  "price": "3.75",
+  "options": [
+    {
+      "type": "Flavor Choice",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Apple",
+          "price": "0.00"
+        },
+        {
+          "name": "Cran-Grape",
+          "price": "0.00"
+        },
+        {
+          "name": "Cranberry",
+          "price": "0.00"
+        },
+        {
+          "name": "Orange",
+          "price": "0.00"
+        }
+      ]
+    }
+  ]
+}

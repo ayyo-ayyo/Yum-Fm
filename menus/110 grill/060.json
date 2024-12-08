@@ -1,0 +1,96 @@
+{
+  "name": "1/2 House Salad",
+  "price": "8.45",
+  "options": [
+    {
+      "type": "Dressings",
+      "required": 0,
+      "upto": 9,
+      "features": [
+        {
+          "name": "Blue Cheese Dressing",
+          "price": "0.00"
+        },
+        {
+          "name": "Caesar",
+          "price": "0.00"
+        },
+        {
+          "name": "Ranch",
+          "price": "0.00"
+        },
+        {
+          "name": "Mustard Vinaigrette",
+          "price": "0.00"
+        },
+        {
+          "name": "Balsamic Reduction",
+          "price": "0.00"
+        },
+        {
+          "name": "Oil & Vinegar",
+          "price": "0.00"
+        },
+        {
+          "name": "No Dressing",
+          "price": "0.00"
+        },
+        {
+          "name": "Side Dressing",
+          "price": "0.00"
+        },
+        {
+          "name": "Lemon Oregeno Vinegar",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "If You Have A Food Allergy, Please Check Box Below",
+      "required": 0,
+      "upto": 5,
+      "features": [
+        {
+          "name": "GLUTEN ALLERGY",
+          "price": "0.00"
+        },
+        {
+          "name": "DAIRY ALLERGY",
+          "price": "0.00"
+        },
+        {
+          "name": "EGG ALLERGY",
+          "price": "0.00"
+        },
+        {
+          "name": "SOY ALLERGY",
+          "price": "0.00"
+        },
+        {
+          "name": "SHRIMP ALLERGY",
+          "price": "0.00"
+        },
+        {
+          "name": "SHELLFISH ALLERGY",
+          "price": "0.00"
+        },
+        {
+          "name": "PEANUT ALLERGY",
+          "price": "0.00"
+        },
+        {
+          "name": "NUT ALLERGY",
+          "price": "0.00"
+        },
+        {
+          "name": "FISH ALLERGY",
+          "price": "0.00"
+        },
+        {
+          "name": "OTHER ALLERGY",
+          "price": "0.00"
+        }
+      ]
+    }
+  ]
+}

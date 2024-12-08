@@ -1,0 +1,53 @@
+{
+  "name": "Cup Clam Chowder",
+  "price": "10.85",
+  "options": [
+    {
+      "type": "If You Have A Food Allergy, Please Check Box Below",
+      "required": 0,
+      "upto": 5,
+      "features": [
+        {
+          "name": "GLUTEN ALLERGY",
+          "price": "0.00"
+        },
+        {
+          "name": "DAIRY ALLERGY",
+          "price": "0.00"
+        },
+        {
+          "name": "EGG ALLERGY",
+          "price": "0.00"
+        },
+        {
+          "name": "SOY ALLERGY",
+          "price": "0.00"
+        },
+        {
+          "name": "SHRIMP ALLERGY",
+          "price": "0.00"
+        },
+        {
+          "name": "SHELLFISH ALLERGY",
+          "price": "0.00"
+        },
+        {
+          "name": "PEANUT ALLERGY",
+          "price": "0.00"
+        },
+        {
+          "name": "NUT ALLERGY",
+          "price": "0.00"
+        },
+        {
+          "name": "FISH ALLERGY",
+          "price": "0.00"
+        },
+        {
+          "name": "OTHER ALLERGY",
+          "price": "0.00"
+        }
+      ]
+    }
+  ]
+}

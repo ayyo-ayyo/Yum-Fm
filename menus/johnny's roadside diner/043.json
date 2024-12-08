@@ -1,0 +1,88 @@
+{
+  "name": "One Egg",
+  "price": "1.70",
+  "options": [
+    {
+      "type": "Egg Choice",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Scrambled",
+          "price": "0.00"
+        },
+        {
+          "name": "Hard Scramble",
+          "price": "0.00"
+        },
+        {
+          "name": "Soft Scamble",
+          "price": "0.00"
+        },
+        {
+          "name": "Sunny SIde Up",
+          "price": "0.00"
+        },
+        {
+          "name": "Over Easy",
+          "price": "0.00"
+        },
+        {
+          "name": "Over Medium",
+          "price": "0.00"
+        },
+        {
+          "name": "Poached",
+          "price": "0.00"
+        },
+        {
+          "name": "Over Hard",
+          "price": "0.00"
+        },
+        {
+          "name": "Scramble Egg Whites",
+          "price": "1.15"
+        }
+      ]
+    },
+    {
+      "type": "Omelet Cheese Choice",
+      "required": 0,
+      "upto": null,
+      "features": [
+        {
+          "name": "Motz",
+          "price": "1.15"
+        },
+        {
+          "name": "Cheddar",
+          "price": "1.15"
+        },
+        {
+          "name": "Swiss",
+          "price": "1.15"
+        },
+        {
+          "name": "American",
+          "price": "1.15"
+        },
+        {
+          "name": "Pepperjack",
+          "price": "1.15"
+        },
+        {
+          "name": "Feta",
+          "price": "1.15"
+        },
+        {
+          "name": "Goat Cheese",
+          "price": "1.15"
+        },
+        {
+          "name": "NO American",
+          "price": "0.00"
+        }
+      ]
+    }
+  ]
+}

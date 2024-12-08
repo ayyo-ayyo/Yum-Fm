@@ -1,0 +1,166 @@
+{
+  "name": "Large Margherita pizza",
+  "price": "22.00",
+  "options": [
+    {
+      "type": "Crust Choice",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "White Wheat",
+          "price": "0.00"
+        },
+        {
+          "name": "Gluten Free",
+          "price": "3.25"
+        }
+      ]
+    },
+    {
+      "type": "Cheese Choice",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Regular Cheese",
+          "price": "0.00"
+        },
+        {
+          "name": "Violife Cheese (Nut Free)",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "LG Pizza toppings",
+      "required": 0,
+      "upto": 5,
+      "features": [
+        {
+          "name": "Eggplant",
+          "price": "3.25"
+        },
+        {
+          "name": "Artichokes",
+          "price": "3.25"
+        },
+        {
+          "name": "Kale",
+          "price": "3.25"
+        },
+        {
+          "name": "Black Olives",
+          "price": "3.25"
+        },
+        {
+          "name": "Mushrooms",
+          "price": "3.25"
+        },
+        {
+          "name": "Jalapeno",
+          "price": "3.25"
+        },
+        {
+          "name": "Tomatoes",
+          "price": "3.25"
+        },
+        {
+          "name": "Arugula",
+          "price": "3.25"
+        },
+        {
+          "name": "Kalamata Olives",
+          "price": "3.25"
+        },
+        {
+          "name": "Broccoli",
+          "price": "3.25"
+        },
+        {
+          "name": "Bell Peppers",
+          "price": "3.25"
+        },
+        {
+          "name": "Garlic",
+          "price": "3.25"
+        },
+        {
+          "name": "Spinach",
+          "price": "3.25"
+        },
+        {
+          "name": "Onions",
+          "price": "3.25"
+        },
+        {
+          "name": "Basil",
+          "price": "3.25"
+        },
+        {
+          "name": "Seitan Strips",
+          "price": "4.00"
+        },
+        {
+          "name": "Smoked Tofu GF",
+          "price": "4.00"
+        },
+        {
+          "name": "BBQ Tempeh GF",
+          "price": "4.00"
+        },
+        {
+          "name": "Buffalo Chicken",
+          "price": "4.00"
+        },
+        {
+          "name": "Chorizo GF",
+          "price": "4.00"
+        },
+        {
+          "name": "Kielbasa",
+          "price": "4.00"
+        },
+        {
+          "name": "Soy Chicken GF",
+          "price": "4.00"
+        },
+        {
+          "name": "Pepperoni",
+          "price": "4.00"
+        },
+        {
+          "name": "Extra Cheese",
+          "price": "1.75"
+        }
+      ]
+    },
+    {
+      "type": "Recommended Beverages",
+      "required": 0,
+      "upto": 5,
+      "features": [
+        {
+          "name": "Green Jolly Smoothie",
+          "price": "9.50"
+        },
+        {
+          "name": "Pina Colada",
+          "price": "9.50"
+        },
+        {
+          "name": "Acai",
+          "price": "9.50"
+        },
+        {
+          "name": "Strawberry Mango Banana",
+          "price": "9.50"
+        },
+        {
+          "name": "Almond Joy",
+          "price": "9.50"
+        }
+      ]
+    }
+  ]
+}

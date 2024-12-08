@@ -1,0 +1,88 @@
+{
+  "name": "Aac Roll",
+  "price": "4.75",
+  "options": [
+    {
+      "type": "Allergy Notice",
+      "required": 0,
+      "upto": 7,
+      "features": [
+        {
+          "name": "Gluten Free",
+          "price": "0.00"
+        },
+        {
+          "name": "Seafood Allergy",
+          "price": "0.00"
+        },
+        {
+          "name": "Shellfish Allergy",
+          "price": "0.00"
+        },
+        {
+          "name": "Nut Allergy",
+          "price": "0.00"
+        },
+        {
+          "name": "Peanut Allergy",
+          "price": "0.00"
+        },
+        {
+          "name": "Dairy Allergy",
+          "price": "0.00"
+        },
+        {
+          "name": "Sesame Allergy",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Extra Options",
+      "required": 0,
+      "upto": 10,
+      "features": [
+        {
+          "name": "Brown Rice",
+          "price": "1.00"
+        },
+        {
+          "name": "Extra Spicy Mayo (2Oz)",
+          "price": "1.00"
+        },
+        {
+          "name": "Avocado",
+          "price": "1.00"
+        },
+        {
+          "name": "Cream Cheese",
+          "price": "1.00"
+        },
+        {
+          "name": "Soy Bean Paper",
+          "price": "1.00"
+        },
+        {
+          "name": "Extra Eel Sauce (2Oz)",
+          "price": "1.00"
+        },
+        {
+          "name": "Tobiko",
+          "price": "1.00"
+        },
+        {
+          "name": "Masago",
+          "price": "1.00"
+        },
+        {
+          "name": "Ginger",
+          "price": "1.00"
+        },
+        {
+          "name": "Wasabi",
+          "price": "1.00"
+        }
+      ]
+    }
+  ]
+}

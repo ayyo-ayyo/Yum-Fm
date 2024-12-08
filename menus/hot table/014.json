@@ -1,0 +1,17 @@
+{
+  "name": "COOKIE",
+  "price": "3.75",
+  "options": [
+    {
+      "type": "COOKIE SELECTION",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "CHOCOLATE CHUNKS",
+          "price": "0.00"
+        }
+      ]
+    }
+  ]
+}

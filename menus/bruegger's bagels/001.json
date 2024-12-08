@@ -1,0 +1,192 @@
+{
+  "name": "Single Bagel with Cream Cheese",
+  "price": "2.99",
+  "options": [
+    {
+      "type": "Bagel Flavor Choice",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Asiago Parmesan",
+          "price": "0.29"
+        },
+        {
+          "name": "Blueberry",
+          "price": "0.29"
+        },
+        {
+          "name": "Cinnamon Raisin",
+          "price": "0.00"
+        },
+        {
+          "name": "Cinnamon Sugar",
+          "price": "0.29"
+        },
+        {
+          "name": "Everything",
+          "price": "0.00"
+        },
+        {
+          "name": "Gourmet Cheesy Hash Brown",
+          "price": "1.19"
+        },
+        {
+          "name": "Gourmet Five Cheese",
+          "price": "1.19"
+        },
+        {
+          "name": "Gourmet Jalapeno Cheddar",
+          "price": "1.19"
+        },
+        {
+          "name": "Gourmet Maple French Toast",
+          "price": "1.19"
+        },
+        {
+          "name": "Onion",
+          "price": "0.00"
+        },
+        {
+          "name": "Plain",
+          "price": "0.00"
+        },
+        {
+          "name": "Poppy Seed",
+          "price": "0.00"
+        },
+        {
+          "name": "Pumpernickel",
+          "price": "0.00"
+        },
+        {
+          "name": "Rosemary Olive Oil",
+          "price": "0.29"
+        },
+        {
+          "name": "Sesame Seed",
+          "price": "0.00"
+        },
+        {
+          "name": "Whole Wheat",
+          "price": "0.29"
+        }
+      ]
+    },
+    {
+      "type": "Bagel Additions",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Bacon Scallion Cream Ches",
+          "price": "2.30"
+        },
+        {
+          "name": "Butter",
+          "price": "0.70"
+        },
+        {
+          "name": "Garden Veggie Cream Cheese",
+          "price": "2.30"
+        },
+        {
+          "name": "Honey Walnut Cream Cheese",
+          "price": "2.30"
+        },
+        {
+          "name": "Jalapeno Cream Cheese",
+          "price": "2.30"
+        },
+        {
+          "name": "Jelly",
+          "price": "0.70"
+        },
+        {
+          "name": "Light Plain Cream Cheese",
+          "price": "2.30"
+        },
+        {
+          "name": "Onion Chive Cream Cheese",
+          "price": "2.30"
+        },
+        {
+          "name": "Plain Cream Cheese",
+          "price": "2.30"
+        },
+        {
+          "name": "Sriracha Honey",
+          "price": "2.30"
+        },
+        {
+          "name": "Strawberry Cream Cheese",
+          "price": "2.30"
+        }
+      ]
+    },
+    {
+      "type": "Toasted Choice",
+      "required": 0,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Not Toasted",
+          "price": "0.00"
+        },
+        {
+          "name": "Toasted",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Recommended Beverages",
+      "required": 0,
+      "upto": 5,
+      "features": [
+        {
+          "name": "NEW! Caramel Cream Cold Brew",
+          "price": "5.69"
+        },
+        {
+          "name": "NEW! Vanilla Cream Cold Brew",
+          "price": "5.69"
+        },
+        {
+          "name": "NEW! Chocolate Cream Cold Brew",
+          "price": "5.69"
+        },
+        {
+          "name": "Bottled OJ",
+          "price": "4.49"
+        },
+        {
+          "name": "Orange Juice, Small",
+          "price": "5.99"
+        }
+      ]
+    },
+    {
+      "type": "Recommended Side And App",
+      "required": 0,
+      "upto": null,
+      "features": [
+        {
+          "name": "Sea Salt Kettle Chips",
+          "price": "2.59"
+        }
+      ]
+    },
+    {
+      "type": "Recommended Dessert",
+      "required": 0,
+      "upto": null,
+      "features": [
+        {
+          "name": "Chocolate Chip Cookie",
+          "price": "3.39"
+        }
+      ]
+    }
+  ]
+}

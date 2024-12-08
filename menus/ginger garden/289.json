@@ -1,0 +1,21 @@
+{
+  "name": "Appetizer Combo Ii(P)",
+  "price": "85.00",
+  "options": [
+    {
+      "type": "20 Spring Rolls Or Egg Rolls",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "20 Pcs Spring Rolls",
+          "price": "0.00"
+        },
+        {
+          "name": "20 Pcs Egg Rolls",
+          "price": "0.00"
+        }
+      ]
+    }
+  ]
+}

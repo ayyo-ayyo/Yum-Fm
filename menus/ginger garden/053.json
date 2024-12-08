@@ -1,0 +1,102 @@
+{
+  "name": "Eggplant Garlic Sauce",
+  "price": "12.50",
+  "options": [
+    {
+      "type": "Rice Choices 2",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "White Rice",
+          "price": "0.00"
+        },
+        {
+          "name": "Brown Rice",
+          "price": "0.00"
+        },
+        {
+          "name": "No Rice",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Allergy Notice",
+      "required": 0,
+      "upto": 7,
+      "features": [
+        {
+          "name": "Gluten Free",
+          "price": "0.00"
+        },
+        {
+          "name": "Seafood Allergy",
+          "price": "0.00"
+        },
+        {
+          "name": "Shellfish Allergy",
+          "price": "0.00"
+        },
+        {
+          "name": "Nut Allergy",
+          "price": "0.00"
+        },
+        {
+          "name": "Peanut Allergy",
+          "price": "0.00"
+        },
+        {
+          "name": "Dairy Allergy",
+          "price": "0.00"
+        },
+        {
+          "name": "Sesame Allergy",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Recommended Sides And Apps",
+      "required": 0,
+      "upto": 5,
+      "features": [
+        {
+          "name": "Crab Rangoon (6)",
+          "price": "7.50"
+        },
+        {
+          "name": "Meat Dumplings (7)",
+          "price": "7.50"
+        },
+        {
+          "name": "Scallion Pancake (8)",
+          "price": "7.50"
+        },
+        {
+          "name": "Egg Roll (L)",
+          "price": "2.25"
+        },
+        {
+          "name": "Chicken Fingers",
+          "price": "7.50"
+        }
+      ]
+    },
+    {
+      "type": "Recommended Beverages",
+      "required": 0,
+      "upto": 2,
+      "features": [
+        {
+          "name": "Coke",
+          "price": "2.99"
+        },
+        {
+          "name": "Sprite",
+          "price": "2.99"
+        }
+      ]
+    }
+  ]
+}

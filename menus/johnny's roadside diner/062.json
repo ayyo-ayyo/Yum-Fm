@@ -1,0 +1,95 @@
+{
+  "name": "Grilled Cheese",
+  "price": "12.35",
+  "options": [
+    {
+      "type": "Sandwich Sides Choice",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Fries",
+          "price": "0.00"
+        },
+        {
+          "name": "Tots",
+          "price": "0.00"
+        },
+        {
+          "name": "Side Salad",
+          "price": "Includes customization"
+        },
+        {
+          "name": "Homies",
+          "price": "Includes customization"
+        },
+        {
+          "name": "SUB Fruit",
+          "price": "3.40"
+        },
+        {
+          "name": "Black Beans",
+          "price": "0.00"
+        },
+        {
+          "name": "Cole Slaw",
+          "price": "0.00"
+        },
+        {
+          "name": "No Side",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Grilled Cheese MOD",
+      "required": 0,
+      "upto": null,
+      "features": [
+        {
+          "name": "ADD Tomato",
+          "price": "1.15"
+        },
+        {
+          "name": "ADD Bacon",
+          "price": "1.15"
+        },
+        {
+          "name": "NO American",
+          "price": "0.00"
+        },
+        {
+          "name": "NO Swiss",
+          "price": "0.00"
+        },
+        {
+          "name": "NO Cheddar",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Recommended Sides And Apps",
+      "required": 0,
+      "upto": 4,
+      "features": [
+        {
+          "name": "Bacon",
+          "price": "4.50"
+        },
+        {
+          "name": "Single Pancake",
+          "price": "5.60"
+        },
+        {
+          "name": "Hash",
+          "price": "6.75"
+        },
+        {
+          "name": "Sausage",
+          "price": "4.50"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "name": "Bacon",
+  "price": "4.50",
+  "options": [
+    {
+      "type": "Side Bacon Mod",
+      "required": 0,
+      "upto": null,
+      "features": [
+        {
+          "name": "crispy",
+          "price": "0.00"
+        },
+        {
+          "name": "xtra crispy",
+          "price": "0.00"
+        },
+        {
+          "name": "chewy",
+          "price": "0.00"
+        },
+        {
+          "name": "1 piece crispy",
+          "price": "2.80"
+        }
+      ]
+    }
+  ]
+}

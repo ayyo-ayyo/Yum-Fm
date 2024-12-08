@@ -1,0 +1,25 @@
+{
+  "name": "2 Liter",
+  "price": "4.49",
+  "options": [
+    {
+      "type": "2 Liter Flavors",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Brisk Tea",
+          "price": "0.00"
+        },
+        {
+          "name": "Diet Pepsi",
+          "price": "0.00"
+        },
+        {
+          "name": "Pepsi",
+          "price": "0.00"
+        }
+      ]
+    }
+  ]
+}

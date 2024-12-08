@@ -1,0 +1,129 @@
+{
+  "name": "Iced Latt\u00e9",
+  "price": "4.75",
+  "options": [
+    {
+      "type": "Size Choice",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Small (16oz)",
+          "price": "0.00"
+        },
+        {
+          "name": "Medium (20oz)",
+          "price": "0.50"
+        },
+        {
+          "name": "Large (24oz)",
+          "price": "1.00"
+        }
+      ]
+    },
+    {
+      "type": "Milk Choice",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Whole Milk",
+          "price": "0.00"
+        },
+        {
+          "name": "Half and Half",
+          "price": "0.00"
+        },
+        {
+          "name": "Almond Milk",
+          "price": "0.00"
+        },
+        {
+          "name": "Oat Milk",
+          "price": "0.00"
+        },
+        {
+          "name": "Skim Milk",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Sweetener Addition",
+      "required": 0,
+      "upto": 6,
+      "features": [
+        {
+          "name": "Simple Syrup",
+          "price": "0.00"
+        },
+        {
+          "name": "White Sugar",
+          "price": "0.00"
+        },
+        {
+          "name": "Cane Sugar",
+          "price": "0.00"
+        },
+        {
+          "name": "Splenda",
+          "price": "0.00"
+        },
+        {
+          "name": "Equal",
+          "price": "0.00"
+        },
+        {
+          "name": "Honey",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Flavor Addition",
+      "required": 0,
+      "upto": 6,
+      "features": [
+        {
+          "name": "Pumpkin Spice",
+          "price": "0.50"
+        },
+        {
+          "name": "Peppermint",
+          "price": "0.50"
+        },
+        {
+          "name": "Hazelnut",
+          "price": "0.50"
+        },
+        {
+          "name": "Caramel",
+          "price": "0.50"
+        },
+        {
+          "name": "Vanilla",
+          "price": "0.50"
+        },
+        {
+          "name": "Salted Caramel",
+          "price": "0.50"
+        }
+      ]
+    },
+    {
+      "type": "Preparation Addition",
+      "required": 0,
+      "upto": 2,
+      "features": [
+        {
+          "name": "One Shot Espresso",
+          "price": "1.50"
+        },
+        {
+          "name": "Two Shots Espresso",
+          "price": "2.50"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "name": "Recess",
+  "price": "4.50",
+  "options": [
+    {
+      "type": "Recess Flavors",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Strawberry Rose",
+          "price": "0.00"
+        },
+        {
+          "name": "Lime citrus",
+          "price": "0.00"
+        },
+        {
+          "name": "Raspberry lemon",
+          "price": "0.00"
+        },
+        {
+          "name": "Grapefruit tangerine",
+          "price": "0.00"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "name": "Chicken Fingers",
+  "price": "14.49",
+  "options": [
+    {
+      "type": "Remove Option",
+      "required": 0,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Meat Sauce",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Ingredients Addition",
+      "required": 0,
+      "upto": 7,
+      "features": [
+        {
+          "name": "B.B.Q Sause",
+          "price": "0.50"
+        },
+        {
+          "name": "Bleu Cheese",
+          "price": "0.50"
+        },
+        {
+          "name": "Honey Mustard",
+          "price": "0.00"
+        },
+        {
+          "name": "Ketchup",
+          "price": "0.00"
+        },
+        {
+          "name": "Marinara",
+          "price": "0.25"
+        },
+        {
+          "name": "Meat Sauce",
+          "price": "0.00"
+        },
+        {
+          "name": "Sour Cream",
+          "price": "0.25"
+        }
+      ]
+    },
+    {
+      "type": "Preparation Option",
+      "required": 0,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Well Done",
+          "price": "0.00"
+        }
+      ]
+    }
+  ]
+}

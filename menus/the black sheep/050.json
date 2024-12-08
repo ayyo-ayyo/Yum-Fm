@@ -1,0 +1,106 @@
+{
+  "name": "Mocha Au Lait",
+  "price": "3.99",
+  "options": [
+    {
+      "type": "Size Choice",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "12 Oz",
+          "price": "0.00"
+        },
+        {
+          "name": "16 Oz",
+          "price": "0.25"
+        },
+        {
+          "name": "20 Oz",
+          "price": "0.50"
+        }
+      ]
+    },
+    {
+      "type": "Coffee Choice",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Black Sheep Blend",
+          "price": "0.00"
+        },
+        {
+          "name": "Sumatran French Roast",
+          "price": "0.00"
+        },
+        {
+          "name": "Ahab's Revenge",
+          "price": "0.00"
+        },
+        {
+          "name": "Decaf - Peru French Roast",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Milk Choice",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Whole Milk",
+          "price": "0.00"
+        },
+        {
+          "name": "Half and Half",
+          "price": "0.00"
+        },
+        {
+          "name": "Almond Milk",
+          "price": "0.00"
+        },
+        {
+          "name": "Oat Milk",
+          "price": "0.00"
+        },
+        {
+          "name": "Skim Milk",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Flavor Addition",
+      "required": 0,
+      "upto": 6,
+      "features": [
+        {
+          "name": "Pumpkin Spice",
+          "price": "0.50"
+        },
+        {
+          "name": "Peppermint",
+          "price": "0.50"
+        },
+        {
+          "name": "Hazelnut",
+          "price": "0.50"
+        },
+        {
+          "name": "Caramel",
+          "price": "0.50"
+        },
+        {
+          "name": "Vanilla",
+          "price": "0.50"
+        },
+        {
+          "name": "Salted Caramel",
+          "price": "0.50"
+        }
+      ]
+    }
+  ]
+}

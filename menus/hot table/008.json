@@ -1,0 +1,78 @@
+{
+  "name": "GRILLED CHEESE PANINI",
+  "price": "0.00",
+  "options": [
+    {
+      "type": "SELECT SIZE",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "SMALL",
+          "price": "4.79"
+        },
+        {
+          "name": "MEDIUM",
+          "price": "5.99"
+        },
+        {
+          "name": "LARGE",
+          "price": "7.19"
+        },
+        {
+          "name": "GLUTEN FREE",
+          "price": "6.89"
+        }
+      ]
+    },
+    {
+      "type": "SELECT CHEESE",
+      "required": 0,
+      "upto": 1,
+      "features": [
+        {
+          "name": "AMERICAN",
+          "price": "0.00"
+        },
+        {
+          "name": "SWISS",
+          "price": "0.00"
+        },
+        {
+          "name": "PROVOLONE",
+          "price": "0.00"
+        },
+        {
+          "name": "FRESH MOZZARELLA",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Recommended Desserts",
+      "required": 0,
+      "upto": 2,
+      "features": [
+        {
+          "name": "COOKIE",
+          "price": "3.75"
+        },
+        {
+          "name": "DESSERT BAR",
+          "price": "3.75"
+        }
+      ]
+    },
+    {
+      "type": "Recommended Side And App",
+      "required": 0,
+      "upto": null,
+      "features": [
+        {
+          "name": "KETTLE CHIPS",
+          "price": "1.75"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "name": "Polar Seltzer",
+  "price": "3.30",
+  "options": [
+    {
+      "type": "Choose from the following",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Orange Vanilla",
+          "price": "0.00"
+        },
+        {
+          "name": "Blueberry Lemon",
+          "price": "0.00"
+        },
+        {
+          "name": "Cranberry Lime",
+          "price": "0.00"
+        }
+      ]
+    }
+  ]
+}

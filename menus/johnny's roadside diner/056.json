@@ -1,0 +1,84 @@
+{
+  "name": "Seasonal Salad",
+  "price": "16.80",
+  "options": [
+    {
+      "type": "Salad Dressing Choice",
+      "required": 0,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Blue Cheese",
+          "price": "0.00"
+        },
+        {
+          "name": "Ranch",
+          "price": "0.00"
+        },
+        {
+          "name": "1000 Island",
+          "price": "Includes customization"
+        },
+        {
+          "name": "Honey Mustard",
+          "price": "0.00"
+        },
+        {
+          "name": "Balsamic",
+          "price": "0.00"
+        },
+        {
+          "name": "Cesar",
+          "price": "0.00"
+        },
+        {
+          "name": "Lemon Vinegrette",
+          "price": "0.00"
+        },
+        {
+          "name": "Oil & Vin",
+          "price": "0.00"
+        },
+        {
+          "name": "No Dressing",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Seaonal Salad MOD",
+      "required": 0,
+      "upto": null,
+      "features": [
+        {
+          "name": "NO Apple",
+          "price": "0.00"
+        },
+        {
+          "name": "NO Goat Cheese",
+          "price": "0.00"
+        },
+        {
+          "name": "NO Walnuts",
+          "price": "0.00"
+        },
+        {
+          "name": "NO Tomato",
+          "price": "0.00"
+        },
+        {
+          "name": "NO Cucumber",
+          "price": "0.00"
+        },
+        {
+          "name": "NO Grilled Chicken",
+          "price": "0.00"
+        },
+        {
+          "name": "SUB Crispy Chicken",
+          "price": "1.15"
+        }
+      ]
+    }
+  ]
+}

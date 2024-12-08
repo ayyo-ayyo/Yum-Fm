@@ -1,0 +1,21 @@
+{
+  "name": "Clean Cause Yerba Mate",
+  "price": "3.75",
+  "options": [
+    {
+      "type": "Flavor Choice",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Black Berry",
+          "price": "0.00"
+        },
+        {
+          "name": "Lemon Lime",
+          "price": "0.00"
+        }
+      ]
+    }
+  ]
+}

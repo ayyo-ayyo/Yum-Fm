@@ -1,0 +1,21 @@
+{
+  "name": "Iced Coffee",
+  "price": "3.79",
+  "options": [
+    {
+      "type": "Choose",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Large",
+          "price": "4.39"
+        },
+        {
+          "name": "Small",
+          "price": "3.79"
+        }
+      ]
+    }
+  ]
+}

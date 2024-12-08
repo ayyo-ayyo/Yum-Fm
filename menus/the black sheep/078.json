@@ -1,0 +1,17 @@
+{
+  "name": "Maine Root Soda",
+  "price": "3.25",
+  "options": [
+    {
+      "type": "Flavor Choice",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Ginger Brew",
+          "price": "0.00"
+        }
+      ]
+    }
+  ]
+}

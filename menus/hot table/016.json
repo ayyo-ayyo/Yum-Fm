@@ -1,0 +1,21 @@
+{
+  "name": "DESSERT BAR",
+  "price": "0.00",
+  "options": [
+    {
+      "type": "DESSERT BAR SELECTION",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "CHOCOLATE BROWNIE",
+          "price": "3.99"
+        },
+        {
+          "name": "MARSHMALLOW BAR",
+          "price": "3.75"
+        }
+      ]
+    }
+  ]
+}

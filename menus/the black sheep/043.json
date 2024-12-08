@@ -1,0 +1,41 @@
+{
+  "name": "Chips",
+  "price": "2.75",
+  "options": [
+    {
+      "type": "Flavor Choice",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Jalape\u00f1o",
+          "price": "0.00"
+        },
+        {
+          "name": "Sea Salted",
+          "price": "0.00"
+        },
+        {
+          "name": "Sea Salt and Vinegar",
+          "price": "0.00"
+        },
+        {
+          "name": "Sweet chili",
+          "price": "0.00"
+        },
+        {
+          "name": "Buffalo ranch",
+          "price": "0.00"
+        },
+        {
+          "name": "Barbeque",
+          "price": "0.00"
+        },
+        {
+          "name": "Jalapeno",
+          "price": "0.00"
+        }
+      ]
+    }
+  ]
+}

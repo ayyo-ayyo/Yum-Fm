@@ -1,0 +1,36 @@
+{
+  "name": "Turmeric Latte",
+  "price": "6.00",
+  "options": [
+    {
+      "type": "Flavor Choice",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Sweetened",
+          "price": "0.00"
+        },
+        {
+          "name": "Unsweetened",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Turmeric Latte Preparation Choice",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Drink By Itself",
+          "price": "0.00"
+        },
+        {
+          "name": "Regular",
+          "price": "0.00"
+        }
+      ]
+    }
+  ]
+}

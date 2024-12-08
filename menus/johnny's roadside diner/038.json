@@ -1,0 +1,17 @@
+{
+  "name": "Hash",
+  "price": "6.75",
+  "options": [
+    {
+      "type": "Corned Beef MOD",
+      "required": 0,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Crispy Hash",
+          "price": "0.00"
+        }
+      ]
+    }
+  ]
+}

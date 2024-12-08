@@ -1,0 +1,75 @@
+{
+  "name": "Chicken piccata",
+  "price": "11.25",
+  "options": [
+    {
+      "type": "Recommended Desserts",
+      "required": 0,
+      "upto": 5,
+      "features": [
+        {
+          "name": "Cookies",
+          "price": "3.75"
+        },
+        {
+          "name": "Cannoli",
+          "price": "3.75"
+        },
+        {
+          "name": "Brownie",
+          "price": "4.75"
+        },
+        {
+          "name": "Lemon Square",
+          "price": "4.75"
+        },
+        {
+          "name": "Chocolate Mousse Cup",
+          "price": "5.75"
+        }
+      ]
+    },
+    {
+      "type": "Recommended Beverages",
+      "required": 0,
+      "upto": 5,
+      "features": [
+        {
+          "name": "Iced Latt\u00e9",
+          "price": "4.75"
+        },
+        {
+          "name": "Latt\u00e9",
+          "price": "4.75"
+        },
+        {
+          "name": "Iced Chai Latt\u00e9",
+          "price": "4.75"
+        },
+        {
+          "name": "San Pellegrino Sparkling Italian Drink",
+          "price": "3.25"
+        },
+        {
+          "name": "Joe Tea",
+          "price": "3.75"
+        }
+      ]
+    },
+    {
+      "type": "Recommended Sides And Apps",
+      "required": 0,
+      "upto": 2,
+      "features": [
+        {
+          "name": "Chips",
+          "price": "2.75"
+        },
+        {
+          "name": "Cabot chips",
+          "price": "3.60"
+        }
+      ]
+    }
+  ]
+}

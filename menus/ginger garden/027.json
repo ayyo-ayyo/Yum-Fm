@@ -1,0 +1,41 @@
+{
+  "name": "Dumplings In Hot Chili Oil (6)",
+  "price": "8.50",
+  "options": [
+    {
+      "type": "Allergy Notice",
+      "required": 0,
+      "upto": 7,
+      "features": [
+        {
+          "name": "Seafood Allergy",
+          "price": "0.00"
+        },
+        {
+          "name": "Shellfish Allergy",
+          "price": "0.00"
+        },
+        {
+          "name": "Nut Allergy",
+          "price": "0.00"
+        },
+        {
+          "name": "Peanut Allergy",
+          "price": "0.00"
+        },
+        {
+          "name": "Dairy Allergy",
+          "price": "0.00"
+        },
+        {
+          "name": "Sesame Allergy",
+          "price": "0.00"
+        },
+        {
+          "name": "Can Not Make Gluten Free",
+          "price": "0.00"
+        }
+      ]
+    }
+  ]
+}

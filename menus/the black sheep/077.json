@@ -1,0 +1,25 @@
+{
+  "name": "Natalie's Juice",
+  "price": "4.99",
+  "options": [
+    {
+      "type": "Flavor Choice",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Tangerine",
+          "price": "0.00"
+        },
+        {
+          "name": "Orange",
+          "price": "0.00"
+        },
+        {
+          "name": "Lemonade",
+          "price": "0.00"
+        }
+      ]
+    }
+  ]
+}

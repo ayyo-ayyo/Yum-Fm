@@ -1,0 +1,21 @@
+{
+  "name": "Fresh Brewed Coffee",
+  "price": "3.89",
+  "options": [
+    {
+      "type": "Choose",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Large",
+          "price": "4.19"
+        },
+        {
+          "name": "Medium",
+          "price": "3.89"
+        }
+      ]
+    }
+  ]
+}

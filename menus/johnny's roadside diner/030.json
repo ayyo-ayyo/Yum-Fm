@@ -1,0 +1,103 @@
+{
+  "name": "Breakfast Rito",
+  "price": "15.70",
+  "options": [
+    {
+      "type": "Breakfast Sides",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Homies",
+          "price": "Includes customization"
+        },
+        {
+          "name": "Side Salad",
+          "price": "Includes customization"
+        },
+        {
+          "name": "SUB Tots",
+          "price": "2.25"
+        },
+        {
+          "name": "SUB Fries",
+          "price": "2.25"
+        },
+        {
+          "name": "SUB Fruit",
+          "price": "3.40"
+        },
+        {
+          "name": "SUB Sliced Tomato",
+          "price": "0.00"
+        },
+        {
+          "name": "SUB Beans",
+          "price": "0.00"
+        },
+        {
+          "name": "NO Side",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Breakfast Rito MOD",
+      "required": 0,
+      "upto": null,
+      "features": [
+        {
+          "name": "ADD Guac",
+          "price": "2.25"
+        },
+        {
+          "name": "NO Eggs",
+          "price": "0.00"
+        },
+        {
+          "name": "NO Onions",
+          "price": "0.00"
+        },
+        {
+          "name": "NO Peppers",
+          "price": "0.00"
+        },
+        {
+          "name": "NO Chipolte S.C.",
+          "price": "0.00"
+        },
+        {
+          "name": "NO Beans",
+          "price": "0.00"
+        },
+        {
+          "name": "NO Cheddar",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Recommended Sides And Apps",
+      "required": 0,
+      "upto": 4,
+      "features": [
+        {
+          "name": "Bacon",
+          "price": "4.50"
+        },
+        {
+          "name": "Single Pancake",
+          "price": "5.60"
+        },
+        {
+          "name": "Hash",
+          "price": "6.75"
+        },
+        {
+          "name": "Sausage",
+          "price": "4.50"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,283 @@
+{
+  "name": "Bagels (3)",
+  "price": "6.89",
+  "options": [
+    {
+      "type": "Sliced Choice",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Not Sliced",
+          "price": "0.00"
+        },
+        {
+          "name": "Sliced",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "1st Bagel Choice",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Asiago Parmesan Bagel",
+          "price": "0.30"
+        },
+        {
+          "name": "Blueberry Bagel",
+          "price": "0.30"
+        },
+        {
+          "name": "Cheesy Hasbrown Bagel",
+          "price": "0.90"
+        },
+        {
+          "name": "Cinnamon Raisin Bagel",
+          "price": "0.00"
+        },
+        {
+          "name": "Cinnamon Sugar Bagel",
+          "price": "0.30"
+        },
+        {
+          "name": "Everything Bagel",
+          "price": "0.00"
+        },
+        {
+          "name": "Five Cheese Bagel",
+          "price": "0.90"
+        },
+        {
+          "name": "Jalapeno Cheddar Bagel",
+          "price": "0.90"
+        },
+        {
+          "name": "Maple French Toast",
+          "price": "0.90"
+        },
+        {
+          "name": "Onion Bagel",
+          "price": "0.00"
+        },
+        {
+          "name": "Plain Bagel",
+          "price": "0.00"
+        },
+        {
+          "name": "Poppy Seed Bagel",
+          "price": "0.00"
+        },
+        {
+          "name": "Pumpernickel Bagel",
+          "price": "0.00"
+        },
+        {
+          "name": "Rosemary Olive Bagel",
+          "price": "0.30"
+        },
+        {
+          "name": "Sesame Bagel",
+          "price": "0.00"
+        },
+        {
+          "name": "Whole Wheat Bagel",
+          "price": "0.30"
+        }
+      ]
+    },
+    {
+      "type": "2nd Bagel Choice",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Asiago Parmesan Bagel",
+          "price": "0.30"
+        },
+        {
+          "name": "Blueberry Bagel",
+          "price": "0.30"
+        },
+        {
+          "name": "Cheesy Hasbrown Bagel",
+          "price": "0.90"
+        },
+        {
+          "name": "Cinnamon Raisin Bagel",
+          "price": "0.00"
+        },
+        {
+          "name": "Cinnamon Sugar Bagel",
+          "price": "0.30"
+        },
+        {
+          "name": "Everything Bagel",
+          "price": "0.00"
+        },
+        {
+          "name": "Five Cheese Bagel",
+          "price": "0.90"
+        },
+        {
+          "name": "Jalapeno Cheddar Bagel",
+          "price": "0.90"
+        },
+        {
+          "name": "Maple French Toast",
+          "price": "0.90"
+        },
+        {
+          "name": "Onion Bagel",
+          "price": "0.00"
+        },
+        {
+          "name": "Plain Bagel",
+          "price": "0.00"
+        },
+        {
+          "name": "Poppy Seed Bagel",
+          "price": "0.00"
+        },
+        {
+          "name": "Pumpernickel Bagel",
+          "price": "0.00"
+        },
+        {
+          "name": "Rosemary Olive Bagel",
+          "price": "0.30"
+        },
+        {
+          "name": "Sesame Bagel",
+          "price": "0.00"
+        },
+        {
+          "name": "Whole Wheat Bagel",
+          "price": "0.30"
+        }
+      ]
+    },
+    {
+      "type": "3rd Bagel Choice",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Asiago Parmesan Bagel",
+          "price": "0.30"
+        },
+        {
+          "name": "Blueberry Bagel",
+          "price": "0.30"
+        },
+        {
+          "name": "Cheesy Hasbrown Bagel",
+          "price": "0.90"
+        },
+        {
+          "name": "Cinnamon Raisin Bagel",
+          "price": "0.00"
+        },
+        {
+          "name": "Cinnamon Sugar Bagel",
+          "price": "0.30"
+        },
+        {
+          "name": "Everything Bagel",
+          "price": "0.00"
+        },
+        {
+          "name": "Five Cheese Bagel",
+          "price": "0.90"
+        },
+        {
+          "name": "Jalapeno Cheddar Bagel",
+          "price": "0.90"
+        },
+        {
+          "name": "Maple French Toast",
+          "price": "0.90"
+        },
+        {
+          "name": "Onion Bagel",
+          "price": "0.00"
+        },
+        {
+          "name": "Plain Bagel",
+          "price": "0.00"
+        },
+        {
+          "name": "Poppy Seed Bagel",
+          "price": "0.00"
+        },
+        {
+          "name": "Pumpernickel Bagel",
+          "price": "0.00"
+        },
+        {
+          "name": "Rosemary Olive Bagel",
+          "price": "0.30"
+        },
+        {
+          "name": "Sesame Bagel",
+          "price": "0.00"
+        },
+        {
+          "name": "Whole Wheat Bagel",
+          "price": "0.30"
+        }
+      ]
+    },
+    {
+      "type": "Recommended Beverages",
+      "required": 0,
+      "upto": 5,
+      "features": [
+        {
+          "name": "NEW! Caramel Cream Cold Brew",
+          "price": "5.69"
+        },
+        {
+          "name": "NEW! Vanilla Cream Cold Brew",
+          "price": "5.69"
+        },
+        {
+          "name": "NEW! Chocolate Cream Cold Brew",
+          "price": "5.69"
+        },
+        {
+          "name": "Bottled OJ",
+          "price": "4.49"
+        },
+        {
+          "name": "Orange Juice, Small",
+          "price": "5.99"
+        }
+      ]
+    },
+    {
+      "type": "Recommended Side And App",
+      "required": 0,
+      "upto": null,
+      "features": [
+        {
+          "name": "Sea Salt Kettle Chips",
+          "price": "2.59"
+        }
+      ]
+    },
+    {
+      "type": "Recommended Dessert",
+      "required": 0,
+      "upto": null,
+      "features": [
+        {
+          "name": "Chocolate Chip Cookie",
+          "price": "3.39"
+        }
+      ]
+    }
+  ]
+}

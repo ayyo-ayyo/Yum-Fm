@@ -1,0 +1,29 @@
+{
+  "name": "Cabot chips",
+  "price": "3.60",
+  "options": [
+    {
+      "type": "Flavor choice",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Sea salt original",
+          "price": "0.00"
+        },
+        {
+          "name": "Sour Cream and French Onion",
+          "price": "0.00"
+        },
+        {
+          "name": "Wickedly Habanero and Cheddar",
+          "price": "0.00"
+        },
+        {
+          "name": "Seriously Sharp Cheddar and Sour Cream",
+          "price": "0.00"
+        }
+      ]
+    }
+  ]
+}

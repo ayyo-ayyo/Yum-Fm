@@ -1,0 +1,171 @@
+{
+  "name": "Curry Shrimp",
+  "price": "16.50",
+  "options": [
+    {
+      "type": "Rice Choices 2",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "White Rice",
+          "price": "0.00"
+        },
+        {
+          "name": "Brown Rice",
+          "price": "0.00"
+        },
+        {
+          "name": "No Rice",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Allergy Notice",
+      "required": 0,
+      "upto": 7,
+      "features": [
+        {
+          "name": "Gluten Free",
+          "price": "0.00"
+        },
+        {
+          "name": "Seafood Allergy",
+          "price": "0.00"
+        },
+        {
+          "name": "Shellfish Allergy",
+          "price": "0.00"
+        },
+        {
+          "name": "Nut Allergy",
+          "price": "0.00"
+        },
+        {
+          "name": "Peanut Allergy",
+          "price": "0.00"
+        },
+        {
+          "name": "Dairy Allergy",
+          "price": "0.00"
+        },
+        {
+          "name": "Sesame Allergy",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Extras",
+      "required": 0,
+      "upto": 2,
+      "features": [
+        {
+          "name": "Extra Vegetable-",
+          "price": "2.00"
+        },
+        {
+          "name": "Extra Jump Shrimp /Pcs",
+          "price": "2.00"
+        }
+      ]
+    },
+    {
+      "type": "No1",
+      "required": 0,
+      "upto": 7,
+      "features": [
+        {
+          "name": "No Carrot",
+          "price": "0.00"
+        },
+        {
+          "name": "No Celery",
+          "price": "0.00"
+        },
+        {
+          "name": "No Mushroom",
+          "price": "0.00"
+        },
+        {
+          "name": "No Snow Pea",
+          "price": "0.00"
+        },
+        {
+          "name": "No Onion",
+          "price": "0.00"
+        },
+        {
+          "name": "No Red & Green Pepper",
+          "price": "0.00"
+        },
+        {
+          "name": "No Pineapple",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Spicy",
+      "required": 0,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Extra Spicy",
+          "price": "0.00"
+        },
+        {
+          "name": "Less Spicy",
+          "price": "0.00"
+        },
+        {
+          "name": "No Spicy",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Recommended Sides And Apps",
+      "required": 0,
+      "upto": 5,
+      "features": [
+        {
+          "name": "Crab Rangoon (6)",
+          "price": "7.50"
+        },
+        {
+          "name": "Meat Dumplings (7)",
+          "price": "7.50"
+        },
+        {
+          "name": "Scallion Pancake (8)",
+          "price": "7.50"
+        },
+        {
+          "name": "Egg Roll (L)",
+          "price": "2.25"
+        },
+        {
+          "name": "Chicken Fingers",
+          "price": "7.50"
+        }
+      ]
+    },
+    {
+      "type": "Recommended Beverages",
+      "required": 0,
+      "upto": 2,
+      "features": [
+        {
+          "name": "Coke",
+          "price": "2.99"
+        },
+        {
+          "name": "Sprite",
+          "price": "2.99"
+        }
+      ]
+    }
+  ]
+}

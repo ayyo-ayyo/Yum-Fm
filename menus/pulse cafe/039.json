@@ -1,0 +1,47 @@
+{
+  "name": "Orzo Latte",
+  "price": "5.50",
+  "options": [
+    {
+      "type": "Flavor Choice",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Sweetened",
+          "price": "0.00"
+        },
+        {
+          "name": "Unsweetened",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Serving Choice",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Drink By Itself",
+          "price": "0.00"
+        },
+        {
+          "name": "Regular",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Orzo Latte Preparation Choice",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Regular",
+          "price": "0.00"
+        }
+      ]
+    }
+  ]
+}

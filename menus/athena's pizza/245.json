@@ -1,0 +1,274 @@
+{
+  "name": "Spaghetti",
+  "price": "17.99",
+  "options": [
+    {
+      "type": "Side Choice",
+      "required": 2,
+      "upto": 2,
+      "features": [
+        {
+          "name": "Cheese",
+          "price": "0.00"
+        },
+        {
+          "name": "Marinara",
+          "price": "0.00"
+        },
+        {
+          "name": "Meat Sauce",
+          "price": "0.00"
+        },
+        {
+          "name": "No Cheese",
+          "price": "0.00"
+        },
+        {
+          "name": "No Sauce",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Ingredients Option",
+      "required": 0,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Chicken",
+          "price": "1.76"
+        },
+        {
+          "name": "Eggplant",
+          "price": "1.76"
+        },
+        {
+          "name": "Meatballs",
+          "price": "1.26"
+        },
+        {
+          "name": "Mushrooms",
+          "price": "1.76"
+        },
+        {
+          "name": "Plain",
+          "price": "0.00"
+        },
+        {
+          "name": "Sausage",
+          "price": "1.76"
+        },
+        {
+          "name": "Veal",
+          "price": "1.76"
+        }
+      ]
+    },
+    {
+      "type": "Remove Option",
+      "required": 0,
+      "upto": 2,
+      "features": [
+        {
+          "name": "Garlic Bread",
+          "price": "0.00"
+        },
+        {
+          "name": "Salad",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Dressing Addition",
+      "required": 0,
+      "upto": 13,
+      "features": [
+        {
+          "name": "Balsamic Vinaigrette",
+          "price": "0.00"
+        },
+        {
+          "name": "Bleu Cheese",
+          "price": "0.50"
+        },
+        {
+          "name": "Ceasar",
+          "price": "0.00"
+        },
+        {
+          "name": "French",
+          "price": "0.00"
+        },
+        {
+          "name": "Greek",
+          "price": "0.00"
+        },
+        {
+          "name": "Honey Mustard",
+          "price": "0.00"
+        },
+        {
+          "name": "House",
+          "price": "0.00"
+        },
+        {
+          "name": "Italian",
+          "price": "0.50"
+        },
+        {
+          "name": "No Dresing",
+          "price": "0.00"
+        },
+        {
+          "name": "Oil Vinegar",
+          "price": "0.00"
+        },
+        {
+          "name": "Ranch",
+          "price": "0.00"
+        },
+        {
+          "name": "Russian",
+          "price": "0.00"
+        },
+        {
+          "name": "Vinegar",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Dressing Option",
+      "required": 0,
+      "upto": 12,
+      "features": [
+        {
+          "name": "Italian",
+          "price": "0.00"
+        },
+        {
+          "name": "Balsamic Vinagirette",
+          "price": "0.00"
+        },
+        {
+          "name": "Bleu Cheese",
+          "price": "0.50"
+        },
+        {
+          "name": "Caesar",
+          "price": "0.00"
+        },
+        {
+          "name": "French",
+          "price": "0.00"
+        },
+        {
+          "name": "Greek",
+          "price": "0.00"
+        },
+        {
+          "name": "Honey Mustard",
+          "price": "0.00"
+        },
+        {
+          "name": "House",
+          "price": "0.00"
+        },
+        {
+          "name": "Oil Vinegar",
+          "price": "0.00"
+        },
+        {
+          "name": "Ranch",
+          "price": "0.00"
+        },
+        {
+          "name": "Russian",
+          "price": "0.00"
+        },
+        {
+          "name": "Vinegar",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Recommended Beverages",
+      "required": 0,
+      "upto": 5,
+      "features": [
+        {
+          "name": "Pepsi",
+          "price": "3.75"
+        },
+        {
+          "name": "Root Beer",
+          "price": "3.75"
+        },
+        {
+          "name": "Diet Pepsi",
+          "price": "3.75"
+        },
+        {
+          "name": "Ginger Al",
+          "price": "3.75"
+        },
+        {
+          "name": "Pure Leaf Tea",
+          "price": "3.75"
+        }
+      ]
+    },
+    {
+      "type": "Recommended Sides And Apps",
+      "required": 0,
+      "upto": 5,
+      "features": [
+        {
+          "name": "Spicy Curly Fries",
+          "price": "9.25"
+        },
+        {
+          "name": "Mozz Sticks",
+          "price": "12.99"
+        },
+        {
+          "name": "Potato Skins",
+          "price": "13.25"
+        },
+        {
+          "name": "Chicken Fingers",
+          "price": "14.49"
+        },
+        {
+          "name": "Super Fries",
+          "price": "13.99"
+        }
+      ]
+    },
+    {
+      "type": "Recommended Desserts",
+      "required": 0,
+      "upto": 4,
+      "features": [
+        {
+          "name": "Chocolate Cake",
+          "price": "6.99"
+        },
+        {
+          "name": "Baklava",
+          "price": "5.49"
+        },
+        {
+          "name": "Fried Dough",
+          "price": "8.49"
+        },
+        {
+          "name": "Cheese Cake",
+          "price": "6.49"
+        }
+      ]
+    }
+  ]
+}

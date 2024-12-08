@@ -1,0 +1,56 @@
+{
+  "name": "Sweet Tofu Skin",
+  "price": "5.00",
+  "options": [
+    {
+      "type": "Sushi Or Sashimi",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Sushi",
+          "price": "0.00"
+        },
+        {
+          "name": "Sashimi",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Allergy Notice",
+      "required": 0,
+      "upto": 7,
+      "features": [
+        {
+          "name": "Gluten Free",
+          "price": "0.00"
+        },
+        {
+          "name": "Seafood Allergy",
+          "price": "0.00"
+        },
+        {
+          "name": "Shellfish Allergy",
+          "price": "0.00"
+        },
+        {
+          "name": "Nut Allergy",
+          "price": "0.00"
+        },
+        {
+          "name": "Peanut Allergy",
+          "price": "0.00"
+        },
+        {
+          "name": "Dairy Allergy",
+          "price": "0.00"
+        },
+        {
+          "name": "Sesame Allergy",
+          "price": "0.00"
+        }
+      ]
+    }
+  ]
+}

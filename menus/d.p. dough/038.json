@@ -1,0 +1,75 @@
+{
+  "name": "Safety Zone",
+  "price": "10.99",
+  "options": [
+    {
+      "type": "EXTRA CHEESE",
+      "required": 0,
+      "upto": 1,
+      "features": [
+        {
+          "name": "EXTRA CHEESE",
+          "price": "0.99"
+        }
+      ]
+    },
+    {
+      "type": "Hook it Up! Crust",
+      "required": 0,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Hook It Up! Crust",
+          "price": "0.99"
+        }
+      ]
+    },
+    {
+      "type": "Choose Your Side Sauce",
+      "required": 0,
+      "upto": 10,
+      "features": [
+        {
+          "name": "Side BBQ",
+          "price": "0.99"
+        },
+        {
+          "name": "Side Blue Cheese",
+          "price": "0.99"
+        },
+        {
+          "name": "Side Garlic Butter",
+          "price": "0.99"
+        },
+        {
+          "name": "Side Hot Sauce",
+          "price": "0.99"
+        },
+        {
+          "name": "Side Jalapeno Ranch",
+          "price": "0.99"
+        },
+        {
+          "name": "Side Ketchup",
+          "price": "0.99"
+        },
+        {
+          "name": "Side Marinara",
+          "price": "0.99"
+        },
+        {
+          "name": "Side Ranch",
+          "price": "0.99"
+        },
+        {
+          "name": "Side Sour Cream",
+          "price": "0.99"
+        },
+        {
+          "name": "Side Sweet Chili",
+          "price": "0.99"
+        }
+      ]
+    }
+  ]
+}

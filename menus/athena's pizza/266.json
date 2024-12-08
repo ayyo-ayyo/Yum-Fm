@@ -1,0 +1,49 @@
+{
+  "name": "Pure Leaf Tea",
+  "price": "3.75",
+  "options": [
+    {
+      "type": "Flavor Choice",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Diet Lemon",
+          "price": "0.00"
+        },
+        {
+          "name": "Diet Peach",
+          "price": "0.00"
+        },
+        {
+          "name": "Honey Green Tea",
+          "price": "0.00"
+        },
+        {
+          "name": "Lemon",
+          "price": "0.00"
+        },
+        {
+          "name": "Peach",
+          "price": "0.00"
+        },
+        {
+          "name": "Rasberry",
+          "price": "0.00"
+        },
+        {
+          "name": "Sweet Tea",
+          "price": "0.00"
+        },
+        {
+          "name": "Tea Lemonade",
+          "price": "0.00"
+        },
+        {
+          "name": "Unsweetened",
+          "price": "0.00"
+        }
+      ]
+    }
+  ]
+}

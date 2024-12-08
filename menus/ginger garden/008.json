@@ -1,0 +1,48 @@
+{
+  "name": "Tofu W. Vegetable Soup (For Two)",
+  "price": "8.00",
+  "options": [
+    {
+      "type": "Add",
+      "required": 0,
+      "upto": 2,
+      "features": [
+        {
+          "name": "Add Soft Tofu",
+          "price": "2.00"
+        },
+        {
+          "name": "Add Vegetable",
+          "price": "2.00"
+        }
+      ]
+    },
+    {
+      "type": "No For Tofu Soup",
+      "required": 0,
+      "upto": 5,
+      "features": [
+        {
+          "name": "No Soft Tofu",
+          "price": "0.00"
+        },
+        {
+          "name": "No Napa",
+          "price": "0.00"
+        },
+        {
+          "name": "No Carrot",
+          "price": "0.00"
+        },
+        {
+          "name": "No Celery",
+          "price": "0.00"
+        },
+        {
+          "name": "No Mushroom",
+          "price": "0.00"
+        }
+      ]
+    }
+  ]
+}

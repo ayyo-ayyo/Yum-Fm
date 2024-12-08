@@ -1,0 +1,51 @@
+{
+  "name": "Potato Skins",
+  "price": "13.25",
+  "options": [
+    {
+      "type": "Remove Option",
+      "required": 0,
+      "upto": 2,
+      "features": [
+        {
+          "name": "Cheese",
+          "price": "0.00"
+        },
+        {
+          "name": "Sour Cream",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Preparation Option",
+      "required": 0,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Well Done",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Ingredients Option",
+      "required": 0,
+      "upto": 3,
+      "features": [
+        {
+          "name": "Bacon",
+          "price": "1.00"
+        },
+        {
+          "name": "Cheese",
+          "price": "1.00"
+        },
+        {
+          "name": "Sour Cream",
+          "price": "0.25"
+        }
+      ]
+    }
+  ]
+}

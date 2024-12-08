@@ -1,0 +1,203 @@
+{
+  "name": "Chamomile Milk Tea",
+  "price": "6.40",
+  "options": [
+    {
+      "type": "Ice Levels Choice",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Extra Ice",
+          "price": "0.00"
+        },
+        {
+          "name": "Light Ice",
+          "price": "0.00"
+        },
+        {
+          "name": "No Ice",
+          "price": "0.00"
+        },
+        {
+          "name": "Standard Ice",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Preparation Choice",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Cold",
+          "price": "0.00"
+        },
+        {
+          "name": "Hot",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Sweetness Level Choice",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Normal Sweet - 100%",
+          "price": "0.00"
+        },
+        {
+          "name": "Tad Sweet - 25%",
+          "price": "0.00"
+        },
+        {
+          "name": "1/2 Sweet - 50%",
+          "price": "0.00"
+        },
+        {
+          "name": "Less Sweet - 75%",
+          "price": "0.00"
+        },
+        {
+          "name": "Extra Sweet - 125%",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Topping Choice",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Aloe",
+          "price": "0.00"
+        },
+        {
+          "name": "Boba",
+          "price": "0.00"
+        },
+        {
+          "name": "Fruit Jelly",
+          "price": "0.00"
+        },
+        {
+          "name": "Grass Jelly",
+          "price": "0.00"
+        },
+        {
+          "name": "Lychee Jelly",
+          "price": "0.00"
+        },
+        {
+          "name": "Lychee Pop",
+          "price": "0.00"
+        },
+        {
+          "name": "Mango Pop",
+          "price": "0.00"
+        },
+        {
+          "name": "No Topping",
+          "price": "0.00"
+        },
+        {
+          "name": "Oreo Crumbs",
+          "price": "0.00"
+        },
+        {
+          "name": "Pudding",
+          "price": "0.00"
+        },
+        {
+          "name": "Red Bean",
+          "price": "0.00"
+        },
+        {
+          "name": "Strawberry Pop",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Chamomile Milk Tea Size",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Regular",
+          "price": "0.00"
+        },
+        {
+          "name": "Large",
+          "price": "0.60"
+        }
+      ]
+    },
+    {
+      "type": "Preparation Option",
+      "required": 0,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Substitute Soy Milk",
+          "price": "0.00"
+        },
+        {
+          "name": "Substitute Oat Milk",
+          "price": "1.20"
+        }
+      ]
+    },
+    {
+      "type": "Topping Addition",
+      "required": 0,
+      "upto": 10,
+      "features": [
+        {
+          "name": "Boba",
+          "price": "0.60"
+        },
+        {
+          "name": "Lychee Jelly",
+          "price": "0.60"
+        },
+        {
+          "name": "Fruit Jelly",
+          "price": "0.60"
+        },
+        {
+          "name": "Strawberry Pop",
+          "price": "0.60"
+        },
+        {
+          "name": "Mango Pop",
+          "price": "0.60"
+        },
+        {
+          "name": "Lychee Pop",
+          "price": "0.60"
+        },
+        {
+          "name": "Pudding",
+          "price": "0.60"
+        },
+        {
+          "name": "Oreo Crumbs",
+          "price": "0.60"
+        },
+        {
+          "name": "Red Bean",
+          "price": "0.60"
+        },
+        {
+          "name": "Aloe",
+          "price": "0.60"
+        }
+      ]
+    }
+  ]
+}

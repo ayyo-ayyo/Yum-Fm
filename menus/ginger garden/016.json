@@ -1,0 +1,25 @@
+{
+  "name": "Vietnamese Spring Roll (2)",
+  "price": "8.50",
+  "options": [
+    {
+      "type": "Size",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Tofu",
+          "price": "0.00"
+        },
+        {
+          "name": "Chicken",
+          "price": "0.00"
+        },
+        {
+          "name": "Shrimp",
+          "price": "0.00"
+        }
+      ]
+    }
+  ]
+}

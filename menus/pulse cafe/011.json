@@ -1,0 +1,147 @@
+{
+  "name": "Pulse Burger",
+  "price": "18.00",
+  "options": [
+    {
+      "type": "Potatoes Choice",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Regular",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Bun Choice",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Gluten Free",
+          "price": "2.00"
+        },
+        {
+          "name": "No Bun",
+          "price": "0.00"
+        },
+        {
+          "name": "Regular",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Patty Choice",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "New Breed Patty",
+          "price": "0.00"
+        },
+        {
+          "name": "Impossible Patty",
+          "price": "0.00"
+        },
+        {
+          "name": "Black Bean Patty",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Item Additions",
+      "required": 0,
+      "upto": 3,
+      "features": [
+        {
+          "name": "Mushrooms",
+          "price": "1.25"
+        },
+        {
+          "name": "Guacamole",
+          "price": "2.50"
+        },
+        {
+          "name": "Avocado",
+          "price": "2.50"
+        }
+      ]
+    },
+    {
+      "type": "Salad Additions",
+      "required": 0,
+      "upto": null,
+      "features": [
+        {
+          "name": "Side Caesar Salad",
+          "price": "4.00"
+        },
+        {
+          "name": "Side Kale Salad",
+          "price": "3.50"
+        },
+        {
+          "name": "Side Salad",
+          "price": "2.00"
+        }
+      ]
+    },
+    {
+      "type": "Sauce Choice",
+      "required": 0,
+      "upto": null,
+      "features": [
+        {
+          "name": "No Sauce",
+          "price": "0.00"
+        },
+        {
+          "name": "Extra Garlic Aioli",
+          "price": "0.75"
+        },
+        {
+          "name": "Extra Thousand Sauce",
+          "price": "0.75"
+        },
+        {
+          "name": "Extra Chipotle Aioli",
+          "price": "0.75"
+        },
+        {
+          "name": "Extra Chimi",
+          "price": "0.75"
+        }
+      ]
+    },
+    {
+      "type": "Recommended Beverages",
+      "required": 0,
+      "upto": 5,
+      "features": [
+        {
+          "name": "Green Jolly Smoothie",
+          "price": "9.50"
+        },
+        {
+          "name": "Pina Colada",
+          "price": "9.50"
+        },
+        {
+          "name": "Acai",
+          "price": "9.50"
+        },
+        {
+          "name": "Strawberry Mango Banana",
+          "price": "9.50"
+        },
+        {
+          "name": "Almond Joy",
+          "price": "9.50"
+        }
+      ]
+    }
+  ]
+}

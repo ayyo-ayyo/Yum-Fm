@@ -1,0 +1,25 @@
+{
+  "name": "12 oz. Can",
+  "price": "1.49",
+  "options": [
+    {
+      "type": "Can Flavors",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Brisk Tea",
+          "price": "0.00"
+        },
+        {
+          "name": "Diet Pepsi",
+          "price": "0.00"
+        },
+        {
+          "name": "Pepsi",
+          "price": "0.00"
+        }
+      ]
+    }
+  ]
+}

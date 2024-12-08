@@ -1,0 +1,60 @@
+{
+  "name": "Steamed Garlic Prawns",
+  "price": "24.00",
+  "options": [
+    {
+      "type": "Rice",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "No Rice",
+          "price": "0.00"
+        },
+        {
+          "name": "White Rice",
+          "price": "0.00"
+        },
+        {
+          "name": "Brown Rice",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Allergy Notice",
+      "required": 0,
+      "upto": 7,
+      "features": [
+        {
+          "name": "Gluten Free",
+          "price": "0.00"
+        },
+        {
+          "name": "Seafood Allergy",
+          "price": "0.00"
+        },
+        {
+          "name": "Shellfish Allergy",
+          "price": "0.00"
+        },
+        {
+          "name": "Nut Allergy",
+          "price": "0.00"
+        },
+        {
+          "name": "Peanut Allergy",
+          "price": "0.00"
+        },
+        {
+          "name": "Dairy Allergy",
+          "price": "0.00"
+        },
+        {
+          "name": "Sesame Allergy",
+          "price": "0.00"
+        }
+      ]
+    }
+  ]
+}

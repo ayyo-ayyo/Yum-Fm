@@ -1,0 +1,25 @@
+{
+  "name": "Cheese Stix",
+  "price": "8.99",
+  "options": [
+    {
+      "type": "Stix Side Sauce",
+      "required": 0,
+      "upto": 3,
+      "features": [
+        {
+          "name": "Side Garlic Butter",
+          "price": "0.99"
+        },
+        {
+          "name": "Side Marinara",
+          "price": "0.99"
+        },
+        {
+          "name": "Side Ranch",
+          "price": "0.99"
+        }
+      ]
+    }
+  ]
+}

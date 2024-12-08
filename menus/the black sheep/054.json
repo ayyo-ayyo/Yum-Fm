@@ -1,0 +1,52 @@
+{
+  "name": "Espresso",
+  "price": "2.50",
+  "options": [
+    {
+      "type": "Preparation Choice",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Single Shot",
+          "price": "0.00"
+        },
+        {
+          "name": "Double Shot",
+          "price": "0.75"
+        }
+      ]
+    },
+    {
+      "type": "Sweetener Addition",
+      "required": 0,
+      "upto": 6,
+      "features": [
+        {
+          "name": "Simple Syrup",
+          "price": "0.00"
+        },
+        {
+          "name": "White Sugar",
+          "price": "0.00"
+        },
+        {
+          "name": "Cane Sugar",
+          "price": "0.00"
+        },
+        {
+          "name": "Splenda",
+          "price": "0.00"
+        },
+        {
+          "name": "Equal",
+          "price": "0.00"
+        },
+        {
+          "name": "Honey",
+          "price": "0.00"
+        }
+      ]
+    }
+  ]
+}

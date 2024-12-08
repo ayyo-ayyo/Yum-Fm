@@ -1,0 +1,21 @@
+{
+  "name": "Hot Tea",
+  "price": "0.00",
+  "options": [
+    {
+      "type": "Choose",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Large",
+          "price": "3.99"
+        },
+        {
+          "name": "Small",
+          "price": "3.39"
+        }
+      ]
+    }
+  ]
+}

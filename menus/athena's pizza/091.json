@@ -1,0 +1,71 @@
+{
+  "name": "Super Curly Fries",
+  "price": "13.99",
+  "options": [
+    {
+      "type": "Remove Option",
+      "required": 0,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Meat Sauce",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Preparation Option",
+      "required": 0,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Well Done",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Ingredients Addition",
+      "required": 0,
+      "upto": 9,
+      "features": [
+        {
+          "name": "American Cheese",
+          "price": "0.25"
+        },
+        {
+          "name": "Bacon",
+          "price": "0.25"
+        },
+        {
+          "name": "Bleu Cheese",
+          "price": "0.25"
+        },
+        {
+          "name": "Ketchup",
+          "price": "0.00"
+        },
+        {
+          "name": "Marinara",
+          "price": "0.25"
+        },
+        {
+          "name": "Pepper",
+          "price": "0.00"
+        },
+        {
+          "name": "Pizza Cheese",
+          "price": "0.50"
+        },
+        {
+          "name": "Salt",
+          "price": "0.00"
+        },
+        {
+          "name": "Sour Cream",
+          "price": "0.25"
+        }
+      ]
+    }
+  ]
+}

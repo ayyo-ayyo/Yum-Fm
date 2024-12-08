@@ -1,0 +1,90 @@
+{
+  "name": "ITALIAN COLDCUT PANINI",
+  "price": "0.00",
+  "options": [
+    {
+      "type": "SELECT SIZE",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "SMALL",
+          "price": "10.75"
+        },
+        {
+          "name": "MEDIUM",
+          "price": "14.29"
+        },
+        {
+          "name": "LARGE",
+          "price": "17.99"
+        },
+        {
+          "name": "WRAP",
+          "price": "14.27"
+        },
+        {
+          "name": "GLUTEN FREE",
+          "price": "12.49"
+        }
+      ]
+    },
+    {
+      "type": "EXTRA MEAT",
+      "required": 0,
+      "upto": 1,
+      "features": [
+        {
+          "name": "EXTRA CHICKEN",
+          "price": "3.75"
+        },
+        {
+          "name": "EXTRA STEAK",
+          "price": "3.75"
+        },
+        {
+          "name": "EXTRA PORK",
+          "price": "3.75"
+        },
+        {
+          "name": "EXTRA TURKEY",
+          "price": "3.75"
+        },
+        {
+          "name": "EXTRA HAM",
+          "price": "3.75"
+        },
+        {
+          "name": "EXTRA TUNA",
+          "price": "3.75"
+        }
+      ]
+    },
+    {
+      "type": "Recommended Desserts",
+      "required": 0,
+      "upto": 2,
+      "features": [
+        {
+          "name": "COOKIE",
+          "price": "3.75"
+        },
+        {
+          "name": "DESSERT BAR",
+          "price": "3.75"
+        }
+      ]
+    },
+    {
+      "type": "Recommended Side And App",
+      "required": 0,
+      "upto": null,
+      "features": [
+        {
+          "name": "KETTLE CHIPS",
+          "price": "1.75"
+        }
+      ]
+    }
+  ]
+}

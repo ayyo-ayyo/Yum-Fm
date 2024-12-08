@@ -1,0 +1,25 @@
+{
+  "name": "Bluewater Juice",
+  "price": "4.50",
+  "options": [
+    {
+      "type": "Flavor Choice",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Regular",
+          "price": "0.00"
+        },
+        {
+          "name": "Cranberry Juice",
+          "price": "0.00"
+        },
+        {
+          "name": "Cranberry Tangerine",
+          "price": "0.00"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "name": "Izze Soda (Self serve)",
+  "price": "4.20",
+  "options": [
+    {
+      "type": "Choose from the following",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Grapefruit",
+          "price": "0.00"
+        },
+        {
+          "name": "Blackberry",
+          "price": "0.00"
+        },
+        {
+          "name": "Clementine",
+          "price": "0.00"
+        }
+      ]
+    }
+  ]
+}

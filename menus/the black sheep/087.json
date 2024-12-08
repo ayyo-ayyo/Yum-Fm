@@ -1,0 +1,21 @@
+{
+  "name": "Health-Ade Kombucha",
+  "price": "6.25",
+  "options": [
+    {
+      "type": "Flavor Choice",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Ginger-Lemon",
+          "price": "0.00"
+        },
+        {
+          "name": "Pomegranate",
+          "price": "0.00"
+        }
+      ]
+    }
+  ]
+}

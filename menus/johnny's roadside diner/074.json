@@ -1,0 +1,49 @@
+{
+  "name": "Side Salad",
+  "price": "4.50",
+  "options": [
+    {
+      "type": "Salad Dressing Choice",
+      "required": 0,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Blue Cheese",
+          "price": "0.00"
+        },
+        {
+          "name": "Ranch",
+          "price": "0.00"
+        },
+        {
+          "name": "1000 Island",
+          "price": "Includes customization"
+        },
+        {
+          "name": "Honey Mustard",
+          "price": "0.00"
+        },
+        {
+          "name": "Balsamic",
+          "price": "0.00"
+        },
+        {
+          "name": "Cesar",
+          "price": "0.00"
+        },
+        {
+          "name": "Lemon Vinegrette",
+          "price": "0.00"
+        },
+        {
+          "name": "Oil & Vin",
+          "price": "0.00"
+        },
+        {
+          "name": "No Dressing",
+          "price": "0.00"
+        }
+      ]
+    }
+  ]
+}

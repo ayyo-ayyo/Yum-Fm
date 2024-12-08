@@ -1,0 +1,28 @@
+{
+  "name": "French Fries",
+  "price": "8.99",
+  "options": [
+    {
+      "type": "Preparation Option",
+      "required": 0,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Well Done",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Ingredients Addition",
+      "required": 0,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Ketchup",
+          "price": "0.00"
+        }
+      ]
+    }
+  ]
+}

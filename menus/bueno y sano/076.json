@@ -1,0 +1,21 @@
+{
+  "name": "Nantucket Nectar (Self serve)",
+  "price": "4.20",
+  "options": [
+    {
+      "type": "Choose from the following",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Orange Mango",
+          "price": "0.00"
+        },
+        {
+          "name": "Lemonade",
+          "price": "0.00"
+        }
+      ]
+    }
+  ]
+}

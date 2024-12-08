@@ -1,0 +1,77 @@
+{
+  "name": "BOTTLED BEVERAGE",
+  "price": "0.00",
+  "options": [
+    {
+      "type": "DRINK SELECTION",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "DASANI WATER",
+          "price": "2.79"
+        },
+        {
+          "name": "SMART WATER",
+          "price": "3.99"
+        },
+        {
+          "name": "GREEN TEA",
+          "price": "3.59"
+        },
+        {
+          "name": "LEMON TEA",
+          "price": "3.59"
+        },
+        {
+          "name": "POWERADE - RED",
+          "price": "3.35"
+        },
+        {
+          "name": "POWERADE - BLUE",
+          "price": "3.35"
+        },
+        {
+          "name": "COKE",
+          "price": "2.99"
+        },
+        {
+          "name": "COKE ZERO",
+          "price": "2.99"
+        },
+        {
+          "name": "DIET COKE",
+          "price": "2.99"
+        },
+        {
+          "name": "SPRITE",
+          "price": "2.99"
+        },
+        {
+          "name": "CAN DRY - LEMON LIME SELTZER",
+          "price": "2.63"
+        },
+        {
+          "name": "CAN DRY - ORANGE SELTZER",
+          "price": "2.63"
+        },
+        {
+          "name": "CAN DRY - TRIPLE BERRY",
+          "price": "2.63"
+        },
+        {
+          "name": "MONSTER",
+          "price": "4.79"
+        },
+        {
+          "name": "MONSTER ZERO SUGAR",
+          "price": "4.79"
+        },
+        {
+          "name": "APPLE JUICE BOX",
+          "price": "1.79"
+        }
+      ]
+    }
+  ]
+}

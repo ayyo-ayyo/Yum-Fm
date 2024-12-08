@@ -1,0 +1,55 @@
+{
+  "name": "Brunch Box",
+  "price": "51.99",
+  "options": [
+    {
+      "type": "Recommended Beverages",
+      "required": 0,
+      "upto": 5,
+      "features": [
+        {
+          "name": "NEW! Caramel Cream Cold Brew",
+          "price": "5.69"
+        },
+        {
+          "name": "NEW! Vanilla Cream Cold Brew",
+          "price": "5.69"
+        },
+        {
+          "name": "NEW! Chocolate Cream Cold Brew",
+          "price": "5.69"
+        },
+        {
+          "name": "Bottled OJ",
+          "price": "4.49"
+        },
+        {
+          "name": "Orange Juice, Small",
+          "price": "5.99"
+        }
+      ]
+    },
+    {
+      "type": "Recommended Side And App",
+      "required": 0,
+      "upto": null,
+      "features": [
+        {
+          "name": "Sea Salt Kettle Chips",
+          "price": "2.59"
+        }
+      ]
+    },
+    {
+      "type": "Recommended Dessert",
+      "required": 0,
+      "upto": null,
+      "features": [
+        {
+          "name": "Chocolate Chip Cookie",
+          "price": "3.39"
+        }
+      ]
+    }
+  ]
+}

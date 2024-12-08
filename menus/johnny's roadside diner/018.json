@@ -1,0 +1,21 @@
+{
+  "name": "Build Your Own",
+  "price": "10.10",
+  "options": [
+    {
+      "type": "Order",
+      "required": 0,
+      "upto": null,
+      "features": [
+        {
+          "name": "",
+          "price": "0.00"
+        },
+        {
+          "name": "Toast Choice",
+          "price": "4.50"
+        }
+      ]
+    }
+  ]
+}

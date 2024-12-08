@@ -1,0 +1,80 @@
+{
+  "name": "Classic Benny",
+  "price": "14.60",
+  "options": [
+    {
+      "type": "Breakfast Sides",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Homies",
+          "price": "Includes customization"
+        },
+        {
+          "name": "Side Salad",
+          "price": "Includes customization"
+        },
+        {
+          "name": "SUB Tots",
+          "price": "2.25"
+        },
+        {
+          "name": "SUB Fries",
+          "price": "2.25"
+        },
+        {
+          "name": "SUB Fruit",
+          "price": "3.40"
+        },
+        {
+          "name": "SUB Sliced Tomato",
+          "price": "0.00"
+        },
+        {
+          "name": "SUB Beans",
+          "price": "0.00"
+        },
+        {
+          "name": "NO Side",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Classic Benny MOD",
+      "required": 0,
+      "upto": null,
+      "features": [
+        {
+          "name": "NO Ham",
+          "price": "0.00"
+        },
+        {
+          "name": "NO Holly",
+          "price": "0.00"
+        },
+        {
+          "name": "Holy On The Side",
+          "price": "0.00"
+        },
+        {
+          "name": "SUB Bacon",
+          "price": "0.00"
+        },
+        {
+          "name": "SUB Sausage",
+          "price": "0.00"
+        },
+        {
+          "name": "SUB Avocado",
+          "price": "3.40"
+        },
+        {
+          "name": "Extra Holly",
+          "price": "1.15"
+        }
+      ]
+    }
+  ]
+}

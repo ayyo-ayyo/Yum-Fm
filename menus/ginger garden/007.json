@@ -1,0 +1,44 @@
+{
+  "name": "Minced Beef Egg Drop Soup (For Two)",
+  "price": "12.00",
+  "options": [
+    {
+      "type": "Extras",
+      "required": 0,
+      "upto": 2,
+      "features": [
+        {
+          "name": "Extra Vegetable-",
+          "price": "2.00"
+        },
+        {
+          "name": "Extra Beef-",
+          "price": "3.00"
+        }
+      ]
+    },
+    {
+      "type": "No1",
+      "required": 0,
+      "upto": 4,
+      "features": [
+        {
+          "name": "No Asparagus",
+          "price": "0.00"
+        },
+        {
+          "name": "No Egg",
+          "price": "0.00"
+        },
+        {
+          "name": "No Cilantro",
+          "price": "0.00"
+        },
+        {
+          "name": "No Beef",
+          "price": "0.00"
+        }
+      ]
+    }
+  ]
+}

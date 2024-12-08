@@ -1,0 +1,84 @@
+{
+  "name": "Homies",
+  "price": "4.50",
+  "options": [
+    {
+      "type": "Homies Add On",
+      "required": 0,
+      "upto": null,
+      "features": [
+        {
+          "name": "Bacon",
+          "price": "1.15"
+        },
+        {
+          "name": "Grilled Onions",
+          "price": "0.60"
+        },
+        {
+          "name": "Hollidaise",
+          "price": "0.60"
+        },
+        {
+          "name": "Grilled Peppers",
+          "price": "0.60"
+        },
+        {
+          "name": "Cheddar Cheese",
+          "price": "1.15"
+        },
+        {
+          "name": "Loaded",
+          "price": "3.40"
+        },
+        {
+          "name": "Crispy Homies",
+          "price": "0.00"
+        },
+        {
+          "name": "Xtra Crispy Homies",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Omelet Cheese Choice",
+      "required": 0,
+      "upto": null,
+      "features": [
+        {
+          "name": "Motz",
+          "price": "1.15"
+        },
+        {
+          "name": "Cheddar",
+          "price": "1.15"
+        },
+        {
+          "name": "Swiss",
+          "price": "1.15"
+        },
+        {
+          "name": "American",
+          "price": "1.15"
+        },
+        {
+          "name": "Pepperjack",
+          "price": "1.15"
+        },
+        {
+          "name": "Feta",
+          "price": "1.15"
+        },
+        {
+          "name": "Goat Cheese",
+          "price": "1.15"
+        },
+        {
+          "name": "NO American",
+          "price": "0.00"
+        }
+      ]
+    }
+  ]
+}

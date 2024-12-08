@@ -1,0 +1,80 @@
+{
+  "name": "Large Rishi",
+  "price": "4.50",
+  "options": [
+    {
+      "type": "Tea Choice",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Berry Blush",
+          "price": "0.00"
+        },
+        {
+          "name": "Ginger",
+          "price": "0.00"
+        },
+        {
+          "name": "Ginger Lime Rooibos",
+          "price": "0.00"
+        },
+        {
+          "name": "Golden Chamomile Blossoms",
+          "price": "0.00"
+        },
+        {
+          "name": "Mushroom Hero",
+          "price": "0.00"
+        },
+        {
+          "name": "Mystic Mint",
+          "price": "0.00"
+        },
+        {
+          "name": "Omija Beauty Berry",
+          "price": "0.00"
+        },
+        {
+          "name": "Patagonia Super Berry",
+          "price": "0.00"
+        },
+        {
+          "name": "Patagonia Wild Guava",
+          "price": "0.00"
+        },
+        {
+          "name": "Peppermint",
+          "price": "0.00"
+        },
+        {
+          "name": "Rooibos",
+          "price": "0.00"
+        },
+        {
+          "name": "Scarlett",
+          "price": "0.00"
+        },
+        {
+          "name": "White Ginseng Detox",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Serving Choice",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Drink By Itself",
+          "price": "0.00"
+        },
+        {
+          "name": "Regular",
+          "price": "0.00"
+        }
+      ]
+    }
+  ]
+}

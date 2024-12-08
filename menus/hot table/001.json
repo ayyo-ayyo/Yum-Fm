@@ -1,0 +1,321 @@
+{
+  "name": "BUILD YOUR OWN PANINI",
+  "price": "0.00",
+  "options": [
+    {
+      "type": "SELECT SIZE",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "SMALL",
+          "price": "10.75"
+        },
+        {
+          "name": "MEDIUM",
+          "price": "14.29"
+        },
+        {
+          "name": "LARGE",
+          "price": "17.99"
+        },
+        {
+          "name": "WRAP",
+          "price": "14.27"
+        },
+        {
+          "name": "GLUTEN FREE",
+          "price": "12.49"
+        }
+      ]
+    },
+    {
+      "type": "SELECT MEAT",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "CHICKEN",
+          "price": "0.00"
+        },
+        {
+          "name": "STEAK",
+          "price": "0.00"
+        },
+        {
+          "name": "PORK",
+          "price": "0.00"
+        },
+        {
+          "name": "TURKEY",
+          "price": "0.00"
+        },
+        {
+          "name": "HAM",
+          "price": "0.00"
+        },
+        {
+          "name": "TUNA",
+          "price": "0.00"
+        },
+        {
+          "name": "NO MEAT (VEGGIE)",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "SELECT SAUCE",
+      "required": 0,
+      "upto": 2,
+      "features": [
+        {
+          "name": "MAYO",
+          "price": "0.00"
+        },
+        {
+          "name": "CHIPOTLE MAYO",
+          "price": "0.00"
+        },
+        {
+          "name": "PESTO MAYO",
+          "price": "0.00"
+        },
+        {
+          "name": "SRIRACHA SAUCE",
+          "price": "0.00"
+        },
+        {
+          "name": "BUFFALO SAUCE",
+          "price": "0.00"
+        },
+        {
+          "name": "BBQ SAUCE",
+          "price": "0.00"
+        },
+        {
+          "name": "STEAK SAUCE",
+          "price": "0.00"
+        },
+        {
+          "name": "KETCHUP",
+          "price": "0.00"
+        },
+        {
+          "name": "YELLOW MUSTARD",
+          "price": "0.00"
+        },
+        {
+          "name": "SPICY MUSTARD",
+          "price": "0.00"
+        },
+        {
+          "name": "HONEY DIJON MUSTARD",
+          "price": "0.00"
+        },
+        {
+          "name": "OLIVE OIL",
+          "price": "0.00"
+        },
+        {
+          "name": "BALSAMIC VINEGAR",
+          "price": "0.00"
+        },
+        {
+          "name": "BUTTERMILK RANCH DRESSING",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "SELECT CHEESE",
+      "required": 0,
+      "upto": 2,
+      "features": [
+        {
+          "name": "AMERICAN",
+          "price": "0.00"
+        },
+        {
+          "name": "SWISS",
+          "price": "0.00"
+        },
+        {
+          "name": "PROVOLONE",
+          "price": "0.00"
+        },
+        {
+          "name": "FRESH MOZZARELLA",
+          "price": "0.00"
+        },
+        {
+          "name": "CRUMBLED FETA",
+          "price": "0.00"
+        },
+        {
+          "name": "SHAVED PARMESAN",
+          "price": "0.00"
+        },
+        {
+          "name": "CRUMBLED BLUE",
+          "price": "0.00"
+        },
+        {
+          "name": "SHREDDED PEPPER JACK",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "EXTRA MEAT",
+      "required": 0,
+      "upto": 1,
+      "features": [
+        {
+          "name": "EXTRA CHICKEN",
+          "price": "3.75"
+        },
+        {
+          "name": "EXTRA STEAK",
+          "price": "3.75"
+        },
+        {
+          "name": "EXTRA PORK",
+          "price": "3.75"
+        },
+        {
+          "name": "EXTRA TURKEY",
+          "price": "3.75"
+        },
+        {
+          "name": "EXTRA HAM",
+          "price": "3.75"
+        },
+        {
+          "name": "EXTRA TUNA",
+          "price": "3.75"
+        }
+      ]
+    },
+    {
+      "type": "SELECT VEGGIES",
+      "required": 0,
+      "upto": 6,
+      "features": [
+        {
+          "name": "GREEN LEAF LETTUCE",
+          "price": "0.00"
+        },
+        {
+          "name": "SPINACH",
+          "price": "0.00"
+        },
+        {
+          "name": "RED CABBAGE",
+          "price": "0.00"
+        },
+        {
+          "name": "CARROTS",
+          "price": "0.00"
+        },
+        {
+          "name": "RED ONIONS",
+          "price": "0.00"
+        },
+        {
+          "name": "GREEN PEPPERS",
+          "price": "0.00"
+        },
+        {
+          "name": "CUCUMBERS",
+          "price": "0.00"
+        },
+        {
+          "name": "BLACK OLIVES",
+          "price": "0.00"
+        },
+        {
+          "name": "CHERRY PEPPERS",
+          "price": "0.00"
+        },
+        {
+          "name": "JALAPENO PEPPERS",
+          "price": "0.00"
+        },
+        {
+          "name": "PICKLES",
+          "price": "0.00"
+        },
+        {
+          "name": "BANANA PEPPERS",
+          "price": "0.00"
+        },
+        {
+          "name": "ROASTED RED PEPPERS",
+          "price": "0.00"
+        },
+        {
+          "name": "ROASTED ONIONS",
+          "price": "0.00"
+        },
+        {
+          "name": "ROASTED MUSHROOMS",
+          "price": "0.00"
+        },
+        {
+          "name": "FIRE ROASTED CORN",
+          "price": "0.00"
+        },
+        {
+          "name": "BLACK BEANS",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "SELECT TOPPINGS",
+      "required": 0,
+      "upto": 2,
+      "features": [
+        {
+          "name": "CRISPY ONIONS",
+          "price": "0.00"
+        },
+        {
+          "name": "SLICED SALAMI",
+          "price": "0.00"
+        },
+        {
+          "name": "CRUMBLED BACON",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Recommended Desserts",
+      "required": 0,
+      "upto": 2,
+      "features": [
+        {
+          "name": "COOKIE",
+          "price": "3.75"
+        },
+        {
+          "name": "DESSERT BAR",
+          "price": "3.75"
+        }
+      ]
+    },
+    {
+      "type": "Recommended Side And App",
+      "required": 0,
+      "upto": null,
+      "features": [
+        {
+          "name": "KETTLE CHIPS",
+          "price": "1.75"
+        }
+      ]
+    }
+  ]
+}

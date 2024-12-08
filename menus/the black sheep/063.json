@@ -1,0 +1,83 @@
+{
+  "name": "Iced Caf\u00e9 Americano",
+  "price": "3.50",
+  "options": [
+    {
+      "type": "Size Choice",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Small (16 Oz)",
+          "price": "0.00"
+        },
+        {
+          "name": "Medium (20 Oz)",
+          "price": "0.25"
+        },
+        {
+          "name": "Large (24 Oz)",
+          "price": "0.50"
+        }
+      ]
+    },
+    {
+      "type": "Sweetener Addition",
+      "required": 0,
+      "upto": 6,
+      "features": [
+        {
+          "name": "Simple Syrup",
+          "price": "0.00"
+        },
+        {
+          "name": "White Sugar",
+          "price": "0.00"
+        },
+        {
+          "name": "Cane Sugar",
+          "price": "0.00"
+        },
+        {
+          "name": "Splenda",
+          "price": "0.00"
+        },
+        {
+          "name": "Equal",
+          "price": "0.00"
+        },
+        {
+          "name": "Honey",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Milk Addition",
+      "required": 0,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Whole Milk",
+          "price": "0.00"
+        },
+        {
+          "name": "Half and Half",
+          "price": "0.00"
+        },
+        {
+          "name": "Almond Milk",
+          "price": "0.00"
+        },
+        {
+          "name": "Oat Milk",
+          "price": "0.00"
+        },
+        {
+          "name": "Skim Milk",
+          "price": "0.00"
+        }
+      ]
+    }
+  ]
+}

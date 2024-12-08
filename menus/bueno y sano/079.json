@@ -1,0 +1,29 @@
+{
+  "name": "Spindrift Sparkling (Self serve)",
+  "price": "3.55",
+  "options": [
+    {
+      "type": "Choose from the following",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Lemon",
+          "price": "0.00"
+        },
+        {
+          "name": "Orange Mango",
+          "price": "0.00"
+        },
+        {
+          "name": "Raspberry Lime",
+          "price": "0.00"
+        },
+        {
+          "name": "Grapefruit",
+          "price": "0.00"
+        }
+      ]
+    }
+  ]
+}

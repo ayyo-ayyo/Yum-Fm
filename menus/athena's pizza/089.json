@@ -1,0 +1,36 @@
+{
+  "name": "Garlic Bread",
+  "price": "5.99",
+  "options": [
+    {
+      "type": "Preparation Option",
+      "required": 0,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Well Done",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Ingredients Addittion",
+      "required": 0,
+      "upto": 3,
+      "features": [
+        {
+          "name": "Meat Sauce",
+          "price": "0.45"
+        },
+        {
+          "name": "Cheese",
+          "price": "0.45"
+        },
+        {
+          "name": "Marinara",
+          "price": "0.25"
+        }
+      ]
+    }
+  ]
+}

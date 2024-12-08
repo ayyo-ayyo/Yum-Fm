@@ -1,0 +1,63 @@
+{
+  "name": "Jalape\u00f1o Poppers",
+  "price": "12.49",
+  "options": [
+    {
+      "type": "Remove Option",
+      "required": 0,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Meat Sauce",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Preparation Option",
+      "required": 0,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Well Done",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Ingredients Addition",
+      "required": 0,
+      "upto": 5,
+      "features": [
+        {
+          "name": "Bleu Cheese",
+          "price": "0.25"
+        },
+        {
+          "name": "Ketchup",
+          "price": "0.00"
+        },
+        {
+          "name": "Marinara",
+          "price": "0.25"
+        },
+        {
+          "name": "Meat Sauce",
+          "price": "0.00"
+        },
+        {
+          "name": "Pepper",
+          "price": "0.00"
+        },
+        {
+          "name": "Salt",
+          "price": "0.00"
+        },
+        {
+          "name": "Sour Cream",
+          "price": "0.25"
+        }
+      ]
+    }
+  ]
+}

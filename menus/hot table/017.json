@@ -1,0 +1,59 @@
+{
+  "name": "KIDS COMBO",
+  "price": "9.59",
+  "options": [
+    {
+      "type": "1. SELECT FOOD",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "SMALL - GRILLED CHEESE",
+          "price": "0.00"
+        },
+        {
+          "name": "SMALL - HAM + CHEESE",
+          "price": "0.00"
+        },
+        {
+          "name": "SMALL - TURKEY + CHEESE",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "2. SELECT DRINK",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "KIDS FOUNTAIN DRINK",
+          "price": "0.00"
+        },
+        {
+          "name": "APPLE JUICE BOX",
+          "price": "0.00"
+        },
+        {
+          "name": "BOTTLED WATER",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "3. SELECT SIDE",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "APPLE",
+          "price": "0.00"
+        },
+        {
+          "name": "POTATO CHIPS",
+          "price": "0.00"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "name": "Cookies",
+  "price": "3.75",
+  "options": [
+    {
+      "type": "Flavor Choice",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Vegan Chocolate Raspberry Cookie",
+          "price": "0.00"
+        },
+        {
+          "name": "Chocolate Chip Cookie",
+          "price": "0.00"
+        },
+        {
+          "name": "Cape Cod Cowboy Cookie",
+          "price": "0.00"
+        },
+        {
+          "name": "Peanut Butter Chocolate Chip",
+          "price": "0.00"
+        }
+      ]
+    }
+  ]
+}

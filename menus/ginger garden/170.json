@@ -1,0 +1,110 @@
+{
+  "name": "Tekka Don Entree",
+  "price": "22.50",
+  "options": [
+    {
+      "type": "Soup Choices",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Wonton Soup",
+          "price": "0.00"
+        },
+        {
+          "name": "Hot & Sour Soup",
+          "price": "0.00"
+        },
+        {
+          "name": "Egg Drop Soup",
+          "price": "0.00"
+        },
+        {
+          "name": "Miso Soup",
+          "price": "0.00"
+        },
+        {
+          "name": "No Soup",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Allergy Notice",
+      "required": 0,
+      "upto": 7,
+      "features": [
+        {
+          "name": "Gluten Free",
+          "price": "0.00"
+        },
+        {
+          "name": "Seafood Allergy",
+          "price": "0.00"
+        },
+        {
+          "name": "Shellfish Allergy",
+          "price": "0.00"
+        },
+        {
+          "name": "Nut Allergy",
+          "price": "0.00"
+        },
+        {
+          "name": "Peanut Allergy",
+          "price": "0.00"
+        },
+        {
+          "name": "Dairy Allergy",
+          "price": "0.00"
+        },
+        {
+          "name": "Sesame Allergy",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Recommended Sides And Apps",
+      "required": 0,
+      "upto": 5,
+      "features": [
+        {
+          "name": "Crab Rangoon (6)",
+          "price": "7.50"
+        },
+        {
+          "name": "Meat Dumplings (7)",
+          "price": "7.50"
+        },
+        {
+          "name": "Scallion Pancake (8)",
+          "price": "7.50"
+        },
+        {
+          "name": "Egg Roll (L)",
+          "price": "2.25"
+        },
+        {
+          "name": "Chicken Fingers",
+          "price": "7.50"
+        }
+      ]
+    },
+    {
+      "type": "Recommended Beverages",
+      "required": 0,
+      "upto": 2,
+      "features": [
+        {
+          "name": "Coke",
+          "price": "2.99"
+        },
+        {
+          "name": "Sprite",
+          "price": "2.99"
+        }
+      ]
+    }
+  ]
+}

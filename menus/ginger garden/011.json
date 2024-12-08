@@ -1,0 +1,21 @@
+{
+  "name": "Meat Dumplings (7)",
+  "price": "7.50",
+  "options": [
+    {
+      "type": "Steamed Or Pan Fried",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Steamed",
+          "price": "0.00"
+        },
+        {
+          "name": "Pan Fried",
+          "price": "0.00"
+        }
+      ]
+    }
+  ]
+}

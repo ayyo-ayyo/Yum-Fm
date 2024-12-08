@@ -1,0 +1,21 @@
+{
+  "name": "Raspberry Lemonade",
+  "price": "6.00",
+  "options": [
+    {
+      "type": "Serving Choice",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Drink By Itself",
+          "price": "0.00"
+        },
+        {
+          "name": "Regular",
+          "price": "0.00"
+        }
+      ]
+    }
+  ]
+}

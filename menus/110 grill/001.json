@@ -1,0 +1,80 @@
+{
+  "name": "BBQ Chicken Nachos",
+  "price": "21.05",
+  "options": [
+    {
+      "type": "Includes",
+      "required": 0,
+      "upto": null,
+      "features": [
+        {
+          "name": "No Banana Peppers",
+          "price": "0.00"
+        },
+        {
+          "name": "No BBQ Sauce",
+          "price": "0.00"
+        },
+        {
+          "name": "No Black Beans",
+          "price": "0.00"
+        },
+        {
+          "name": "No Corn",
+          "price": "0.00"
+        },
+        {
+          "name": "No Ranch",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "If You Have A Food Allergy, Please Check Box Below",
+      "required": 0,
+      "upto": 5,
+      "features": [
+        {
+          "name": "GLUTEN ALLERGY",
+          "price": "0.00"
+        },
+        {
+          "name": "DAIRY ALLERGY",
+          "price": "0.00"
+        },
+        {
+          "name": "EGG ALLERGY",
+          "price": "0.00"
+        },
+        {
+          "name": "SOY ALLERGY",
+          "price": "0.00"
+        },
+        {
+          "name": "SHRIMP ALLERGY",
+          "price": "0.00"
+        },
+        {
+          "name": "SHELLFISH ALLERGY",
+          "price": "0.00"
+        },
+        {
+          "name": "PEANUT ALLERGY",
+          "price": "0.00"
+        },
+        {
+          "name": "NUT ALLERGY",
+          "price": "0.00"
+        },
+        {
+          "name": "FISH ALLERGY",
+          "price": "0.00"
+        },
+        {
+          "name": "OTHER ALLERGY",
+          "price": "0.00"
+        }
+      ]
+    }
+  ]
+}

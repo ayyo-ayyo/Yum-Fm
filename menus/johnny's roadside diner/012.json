@@ -1,0 +1,48 @@
+{
+  "name": "Cinnamon Bun Pancakes",
+  "price": "14.60",
+  "options": [
+    {
+      "type": "Cinnamon Bun MOD",
+      "required": 0,
+      "upto": null,
+      "features": [
+        {
+          "name": "NO Powdered Sugar",
+          "price": "0.00"
+        },
+        {
+          "name": "No Glaze",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Recommended Sides And Apps",
+      "required": 0,
+      "upto": 5,
+      "features": [
+        {
+          "name": "Bacon",
+          "price": "4.50"
+        },
+        {
+          "name": "Single Pancake",
+          "price": "5.60"
+        },
+        {
+          "name": "Hash",
+          "price": "6.75"
+        },
+        {
+          "name": "Homies",
+          "price": "4.50"
+        },
+        {
+          "name": "Sausage",
+          "price": "4.50"
+        }
+      ]
+    }
+  ]
+}

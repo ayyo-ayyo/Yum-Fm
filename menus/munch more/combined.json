@@ -1,0 +1,653 @@
+[
+    {
+        "name": "Mix Combo Over Rice Platter",
+        "price": "12.99",
+        "options": [
+            {
+                "type": "Drink Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Cola",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Diet Cola",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Lemon-Lime",
+                        "price": "0.00"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Falafel Over Rice",
+        "price": "12.99",
+        "options": [
+            {
+                "type": "Drink Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Cola",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Diet Cola",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Lemon-Lime",
+                        "price": "0.00"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Chicken Over Rice Platter",
+        "price": "12.99",
+        "options": [
+            {
+                "type": "Drink Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Cola",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Diet Cola",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Lemon-Lime",
+                        "price": "0.00"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Lamb Over Rice Platter",
+        "price": "12.99",
+        "options": [
+            {
+                "type": "Drink Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Cola",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Diet Cola",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Lemon-Lime",
+                        "price": "0.00"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Philly Cheesesteak",
+        "price": "11.99",
+        "options": [
+            {
+                "type": "Combo Option",
+                "required": 0,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Fries & Can Cola",
+                        "price": "3.99"
+                    },
+                    {
+                        "name": "Fries & Can Diet Cola",
+                        "price": "3.99"
+                    },
+                    {
+                        "name": "Fries & Can Lemon-Lime",
+                        "price": "3.99"
+                    }
+                ]
+            },
+            {
+                "type": "Recommended Sides And Apps",
+                "required": 0,
+                "upto": 5,
+                "features": [
+                    {
+                        "name": "Mozzarella Sticks",
+                        "price": "8.99"
+                    },
+                    {
+                        "name": "Cheese Fries",
+                        "price": "7.99"
+                    },
+                    {
+                        "name": "Seasoned Fries",
+                        "price": "6.99"
+                    },
+                    {
+                        "name": "Onion Rings",
+                        "price": "5.99"
+                    },
+                    {
+                        "name": "Falafel",
+                        "price": "6.99"
+                    }
+                ]
+            },
+            {
+                "type": "Recommended Beverage",
+                "required": 0,
+                "upto": null,
+                "features": [
+                    {
+                        "name": "Water",
+                        "price": "1.99"
+                    }
+                ]
+            },
+            {
+                "type": "Recommended Desserts",
+                "required": 0,
+                "upto": 4,
+                "features": [
+                    {
+                        "name": "Fried Oreos",
+                        "price": "7.99"
+                    },
+                    {
+                        "name": "OREO cake",
+                        "price": "5.99"
+                    },
+                    {
+                        "name": "Carrot Cake",
+                        "price": "5.99"
+                    },
+                    {
+                        "name": "Cheesecake",
+                        "price": "5.99"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Chopped Cheese Steak",
+        "price": "11.99",
+        "options": [
+            {
+                "type": "Combo Option",
+                "required": 0,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Fries & Can Cola",
+                        "price": "3.99"
+                    },
+                    {
+                        "name": "Fries & Can Diet Cola",
+                        "price": "3.99"
+                    },
+                    {
+                        "name": "Fries & Can Lemon-Lime",
+                        "price": "3.99"
+                    }
+                ]
+            },
+            {
+                "type": "Recommended Sides And Apps",
+                "required": 0,
+                "upto": 5,
+                "features": [
+                    {
+                        "name": "Mozzarella Sticks",
+                        "price": "8.99"
+                    },
+                    {
+                        "name": "Cheese Fries",
+                        "price": "7.99"
+                    },
+                    {
+                        "name": "Seasoned Fries",
+                        "price": "6.99"
+                    },
+                    {
+                        "name": "Onion Rings",
+                        "price": "5.99"
+                    },
+                    {
+                        "name": "Falafel",
+                        "price": "6.99"
+                    }
+                ]
+            },
+            {
+                "type": "Recommended Beverage",
+                "required": 0,
+                "upto": null,
+                "features": [
+                    {
+                        "name": "Water",
+                        "price": "1.99"
+                    }
+                ]
+            },
+            {
+                "type": "Recommended Desserts",
+                "required": 0,
+                "upto": 4,
+                "features": [
+                    {
+                        "name": "Fried Oreos",
+                        "price": "7.99"
+                    },
+                    {
+                        "name": "OREO cake",
+                        "price": "5.99"
+                    },
+                    {
+                        "name": "Carrot Cake",
+                        "price": "5.99"
+                    },
+                    {
+                        "name": "Cheesecake",
+                        "price": "5.99"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Cheese Burger",
+        "price": "8.99",
+        "options": [
+            {
+                "type": "Preparation Addition",
+                "required": 0,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Extra Patty",
+                        "price": "1.99"
+                    }
+                ]
+            },
+            {
+                "type": "Combo Option",
+                "required": 0,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Fries & Can Cola",
+                        "price": "3.99"
+                    },
+                    {
+                        "name": "Fries & Can Diet Cola",
+                        "price": "3.99"
+                    },
+                    {
+                        "name": "Fries & Can Lemon-Lime",
+                        "price": "3.99"
+                    }
+                ]
+            },
+            {
+                "type": "Recommended Sides And Apps",
+                "required": 0,
+                "upto": 5,
+                "features": [
+                    {
+                        "name": "Mozzarella Sticks",
+                        "price": "8.99"
+                    },
+                    {
+                        "name": "Cheese Fries",
+                        "price": "7.99"
+                    },
+                    {
+                        "name": "Seasoned Fries",
+                        "price": "6.99"
+                    },
+                    {
+                        "name": "Onion Rings",
+                        "price": "5.99"
+                    },
+                    {
+                        "name": "Falafel",
+                        "price": "6.99"
+                    }
+                ]
+            },
+            {
+                "type": "Recommended Beverage",
+                "required": 0,
+                "upto": null,
+                "features": [
+                    {
+                        "name": "Water",
+                        "price": "1.99"
+                    }
+                ]
+            },
+            {
+                "type": "Recommended Desserts",
+                "required": 0,
+                "upto": 4,
+                "features": [
+                    {
+                        "name": "Fried Oreos",
+                        "price": "7.99"
+                    },
+                    {
+                        "name": "OREO cake",
+                        "price": "5.99"
+                    },
+                    {
+                        "name": "Carrot Cake",
+                        "price": "5.99"
+                    },
+                    {
+                        "name": "Cheesecake",
+                        "price": "5.99"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Chicken Cheesesteak",
+        "price": "11.99",
+        "options": [
+            {
+                "type": "Combo Option",
+                "required": 0,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Fries & Can Cola",
+                        "price": "3.99"
+                    },
+                    {
+                        "name": "Fries & Can Diet Cola",
+                        "price": "3.99"
+                    },
+                    {
+                        "name": "Fries & Can Lemon-Lime",
+                        "price": "3.99"
+                    }
+                ]
+            },
+            {
+                "type": "Recommended Sides And Apps",
+                "required": 0,
+                "upto": 5,
+                "features": [
+                    {
+                        "name": "Mozzarella Sticks",
+                        "price": "8.99"
+                    },
+                    {
+                        "name": "Cheese Fries",
+                        "price": "7.99"
+                    },
+                    {
+                        "name": "Seasoned Fries",
+                        "price": "6.99"
+                    },
+                    {
+                        "name": "Onion Rings",
+                        "price": "5.99"
+                    },
+                    {
+                        "name": "Falafel",
+                        "price": "6.99"
+                    }
+                ]
+            },
+            {
+                "type": "Recommended Beverage",
+                "required": 0,
+                "upto": null,
+                "features": [
+                    {
+                        "name": "Water",
+                        "price": "1.99"
+                    }
+                ]
+            },
+            {
+                "type": "Recommended Desserts",
+                "required": 0,
+                "upto": 4,
+                "features": [
+                    {
+                        "name": "Fried Oreos",
+                        "price": "7.99"
+                    },
+                    {
+                        "name": "OREO cake",
+                        "price": "5.99"
+                    },
+                    {
+                        "name": "Carrot Cake",
+                        "price": "5.99"
+                    },
+                    {
+                        "name": "Cheesecake",
+                        "price": "5.99"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Gyro On Pita",
+        "price": "9.99",
+        "options": [
+            {
+                "type": "Protein Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Chicken",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Beef",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Falafel",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Combo Option",
+                "required": 0,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Fries & Can Cola",
+                        "price": "3.99"
+                    },
+                    {
+                        "name": "Fries & Can Diet Cola",
+                        "price": "3.99"
+                    },
+                    {
+                        "name": "Fries & Can Lemon-Lime",
+                        "price": "3.99"
+                    }
+                ]
+            },
+            {
+                "type": "Recommended Sides And Apps",
+                "required": 0,
+                "upto": 4,
+                "features": [
+                    {
+                        "name": "Mozzarella Sticks",
+                        "price": "8.99"
+                    },
+                    {
+                        "name": "Cheese Fries",
+                        "price": "7.99"
+                    },
+                    {
+                        "name": "Seasoned Fries",
+                        "price": "6.99"
+                    },
+                    {
+                        "name": "Onion Rings",
+                        "price": "5.99"
+                    }
+                ]
+            },
+            {
+                "type": "Recommended Beverage",
+                "required": 0,
+                "upto": null,
+                "features": [
+                    {
+                        "name": "Water",
+                        "price": "1.99"
+                    }
+                ]
+            },
+            {
+                "type": "Recommended Desserts",
+                "required": 0,
+                "upto": 4,
+                "features": [
+                    {
+                        "name": "Fried Oreos",
+                        "price": "7.99"
+                    },
+                    {
+                        "name": "OREO cake",
+                        "price": "5.99"
+                    },
+                    {
+                        "name": "Carrot Cake",
+                        "price": "5.99"
+                    },
+                    {
+                        "name": "Cheesecake",
+                        "price": "5.99"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Mozzarella Sticks",
+        "price": "8.99",
+        "options": []
+    },
+    {
+        "name": "Onion Rings",
+        "price": "5.99",
+        "options": []
+    },
+    {
+        "name": "Side Salad",
+        "price": "6.99",
+        "options": []
+    },
+    {
+        "name": "Falafel",
+        "price": "6.99",
+        "options": []
+    },
+    {
+        "name": "Cheese Fries",
+        "price": "7.99",
+        "options": []
+    },
+    {
+        "name": "Seasoned Fries",
+        "price": "6.99",
+        "options": []
+    },
+    {
+        "name": "BBQ Sauce",
+        "price": "0.75",
+        "options": []
+    },
+    {
+        "name": "White Sauce",
+        "price": "0.75",
+        "options": []
+    },
+    {
+        "name": "Hot Sauce",
+        "price": "0.75",
+        "options": []
+    },
+    {
+        "name": "Cheesecake",
+        "price": "5.99",
+        "options": []
+    },
+    {
+        "name": "OREO cake",
+        "price": "5.99",
+        "options": []
+    },
+    {
+        "name": "Fried Oreos",
+        "price": "7.99",
+        "options": []
+    },
+    {
+        "name": "Carrot Cake",
+        "price": "5.99",
+        "options": []
+    },
+    {
+        "name": "Can Soda",
+        "price": "1.99",
+        "options": [
+            {
+                "type": "Soda Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Cola",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Diet Cola",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Lemon-Lime",
+                        "price": "0.00"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Water",
+        "price": "1.99",
+        "options": []
+    }
+]

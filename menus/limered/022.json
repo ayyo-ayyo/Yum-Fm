@@ -1,0 +1,167 @@
+{
+  "name": "Fruit Jam Smoothie",
+  "price": "7.50",
+  "options": [
+    {
+      "type": "Sweetness Level Choice",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Normal Sweet - 100%",
+          "price": "0.00"
+        },
+        {
+          "name": "Tad Sweet - 25%",
+          "price": "0.00"
+        },
+        {
+          "name": "1/2 Sweet - 50%",
+          "price": "0.00"
+        },
+        {
+          "name": "Less Sweet - 75%",
+          "price": "0.00"
+        },
+        {
+          "name": "Extra Sweet - 125%",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Topping Choice",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Boba",
+          "price": "0.00"
+        },
+        {
+          "name": "Lychee Jelly",
+          "price": "0.00"
+        },
+        {
+          "name": "Fruit Jelly",
+          "price": "0.00"
+        },
+        {
+          "name": "Strawberry Pop",
+          "price": "0.00"
+        },
+        {
+          "name": "Mango Pop",
+          "price": "0.00"
+        },
+        {
+          "name": "Lychee Pop",
+          "price": "0.00"
+        },
+        {
+          "name": "Pudding",
+          "price": "0.00"
+        },
+        {
+          "name": "Oreo Crumbs",
+          "price": "0.00"
+        },
+        {
+          "name": "Aloe",
+          "price": "0.00"
+        },
+        {
+          "name": "No Topping",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Flavor Choice",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Mango",
+          "price": "0.00"
+        },
+        {
+          "name": "Passion Fruit",
+          "price": "0.00"
+        },
+        {
+          "name": "Peach",
+          "price": "0.00"
+        },
+        {
+          "name": "Strawberry",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Fruit Jam Smoothie Size",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Regular",
+          "price": "0.00"
+        },
+        {
+          "name": "Large",
+          "price": "0.60"
+        }
+      ]
+    },
+    {
+      "type": "Side Addition",
+      "required": 0,
+      "upto": 0,
+      "features": []
+    },
+    {
+      "type": "Topping Addition",
+      "required": 0,
+      "upto": 9,
+      "features": [
+        {
+          "name": "Strawberry Pop",
+          "price": "0.60"
+        },
+        {
+          "name": "Pudding",
+          "price": "0.60"
+        },
+        {
+          "name": "Oreo Crumbs",
+          "price": "0.60"
+        },
+        {
+          "name": "Mango Pop",
+          "price": "0.60"
+        },
+        {
+          "name": "Lychee Jelly",
+          "price": "0.60"
+        },
+        {
+          "name": "Grass Jelly",
+          "price": "0.60"
+        },
+        {
+          "name": "Fruit Jelly",
+          "price": "0.60"
+        },
+        {
+          "name": "Boba",
+          "price": "0.60"
+        },
+        {
+          "name": "Aloe",
+          "price": "0.60"
+        }
+      ]
+    }
+  ]
+}

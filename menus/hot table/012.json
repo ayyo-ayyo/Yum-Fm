@@ -1,0 +1,242 @@
+{
+  "name": "BUILD YOUR OWN SALAD",
+  "price": "11.99",
+  "options": [
+    {
+      "type": "SELECT DRESSING",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "CRANBERRY VINAIGRETTE",
+          "price": "0.00"
+        },
+        {
+          "name": "WHITE BALSAMIC VINAIGRETTE",
+          "price": "0.00"
+        },
+        {
+          "name": "HONEY LEMON VINAIGRETTE",
+          "price": "0.00"
+        },
+        {
+          "name": "BUTTERMILK RANCH DRESSING",
+          "price": "0.00"
+        },
+        {
+          "name": "CHIPOTLE RANCH DRESSING",
+          "price": "0.00"
+        },
+        {
+          "name": "CREAMY CAESAR DRESSING",
+          "price": "0.00"
+        },
+        {
+          "name": "OIL & VINEGAR",
+          "price": "0.00"
+        },
+        {
+          "name": "NO DRESSING",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "SELECT BASE",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "MIXED GREENS",
+          "price": "0.00"
+        },
+        {
+          "name": "GREEN LEAF LETTUCE",
+          "price": "0.00"
+        },
+        {
+          "name": "SPINACH",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "SELECT VEGGIES",
+      "required": 0,
+      "upto": 6,
+      "features": [
+        {
+          "name": "RED CABBAGE",
+          "price": "0.00"
+        },
+        {
+          "name": "CARROTS",
+          "price": "0.00"
+        },
+        {
+          "name": "RED ONIONS",
+          "price": "0.00"
+        },
+        {
+          "name": "GREEN PEPPERS",
+          "price": "0.00"
+        },
+        {
+          "name": "CUCUMBERS",
+          "price": "0.00"
+        },
+        {
+          "name": "BLACK OLIVES",
+          "price": "0.00"
+        },
+        {
+          "name": "KALAMATA OLIVES",
+          "price": "0.00"
+        },
+        {
+          "name": "CHERRY PEPPERS",
+          "price": "0.00"
+        },
+        {
+          "name": "JALAPENO PEPPERS",
+          "price": "0.00"
+        },
+        {
+          "name": "PICKLES",
+          "price": "0.00"
+        },
+        {
+          "name": "ROASTED ONIONS",
+          "price": "0.00"
+        },
+        {
+          "name": "ROASTED RED PEPPERS",
+          "price": "0.00"
+        },
+        {
+          "name": "ROASTED MUSHROOMS",
+          "price": "0.00"
+        },
+        {
+          "name": "FIRE ROASTED CORN",
+          "price": "0.00"
+        },
+        {
+          "name": "BLACK BEANS",
+          "price": "0.00"
+        },
+        {
+          "name": "APPLES",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "SELECT TOPPINGS",
+      "required": 0,
+      "upto": 2,
+      "features": [
+        {
+          "name": "CRISPY ONIONS",
+          "price": "0.00"
+        },
+        {
+          "name": "CROUTONS",
+          "price": "0.00"
+        },
+        {
+          "name": "TORTILLA STRIPS",
+          "price": "0.00"
+        },
+        {
+          "name": "GLAZED WALNUTS",
+          "price": "0.00"
+        },
+        {
+          "name": "SLICED SALAMI",
+          "price": "0.00"
+        },
+        {
+          "name": "CRUMBLED BACON",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "ADD CHEESE",
+      "required": 0,
+      "upto": 1,
+      "features": [
+        {
+          "name": "CRUMBLED FETA",
+          "price": "0.00"
+        },
+        {
+          "name": "SHAVED PARMESAN",
+          "price": "0.00"
+        },
+        {
+          "name": "CRUMBLED BLUE",
+          "price": "0.00"
+        },
+        {
+          "name": "SHREDDED PEPPER JACK",
+          "price": "0.00"
+        },
+        {
+          "name": "FRESH MOZZARELLA",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "ADD MEAT",
+      "required": 0,
+      "upto": 1,
+      "features": [
+        {
+          "name": "ADD CHICKEN",
+          "price": "3.75"
+        },
+        {
+          "name": "ADD HAM",
+          "price": "3.75"
+        },
+        {
+          "name": "ADD TURKEY",
+          "price": "3.75"
+        },
+        {
+          "name": "ADD TUNA",
+          "price": "3.75"
+        }
+      ]
+    },
+    {
+      "type": "Recommended Desserts",
+      "required": 0,
+      "upto": 2,
+      "features": [
+        {
+          "name": "COOKIE",
+          "price": "3.75"
+        },
+        {
+          "name": "DESSERT BAR",
+          "price": "3.75"
+        }
+      ]
+    },
+    {
+      "type": "Recommended Side And App",
+      "required": 0,
+      "upto": null,
+      "features": [
+        {
+          "name": "KETTLE CHIPS",
+          "price": "1.75"
+        }
+      ]
+    }
+  ]
+}

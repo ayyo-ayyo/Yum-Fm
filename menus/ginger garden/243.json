@@ -1,0 +1,29 @@
+{
+  "name": "To Go Drink",
+  "price": "0.00",
+  "options": [
+    {
+      "type": "To Go Drink Option",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Diet Coke",
+          "price": "2.00"
+        },
+        {
+          "name": "Coke",
+          "price": "2.00"
+        },
+        {
+          "name": "Sprite",
+          "price": "2.00"
+        },
+        {
+          "name": "Bottle Water",
+          "price": "2.00"
+        }
+      ]
+    }
+  ]
+}

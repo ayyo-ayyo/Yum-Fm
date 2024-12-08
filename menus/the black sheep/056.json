@@ -1,0 +1,156 @@
+{
+  "name": "Hot Tea",
+  "price": "1.99",
+  "options": [
+    {
+      "type": "Size Choice",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "8 Oz",
+          "price": "0.00"
+        },
+        {
+          "name": "12 Oz",
+          "price": "0.00"
+        },
+        {
+          "name": "16 Oz",
+          "price": "0.00"
+        },
+        {
+          "name": "20 Oz",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Tea Choice",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Hibiscus",
+          "price": "0.00"
+        },
+        {
+          "name": "Jasmine",
+          "price": "0.00"
+        },
+        {
+          "name": "Yuzu citrus ginko",
+          "price": "0.00"
+        },
+        {
+          "name": "Breakfast blend",
+          "price": "0.00"
+        },
+        {
+          "name": "Ceylon India",
+          "price": "0.00"
+        },
+        {
+          "name": "decaf black",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Milk Addition",
+      "required": 0,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Whole Milk",
+          "price": "0.00"
+        },
+        {
+          "name": "Half and Half",
+          "price": "0.00"
+        },
+        {
+          "name": "Almond Milk",
+          "price": "0.00"
+        },
+        {
+          "name": "Oat Milk",
+          "price": "0.00"
+        },
+        {
+          "name": "Skim Milk",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Milk Preparation Option",
+      "required": 0,
+      "upto": 1,
+      "features": [
+        {
+          "name": "1 Splash",
+          "price": "0.00"
+        },
+        {
+          "name": "2 Splash",
+          "price": "0.00"
+        },
+        {
+          "name": "3 Splash",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Sweetener Addition",
+      "required": 0,
+      "upto": 6,
+      "features": [
+        {
+          "name": "Simple Syrup",
+          "price": "0.00"
+        },
+        {
+          "name": "White Sugar",
+          "price": "0.00"
+        },
+        {
+          "name": "Cane Sugar",
+          "price": "0.00"
+        },
+        {
+          "name": "Splenda",
+          "price": "0.00"
+        },
+        {
+          "name": "Equal",
+          "price": "0.00"
+        },
+        {
+          "name": "Honey",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Sweet Level Option",
+      "required": 0,
+      "upto": 1,
+      "features": [
+        {
+          "name": "1 Pack/Pump",
+          "price": "0.00"
+        },
+        {
+          "name": "2 Packs/Pump",
+          "price": "0.00"
+        },
+        {
+          "name": "3 Packs/Pump",
+          "price": "0.00"
+        }
+      ]
+    }
+  ]
+}

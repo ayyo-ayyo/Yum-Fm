@@ -1,0 +1,176 @@
+{
+  "name": "Fried Rice",
+  "price": "11.50",
+  "options": [
+    {
+      "type": "D-Fried Rice Protein Choices",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Vegetable",
+          "price": "0.00"
+        },
+        {
+          "name": "Chicken",
+          "price": "0.00"
+        },
+        {
+          "name": "Pork",
+          "price": "0.00"
+        },
+        {
+          "name": "Beef",
+          "price": "1.00"
+        },
+        {
+          "name": "Shrimp",
+          "price": "1.00"
+        },
+        {
+          "name": "House Special",
+          "price": "1.00"
+        },
+        {
+          "name": "Plain",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Allergy Notice",
+      "required": 0,
+      "upto": 7,
+      "features": [
+        {
+          "name": "Gluten Free",
+          "price": "0.00"
+        },
+        {
+          "name": "Seafood Allergy",
+          "price": "0.00"
+        },
+        {
+          "name": "Shellfish Allergy",
+          "price": "0.00"
+        },
+        {
+          "name": "Nut Allergy",
+          "price": "0.00"
+        },
+        {
+          "name": "Peanut Allergy",
+          "price": "0.00"
+        },
+        {
+          "name": "Dairy Allergy",
+          "price": "0.00"
+        },
+        {
+          "name": "Sesame Allergy",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Extras",
+      "required": 0,
+      "upto": 7,
+      "features": [
+        {
+          "name": "Extra Baby Shrimp-",
+          "price": "2.00"
+        },
+        {
+          "name": "Extra Chicken-",
+          "price": "2.00"
+        },
+        {
+          "name": "Extra Vegetable-",
+          "price": "2.00"
+        },
+        {
+          "name": "Extra Beef-",
+          "price": "3.00"
+        },
+        {
+          "name": "Extra Pork-",
+          "price": "2.00"
+        },
+        {
+          "name": "Extra Egg",
+          "price": "2.00"
+        },
+        {
+          "name": "Add Fried Tofu",
+          "price": "2.00"
+        }
+      ]
+    },
+    {
+      "type": "No1",
+      "required": 0,
+      "upto": 4,
+      "features": [
+        {
+          "name": "No Egg",
+          "price": "0.00"
+        },
+        {
+          "name": "No Onion",
+          "price": "0.00"
+        },
+        {
+          "name": "No Beansprouts",
+          "price": "0.00"
+        },
+        {
+          "name": "No Green Peas & Carrots",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Recommended Sides And Apps",
+      "required": 0,
+      "upto": 5,
+      "features": [
+        {
+          "name": "Crab Rangoon (6)",
+          "price": "7.50"
+        },
+        {
+          "name": "Meat Dumplings (7)",
+          "price": "7.50"
+        },
+        {
+          "name": "Scallion Pancake (8)",
+          "price": "7.50"
+        },
+        {
+          "name": "Egg Roll (L)",
+          "price": "2.25"
+        },
+        {
+          "name": "Chicken Fingers",
+          "price": "7.50"
+        }
+      ]
+    },
+    {
+      "type": "Recommended Beverages",
+      "required": 0,
+      "upto": 2,
+      "features": [
+        {
+          "name": "Coke",
+          "price": "2.99"
+        },
+        {
+          "name": "Sprite",
+          "price": "2.99"
+        }
+      ]
+    }
+  ]
+}

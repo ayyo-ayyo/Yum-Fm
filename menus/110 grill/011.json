@@ -1,0 +1,122 @@
+{
+  "name": "Half Fig&Prosciutto Flat",
+  "price": "19.85",
+  "options": [
+    {
+      "type": "If You Have A Food Allergy, Please Check Box Below",
+      "required": 0,
+      "upto": 5,
+      "features": [
+        {
+          "name": "GLUTEN ALLERGY",
+          "price": "0.00"
+        },
+        {
+          "name": "DAIRY ALLERGY",
+          "price": "0.00"
+        },
+        {
+          "name": "EGG ALLERGY",
+          "price": "0.00"
+        },
+        {
+          "name": "SOY ALLERGY",
+          "price": "0.00"
+        },
+        {
+          "name": "SHRIMP ALLERGY",
+          "price": "0.00"
+        },
+        {
+          "name": "SHELLFISH ALLERGY",
+          "price": "0.00"
+        },
+        {
+          "name": "PEANUT ALLERGY",
+          "price": "0.00"
+        },
+        {
+          "name": "NUT ALLERGY",
+          "price": "0.00"
+        },
+        {
+          "name": "FISH ALLERGY",
+          "price": "0.00"
+        },
+        {
+          "name": "OTHER ALLERGY",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Recommended Sides And Apps",
+      "required": 0,
+      "upto": 5,
+      "features": [
+        {
+          "name": "Crispy Fried Pickle Chips",
+          "price": "14.45"
+        },
+        {
+          "name": "French Fries",
+          "price": "7.25"
+        },
+        {
+          "name": "Roasted Garlic Mashed Potatoes",
+          "price": "8.45"
+        },
+        {
+          "name": "BBQ Chicken Nachos",
+          "price": "21.05"
+        },
+        {
+          "name": "Roasted Brussels Sprouts",
+          "price": "9.65"
+        }
+      ]
+    },
+    {
+      "type": "Recommended Desserts",
+      "required": 0,
+      "upto": 5,
+      "features": [
+        {
+          "name": "Strawberry Cheesecake",
+          "price": "12.05"
+        },
+        {
+          "name": "Chocolate Tuxedo Cake",
+          "price": "14.45"
+        },
+        {
+          "name": "Oreo Brownie Sundae",
+          "price": "15.65"
+        },
+        {
+          "name": "Peanut Butter Cascade",
+          "price": "14.45"
+        },
+        {
+          "name": "Lemon Sorbet",
+          "price": "10.85"
+        }
+      ]
+    },
+    {
+      "type": "Recommended Beverages",
+      "required": 0,
+      "upto": 2,
+      "features": [
+        {
+          "name": "Large Sparkling",
+          "price": "8.15"
+        },
+        {
+          "name": "Large Still",
+          "price": "8.15"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "name": "Chocolate Tuxedo Cake",
+  "price": "14.45",
+  "options": [
+    {
+      "type": "Dessert",
+      "required": 0,
+      "upto": 3,
+      "features": [
+        {
+          "name": "A LA MODE",
+          "price": "1.85"
+        },
+        {
+          "name": "Hot Fudge",
+          "price": "0.00"
+        },
+        {
+          "name": "Whip Cream",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "If You Have A Food Allergy, Please Check Box Below",
+      "required": 0,
+      "upto": 5,
+      "features": [
+        {
+          "name": "GLUTEN ALLERGY",
+          "price": "0.00"
+        },
+        {
+          "name": "DAIRY ALLERGY",
+          "price": "0.00"
+        },
+        {
+          "name": "EGG ALLERGY",
+          "price": "0.00"
+        },
+        {
+          "name": "SOY ALLERGY",
+          "price": "0.00"
+        },
+        {
+          "name": "SHRIMP ALLERGY",
+          "price": "0.00"
+        },
+        {
+          "name": "SHELLFISH ALLERGY",
+          "price": "0.00"
+        },
+        {
+          "name": "PEANUT ALLERGY",
+          "price": "0.00"
+        },
+        {
+          "name": "NUT ALLERGY",
+          "price": "0.00"
+        },
+        {
+          "name": "FISH ALLERGY",
+          "price": "0.00"
+        },
+        {
+          "name": "OTHER ALLERGY",
+          "price": "0.00"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,177 @@
+{
+  "name": "Chicken Finger Salad",
+  "price": "16.99",
+  "options": [
+    {
+      "type": "Dressing Choice",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Balsamic Vinaigrette",
+          "price": "0.00"
+        },
+        {
+          "name": "Bleu Cheese",
+          "price": "0.00"
+        },
+        {
+          "name": "Caesar",
+          "price": "0.00"
+        },
+        {
+          "name": "French",
+          "price": "0.00"
+        },
+        {
+          "name": "Greek",
+          "price": "0.00"
+        },
+        {
+          "name": "Honey Mustard",
+          "price": "0.00"
+        },
+        {
+          "name": "House",
+          "price": "0.00"
+        },
+        {
+          "name": "Italian",
+          "price": "0.00"
+        },
+        {
+          "name": "No Dressing",
+          "price": "0.00"
+        },
+        {
+          "name": "Oil Vinegar",
+          "price": "0.00"
+        },
+        {
+          "name": "Ranch",
+          "price": "0.00"
+        },
+        {
+          "name": "Russian",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Remove Option",
+      "required": 0,
+      "upto": 8,
+      "features": [
+        {
+          "name": "Chicken Finger",
+          "price": "0.00"
+        },
+        {
+          "name": "Cucumbers",
+          "price": "0.00"
+        },
+        {
+          "name": "Green Peppers",
+          "price": "0.00"
+        },
+        {
+          "name": "Lettuce",
+          "price": "0.00"
+        },
+        {
+          "name": "Mozzarella",
+          "price": "0.00"
+        },
+        {
+          "name": "Onion",
+          "price": "0.00"
+        },
+        {
+          "name": "Pepperoncini",
+          "price": "0.00"
+        },
+        {
+          "name": "Tomato",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Recommended Beverages",
+      "required": 0,
+      "upto": 5,
+      "features": [
+        {
+          "name": "Pepsi",
+          "price": "3.75"
+        },
+        {
+          "name": "Root Beer",
+          "price": "3.75"
+        },
+        {
+          "name": "Diet Pepsi",
+          "price": "3.75"
+        },
+        {
+          "name": "Ginger Al",
+          "price": "3.75"
+        },
+        {
+          "name": "Pure Leaf Tea",
+          "price": "3.75"
+        }
+      ]
+    },
+    {
+      "type": "Recommended Sides And Apps",
+      "required": 0,
+      "upto": 5,
+      "features": [
+        {
+          "name": "Spicy Curly Fries",
+          "price": "9.25"
+        },
+        {
+          "name": "Mozz Sticks",
+          "price": "12.99"
+        },
+        {
+          "name": "Potato Skins",
+          "price": "13.25"
+        },
+        {
+          "name": "Chicken Fingers",
+          "price": "14.49"
+        },
+        {
+          "name": "Super Fries",
+          "price": "13.99"
+        }
+      ]
+    },
+    {
+      "type": "Recommended Desserts",
+      "required": 0,
+      "upto": 4,
+      "features": [
+        {
+          "name": "Chocolate Cake",
+          "price": "6.99"
+        },
+        {
+          "name": "Baklava",
+          "price": "5.49"
+        },
+        {
+          "name": "Fried Dough",
+          "price": "8.49"
+        },
+        {
+          "name": "Cheese Cake",
+          "price": "6.49"
+        }
+      ]
+    }
+  ]
+}

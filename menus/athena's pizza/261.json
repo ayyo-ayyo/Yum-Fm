@@ -1,0 +1,33 @@
+{
+  "name": "Fried Dough",
+  "price": "8.49",
+  "options": [
+    {
+      "type": "Flavor Choice",
+      "required": 0,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Cinnamon & Sugar",
+          "price": "0.00"
+        },
+        {
+          "name": "Only Cinnamon",
+          "price": "0.00"
+        },
+        {
+          "name": "Only Sugar",
+          "price": "0.00"
+        },
+        {
+          "name": "Plain",
+          "price": "0.00"
+        },
+        {
+          "name": "Sauce & Cheese",
+          "price": "0.15"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,294 @@
+{
+  "name": "Hash Plate",
+  "price": "15.70",
+  "options": [
+    {
+      "type": "Egg Choice",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Scrambled",
+          "price": "0.00"
+        },
+        {
+          "name": "Hard Scramble",
+          "price": "0.00"
+        },
+        {
+          "name": "Soft Scamble",
+          "price": "0.00"
+        },
+        {
+          "name": "Sunny SIde Up",
+          "price": "0.00"
+        },
+        {
+          "name": "Over Easy",
+          "price": "0.00"
+        },
+        {
+          "name": "Over Medium",
+          "price": "0.00"
+        },
+        {
+          "name": "Poached",
+          "price": "0.00"
+        },
+        {
+          "name": "Over Hard",
+          "price": "0.00"
+        },
+        {
+          "name": "Scramble Egg Whites",
+          "price": "1.15"
+        }
+      ]
+    },
+    {
+      "type": "Toast Choice",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Sourdough",
+          "price": "0.00"
+        },
+        {
+          "name": "Whole Wheat",
+          "price": "0.00"
+        },
+        {
+          "name": "Rye",
+          "price": "0.00"
+        },
+        {
+          "name": "Cinnamon Raisin",
+          "price": "1.15"
+        },
+        {
+          "name": "English",
+          "price": "0.00"
+        },
+        {
+          "name": "Grilled English",
+          "price": "0.00"
+        },
+        {
+          "name": "GF Bread",
+          "price": "1.15"
+        },
+        {
+          "name": "NO Toast",
+          "price": "0.00"
+        },
+        {
+          "name": "Bagel",
+          "price": "1.15"
+        },
+        {
+          "name": "Bagel & CC",
+          "price": "2.25"
+        }
+      ]
+    },
+    {
+      "type": "Breakfast Sides",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Homies",
+          "price": "Includes customization"
+        },
+        {
+          "name": "Side Salad",
+          "price": "Includes customization"
+        },
+        {
+          "name": "SUB Tots",
+          "price": "2.25"
+        },
+        {
+          "name": "SUB Fries",
+          "price": "2.25"
+        },
+        {
+          "name": "SUB Fruit",
+          "price": "3.40"
+        },
+        {
+          "name": "SUB Sliced Tomato",
+          "price": "0.00"
+        },
+        {
+          "name": "SUB Beans",
+          "price": "0.00"
+        },
+        {
+          "name": "NO Side",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Add Eggs",
+      "required": 0,
+      "upto": 1,
+      "features": [
+        {
+          "name": "ADD Egg",
+          "price": "1.70"
+        },
+        {
+          "name": "ADD Two Eggs",
+          "price": "3.40"
+        },
+        {
+          "name": "ADD Three Eggs",
+          "price": "5.05"
+        }
+      ]
+    },
+    {
+      "type": "Egg Add Ins",
+      "required": 0,
+      "upto": null,
+      "features": [
+        {
+          "name": "$Onion",
+          "price": "1.15"
+        },
+        {
+          "name": "$Pepper",
+          "price": "1.15"
+        },
+        {
+          "name": "$Tomato",
+          "price": "1.15"
+        },
+        {
+          "name": "$Broccoli",
+          "price": "1.15"
+        },
+        {
+          "name": "$Ham",
+          "price": "1.15"
+        },
+        {
+          "name": "$Bacon",
+          "price": "1.15"
+        },
+        {
+          "name": "$Sausage",
+          "price": "1.15"
+        },
+        {
+          "name": "$Spicy Bacon",
+          "price": "1.15"
+        },
+        {
+          "name": "$Mushroom",
+          "price": "1.15"
+        },
+        {
+          "name": "$Guac",
+          "price": "1.15"
+        },
+        {
+          "name": "$1/2 Avocado",
+          "price": "3.40"
+        },
+        {
+          "name": "$Spinach",
+          "price": "1.15"
+        },
+        {
+          "name": "$Jalapeno",
+          "price": "1.15"
+        },
+        {
+          "name": "$Garlic",
+          "price": "1.15"
+        },
+        {
+          "name": "$Holly",
+          "price": "1.15"
+        },
+        {
+          "name": "$Motz",
+          "price": "1.15"
+        },
+        {
+          "name": "$Cheddar",
+          "price": "1.15"
+        },
+        {
+          "name": "$Swiss",
+          "price": "1.15"
+        },
+        {
+          "name": "$Pepperjack",
+          "price": "1.15"
+        },
+        {
+          "name": "$American",
+          "price": "1.15"
+        },
+        {
+          "name": "Sub Egg Whites",
+          "price": "1.15"
+        }
+      ]
+    },
+    {
+      "type": "Corned Beef MOD",
+      "required": 0,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Crispy Hash",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Toast MOD",
+      "required": 0,
+      "upto": 1,
+      "features": [
+        {
+          "name": "DRY Toast",
+          "price": "0.00"
+        },
+        {
+          "name": "DARK Toast",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Recommended Sides And Apps",
+      "required": 0,
+      "upto": 4,
+      "features": [
+        {
+          "name": "Bacon",
+          "price": "4.50"
+        },
+        {
+          "name": "Single Pancake",
+          "price": "5.60"
+        },
+        {
+          "name": "Hash",
+          "price": "6.75"
+        },
+        {
+          "name": "Sausage",
+          "price": "4.50"
+        }
+      ]
+    }
+  ]
+}

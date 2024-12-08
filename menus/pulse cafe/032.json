@@ -1,0 +1,71 @@
+{
+  "name": "Triple Berry",
+  "price": "9.50",
+  "options": [
+    {
+      "type": "Triple Berry Smoothie Preparation Choice",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Drink By Itself",
+          "price": "0.00"
+        },
+        {
+          "name": "Regular",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Item Removals",
+      "required": 0,
+      "upto": 2,
+      "features": [
+        {
+          "name": "No Agave",
+          "price": "0.00"
+        },
+        {
+          "name": "No Banana Slices",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Item Additions",
+      "required": 0,
+      "upto": null,
+      "features": [
+        {
+          "name": "Chia",
+          "price": "1.25"
+        },
+        {
+          "name": "Lucuma",
+          "price": "1.25"
+        },
+        {
+          "name": "Spirulina",
+          "price": "1.25"
+        },
+        {
+          "name": "Flaxseeds",
+          "price": "1.25"
+        },
+        {
+          "name": "Almond Butter",
+          "price": "1.25"
+        },
+        {
+          "name": "Peanut Butter",
+          "price": "1.25"
+        },
+        {
+          "name": "Extra",
+          "price": "1.25"
+        }
+      ]
+    }
+  ]
+}

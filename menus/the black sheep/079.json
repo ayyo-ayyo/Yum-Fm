@@ -1,0 +1,21 @@
+{
+  "name": "Gus Soda",
+  "price": "3.25",
+  "options": [
+    {
+      "type": "Flavor Choice",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Cranberry Lime",
+          "price": "0.00"
+        },
+        {
+          "name": "Lemon",
+          "price": "0.00"
+        }
+      ]
+    }
+  ]
+}

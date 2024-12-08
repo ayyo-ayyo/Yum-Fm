@@ -1,0 +1,470 @@
+{
+  "name": "Smokey Joe's",
+  "price": "6.99",
+  "options": [
+    {
+      "type": "Size Choice",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Half",
+          "price": "0.00"
+        },
+        {
+          "name": "Whole",
+          "price": "6.25"
+        }
+      ]
+    },
+    {
+      "type": "Bread Choice",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Baguette",
+          "price": "0.00"
+        },
+        {
+          "name": "Sourdough Bread",
+          "price": "0.00"
+        },
+        {
+          "name": "Whole Wheat Bread",
+          "price": "0.00"
+        },
+        {
+          "name": "Rye Bread",
+          "price": "0.00"
+        },
+        {
+          "name": "Plain Bagel",
+          "price": "0.00"
+        },
+        {
+          "name": "Everything Bagel",
+          "price": "0.00"
+        },
+        {
+          "name": "Croissant",
+          "price": "0.00"
+        },
+        {
+          "name": "Homemade Biscuit",
+          "price": "0.00"
+        },
+        {
+          "name": "Plain Wrap - Whole Sandwich Only",
+          "price": "0.00"
+        },
+        {
+          "name": "Whole Wheat Wrap - Whole Sandwich Only",
+          "price": "0.00"
+        },
+        {
+          "name": "Udi's Gluten-Free Bagel",
+          "price": "2.00"
+        },
+        {
+          "name": "Udi's Gluten-Free Bread",
+          "price": "2.25"
+        }
+      ]
+    },
+    {
+      "type": "Preparation Choice",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Toasted",
+          "price": "0.00"
+        },
+        {
+          "name": "Not Toasted",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Remove Ingredients",
+      "required": 0,
+      "upto": null,
+      "features": [
+        {
+          "name": "No Lettuce",
+          "price": "0.00"
+        },
+        {
+          "name": "No Tomato",
+          "price": "0.00"
+        },
+        {
+          "name": "No Onion",
+          "price": "0.00"
+        },
+        {
+          "name": "No Olives",
+          "price": "0.00"
+        },
+        {
+          "name": "No Carrots",
+          "price": "0.00"
+        },
+        {
+          "name": "No Roasted Red Peppers",
+          "price": "0.00"
+        },
+        {
+          "name": "No Pickles",
+          "price": "0.00"
+        },
+        {
+          "name": "No Cucumbers",
+          "price": "0.00"
+        },
+        {
+          "name": "No Cheese",
+          "price": "0.00"
+        },
+        {
+          "name": "No Mayo",
+          "price": "0.00"
+        },
+        {
+          "name": "No Mustard",
+          "price": "0.00"
+        },
+        {
+          "name": "No Spread (Totally Dry)",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Preparation Option",
+      "required": 0,
+      "upto": 1,
+      "features": [
+        {
+          "name": "GF Allergy",
+          "price": "0.00"
+        },
+        {
+          "name": "GF Preference",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Protein Addition",
+      "required": 0,
+      "upto": 10,
+      "features": [
+        {
+          "name": "Extra Buffalo Chicken",
+          "price": "1.99"
+        },
+        {
+          "name": "Roasted chicken",
+          "price": "2.25"
+        },
+        {
+          "name": "Extra Roasted Turkey",
+          "price": "1.99"
+        },
+        {
+          "name": "Extra Black Forest Ham",
+          "price": "1.99"
+        },
+        {
+          "name": "Extra Genoa Salami",
+          "price": "2.25"
+        },
+        {
+          "name": "Extra Tofu",
+          "price": "1.99"
+        },
+        {
+          "name": "Extra Bacon",
+          "price": "2.50"
+        },
+        {
+          "name": "Extra Prosciutto",
+          "price": "2.25"
+        },
+        {
+          "name": "Extra Roast Beef",
+          "price": "2.25"
+        },
+        {
+          "name": "Breakfast Sausage Patty",
+          "price": "1.99"
+        },
+        {
+          "name": "Pastrami",
+          "price": "2.25"
+        }
+      ]
+    },
+    {
+      "type": "Cheese Addition",
+      "required": 0,
+      "upto": 11,
+      "features": [
+        {
+          "name": "Cheddar",
+          "price": "0.99"
+        },
+        {
+          "name": "Swiss",
+          "price": "0.99"
+        },
+        {
+          "name": "Provolone",
+          "price": "0.99"
+        },
+        {
+          "name": "American",
+          "price": "0.99"
+        },
+        {
+          "name": "Pepper Jack",
+          "price": "0.99"
+        },
+        {
+          "name": "Cream Cheese",
+          "price": "1.75"
+        },
+        {
+          "name": "Feta",
+          "price": "1.95"
+        },
+        {
+          "name": "Brie",
+          "price": "1.99"
+        },
+        {
+          "name": "Goat",
+          "price": "1.99"
+        },
+        {
+          "name": "Fresh Mozzarella",
+          "price": "1.99"
+        },
+        {
+          "name": "Smoked Gouda",
+          "price": "0.99"
+        }
+      ]
+    },
+    {
+      "type": "Veggie Addition",
+      "required": 0,
+      "upto": 13,
+      "features": [
+        {
+          "name": "Lettuce",
+          "price": "0.85"
+        },
+        {
+          "name": "Tomatoes",
+          "price": "0.85"
+        },
+        {
+          "name": "Olives",
+          "price": "0.85"
+        },
+        {
+          "name": "Carrots, Shredded",
+          "price": "0.85"
+        },
+        {
+          "name": "Roasted Red Peppers",
+          "price": "0.85"
+        },
+        {
+          "name": "Hot Peppers",
+          "price": "0.85"
+        },
+        {
+          "name": "Pickles",
+          "price": "0.85"
+        },
+        {
+          "name": "Banana Peppers",
+          "price": "0.85"
+        },
+        {
+          "name": "Portabellos",
+          "price": "1.95"
+        },
+        {
+          "name": "Cucumber",
+          "price": "0.85"
+        },
+        {
+          "name": "Spinach",
+          "price": "0.85"
+        },
+        {
+          "name": "Red Onion",
+          "price": "0.85"
+        },
+        {
+          "name": "Capers",
+          "price": "0.85"
+        }
+      ]
+    },
+    {
+      "type": "Spread Addition",
+      "required": 0,
+      "upto": 18,
+      "features": [
+        {
+          "name": "Guacamole",
+          "price": "1.75"
+        },
+        {
+          "name": "Hummus",
+          "price": "1.75"
+        },
+        {
+          "name": "Basil Pesto (Contains Pine Nuts)",
+          "price": "1.75"
+        },
+        {
+          "name": "Dijon Mustard",
+          "price": "0.00"
+        },
+        {
+          "name": "Honeycup Mustard",
+          "price": "0.00"
+        },
+        {
+          "name": "Brown Deli Style Mustard",
+          "price": "0.00"
+        },
+        {
+          "name": "Plain Mayo",
+          "price": "0.00"
+        },
+        {
+          "name": "Spicy Mayo",
+          "price": "0.00"
+        },
+        {
+          "name": "Herb and Garlic Mayo",
+          "price": "0.00"
+        },
+        {
+          "name": "Ketchup",
+          "price": "0.00"
+        },
+        {
+          "name": "Hot Sauce",
+          "price": "0.00"
+        },
+        {
+          "name": "Salt and Pepper",
+          "price": "0.00"
+        },
+        {
+          "name": "Oil",
+          "price": "0.00"
+        },
+        {
+          "name": "Balsamic Vinegar",
+          "price": "0.00"
+        },
+        {
+          "name": "Butter",
+          "price": "0.00"
+        },
+        {
+          "name": "Peanut Butter",
+          "price": "0.00"
+        },
+        {
+          "name": "Jam",
+          "price": "0.00"
+        },
+        {
+          "name": "Sun-Dried Pesto",
+          "price": "1.75"
+        }
+      ]
+    },
+    {
+      "type": "Recommended Desserts",
+      "required": 0,
+      "upto": 5,
+      "features": [
+        {
+          "name": "Cookies",
+          "price": "3.75"
+        },
+        {
+          "name": "Cannoli",
+          "price": "3.75"
+        },
+        {
+          "name": "Brownie",
+          "price": "4.75"
+        },
+        {
+          "name": "Lemon Square",
+          "price": "4.75"
+        },
+        {
+          "name": "Chocolate Mousse Cup",
+          "price": "5.75"
+        }
+      ]
+    },
+    {
+      "type": "Recommended Beverages",
+      "required": 0,
+      "upto": 5,
+      "features": [
+        {
+          "name": "Iced Latt\u00e9",
+          "price": "4.75"
+        },
+        {
+          "name": "Latt\u00e9",
+          "price": "4.75"
+        },
+        {
+          "name": "Iced Chai Latt\u00e9",
+          "price": "4.75"
+        },
+        {
+          "name": "San Pellegrino Sparkling Italian Drink",
+          "price": "3.25"
+        },
+        {
+          "name": "Joe Tea",
+          "price": "3.75"
+        }
+      ]
+    },
+    {
+      "type": "Recommended Sides And Apps",
+      "required": 0,
+      "upto": 2,
+      "features": [
+        {
+          "name": "Chips",
+          "price": "2.75"
+        },
+        {
+          "name": "Cabot chips",
+          "price": "3.60"
+        }
+      ]
+    }
+  ]
+}

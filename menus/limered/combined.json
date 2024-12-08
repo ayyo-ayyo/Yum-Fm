@@ -1,0 +1,4425 @@
+[
+    {
+        "name": "Mango Classic Tea",
+        "price": "6.40",
+        "options": [
+            {
+                "type": "Ice Levels Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Standard Ice",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Light Ice",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Extra Ice",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Preparation Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Cold",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Hot",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Sweetness Level Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Normal Sweet - 100%",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Tad Sweet - 25%",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "1/2 Sweet - 50%",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Less Sweet - 75%",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Extra Sweet - 125%",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Topping Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Boba",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Fruit Jelly",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Grass Jelly",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Lychee Jelly",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Lychee Pop",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Mango Pop",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "No Topping",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Oreo Crumbs",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Pudding",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Red Bean",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Strawberry Pop",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Mango Classic Tea Size",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Regular",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Large",
+                        "price": "0.60"
+                    }
+                ]
+            },
+            {
+                "type": "Preparation Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Cold",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Hot",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Topping Addition",
+                "required": 0,
+                "upto": 10,
+                "features": [
+                    {
+                        "name": "Boba",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Lychee Jelly",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Fruit Jelly",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Strawberry Pop",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Mango Pop",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Lychee Pop",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Pudding",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Oreo Crumbs",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Red Bean",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Aloe",
+                        "price": "0.60"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Honey Jasmine Classic Tea",
+        "price": "6.40",
+        "options": [
+            {
+                "type": "Ice Levels Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Standard Ice",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Light Ice",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Extra Ice",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Preparation Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Cold",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Hot",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Sweetness Level Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Normal Sweet - 100%",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Less Sweet - 75%",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "1/2 Sweet - 50%",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Tad Sweet - 25%",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Extra Sweet - 125%",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Topping Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Boba",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Fruit Jelly",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Lychee Jelly",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Lychee Pop",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Mango Pop",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "No Topping",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Oreo Crumbs",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Pudding",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Red Bean",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Strawberry Pop",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Honey Jasmine Classic Tea Size",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Regular",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Large",
+                        "price": "0.60"
+                    }
+                ]
+            },
+            {
+                "type": "Topping Addition",
+                "required": 0,
+                "upto": 9,
+                "features": [
+                    {
+                        "name": "Boba",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Lychee Jelly",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Fruit Jelly",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Mango Pop",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Strawberry Pop",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Lychee Pop",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Red Bean",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Pudding",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Aloe",
+                        "price": "0.60"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Peach Classic Tea",
+        "price": "6.40",
+        "options": [
+            {
+                "type": "Ice Levels Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Standard Ice",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Light Ice",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Extra Ice",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Preparation Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Cold",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Hot",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Sweetness Level Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Normal Sweet - 100%",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Tad Sweet - 25%",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "1/2 Sweet - 50%",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Less Sweet - 75%",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Extra Sweet - 125%",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Topping Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Aloe",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Boba",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Fruit Jelly",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Lychee Jelly",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Lychee Pop",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Mango Pop",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "No Topping",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Oreo Crumbs",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Pudding",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Red Bean",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Strawberry Pop",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Peach Classic Tea Size",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Regular",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Large",
+                        "price": "0.60"
+                    }
+                ]
+            },
+            {
+                "type": "Preparation Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Cold",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Hot",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Topping Addition",
+                "required": 0,
+                "upto": 10,
+                "features": [
+                    {
+                        "name": "Boba",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Lychee Jelly",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Fruit Jelly",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Strawberry Pop",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Mango Pop",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Lychee Pop",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Pudding",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Oreo Crumbs",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Red Bean",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Aloe",
+                        "price": "0.60"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Guava Classic Tea",
+        "price": "6.40",
+        "options": [
+            {
+                "type": "Preparation Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Cold",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Hot",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Ice Levels Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Standard Ice",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Light Ice",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Extra Ice",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Sweetness Level Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Normal Sweet - 100%",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Tad Sweet - 25%",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "1/2 Sweet - 50%",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Less Sweet - 75%",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Extra Sweet - 125%",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Topping Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Aloe",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Boba",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Fruit Jelly",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Lychee Jelly",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Lychee Pop",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Mango Pop",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "No Topping",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Oreo Crumbs",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Pudding",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Red Bean",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Strawberry Pop",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Guava Classic Tea Size",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Regular",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Large",
+                        "price": "0.60"
+                    }
+                ]
+            },
+            {
+                "type": "Preparation Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Cold",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Hot",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Topping Addition",
+                "required": 0,
+                "upto": 10,
+                "features": [
+                    {
+                        "name": "Boba",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Lychee Jelly",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Fruit Jelly",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Strawberry Pop",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Mango Pop",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Lychee Pop",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Pudding",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Oreo Crumbs",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Red Bean",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Aloe",
+                        "price": "0.60"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Lychee Classic Tea",
+        "price": "6.40",
+        "options": [
+            {
+                "type": "Ice Levels Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Standard Ice",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Light Ice",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Extra Ice",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Preparation Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Cold",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Hot",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Sweetness Level Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Normal Sweet - 100%",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Tad Sweet - 25%",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "1/2 Sweet - 50%",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Less Sweet - 75%",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Extra Sweet - 125%",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Topping Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Boba",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Fruit Jelly",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Lychee Jelly",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Lychee Pop",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Mango Pop",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "No Topping",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Oreo Crumbs",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Pudding",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Red Bean",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Strawberry Pop",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Lychee Classic Tea Size",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Regular",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Large",
+                        "price": "0.60"
+                    }
+                ]
+            },
+            {
+                "type": "Preparation Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Cold",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Hot",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Sweetness Level Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Normal Sweet - 100%",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Less Sweet - 75%",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "1/2 Sweet - 50%",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Tad Sweet - 25%",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Extra Sweet - 125%",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Topping Addition",
+                "required": 0,
+                "upto": 10,
+                "features": [
+                    {
+                        "name": "Boba",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Lychee Jelly",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Fruit Jelly",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Strawberry Pop",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Mango Pop",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Lychee Pop",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Pudding",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Oreo Crumbs",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Red Bean",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Aloe",
+                        "price": "0.60"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Passion Fruit Classic Tea",
+        "price": "6.40",
+        "options": [
+            {
+                "type": "Ice Levels Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Standard Ice",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Light Ice",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Extra Ice",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Preparation Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Cold",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Hot",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Sweetness Level Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Normal Sweet - 100%",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Tad Sweet - 25%",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "1/2 Sweet - 50%",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Less Sweet - 75%",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Extra Sweet - 125%",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Topping Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Boba",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Fruit Jelly",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Grass Jelly",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Lychee Jelly",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Lychee Pop",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Mango Pop",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "No Topping",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Oreo Crumbs",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Pudding",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Red Bean",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Strawberry Pop",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Passion Fruit Classic Tea Size",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Regular",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Large",
+                        "price": "0.60"
+                    }
+                ]
+            },
+            {
+                "type": "Topping Addition",
+                "required": 0,
+                "upto": 10,
+                "features": [
+                    {
+                        "name": "Boba",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Lychee Jelly",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Fruit Jelly",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Strawberry Pop",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Mango Pop",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Lychee Pop",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Pudding",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Oreo Crumbs",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Red Bean",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Aloe",
+                        "price": "0.60"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Strawberry Fruit Tea",
+        "price": "7.50",
+        "options": [
+            {
+                "type": "Ice Levels Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Standard Ice",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Light Ice",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Extra Ice",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Sweetness Level Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Normal Sweet - 100%",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Tad Sweet - 25%",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "1/2 Sweet - 50%",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Less Sweet - 75%",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Extra Sweet - 125%",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Topping Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Aloe",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Boba",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Fruit Jelly",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Grass Jelly",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Lychee Jelly",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Lychee Pop",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Mango Pop",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "No Topping",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Oreo Crumbs",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Pudding",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Red Bean",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Strawberry Pop",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Strawberry Fruit Tea Size",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Regular",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Large",
+                        "price": "0.60"
+                    }
+                ]
+            },
+            {
+                "type": "Topping Addition",
+                "required": 0,
+                "upto": 10,
+                "features": [
+                    {
+                        "name": "Boba",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Lychee Jelly",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Fruit Jelly",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Strawberry Pop",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Mango Pop",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Lychee Pop",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Pudding",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Oreo Crumbs",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Red Bean",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Aloe",
+                        "price": "0.60"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Blueberry Fruit Tea",
+        "price": "7.50",
+        "options": [
+            {
+                "type": "Ice Levels Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Standard Ice",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Light Ice",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Extra Ice",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Preparation Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Cold",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Hot",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Sweetness Level Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Normal Sweet - 100%",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Tad Sweet - 25%",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "1/2 Sweet - 50%",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Less Sweet - 75%",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Extra Sweet - 125%",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Topping Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Aloe",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Boba",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Fruit Jelly",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Grass Jelly",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Lychee Jelly",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Lychee Pop",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Mango Pop",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "No Topping",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Oreo Crumbs",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Pudding",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Red Bean",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Strawberry Pop",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Blueberry Fruit Tea Size",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Regular",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Large",
+                        "price": "0.60"
+                    }
+                ]
+            },
+            {
+                "type": "Topping Addition",
+                "required": 0,
+                "upto": 10,
+                "features": [
+                    {
+                        "name": "Boba",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Lychee Jelly",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Fruit Jelly",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Strawberry Pop",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Mango Pop",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Lychee Pop",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Pudding",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Oreo Crumbs",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Red Bean",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Aloe",
+                        "price": "0.60"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Taro Milk Tea",
+        "price": "6.40",
+        "options": [
+            {
+                "type": "Ice Levels Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Extra Ice",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Light Ice",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "No Ice",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Standard Ice",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Preparation Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Cold",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Sweetness Level Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Normal Sweet - 100%",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Tad Sweet - 25%",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "1/2 Sweet - 50%",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Less Sweet - 75%",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Extra Sweet - 125%",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Topping Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Aloe",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Boba",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Fruit Jelly",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Grass Jelly",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Lychee Jelly",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Lychee Pop",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Mango Pop",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "No Topping",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Oreo Crumbs",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Pudding",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Red Bean",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Strawberry Pop",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Taro Milk Tea Size",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Regular",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Large",
+                        "price": "0.60"
+                    }
+                ]
+            },
+            {
+                "type": "Preparation Option",
+                "required": 0,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Substitute Soy Milk",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Substitute Oat Milk",
+                        "price": "1.20"
+                    }
+                ]
+            },
+            {
+                "type": "Topping Addition",
+                "required": 0,
+                "upto": 10,
+                "features": [
+                    {
+                        "name": "Boba",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Lychee Jelly",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Fruit Jelly",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Strawberry Pop",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Mango Pop",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Lychee Pop",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Pudding",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Oreo Crumbs",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Red Bean",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Aloe",
+                        "price": "0.60"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Thai Milk Tea",
+        "price": "6.40",
+        "options": [
+            {
+                "type": "Ice Levels Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Standard Ice",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Light Ice",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Extra Ice",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Preparation Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Cold",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Hot",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Sweetness Level Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Normal Sweet - 100%",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Tad Sweet - 25%",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "1/2 Sweet - 50%",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Less Sweet - 75%",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Extra Sweet - 125%",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Topping Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Aloe",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Boba",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Fruit Jelly",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Lychee Jelly",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Lychee Pop",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Mango Pop",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "No Topping",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Oreo Crumbs",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Pudding",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Red Bean",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Strawberry Pop",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Thai Milk Tea Size",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Regular",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Large",
+                        "price": "0.60"
+                    }
+                ]
+            },
+            {
+                "type": "Preparation Option",
+                "required": 0,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Substitute Oat Milk",
+                        "price": "1.20"
+                    },
+                    {
+                        "name": "Substitute Soy Milk",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Topping Addition",
+                "required": 0,
+                "upto": 10,
+                "features": [
+                    {
+                        "name": "Boba",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Lychee Jelly",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Fruit Jelly",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Strawberry Pop",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Mango Pop",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Lychee Pop",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Pudding",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Oreo Crumbs",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Red Bean",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Aloe",
+                        "price": "0.60"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Oolong Milk Tea",
+        "price": "6.40",
+        "options": [
+            {
+                "type": "Ice Levels Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Standard Ice",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Light Ice",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Extra Ice",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Preparation Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Cold",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Hot",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Sweetness Level Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Normal Sweet - 100%",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Tad Sweet - 25%",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "1/2 Sweet - 50%",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Less Sweet - 75%",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Extra Sweet - 125%",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Topping Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Aloe",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Boba",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Fruit Jelly",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Grass Jelly",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Lychee Jelly",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Lychee Pop",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Mango Pop",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "No Topping",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Oreo Crumbs",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Pudding",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Red Bean",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Strawberry Pop",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Oolong Milk Tea Size",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Regular",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Large",
+                        "price": "0.60"
+                    }
+                ]
+            },
+            {
+                "type": "Preparation Option",
+                "required": 0,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Substitute Soy Milk",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Substitute Oat Milk",
+                        "price": "1.20"
+                    }
+                ]
+            },
+            {
+                "type": "Topping Addition",
+                "required": 0,
+                "upto": 10,
+                "features": [
+                    {
+                        "name": "Boba",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Lychee Jelly",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Fruit Jelly",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Strawberry Pop",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Mango Pop",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Lychee Pop",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Pudding",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Oreo Crumbs",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Red Bean",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Aloe",
+                        "price": "0.60"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Jasmine Milk Tea",
+        "price": "6.40",
+        "options": [
+            {
+                "type": "Ice Levels Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Standard Ice",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Light Ice",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Extra Ice",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Preparation Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Cold",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Sweetness Level Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Normal Sweet - 100%",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Tad Sweet - 25%",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "1/2 Sweet - 50%",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Less Sweet - 75%",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Extra Sweet - 125%",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Topping Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Aloe",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Boba",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Fruit Jelly",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Lychee Jelly",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Lychee Pop",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Mango Pop",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "No Topping",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Oreo Crumbs",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Pudding",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Red Bean",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Strawberry Pop",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Jasmine Milk Tea Size",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Regular",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Large",
+                        "price": "0.60"
+                    }
+                ]
+            },
+            {
+                "type": "Preparation Option",
+                "required": 0,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Substitute Soy Milk",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Substitute Oat Milk",
+                        "price": "1.20"
+                    }
+                ]
+            },
+            {
+                "type": "Topping Addition",
+                "required": 0,
+                "upto": 10,
+                "features": [
+                    {
+                        "name": "Boba",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Lychee Jelly",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Fruit Jelly",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Strawberry Pop",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Mango Pop",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Lychee Pop",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Pudding",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Oreo Crumbs",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Red Bean",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Aloe",
+                        "price": "0.60"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Coconut Milk Tea",
+        "price": "6.40",
+        "options": [
+            {
+                "type": "Ice Levels Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Extra Ice",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Light Ice",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "No Ice",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Standard Ice",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Preparation Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Cold",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Hot",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Sweetness Level Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Normal Sweet - 100%",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Tad Sweet - 25%",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "1/2 Sweet - 50%",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Less Sweet - 75%",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Extra Sweet - 125%",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Topping Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Aloe",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Boba",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Fruit Jelly",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Lychee Jelly",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Lychee Pop",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Mango Pop",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "No Topping",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Oreo Crumbs",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Pudding",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Red Bean",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Strawberry Pop",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Coconut Milk Tea Size",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Regular",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Large",
+                        "price": "0.60"
+                    }
+                ]
+            },
+            {
+                "type": "Preparation Option",
+                "required": 0,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Substitute Soy Milk",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Substitute Oat Milk",
+                        "price": "1.20"
+                    }
+                ]
+            },
+            {
+                "type": "Topping Addition",
+                "required": 0,
+                "upto": 10,
+                "features": [
+                    {
+                        "name": "Boba",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Lychee Jelly",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Fruit Jelly",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Strawberry Pop",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Mango Pop",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Lychee Pop",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Pudding",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Oreo Crumbs",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Red Bean",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Aloe",
+                        "price": "0.60"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Assam Milk Tea",
+        "price": "6.40",
+        "options": [
+            {
+                "type": "Ice Levels Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Extra Ice",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Light Ice",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Standard Ice",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Preparation Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Cold",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Hot",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Sweetness Level Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Normal Sweet - 100%",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Less Sweet - 75%",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "1/2 Sweet - 50%",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Tad Sweet - 25%",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Extra Sweet - 125%",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Topping Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Boba",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "No Topping",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Fruit Jelly",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Lychee Jelly",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Strawberry Pop",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Mango Pop",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Lychee Pop",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Red Bean",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Pudding",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Oreo Crumbs",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Aloe",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Assam Milk Tea Size",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Regular",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Large",
+                        "price": "0.60"
+                    }
+                ]
+            },
+            {
+                "type": "Preparation Option",
+                "required": 0,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Substitute Oat Milk",
+                        "price": "1.20"
+                    }
+                ]
+            },
+            {
+                "type": "Topping Addition",
+                "required": 0,
+                "upto": 10,
+                "features": [
+                    {
+                        "name": "Boba",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Lychee Jelly",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Fruit Jelly",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Strawberry Pop",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Mango Pop",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Red Bean",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Lychee Pop",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Pudding",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Oreo Crumbs",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Aloe",
+                        "price": "0.60"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Chamomile Milk Tea",
+        "price": "6.40",
+        "options": [
+            {
+                "type": "Ice Levels Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Extra Ice",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Light Ice",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "No Ice",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Standard Ice",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Preparation Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Cold",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Hot",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Sweetness Level Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Normal Sweet - 100%",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Tad Sweet - 25%",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "1/2 Sweet - 50%",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Less Sweet - 75%",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Extra Sweet - 125%",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Topping Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Aloe",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Boba",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Fruit Jelly",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Grass Jelly",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Lychee Jelly",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Lychee Pop",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Mango Pop",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "No Topping",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Oreo Crumbs",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Pudding",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Red Bean",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Strawberry Pop",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Chamomile Milk Tea Size",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Regular",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Large",
+                        "price": "0.60"
+                    }
+                ]
+            },
+            {
+                "type": "Preparation Option",
+                "required": 0,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Substitute Soy Milk",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Substitute Oat Milk",
+                        "price": "1.20"
+                    }
+                ]
+            },
+            {
+                "type": "Topping Addition",
+                "required": 0,
+                "upto": 10,
+                "features": [
+                    {
+                        "name": "Boba",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Lychee Jelly",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Fruit Jelly",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Strawberry Pop",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Mango Pop",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Lychee Pop",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Pudding",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Oreo Crumbs",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Red Bean",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Aloe",
+                        "price": "0.60"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Honeydew Milk Tea",
+        "price": "6.40",
+        "options": [
+            {
+                "type": "Ice Levels Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Standard Ice",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Light Ice",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Extra Ice",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Preparation Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Cold",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Hot",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Sweetness Level Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Normal Sweet - 100%",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Tad Sweet - 25%",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "1/2 Sweet - 50%",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Less Sweet - 75%",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Extra Sweet - 125%",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Topping Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Aloe",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Boba",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Fruit Jelly",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Grass Jelly",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Lychee Jelly",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Lychee Pop",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Mango Pop",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "No Topping",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Oreo Crumbs",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Pudding",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Red Bean",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Strawberry Pop",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Honeydew Milk Tea Size",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Regular",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Large",
+                        "price": "0.60"
+                    }
+                ]
+            },
+            {
+                "type": "Preparation Option",
+                "required": 0,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Substitute Oat Milk",
+                        "price": "1.20"
+                    },
+                    {
+                        "name": "Substitute Soy Milk",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Topping Addition",
+                "required": 0,
+                "upto": 10,
+                "features": [
+                    {
+                        "name": "Boba",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Lychee Jelly",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Fruit Jelly",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Strawberry Pop",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Mango Pop",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Lychee Pop",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Pudding",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Oreo Crumbs",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Red Bean",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Aloe",
+                        "price": "0.60"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Earl Grey Milk Tea",
+        "price": "6.40",
+        "options": [
+            {
+                "type": "Ice Levels Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Extra Ice",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Light Ice",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "No Ice",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Standard Ice",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Preparation Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Cold",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Sweetness Level Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Normal Sweet - 100%",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Tad Sweet - 25%",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "1/2 Sweet - 50%",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Less Sweet - 75%",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Extra Sweet - 125%",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Topping Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Aloe",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Boba",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Fruit Jelly",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Grass Jelly",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Lychee Jelly",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Lychee Pop",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Mango Pop",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "No Topping",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Oreo Crumbs",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Pudding",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Red Bean",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Strawberry Pop",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Earl Grey Milk Tea Size",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Regular",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Large",
+                        "price": "0.60"
+                    }
+                ]
+            },
+            {
+                "type": "Preparation Option",
+                "required": 0,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Substitute Soy Milk",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Substitute Oat Milk",
+                        "price": "1.20"
+                    }
+                ]
+            },
+            {
+                "type": "Topping Addition",
+                "required": 0,
+                "upto": 10,
+                "features": [
+                    {
+                        "name": "Boba",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Lychee Jelly",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Fruit Jelly",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Strawberry Pop",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Mango Pop",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Lychee Pop",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Pudding",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Oreo Crumbs",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Red Bean",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Aloe",
+                        "price": "0.60"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Rose Milk Tea",
+        "price": "6.40",
+        "options": [
+            {
+                "type": "Ice Levels Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Standard Ice",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Light Ice",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Extra Ice",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Honeydew Milk Tea Size",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Regular",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Large",
+                        "price": "0.60"
+                    }
+                ]
+            },
+            {
+                "type": "Choose a tea base",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Chamomile Tea (Caffeine Free)",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Jasmine Tea",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Sweetness Level Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Normal Sweet - 100%",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Less Sweet - 75%",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "1/2 Sweet - 50%",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Tad Sweet - 25%",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Extra Sweet - 125%",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Preparation Option",
+                "required": 0,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Substitute Soy Milk",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Substitute Oat Milk",
+                        "price": "1.20"
+                    }
+                ]
+            },
+            {
+                "type": "Topping Addition",
+                "required": 0,
+                "upto": 10,
+                "features": [
+                    {
+                        "name": "Boba",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Lychee Jelly",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Fruit Jelly",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Strawberry Pop",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Mango Pop",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Lychee Pop",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Pudding",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Oreo Crumbs",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Red Bean",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Aloe",
+                        "price": "0.60"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Matcha Americano",
+        "price": "6.00",
+        "options": [
+            {
+                "type": "Ice Levels Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Extra Ice",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Light Ice",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "No Ice",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Standard Ice",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Preparation Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Cold",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Hot",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Topping Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Boba",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Strawberry Pop",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Red Bean",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Pudding",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Oreo Crumbs",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "No Topping",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Mango Pop",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Lychee Pop",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Lychee Jelly",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Fruit Jelly",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Aloe",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Sweetness Level Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Normal Sweet - 100%",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Tad Sweet - 25%",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "1/2 Sweet - 50%",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Less Sweet - 75%",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Extra Sweet - 125%",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Matcha Americano Size",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Regular",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Large",
+                        "price": "0.60"
+                    }
+                ]
+            },
+            {
+                "type": "Preparation Option",
+                "required": 0,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Substitute Soy Milk",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Substitute Oat Milk",
+                        "price": "1.20"
+                    }
+                ]
+            },
+            {
+                "type": "Topping Addition",
+                "required": 0,
+                "upto": 10,
+                "features": [
+                    {
+                        "name": "Boba",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Lychee Jelly",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Fruit Jelly",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Strawberry Pop",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Mango Pop",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Lychee Pop",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Pudding",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Oreo Crumbs",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Red Bean",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Aloe",
+                        "price": "0.60"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Matcha Latte",
+        "price": "7.20",
+        "options": [
+            {
+                "type": "Ice Levels Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Standard Ice",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Light Ice",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Extra Ice",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Preparation Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Cold",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Hot",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Topping Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Strawberry Pop",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Red Bean",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Pudding",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Oreo Crumbs",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "No Topping",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Mango Pop",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Lychee Pop",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Lychee Jelly",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Fruit Jelly",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Aloe",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Boba",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Sweetness Level Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Normal Sweet - 100%",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Tad Sweet - 25%",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "1/2 Sweet - 50%",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Less Sweet - 75%",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Extra Sweet - 125%",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Matcha Latte Size",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Regular",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Large",
+                        "price": "0.60"
+                    }
+                ]
+            },
+            {
+                "type": "Topping Addition",
+                "required": 0,
+                "upto": 10,
+                "features": [
+                    {
+                        "name": "Boba",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Lychee Jelly",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Fruit Jelly",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Strawberry Pop",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Mango Pop",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Lychee Pop",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Pudding",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Oreo Crumbs",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Red Bean",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Aloe",
+                        "price": "0.60"
+                    }
+                ]
+            },
+            {
+                "type": "Preparation Option",
+                "required": 0,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Substitute Soy Milk",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Substitute Oat Milk",
+                        "price": "1.20"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Matcha Latte with Strawberry",
+        "price": "7.80",
+        "options": [
+            {
+                "type": "Ice Levels Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Standard Ice",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Light Ice",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Extra Ice",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Topping Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Aloe",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Boba",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Fruit Jelly",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Grass Jelly",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Lychee Jelly",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Lychee Pop",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Mango Pop",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "No Topping",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Oreo Crumbs",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Pudding",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Red Bean",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Strawberry Pop",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Sweetness Level Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Normal Sweet - 100%",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Tad Sweet - 25%",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "1/2 Sweet - 50%",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Less Sweet - 75%",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Extra Sweet - 125%",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Matcha Latte with Strawberry Size",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Regular",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Large",
+                        "price": "0.60"
+                    }
+                ]
+            },
+            {
+                "type": "Topping Addition",
+                "required": 0,
+                "upto": 10,
+                "features": [
+                    {
+                        "name": "Strawberry Pop",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Red Bean",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Pudding",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Oreo Crumbs",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Mango Pop",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Lychee Jelly",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Grass Jelly",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Fruit Jelly",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Boba",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Aloe",
+                        "price": "0.60"
+                    }
+                ]
+            },
+            {
+                "type": "Preparation Option",
+                "required": 0,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Substitute Soy Milk",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Substitute Oat Milk",
+                        "price": "1.20"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Fruit Jam Smoothie",
+        "price": "7.50",
+        "options": [
+            {
+                "type": "Sweetness Level Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Normal Sweet - 100%",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Tad Sweet - 25%",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "1/2 Sweet - 50%",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Less Sweet - 75%",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Extra Sweet - 125%",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Topping Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Boba",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Lychee Jelly",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Fruit Jelly",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Strawberry Pop",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Mango Pop",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Lychee Pop",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Pudding",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Oreo Crumbs",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Aloe",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "No Topping",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Flavor Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Mango",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Passion Fruit",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Peach",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Strawberry",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Fruit Jam Smoothie Size",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Regular",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Large",
+                        "price": "0.60"
+                    }
+                ]
+            },
+            {
+                "type": "Side Addition",
+                "required": 0,
+                "upto": 0,
+                "features": []
+            },
+            {
+                "type": "Topping Addition",
+                "required": 0,
+                "upto": 9,
+                "features": [
+                    {
+                        "name": "Strawberry Pop",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Pudding",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Oreo Crumbs",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Mango Pop",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Lychee Jelly",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Grass Jelly",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Fruit Jelly",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Boba",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Aloe",
+                        "price": "0.60"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Farm Milk Smoothie",
+        "price": "7.50",
+        "options": [
+            {
+                "type": "Preparation Option",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Substitute Oat Milk",
+                        "price": "1.20"
+                    },
+                    {
+                        "name": "Whole Milk",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Soy Milk",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Sweetness Level Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Normal Sweet - 100%",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Tad Sweet - 25%",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "1/2 Sweet - 50%",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Less Sweet - 75%",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Extra Sweet - 125%",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Topping Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Boba",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Lychee Jelly",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Fruit Jelly",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Strawberry Pop",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Oreo Crumbs",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Mango Pop",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Lychee Pop",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Pudding",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Red Bean",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Aloe",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "No Topping",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Flavor Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Coconut",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Taro",
+                        "price": "0.00"
+                    }
+                ]
+            },
+            {
+                "type": "Farm Milk Smoothie Size",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Regular",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Large",
+                        "price": "0.60"
+                    }
+                ]
+            },
+            {
+                "type": "Side Addition",
+                "required": 0,
+                "upto": 0,
+                "features": []
+            },
+            {
+                "type": "Topping Addition",
+                "required": 0,
+                "upto": 10,
+                "features": [
+                    {
+                        "name": "Boba",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Lychee Jelly",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Fruit Jelly",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Strawberry Pop",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Mango Pop",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Lychee Pop",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Pudding",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Oreo Crumbs",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Red Bean",
+                        "price": "0.60"
+                    },
+                    {
+                        "name": "Aloe",
+                        "price": "0.60"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "French Macaron",
+        "price": "3.60",
+        "options": [
+            {
+                "type": "Flavor Choice",
+                "required": 1,
+                "upto": 1,
+                "features": [
+                    {
+                        "name": "Caramel",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Coconut",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Earl Grey",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Espresso",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Pistachio",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Rose",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Tiramisu",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "White Chocolate",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Wedding Almond",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Vanilla",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Fruity Cereal (Seasonal)",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Blackberry Violette",
+                        "price": "0.00"
+                    },
+                    {
+                        "name": "Matcha",
+                        "price": "0.00"
+                    }
+                ]
+            }
+        ]
+    }
+]

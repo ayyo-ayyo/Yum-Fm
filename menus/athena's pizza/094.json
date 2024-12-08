@@ -1,0 +1,67 @@
+{
+  "name": "3 Fingers & Fries",
+  "price": "14.25",
+  "options": [
+    {
+      "type": "Remove Option",
+      "required": 0,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Ketchup",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Ingredients Addition",
+      "required": 0,
+      "upto": 8,
+      "features": [
+        {
+          "name": "Bleu Cheese",
+          "price": "0.75"
+        },
+        {
+          "name": "Curly Fries",
+          "price": "0.00"
+        },
+        {
+          "name": "Ketchup",
+          "price": "0.00"
+        },
+        {
+          "name": "Marinara",
+          "price": "0.25"
+        },
+        {
+          "name": "Onion Rings",
+          "price": "0.00"
+        },
+        {
+          "name": "Pepper",
+          "price": "0.00"
+        },
+        {
+          "name": "Salt",
+          "price": "0.00"
+        },
+        {
+          "name": "Sour Cream",
+          "price": "0.75"
+        }
+      ]
+    },
+    {
+      "type": "Preparation Option",
+      "required": 0,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Well Done",
+          "price": "0.00"
+        }
+      ]
+    }
+  ]
+}

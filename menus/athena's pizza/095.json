@@ -1,0 +1,63 @@
+{
+  "name": "Athena's Bread",
+  "price": "7.99",
+  "options": [
+    {
+      "type": "Preparation Option",
+      "required": 0,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Well Done",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Ingredients Addition",
+      "required": 0,
+      "upto": 6,
+      "features": [
+        {
+          "name": "Ketchup",
+          "price": "0.00"
+        },
+        {
+          "name": "Mozzarella Cheese",
+          "price": "0.45"
+        },
+        {
+          "name": "Pepper",
+          "price": "0.00"
+        },
+        {
+          "name": "Salt",
+          "price": "0.00"
+        },
+        {
+          "name": "Sour Cream",
+          "price": "0.25"
+        },
+        {
+          "name": "Tomato",
+          "price": "0.25"
+        }
+      ]
+    },
+    {
+      "type": "Remove Option",
+      "required": 0,
+      "upto": 2,
+      "features": [
+        {
+          "name": "Mozzarella Cheese",
+          "price": "0.00"
+        },
+        {
+          "name": "Tomato",
+          "price": "0.00"
+        }
+      ]
+    }
+  ]
+}

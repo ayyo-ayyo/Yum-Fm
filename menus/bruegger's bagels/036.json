@@ -1,0 +1,21 @@
+{
+  "name": "NEW! Vanilla Cream Cold Brew",
+  "price": "5.69",
+  "options": [
+    {
+      "type": "Choose",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Large",
+          "price": "6.29"
+        },
+        {
+          "name": "Small",
+          "price": "5.69"
+        }
+      ]
+    }
+  ]
+}

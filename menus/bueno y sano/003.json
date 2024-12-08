@@ -1,0 +1,233 @@
+{
+  "name": "Steak Burrito",
+  "price": "13.50",
+  "options": [
+    {
+      "type": "Choose from the following",
+      "required": 0,
+      "upto": 10,
+      "features": [
+        {
+          "name": "Bowl",
+          "price": "0.00"
+        },
+        {
+          "name": "Sour Cream",
+          "price": "0.00"
+        },
+        {
+          "name": "Brown Rice",
+          "price": "0.00"
+        },
+        {
+          "name": "Burrito Special",
+          "price": "5.35"
+        },
+        {
+          "name": "Grilled Corn",
+          "price": "0.00"
+        },
+        {
+          "name": "Grilled Garlic",
+          "price": "0.30"
+        },
+        {
+          "name": "Extra Cheese",
+          "price": "0.60"
+        },
+        {
+          "name": "Medium Sauce",
+          "price": "0.00"
+        },
+        {
+          "name": "Hot Sauce",
+          "price": "0.00"
+        },
+        {
+          "name": "Wicked Hot Sauce",
+          "price": "0.00"
+        },
+        {
+          "name": "Chipotle Sour Cream",
+          "price": "0.00"
+        },
+        {
+          "name": "Light Beans",
+          "price": "0.00"
+        },
+        {
+          "name": "Light Rice",
+          "price": "0.00"
+        },
+        {
+          "name": "Lowfat Yogurt",
+          "price": "0.00"
+        },
+        {
+          "name": "Make it a Grande",
+          "price": "0.90"
+        },
+        {
+          "name": "No Beans",
+          "price": "0.00"
+        },
+        {
+          "name": "No Cheese",
+          "price": "0.00"
+        },
+        {
+          "name": "No Lettuce",
+          "price": "0.00"
+        },
+        {
+          "name": "No Pico De Gallo",
+          "price": "0.00"
+        },
+        {
+          "name": "No Mild Sauce",
+          "price": "0.00"
+        },
+        {
+          "name": "Black Beans",
+          "price": "0.00"
+        },
+        {
+          "name": "Wheat Tortilla",
+          "price": "0.00"
+        },
+        {
+          "name": "White Rice",
+          "price": "0.00"
+        },
+        {
+          "name": "Fat Tuesday (only) Grande",
+          "price": "0.00"
+        },
+        {
+          "name": "GLUTEN ALLERGY!!!",
+          "price": "0.00"
+        },
+        {
+          "name": "SOY ALLERGY!!!",
+          "price": "0.00"
+        },
+        {
+          "name": "DAIRY ALLERGY!!!",
+          "price": "0.00"
+        },
+        {
+          "name": "SHELLFISH ALLERGY!!!",
+          "price": "0.00"
+        },
+        {
+          "name": "Bueno is PEANUT FREE!",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Choose from the following",
+      "required": 0,
+      "upto": 4,
+      "features": [
+        {
+          "name": "Add Guacamole",
+          "price": "2.40"
+        },
+        {
+          "name": "Add Chicken",
+          "price": "2.10"
+        },
+        {
+          "name": "Add Steak",
+          "price": "2.10"
+        },
+        {
+          "name": "Add Fresh Spinach",
+          "price": "1.20"
+        }
+      ]
+    },
+    {
+      "type": "Choose from the following",
+      "required": 0,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Barbecue",
+          "price": "0.00"
+        },
+        {
+          "name": "Spicy Barbecue",
+          "price": "0.00"
+        },
+        {
+          "name": "Chipotle",
+          "price": "0.00"
+        },
+        {
+          "name": "Buffalo Sauce",
+          "price": "0.00"
+        },
+        {
+          "name": "Teriyaki",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Recommended Sides And Apps",
+      "required": 0,
+      "upto": 5,
+      "features": [
+        {
+          "name": "Tortilla Chips",
+          "price": "3.55"
+        },
+        {
+          "name": "Side of Guacamole",
+          "price": "3.90"
+        },
+        {
+          "name": "Three Grilled Jalapenos",
+          "price": "7.80"
+        },
+        {
+          "name": "Side of Spanish Rice",
+          "price": "3.30"
+        },
+        {
+          "name": "Side of Black Beans",
+          "price": "3.30"
+        }
+      ]
+    },
+    {
+      "type": "Recommended Beverages",
+      "required": 0,
+      "upto": 5,
+      "features": [
+        {
+          "name": "Jarritos (Self serve)",
+          "price": "3.30"
+        },
+        {
+          "name": "Fountain Soda (Self serve)",
+          "price": "3.90"
+        },
+        {
+          "name": "Izze Soda (Self serve)",
+          "price": "4.20"
+        },
+        {
+          "name": "Nantucket Nectar (Self serve)",
+          "price": "4.20"
+        },
+        {
+          "name": "Spindrift Sparkling (Self serve)",
+          "price": "3.55"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Joe Tea",
+  "price": "3.75",
+  "options": [
+    {
+      "type": "Flavor Choice",
+      "required": 1,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Green Tea",
+          "price": "0.00"
+        }
+      ]
+    }
+  ]
+}

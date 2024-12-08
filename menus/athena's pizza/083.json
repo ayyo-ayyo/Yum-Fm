@@ -1,0 +1,48 @@
+{
+  "name": "Spicy Curly Fries",
+  "price": "9.25",
+  "options": [
+    {
+      "type": "Preparation Option",
+      "required": 0,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Well Done",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Ingredients Addition",
+      "required": 0,
+      "upto": 6,
+      "features": [
+        {
+          "name": "Bleu Cheese",
+          "price": "0.25"
+        },
+        {
+          "name": "Ketchup",
+          "price": "0.00"
+        },
+        {
+          "name": "Marinara",
+          "price": "0.25"
+        },
+        {
+          "name": "Pepper",
+          "price": "0.00"
+        },
+        {
+          "name": "Salt",
+          "price": "0.00"
+        },
+        {
+          "name": "Sour Cream",
+          "price": "0.25"
+        }
+      ]
+    }
+  ]
+}

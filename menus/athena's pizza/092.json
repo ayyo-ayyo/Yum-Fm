@@ -1,0 +1,59 @@
+{
+  "name": "4 Meatballs",
+  "price": "12.99",
+  "options": [
+    {
+      "type": "Remove Option",
+      "required": 0,
+      "upto": 1,
+      "features": [
+        {
+          "name": "Meat Sauce",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Remove Option",
+      "required": 0,
+      "upto": 2,
+      "features": [
+        {
+          "name": "Cheese",
+          "price": "0.00"
+        },
+        {
+          "name": "Sause",
+          "price": "0.00"
+        }
+      ]
+    },
+    {
+      "type": "Ingredients Addition",
+      "required": 0,
+      "upto": 5,
+      "features": [
+        {
+          "name": "Cheese",
+          "price": "0.00"
+        },
+        {
+          "name": "Mushrooms",
+          "price": "0.00"
+        },
+        {
+          "name": "Onions",
+          "price": "0.00"
+        },
+        {
+          "name": "Peppers",
+          "price": "0.00"
+        },
+        {
+          "name": "Sause",
+          "price": "0.00"
+        }
+      ]
+    }
+  ]
+}
