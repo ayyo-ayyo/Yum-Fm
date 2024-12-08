@@ -20,8 +20,6 @@ interface RestaurantCardProps {
   size?: 'small' | 'large';
 }
 
-const userId = '6734ee0c95789f1ef59cc007'; 
-
 const RestaurantCard: React.FC<RestaurantCardProps> = ({ restaurant, onAddToFavorites, size = 'small' }) => {
   const [isExpanded, setIsExpanded] = useState(false);
   const [modalVisible, setModalVisible] = useState(false);
@@ -70,9 +68,35 @@ const RestaurantCard: React.FC<RestaurantCardProps> = ({ restaurant, onAddToFavo
     setActiveTab(tab);
   };
 
-  const toggleFavorite = () => {
-    setIsFavorite(!isFavorite);
-    onAddToFavorites(restaurant.restaurant_id);
+  const userId = '6734ee0c95789f1ef59cc007'; 
+  const toggleFavorite = async () => {
+    try {
+      // Toggle the favorite status locally for an optimistic UI update
+      const updatedFavoriteStatus = !isFavorite;
+      setIsFavorite(updatedFavoriteStatus);
+  
+      // Determine the HTTP method and API endpoint based on the toggle status
+      const apiUrl = `https://yum-fm-90558e78d331.herokuapp.com/api/users/${userId}`;
+      const requestBody = { restaurant_id: restaurant.restaurant_id };
+  
+      const response = await fetch(apiUrl, {
+        method: updatedFavoriteStatus ? 'POST' : 'DELETE', // POST to add, DELETE to remove
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(requestBody),
+      });
+  
+      if (!response.ok) throw new Error('Failed to update favorites');
+  
+      // Optionally, call a parent callback function
+      onAddToFavorites(restaurant.restaurant_id);
+    } catch (error) {
+      console.error('Error updating favorites:', error);
+  
+      // Revert the local state if the operation fails
+      setIsFavorite(!isFavorite);
+    }
   };
 
   const onUploadMenu = () => {
