@@ -40,10 +40,9 @@ loginRouter.post('/login', (req, res) => {
             }
 
             const user = matchedUsers[0];
-
-            console.log(user);
-            console.log(tm.generateNewToken(user._id));
-            res.status(200).json(user); // Send the user information if successful
+            const token = tm.generateNewToken(user._id)
+            console.log(`Generated token "${token}" for user "${user._id}"`);
+            res.status(200).json({_id: user._id, token: token}); // Send the user information if successful
         })
         .catch(err => {
             console.log(err);
@@ -51,8 +50,7 @@ loginRouter.post('/login', (req, res) => {
         });
 });
 
-// Define the GET /login route, which will will be used to create a new user
-// The user_name, password, and temporarily the user_id must be given in the body of the request
+// Define the POST /signup route, which will will be used to create a new user
 loginRouter.post('/signup', async (req, res) => {
     try {
         const model = new User({ // Make sure the given document matches the User schema
@@ -60,10 +58,20 @@ loginRouter.post('/signup', async (req, res) => {
             ...req.body
         });
 
-        //TODO: Validate that the email does not already exist 
+        // Validate that the email does not already exist 
+        const matchedUsers = await User.aggregate().match({
+            email: req.body.email,
+        }).exec();
+
+        if (matchedUsers.length != 0) {
+            res.status(400).send("Email already in use!");
+            return;
+        }
+
+        // Otherwise, create the account
 
         await model.save(); // Attempt to add the new user to the data base
-        res.status(201).json(model); // If successful, inform the client
+        res.sendStatus(201); // If successful, inform the client
     } catch(err) {
         console.error(err);
         res.status(500).json({ error: err }); // Otherwise, send the error

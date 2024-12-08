@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, Text, TextInput, StyleSheet, TouchableOpacity, Modal } from 'react-native';
+import { View, Text, TextInput, StyleSheet, TouchableOpacity, Modal, Alert } from 'react-native';
 import { useRouter } from 'expo-router';
 import { hashPassword } from './password_hasher';
 
@@ -35,15 +35,19 @@ export default function CreateAccountScreen() {
       headers: {
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify({user_id: 1234, user_name: email, email: email, password: hash, favorites_list: []})
+      body: JSON.stringify({user_name: email, email: email, password: hash, favorites_list: []})
     });
 
-    // If response code is 500, then creation failed TODO: Report to user
-
-
-    console.log(res.body);
-
-    router.replace('/login');
+    if (res.status == 400) {
+      Alert.alert("Error", await res.text());
+    }
+    else if (res.status == 201) {
+      router.replace('/login');
+      Alert.alert("Succes", "Account created successfully")
+    }
+    else {
+      Alert.alert("Error", "Unknown error");
+    }
   };
 
   return (

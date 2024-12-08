@@ -23,29 +23,27 @@ export default function LoginScreen() {
 
     setLoading(true);
 
-    setTimeout(() => {
-      setLoading(false);
-      if (regex.test(email) && password !== '') {
-        // Need to validate if the email and password were correct
-        hashPassword(password).then(async (hash) => {
-          console.log(hash);
-          const res = await fetch('http://localhost:3000/api/login', {
-            method: "POST",
-            headers: {
-              'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({email: email, password: hash})
-          });
-
-          console.log(await res.json());
+    setLoading(false);
+    if (regex.test(email) && password !== '') {
+      // Need to validate if the email and password were correct
+      hashPassword(password).then(async (hash) => {
+        console.log(hash);
+        const res = await fetch('http://localhost:3000/api/login', {
+          method: "POST",
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({email: email, password: hash})
         });
 
-        router.replace('/(tabs)');
-      } else {
-        setErrorMessage('Invalid email or password.');
-        setModalVisible(true);
-      }
-    }, 2000);
+        console.log(await res.json());
+      });
+
+      router.replace('/(tabs)');
+    } else {
+      setErrorMessage('Invalid email or password.');
+      setModalVisible(true);
+    }
   };
 
   const handleCreateAccount = () => {
