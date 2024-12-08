@@ -1,5 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
+const tm = require('../token_manager');
 
 /*
     This file establishes a quick function for creating the routes that are 
@@ -28,6 +29,15 @@ function buildDefaultRouter(routeNameStr, ModelType) {
 
     // Define the GET /routeNameStr route, which will return all entries of ModelType in the database.
     router.get(`/${routeNameStr}`, async (req, res) => {
+        let userId;
+        try {
+            userId = tm.validateToken(req.headers.authorization);
+        }
+        catch (err) {
+            res.status(401).send('Invalid access token');
+            return;
+        }
+
         ModelType.find({}).exec() // Find all documents that match ModelType
             .then((results) => {res.status(200).json(results);})  // On success, return the documents and an OK status code
             .catch((err) => { // On error,
@@ -38,6 +48,15 @@ function buildDefaultRouter(routeNameStr, ModelType) {
 
     // Define the GET /routeNameStr/<id> route, which will return the ModelType document with the specified _id value
     router.get(`/${routeNameStr}/:id`, async(req, res) => {
+        let userId;
+        try {
+            userId = tm.validateToken(req.headers.authorization);
+        }
+        catch (err) {
+            res.status(401).send('Invalid access token');
+            return;
+        }
+
         const { id } = req.params;
         if (!mongoose.Types.ObjectId.isValid(id)) { // Make sure the id is valid
             return res.status(404).json({ error: 'Invalid ID: ' + id }); // If the id is not valid, report that the document could not be found
@@ -71,6 +90,15 @@ function buildDefaultRouter(routeNameStr, ModelType) {
 
     // Define the DELETE /routeNameStr/<id> route, which will delete the ModelType document with the specified _id
     router.delete(`/${routeNameStr}/:id`, async (req, res) => {
+        let userId;
+        try {
+            userId = tm.validateToken(req.headers.authorization);
+        }
+        catch (err) {
+            res.status(401).send('Invalid access token');
+            return;
+        }
+
         try {
             const { id } = req.params;
             if (!mongoose.Types.ObjectId.isValid(id)) { // Make sure the id is valid

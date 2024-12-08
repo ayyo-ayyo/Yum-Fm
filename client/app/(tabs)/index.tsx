@@ -32,6 +32,7 @@ const HomeScreen: React.FC = () => {
 
       // Fetch restaurant data
       try {
+        //const response = await fetch('https://yum-fm-90558e78d331.herokuapp.com/api/restaurants');
         const response = await fetch('https://yum-fm-90558e78d331.herokuapp.com/api/restaurants');
         if (!response.ok) throw new Error(`Error fetching data: ${response.statusText}`);
         const data: Restaurant[] = await response.json();

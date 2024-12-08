@@ -6,16 +6,17 @@ function generateNewToken(userId) {
     let token = crypto.randomBytes(24).toString('base64');
     active_tokens.set(token, userId);
 
-    const expireMs = 5 * 60 * 1000;
+    const expireMs = 60 * 1000; // Time until the token is invalidated
 
     setTimeout(() => {
+        console.log(`Invalidating token "${token}"`);
         active_tokens.delete(token);
     }, expireMs);
 
     return token;
 }
 
-function getUserFromToken(token) {
+function validateToken(token) {
     if (!active_tokens.has(token)) {
         throw Error('Invalid token')
     }
@@ -25,5 +26,5 @@ function getUserFromToken(token) {
 
 module.exports = {
     generateNewToken,
-    generateNewToken
+    validateToken
 };

@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import { View, Text, StyleSheet, TextInput, TouchableOpacity, ActivityIndicator, Modal, Image } from 'react-native';
+import { View, Text, StyleSheet, TextInput, TouchableOpacity, ActivityIndicator, Modal, Image, Alert } from 'react-native';
 import { useRouter } from 'expo-router';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { hashPassword } from './password_hasher';
+import * as SessionInfo from './session_info';
 
 export default function LoginScreen() {
   const router = useRouter();
@@ -36,10 +37,15 @@ export default function LoginScreen() {
           body: JSON.stringify({email: email, password: hash})
         });
 
-        console.log(await res.json());
+        if (res.status != 200) {
+          Alert.alert('Error', await res.text());
+          return;
+        }
+        
+        const resJSON = await res.json();
+        SessionInfo.login(resJSON._id, resJSON.token);
+        router.replace('/(tabs)');
       });
-
-      router.replace('/(tabs)');
     } else {
       setErrorMessage('Invalid email or password.');
       setModalVisible(true);
