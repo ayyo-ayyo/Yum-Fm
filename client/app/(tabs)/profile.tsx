@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, Image, SafeAreaView, TextInput, Modal, Alert, Switch } from 'react-native';
 import { FontAwesome } from '@expo/vector-icons';
 import RestaurantCard from '../../components/RestaurantCard';
+import { useRouter } from 'expo-router';
+import * as SessionInfo from '../session_info';
 
 interface User {
   _id: string;
@@ -24,8 +26,6 @@ export default function ProfileScreen() {
   const [isLogoutModalVisible, setIsLogoutModalVisible] = useState<boolean>(false);
   const [favoriteRestaurants, setFavoriteRestaurants] = useState<any[]>([]);
 
-  const userId = '6734ee0c95789f1ef59cc007'; // hardcoded user ID for this example
-
   useEffect(() => {
     fetchUserData();
   }, []);
@@ -33,10 +33,24 @@ export default function ProfileScreen() {
   // `http://localhost:3000/api/users/${userId}`
   // `https://yum-fm-90558e78d331.herokuapp.com/api/users/${userId}`
 
+  const token = SessionInfo.getAuthToken();
+      if (token === undefined) {
+        throw Error('Undefined token');
+      }
+
+  const userId = SessionInfo.getUserId();
+  if (userId === undefined) {
+    throw new Error('Undefined userId');
+  }
+
   const fetchUserData = async (): Promise<void> => {
     try {
-      const response = await fetch(`http://localhost:3000/api/users/${userId}`); // switch to heroku link after updating
-      if (!response.ok) throw new Error('Failed to fetch user data');
+      const response = await fetch(`http://localhost:3000/api/users/${userId}`, {
+        headers: {
+          'Authorization': token
+        }
+      }); // switch to heroku link after updating
+      if (!response.ok) throw new Error(`Failed to fetch user data: ${await response.text()}`);
       const userData: User = await response.json();
       setName(userData.user_name || '');  // use empty string if data is missing
       setPhone(userData.phone_number || '');
@@ -45,6 +59,7 @@ export default function ProfileScreen() {
       setFavoriteRestaurants(userData.favorites_list || []);
       console.log(userData.favorites_list)
     } catch (error) {
+      console.log(error);
       Alert.alert('Error', 'Failed to load user data.');
     }
   };

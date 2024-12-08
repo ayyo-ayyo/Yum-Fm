@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { View, TextInput, StyleSheet, TouchableOpacity, Keyboard, SafeAreaView, FlatList } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import RestaurantCard from '../../components/RestaurantCard';
+import * as SessionInfo from '../session_info';
 
 // Define type of Restaurant for TypeScript
 interface Restaurant {
@@ -18,7 +19,18 @@ export default function ExploreTab() {
   const handleSearch = async () => {
     if (query) {
       try {
-        const response = await fetch(`https://yum-fm-90558e78d331.herokuapp.com/api/search?type=restaurant&q=${query}`);
+        //const response = await fetch(`https://yum-fm-90558e78d331.herokuapp.com/api/search?type=restaurant&q=${query}`);
+
+        const token = SessionInfo.getAuthToken();
+        if (token === undefined) {
+          throw Error('Undefined token');
+        }
+
+        const response = await fetch(`http://localhost:3000/api/search?type=restaurant&q=${query}`, {
+          headers: {
+            'Authorization': token
+          }
+        });
         if (!response.ok) {
           throw new Error(`Error: ${response.status}`);
         }

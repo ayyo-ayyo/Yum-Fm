@@ -5,6 +5,7 @@ import { StyleSheet, ScrollView, View, Text, ActivityIndicator, Image } from 're
 import { SafeAreaView } from 'react-native-safe-area-context';
 import * as Location from 'expo-location';
 import RestaurantCard from '../../components/RestaurantCard';
+import * as SessionInfo from '../session_info';
 
 interface Restaurant {
   restaurant_id: number;
@@ -33,8 +34,17 @@ const HomeScreen: React.FC = () => {
       // Fetch restaurant data
       try {
         //const response = await fetch('https://yum-fm-90558e78d331.herokuapp.com/api/restaurants');
-        const response = await fetch('https://yum-fm-90558e78d331.herokuapp.com/api/restaurants');
-        if (!response.ok) throw new Error(`Error fetching data: ${response.statusText}`);
+        const token = SessionInfo.getAuthToken();
+        if (token === undefined) {
+          throw Error('Undefined token');
+        }
+
+        const response = await fetch('http://localhost:3000/api/restaurants', {
+          headers: {
+            'Authorization': token
+          }
+        });
+        if (!response.ok) throw new Error(`Error fetching data: ${await response.text()}`);
         const data: Restaurant[] = await response.json();
         setRestaurants(data);
       } catch (error) {
