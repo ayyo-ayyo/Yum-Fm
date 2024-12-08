@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { View, Text, StyleSheet, TextInput, TouchableOpacity, ActivityIndicator, Modal, Image } from 'react-native';
 import { useRouter } from 'expo-router';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import * as Crypto from 'expo-crypto';
 
 export default function LoginScreen() {
   const router = useRouter();
@@ -25,6 +26,13 @@ export default function LoginScreen() {
     setTimeout(() => {
       setLoading(false);
       if (regex.test(email) && password !== '') {
+        // Need to validate if the email and password were correct
+        hashPassword(password).then((hash) => {
+          console.log('----------------------');
+          console.log(hash);
+          console.log('----------------------');
+        });
+
         router.replace('/(tabs)');
       } else {
         setErrorMessage('Invalid email or password.');
@@ -196,3 +204,7 @@ const styles = StyleSheet.create({
     fontSize: 16,
   },
 });
+
+async function hashPassword(password: string): Promise<string> {
+  return await Crypto.digestStringAsync(Crypto.CryptoDigestAlgorithm.SHA256, password);
+}
