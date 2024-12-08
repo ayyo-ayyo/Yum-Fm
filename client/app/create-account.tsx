@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { View, Text, TextInput, StyleSheet, TouchableOpacity, Modal } from 'react-native';
+import { View, Text, TextInput, StyleSheet, TouchableOpacity, Modal, Alert } from 'react-native';
 import { useRouter } from 'expo-router';
+import { hashPassword } from './password_hasher';
 
 export default function CreateAccountScreen() {
   const router = useRouter();
@@ -9,7 +10,7 @@ export default function CreateAccountScreen() {
   const [modalVisible, setModalVisible] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
 
-  const handleCreateAccount = () => {
+  const handleCreateAccount = async () => {
     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
     if (!email || !password) {
@@ -24,12 +25,29 @@ export default function CreateAccountScreen() {
     }
 
     // Simulate account creation logic
-    setTimeout(() => {
-      setTimeout(() => {
-        setModalVisible(false);
-        router.replace('/login');
-      }, 2000); // Wait for 2 seconds before redirecting
-    }, 1000);
+    setModalVisible(false);
+
+    // Create the account after hashing the password
+
+    const hash = await hashPassword(password);
+    const res = await fetch('https://yum-fm-90558e78d331.herokuapp.com/api/signup', {
+      method: "POST",
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({user_name: email, email: email, password: hash, favorites_list: []})
+    });
+
+    if (res.status == 400) {
+      Alert.alert("Error", await res.text());
+    }
+    else if (res.status == 201) {
+      router.replace('/login');
+      Alert.alert("Succes", "Account created successfully")
+    }
+    else {
+      Alert.alert("Error", "Unknown error");
+    }
   };
 
   return (
