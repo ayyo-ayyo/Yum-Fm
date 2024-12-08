@@ -31,7 +31,7 @@ export default function LoginScreen() {
       // Need to validate if the email and password were correct
       hashPassword(password).then(async (hash) => {
         console.log(hash);
-        const res = await fetch('http://localhost:3000/api/login', {
+        const res = await fetch('https://yum-fm-90558e78d331.herokuapp.com/api/login', {
           method: "POST",
           headers: {
             'Content-Type': 'application/json'

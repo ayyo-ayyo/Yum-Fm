@@ -1,8 +1,9 @@
 //index.tsx
 
 import React, { useEffect, useState } from 'react';
-import { StyleSheet, ScrollView, View, Text, ActivityIndicator, Image } from 'react-native';
+import { StyleSheet, ScrollView, View, Text, ActivityIndicator, Image, Alert } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import { useRouter } from 'expo-router';
 import * as Location from 'expo-location';
 import RestaurantCard from '../../components/RestaurantCard';
 import * as SessionInfo from '../session_info';
@@ -18,6 +19,8 @@ const HomeScreen: React.FC = () => {
   const [location, setLocation] = useState<Location.LocationObject | null>(null);
   const [restaurants, setRestaurants] = useState<Restaurant[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
+
+  const router = useRouter();
 
   useEffect(() => {
     (async () => {
@@ -39,11 +42,17 @@ const HomeScreen: React.FC = () => {
           throw Error('Undefined token');
         }
 
-        const response = await fetch('http://localhost:3000/api/restaurants', {
+        const response = await fetch('https://yum-fm-90558e78d331.herokuapp.com/api/restaurants', {
           headers: {
             'Authorization': token
           }
         });
+
+        if (response.status == 401) {
+          router.navigate('/login');
+          Alert.alert('Session expired');
+        }
+
         if (!response.ok) throw new Error(`Error fetching data: ${await response.text()}`);
         const data: Restaurant[] = await response.json();
         setRestaurants(data);

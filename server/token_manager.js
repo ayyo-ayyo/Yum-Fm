@@ -6,7 +6,7 @@ function generateNewToken(userId) {
     let token = crypto.randomBytes(24).toString('base64');
     active_tokens.set(token, userId);
 
-    const expireMs = 5 * 60 * 1000; // Time until the token is invalidated (5 minutes)
+    const expireMs = 10 * 60 * 1000; // Time until the token is invalidated (10 minutes)
 
     setTimeout(() => {
         console.log(`Invalidating token "${token}"`);

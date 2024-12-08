@@ -30,7 +30,7 @@ export default function CreateAccountScreen() {
     // Create the account after hashing the password
 
     const hash = await hashPassword(password);
-    const res = await fetch('http://localhost:3000/api/signup', {
+    const res = await fetch('https://yum-fm-90558e78d331.herokuapp.com/api/signup', {
       method: "POST",
       headers: {
         'Content-Type': 'application/json'

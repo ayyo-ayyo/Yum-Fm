@@ -47,11 +47,17 @@ export default function ProfileScreen() {
 
   const fetchUserData = async (): Promise<void> => {
     try {
-      const response = await fetch(`http://localhost:3000/api/users/${userId}`, {
+      const response = await fetch(`https://yum-fm-90558e78d331.herokuapp.com/api/users/${userId}`, {
         headers: {
           'Authorization': token
         }
       }); // switch to heroku link after updating
+
+      if (response.status == 401) {
+        router.navigate('/login');
+        Alert.alert('Session expired');
+      }
+
       if (!response.ok) throw new Error(`Failed to fetch user data: ${await response.text()}`);
       const userData: User = await response.json();
       setName(userData.user_name || '');  // use empty string if data is missing
