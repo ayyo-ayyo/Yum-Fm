@@ -26,6 +26,8 @@ export default function ProfileScreen() {
   const [isLogoutModalVisible, setIsLogoutModalVisible] = useState<boolean>(false);
   const [favoriteRestaurants, setFavoriteRestaurants] = useState<any[]>([]);
 
+  const router = useRouter();
+
   useEffect(() => {
     fetchUserData();
   }, []);
@@ -128,6 +130,8 @@ export default function ProfileScreen() {
     setIsLogoutModalVisible(!isLogoutModalVisible);
     // setIsLogoutModalVisible(false);
     // navigation.navigate('login');
+
+    router.navigate('/login');
   };
 
   return (
