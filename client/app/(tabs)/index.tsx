@@ -1,21 +1,26 @@
 //index.tsx
 
 import React, { useEffect, useState } from 'react';
-import { StyleSheet, ScrollView, View, Text, ActivityIndicator } from 'react-native';
+import { StyleSheet, ScrollView, View, Text, ActivityIndicator, Image, Alert } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import { useRouter } from 'expo-router';
 import * as Location from 'expo-location';
 import RestaurantCard from '../../components/RestaurantCard';
+import * as SessionInfo from '../session_info';
 
 interface Restaurant {
   restaurant_id: number;
   restaurant_name: string;
   restaurant_desc: string;
+  restaurant_img: string;
 }
 
 const HomeScreen: React.FC = () => {
   const [location, setLocation] = useState<Location.LocationObject | null>(null);
   const [restaurants, setRestaurants] = useState<Restaurant[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
+
+  const router = useRouter();
 
   useEffect(() => {
     (async () => {
@@ -31,8 +36,24 @@ const HomeScreen: React.FC = () => {
 
       // Fetch restaurant data
       try {
-        const response = await fetch('https://yum-fm-90558e78d331.herokuapp.com/api/restaurants');
-        if (!response.ok) throw new Error(`Error fetching data: ${response.statusText}`);
+        //const response = await fetch('https://yum-fm-90558e78d331.herokuapp.com/api/restaurants');
+        const token = SessionInfo.getAuthToken();
+        if (token === undefined) {
+          throw Error('Undefined token');
+        }
+
+        const response = await fetch('https://yum-fm-90558e78d331.herokuapp.com/api/restaurants', {
+          headers: {
+            'Authorization': token
+          }
+        });
+
+        if (response.status == 401) {
+          router.navigate('/login');
+          Alert.alert('Session expired');
+        }
+
+        if (!response.ok) throw new Error(`Error fetching data: ${await response.text()}`);
         const data: Restaurant[] = await response.json();
         setRestaurants(data);
       } catch (error) {
@@ -58,14 +79,16 @@ const HomeScreen: React.FC = () => {
 
   const renderCategory = (title: string, data: Restaurant[]) => (
     <View style={styles.categoryContainer}>
-      <Text style={styles.categoryTitle}>{title}</Text>
+      <View style={styles.categoryTitleContainer}>
+        <Text style={styles.categoryTitle}>{title}</Text>
+      </View>
       <ScrollView horizontal showsHorizontalScrollIndicator={false}>
         {data.map((restaurant) => (
-          <RestaurantCard
-            key={restaurant.restaurant_id}
-            restaurant={restaurant}
-            onAddToFavorites={handleAddToFavorites}
-          />
+            <RestaurantCard
+              key={restaurant.restaurant_id}
+              restaurant={restaurant}
+              onAddToFavorites={handleAddToFavorites}
+            />
         ))}
       </ScrollView>
     </View>
@@ -96,23 +119,28 @@ export default HomeScreen;
 const styles = StyleSheet.create({
   safeContainer: {
     flex: 1,
-    backgroundColor: '#F3E2CF',
+    backgroundColor: '#F3E2CF'
   },
   container: {
-    padding: 16,
+    padding: 4,
+    flex: 1
   },
   categoryContainer: {
     marginBottom: 10,
+    flex:1
   },
   categoryTitle: {
     fontSize: 20,
     fontWeight: 'bold',
     color: 'white', // Text color set to white
-    marginBottom: 8,
-    backgroundColor: '#D74938', // Solid background color for the category box
-    padding: 12, // Padding for better spacing
     width: '100%', // Ensures the box spans the entire width
     textAlign: 'left', // Centers the text
-    borderRadius: 15
+  },
+  categoryTitleContainer: {
+    backgroundColor: '#D74938',
+    borderRadius: 15,
+    padding: 10,
+    width: '100%',
+    marginBottom: 8
   },
 });

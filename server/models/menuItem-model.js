@@ -1,6 +1,10 @@
-// restaurantMenuItem.js
+// menuItem-model.js
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
+
+/*
+    This file defines the format/schema that all MenuItems must fit in the database.
+*/
 
 const menuItemSchema = new Schema({
     menu_item_id: { type: Number, required: true, unique: true },

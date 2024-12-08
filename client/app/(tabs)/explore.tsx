@@ -1,9 +1,9 @@
-// explore.tsx
-
 import React, { useState } from 'react';
-import { View, TextInput, StyleSheet, TouchableOpacity, Keyboard, SafeAreaView, FlatList } from 'react-native';
+import { View, TextInput, StyleSheet, TouchableOpacity, Keyboard, SafeAreaView, FlatList, Alert } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
+import { useRouter } from 'expo-router';
 import RestaurantCard from '../../components/RestaurantCard';
+import * as SessionInfo from '../session_info';
 import { router } from 'expo-router';
 
 // Define type of Restaurant for TypeScript
@@ -17,12 +17,14 @@ export default function ExploreTab() {
   const [query, setQuery] = useState('');
   const [results, setResults] = useState<Restaurant[]>([]);
 
+  const router = useRouter();
+
   // Handle fetching of search results when pressing "Enter"
   const handleSearch = async () => {
     const baseURL = process.env.baseUrl;
     if (query) {
       try {
-        const response = await fetch(`${baseURL}search?type=restaurant&q=${query}`);
+        const response = await fetch(`https://yum-fm-90558e78d331.herokuapp.com/api/search?type=restaurant&q=${query}`);
         if (!response.ok) {
           throw new Error(`Error: ${response.status}`);
         }
@@ -69,14 +71,17 @@ export default function ExploreTab() {
         data={results}
         keyExtractor={(item) => item.restaurant_id.toString()}
         renderItem={({ item }) => (
-          <RestaurantCard
-            restaurant={item}
-            onAddToFavorites={handleAddToFavorites}
-            size = "large"
-          />
+          <View style={styles.resultContainer}>
+            <RestaurantCard
+              restaurant={item}
+              onAddToFavorites={handleAddToFavorites}
+              size="large"
+            />
+          </View>
         )}
         contentContainerStyle={styles.resultsContainer}
         horizontal={false} // Use vertical scrolling for list
+        ItemSeparatorComponent={() => <View style={styles.itemSeparator} />} // Add separator between items
       />
     </SafeAreaView>
   );
@@ -108,5 +113,16 @@ const styles = StyleSheet.create({
   },
   resultsContainer: {
     padding: 16,
+  },
+  resultContainer: {
+    marginBottom: 16, // Space between each restaurant card
+    borderWidth: 1, // Border around each result
+    borderColor: '#D74938', // Light grey border color
+    borderRadius: 12, // Rounded corners for the border
+    padding: 4, // Padding inside the border
+    backgroundColor: 'white', // Background color inside the border
+  },
+  itemSeparator: {
+    height: 16, // Space between items
   },
 });

@@ -42,12 +42,8 @@
           "recordAudioAndroid": true
         }
       ],
-      [
-        "react-native-document-scanner-plugin",
-        {
-          "cameraPermission": "Allow $(PRODUCT_NAME) to access your camera"
-        }
-      ]
+      "expo-font",
+      "expo-asset"
     ],
     "experiments": {
       "typedRoutes": true

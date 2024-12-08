@@ -1,11 +1,144 @@
-// app/profile.tsx
-import React, { useState } from 'react';
-import { View, Text, StyleSheet, TouchableOpacity, Image, Switch, SafeAreaView } from 'react-native';
+import React, { useEffect, useState } from 'react';
+import { View, Text, StyleSheet, TouchableOpacity, Image, SafeAreaView, TextInput, Modal, Alert, Switch } from 'react-native';
 import { FontAwesome } from '@expo/vector-icons';
+import RestaurantCard from '../../components/RestaurantCard';
+import { useRouter } from 'expo-router';
+import * as SessionInfo from '../session_info';
+
+interface User {
+  _id: string;
+  user_name: string;
+  phone_number: string;
+  email: string;
+  address: string;
+  favorites_list: number[];
+}
 
 export default function ProfileScreen() {
   const [activeTab, setActiveTab] = useState<'account' | 'filters'>('account');
-  const [filtersEnabled, setFiltersEnabled] = useState(false);
+  const [filtersEnabled, setFiltersEnabled] = useState<boolean>(false);
+  const [isEditing, setIsEditing] = useState<boolean>(false);
+  const [name, setName] = useState<string>('');
+  const [phone, setPhone] = useState<string>('');
+  const [email, setEmail] = useState<string>('');
+  const [address, setAddress] = useState<string>('');
+  const [isFavoritesModalVisible, setIsFavoritesModalVisible] = useState<boolean>(false);
+  const [isLogoutModalVisible, setIsLogoutModalVisible] = useState<boolean>(false);
+  const [favoriteRestaurants, setFavoriteRestaurants] = useState<any[]>([]);
+
+  const router = useRouter();
+
+  useEffect(() => {
+    fetchUserData();
+  }, []);
+
+  // `http://localhost:3000/api/users/${userId}`
+  // `https://yum-fm-90558e78d331.herokuapp.com/api/users/${userId}`
+
+  const token = SessionInfo.getAuthToken();
+      if (token === undefined) {
+        throw Error('Undefined token');
+      }
+
+  const userId = SessionInfo.getUserId();
+  if (userId === undefined) {
+    throw new Error('Undefined userId');
+  }
+
+  const fetchUserData = async (): Promise<void> => {
+    try {
+      const response = await fetch(`https://yum-fm-90558e78d331.herokuapp.com/api/users/${userId}`, {
+        headers: {
+          'Authorization': token
+        }
+      }); // switch to heroku link after updating
+
+      if (response.status == 401) {
+        router.navigate('/login');
+        Alert.alert('Session expired');
+      }
+
+      if (!response.ok) throw new Error(`Failed to fetch user data: ${await response.text()}`);
+      const userData: User = await response.json();
+      setName(userData.user_name || '');  // use empty string if data is missing
+      setPhone(userData.phone_number || '');
+      setEmail(userData.email || '');
+      setAddress(userData.address || '');
+      setFavoriteRestaurants(userData.favorites_list || []);
+      console.log(userData.favorites_list)
+    } catch (error) {
+      console.log(error);
+      Alert.alert('Error', 'Failed to load user data.');
+    }
+  };
+
+  const handleEditToggle = (): void => {
+    setIsEditing(!isEditing);
+  };
+
+  const handleSave = async (): Promise<void> => {
+    try {
+      console.log("Saving user data:", { name, phone, email, address });
+
+      const response = await fetch(`http://localhost:3000/api/users/${userId}`, { // switch to heroku link after updating
+        method: 'PUT',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          user_name: name,
+          phone_number: phone,
+          email: email,
+          address: address,
+        }),
+      });
+
+      if (!response.ok) {
+        const errorText = await response.text();
+        console.error("Error saving user data:", errorText);
+        throw new Error('Failed to save user data');
+      }
+
+      Alert.alert('Success', 'Profile updated successfully.');
+      setIsEditing(false);
+    } catch (error) {
+      console.error("Save error:", error);
+      Alert.alert('Error', 'Failed to save changes.');
+    }
+  };
+
+  const toggleFavoritesModal = async (): Promise<void> => {
+    if (!isFavoritesModalVisible) {
+      try {
+        const restaurantDetails = await Promise.all(
+          favoriteRestaurants.map((id) =>
+            fetch(`http://localhost:3000/api/restaurants/${id}`).then((res) => {
+              if (!res.ok) throw new Error(`Failed to fetch restaurant with ID: ${id}`);
+              return res.json();
+            })
+          )
+        );
+        setFavoriteRestaurants(restaurantDetails);
+      } catch (error) {
+        console.error('Error fetching favorite restaurants:', error);
+        Alert.alert('Error', 'Failed to load favorite restaurants.');
+      }
+    }
+    setIsFavoritesModalVisible(!isFavoritesModalVisible);
+  };
+  
+
+  const toggleLogoutModal = (): void => {
+    setIsLogoutModalVisible(!isLogoutModalVisible);
+  };
+
+  const handleLogout = () => {
+    setIsLogoutModalVisible(!isLogoutModalVisible);
+    // setIsLogoutModalVisible(false);
+    // navigation.navigate('login');
+
+    router.navigate('/login');
+  };
 
   return (
     <SafeAreaView style={styles.container}>
@@ -29,20 +162,68 @@ export default function ProfileScreen() {
       {/* Content based on active tab */}
       {activeTab === 'account' && (
         <View style={styles.accountSection}>
-          <Image style={styles.profileImage} source={{ uri: 'https://via.placeholder.com/100' }} />
-          <Text style={styles.nameText}>John Brito</Text>
-          <View style={styles.infoContainer}>
-            <Text style={styles.infoText}>📞 +1 435 783 1730</Text>
-            <Text style={styles.infoText}>📧 yummy@email.com</Text>
-            <Text style={styles.infoText}>📍 221B, Baker Street</Text>
-          </View>
-          <TouchableOpacity style={styles.editButton}>
-            <Text style={styles.editButtonText}>Edit Details</Text>
-          </TouchableOpacity>
+          {/* Profile Image */}
+          <Image
+            style={styles.profileImage}
+            source={{ uri: 'https://wallpapers.com/images/featured/luffy-smile-os5fogrcl2bylfkf.jpg' }}
+          />
+
+          {isEditing ? (
+            <>
+              {/* Editable fields in edit mode */}
+              <TextInput
+                style={styles.input}
+                value={name}
+                onChangeText={setName}
+                placeholder="Name"
+              />
+              <TextInput
+                style={styles.input}
+                value={phone}
+                onChangeText={setPhone}
+                placeholder="Phone"
+                keyboardType="phone-pad"
+              />
+              <TextInput
+                style={styles.input}
+                value={email}
+                onChangeText={setEmail}
+                placeholder="Email"
+                keyboardType="email-address"
+              />
+              <TextInput
+                style={styles.input}
+                value={address}
+                onChangeText={setAddress}
+                placeholder="Address"
+              />
+              <View style={styles.editButtonsContainer}>
+                <TouchableOpacity style={styles.saveButton} onPress={handleSave}>
+                  <Text style={styles.editButtonText}>Save</Text>
+                </TouchableOpacity>
+                <TouchableOpacity style={styles.cancelButton} onPress={handleEditToggle}>
+                  <Text style={styles.editButtonText}>Cancel</Text>
+                </TouchableOpacity>
+              </View>
+            </>
+          ) : (
+            <>
+              {/* Display fields in view mode */}
+              <Text style={styles.nameText}>{name}</Text>
+              <View style={styles.infoContainer}>
+                <Text style={styles.infoText}>📞 {phone}</Text>
+                <Text style={styles.infoText}>📧 {email}</Text>
+                <Text style={styles.infoText}>📍 {address}</Text>
+              </View>
+              <TouchableOpacity style={styles.editButton} onPress={handleEditToggle}>
+                <Text style={styles.editButtonText}>Edit Details</Text>
+              </TouchableOpacity>
+            </>
+          )}
 
           {/* Centered Options Section */}
           <View style={styles.centeredOptionsContainer}>
-            <TouchableOpacity style={styles.optionButton}>
+            <TouchableOpacity style={styles.optionButton} onPress={toggleFavoritesModal}>
               <FontAwesome name="heart" size={24} color="#D74938" style={styles.icon} />
               <Text style={styles.optionText}>Your Favorites</Text>
             </TouchableOpacity>
@@ -53,8 +234,8 @@ export default function ProfileScreen() {
           </View>
 
           {/* Log Out Button - Visible Only on Account Tab */}
-          <TouchableOpacity style={styles.logoutButton}>
-            <FontAwesome name="power-off" size={24} color="#D74938" style={styles.icon} />
+          <TouchableOpacity style={styles.logoutButton} onPress={toggleLogoutModal}>
+            <FontAwesome name="sign-out" size={24} color="#D74938" style={styles.icon} />
             <Text style={styles.logoutButtonText}>Log Out</Text>
           </TouchableOpacity>
         </View>
@@ -74,6 +255,64 @@ export default function ProfileScreen() {
           </View>
         </View>
       )}
+
+    {/* Modal for Favorites */}
+    <Modal
+      visible={isFavoritesModalVisible}
+      animationType="slide"
+      transparent={true}
+      onRequestClose={toggleFavoritesModal}
+    >
+      <View style={styles.modalOverlay}>
+        <View style={styles.modalContainer}>
+          <Text style={styles.modalTitle}>
+            <FontAwesome name="heart" size={24} color="#D74938" /> Your Favorites
+          </Text>
+          <View style={styles.modalContent}>
+            {/* Check if favorites are loaded */}
+            {favoriteRestaurants.length > 0 ? (
+              favoriteRestaurants.map((restaurant, index) => (
+                <View key={index} style={styles.favoriteItem}>
+                  <Text style={styles.modalText}>{restaurant.name}</Text>
+                  <Text style={styles.modalSubText}>{restaurant.location}</Text>
+                </View>
+              ))
+            ) : (
+              <Text style={styles.modalText}>No favorites found.</Text>
+            )}
+          </View>
+          <TouchableOpacity style={styles.closeButton} onPress={toggleFavoritesModal}>
+            <Text style={styles.closeButtonText}>Close</Text>
+          </TouchableOpacity>
+        </View>
+      </View>
+    </Modal>
+
+
+      {/* Modal for Logout Confirmation */}
+      <Modal
+        visible={isLogoutModalVisible}
+        animationType="slide"
+        transparent={true}
+        onRequestClose={toggleLogoutModal}
+      >
+        <View style={styles.modalOverlay}>
+          <View style={styles.logoutModalContainer}>
+            <Text style={styles.modalTitle}>Are you sure you want to logout?</Text>
+            <View style={styles.modalContent}>
+            <View style={{ flexDirection:"row" }}>
+              <TouchableOpacity style={styles.closeButton} onPress={handleLogout}>
+                <Text style={styles.closeButtonText}>Yes</Text>
+              </TouchableOpacity>
+              <View style={styles.space} />
+              <TouchableOpacity style={styles.closeButton} onPress={toggleLogoutModal}>
+                <Text style={styles.closeButtonText}>No</Text>
+              </TouchableOpacity>
+              </View>
+            </View>
+          </View>
+        </View>
+      </Modal>
     </SafeAreaView>
   );
 }
@@ -83,6 +322,10 @@ const styles = StyleSheet.create({
     flex: 1,
     padding: 20,
     backgroundColor: '#F3E2CF',
+  },
+  space: {
+    width: 20,
+    height: 20,
   },
   header: {
     fontSize: 30,
@@ -105,8 +348,8 @@ const styles = StyleSheet.create({
     paddingBottom: 10,
   },
   activeTab: {
-    fontWeight: 'bold', // Bold text for active tab
-    fontSize: 20, // Slightly larger font size for active tab
+    fontWeight: 'bold',
+    fontSize: 20,
   },
   accountSection: {
     alignItems: 'center',
@@ -120,6 +363,7 @@ const styles = StyleSheet.create({
     marginBottom: 10,
     borderWidth: 2,
     borderColor: '#D74938',
+    resizeMode: 'cover', // Ensure the image is fully centered and covers the view
   },
   nameText: {
     fontSize: 22,
@@ -149,6 +393,33 @@ const styles = StyleSheet.create({
   editButtonText: {
     color: '#fff',
     fontWeight: '600',
+  },
+  input: {
+    width: '80%',
+    padding: 10,
+    borderWidth: 1,
+    borderColor: '#D74938',
+    borderRadius: 8,
+    marginBottom: 10,
+    textAlign: 'center',
+  },
+  editButtonsContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    width: '100%',
+    marginTop: 10,
+  },
+  saveButton: {
+    backgroundColor: '#D74938',
+    paddingVertical: 10,
+    paddingHorizontal: 20,
+    borderRadius: 8,
+  },
+  cancelButton: {
+    backgroundColor: '#555',
+    paddingVertical: 10,
+    paddingHorizontal: 20,
+    borderRadius: 8,
   },
   centeredOptionsContainer: {
     width: '100%',
@@ -201,4 +472,64 @@ const styles = StyleSheet.create({
     fontSize: 16,
     color: '#555',
   },
+
+  // Modal styles
+  modalOverlay: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+  },
+  modalContainer: {
+    backgroundColor: 'white',
+    padding: 20,
+    borderRadius: 10,
+    width: '80%',
+  },
+  logoutModalContainer: {
+    backgroundColor: 'white',
+    paddingTop: 20,
+    paddingBottom: 6,
+    borderRadius: 10,
+    width: '90%',
+  },
+  modalTitle: {
+    fontSize: 22,
+    fontWeight: '600',
+    color: '#D74938',
+    marginBottom: 10,
+    textAlign: 'center',
+  },
+  modalContent: {
+    marginBottom: 20,
+    alignItems: 'center',
+  },
+  modalText: {
+    fontSize: 18,
+    color: '#333',
+    textAlign: 'center',
+  },
+  closeButton: {
+    backgroundColor: '#D74938',
+    paddingVertical: 10,
+    paddingHorizontal: 20,
+    borderRadius: 8,
+    marginTop: 10,
+  },
+  closeButtonText: {
+    color: '#fff',
+    fontWeight: '600',
+    textAlign: 'center',
+  },
+  favoriteItem: {
+    marginBottom: 10,
+    padding: 10,
+    backgroundColor: '#F3E2CF',
+    borderRadius: 8,
+  },
+  modalSubText: {
+    fontSize: 14,
+    color: '#777',
+  },
+  
 });
