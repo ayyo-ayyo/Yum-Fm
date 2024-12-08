@@ -1,7 +1,9 @@
-import React, { useState } from 'react';
-import { View, Text, StyleSheet, TextInput, TouchableOpacity, ActivityIndicator, Modal, Image } from 'react-native';
+import React, { useEffect, useState } from 'react';
+import { View, Text, StyleSheet, TextInput, TouchableOpacity, ActivityIndicator, Modal, Image, Alert } from 'react-native';
 import { useRouter } from 'expo-router';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import { hashPassword } from './password_hasher';
+import * as SessionInfo from './session_info';
 
 export default function LoginScreen() {
   const router = useRouter();
@@ -10,6 +12,8 @@ export default function LoginScreen() {
   const [loading, setLoading] = useState(false);
   const [modalVisible, setModalVisible] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
+
+  SessionInfo.logout();
 
   const handleLogin = async () => {
     const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
@@ -22,15 +26,32 @@ export default function LoginScreen() {
 
     setLoading(true);
 
-    setTimeout(() => {
-      setLoading(false);
-      if (regex.test(email) && password !== '') {
+    setLoading(false);
+    if (regex.test(email) && password !== '') {
+      // Need to validate if the email and password were correct
+      hashPassword(password).then(async (hash) => {
+        console.log(hash);
+        const res = await fetch('https://yum-fm-90558e78d331.herokuapp.com/api/login', {
+          method: "POST",
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({email: email, password: hash})
+        });
+
+        if (res.status != 200) {
+          Alert.alert('Error', await res.text());
+          return;
+        }
+        
+        const resJSON = await res.json();
+        SessionInfo.login(resJSON._id, resJSON.token);
         router.replace('/(tabs)');
-      } else {
-        setErrorMessage('Invalid email or password.');
-        setModalVisible(true);
-      }
-    }, 2000);
+      });
+    } else {
+      setErrorMessage('Invalid email or password.');
+      setModalVisible(true);
+    }
   };
 
   const handleCreateAccount = () => {

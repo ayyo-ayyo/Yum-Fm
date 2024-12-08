@@ -2,6 +2,7 @@ const express = require('express');
 const Restaurant = require('../models/restaurant-model');
 const MenuItem = require('../models/menuItem-model');
 const router = express.Router();
+const tm = require('../token_manager');
 
 /*
     This file defines custom routes to provide easy text searching of restaurants and menuitems.
@@ -12,6 +13,15 @@ const router = express.Router();
 // Optionally can include "mfilters=[list of mandatory filters separated by comma]"
 // Optionally can include "pfilters=[list of preferred filters separated by comma]"
 router.get('/search', (req, res) => {
+    let userId;
+    try {
+        userId = tm.validateToken(req.headers.authorization);
+    }
+    catch (err) {
+        res.status(401).send('Invalid access token');
+        return;
+    }
+
     // Ensure that the mandatory parameteres were given in the query string
     if (!('type' in req.query)) {
         res.status(400).send('"type" parameter must be provided in search query');

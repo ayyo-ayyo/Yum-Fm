@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
-import { View, TextInput, StyleSheet, TouchableOpacity, Keyboard, SafeAreaView, FlatList } from 'react-native';
+import { View, TextInput, StyleSheet, TouchableOpacity, Keyboard, SafeAreaView, FlatList, Alert } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
+import { useRouter } from 'expo-router';
 import RestaurantCard from '../../components/RestaurantCard';
+import * as SessionInfo from '../session_info';
 
 // Define type of Restaurant for TypeScript
 interface Restaurant {
@@ -15,11 +17,30 @@ export default function ExploreTab() {
   const [query, setQuery] = useState('');
   const [results, setResults] = useState<Restaurant[]>([]);
 
+  const router = useRouter();
+
   // Handle fetching of search results when pressing "Enter"
   const handleSearch = async () => {
     if (query) {
       try {
-        const response = await fetch(`https://yum-fm-90558e78d331.herokuapp.com/api/search?type=restaurant&q=${query}`);
+        //const response = await fetch(`https://yum-fm-90558e78d331.herokuapp.com/api/search?type=restaurant&q=${query}`);
+
+        const token = SessionInfo.getAuthToken();
+        if (token === undefined) {
+          throw Error('Undefined token');
+        }
+
+        const response = await fetch(`https://yum-fm-90558e78d331.herokuapp.com/api/search?type=restaurant&q=${query}`, {
+          headers: {
+            'Authorization': token
+          }
+        });
+
+        if (response.status == 401) {
+          router.navigate('/login');
+          Alert.alert('Session expired');
+        }
+
         if (!response.ok) {
           throw new Error(`Error: ${response.status}`);
         }
