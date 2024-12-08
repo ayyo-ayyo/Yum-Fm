@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { View, Text, TextInput, StyleSheet, TouchableOpacity, Modal } from 'react-native';
 import { useRouter } from 'expo-router';
+import { hashPassword } from './password_hasher';
 
 export default function CreateAccountScreen() {
   const router = useRouter();
@@ -9,7 +10,7 @@ export default function CreateAccountScreen() {
   const [modalVisible, setModalVisible] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
 
-  const handleCreateAccount = () => {
+  const handleCreateAccount = async () => {
     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
     if (!email || !password) {
@@ -24,12 +25,25 @@ export default function CreateAccountScreen() {
     }
 
     // Simulate account creation logic
-    setTimeout(() => {
-      setTimeout(() => {
-        setModalVisible(false);
-        router.replace('/login');
-      }, 2000); // Wait for 2 seconds before redirecting
-    }, 1000);
+    setModalVisible(false);
+
+    // Create the account after hashing the password
+
+    const hash = await hashPassword(password);
+    const res = await fetch('http://localhost:3000/api/signup', {
+      method: "POST",
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({user_id: 1234, user_name: email, email: email, password: hash, favorites_list: []})
+    });
+
+    // If response code is 500, then creation failed TODO: Report to user
+
+
+    console.log(res.body);
+
+    router.replace('/login');
   };
 
   return (

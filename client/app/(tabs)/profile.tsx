@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, Image, SafeAreaView, TextInput, Modal, Alert, Switch } from 'react-native';
 import { FontAwesome } from '@expo/vector-icons';
-import { useNavigation } from '@react-navigation/native';
 import RestaurantCard from '../../components/RestaurantCard';
 
 interface User {
@@ -26,7 +25,6 @@ export default function ProfileScreen() {
   const [favoriteRestaurants, setFavoriteRestaurants] = useState<any[]>([]);
 
   const userId = '6734ee0c95789f1ef59cc007'; // hardcoded user ID for this example
-  const navigation = useNavigation();
 
   useEffect(() => {
     fetchUserData();

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { View, Text, StyleSheet, TextInput, TouchableOpacity, ActivityIndicator, Modal, Image } from 'react-native';
 import { useRouter } from 'expo-router';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import * as Crypto from 'expo-crypto';
+import { hashPassword } from './password_hasher';
 
 export default function LoginScreen() {
   const router = useRouter();
@@ -27,10 +27,17 @@ export default function LoginScreen() {
       setLoading(false);
       if (regex.test(email) && password !== '') {
         // Need to validate if the email and password were correct
-        hashPassword(password).then((hash) => {
-          console.log('----------------------');
+        hashPassword(password).then(async (hash) => {
           console.log(hash);
-          console.log('----------------------');
+          const res = await fetch('http://localhost:3000/api/login', {
+            method: "POST",
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({email: email, password: hash})
+          });
+
+          console.log(await res.json());
         });
 
         router.replace('/(tabs)');
@@ -204,7 +211,3 @@ const styles = StyleSheet.create({
     fontSize: 16,
   },
 });
-
-async function hashPassword(password: string): Promise<string> {
-  return await Crypto.digestStringAsync(Crypto.CryptoDigestAlgorithm.SHA256, password);
-}
