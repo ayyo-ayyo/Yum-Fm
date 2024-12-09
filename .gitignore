@@ -1,3 +1,4 @@
 node_modules
 .env
 menus
+server/scrape_tools/newest.json
