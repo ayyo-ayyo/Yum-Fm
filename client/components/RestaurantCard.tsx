@@ -48,6 +48,38 @@ const RestaurantCard: React.FC<RestaurantCardProps> = ({ restaurant, onAddToFavo
   if (userId === undefined) {
   throw new Error('Undefined userId');
   }
+  // Fetch user's favorites when modal is opened
+  useEffect(() => {
+    const fetchUserFavorites = async () => {
+      if (modalVisible) {
+        try {
+          const apiUrl = `https://yum-fm-90558e78d331.herokuapp.com/api/users/${userId}`;
+          const response = await fetch(apiUrl, {
+            headers: {
+              'Authorization': token,
+              'Content-Type': 'application/json',
+            },
+          });
+  
+          if (!response.ok) throw new Error('Failed to fetch user data');
+  
+          const userData: User = await response.json();
+          
+          // Check if the current restaurant is in the favorites list
+          const isRestaurantFavorite = userData.favorites_list.some(
+            (favId) => favId === restaurant._id
+          );
+          
+          setIsFavorite(isRestaurantFavorite);
+        } catch (error) {
+          console.error('Error checking favorites:', error);
+          Alert.alert('Error', 'Failed to check favorites. Please try again.');
+        }
+      }
+    };
+
+    fetchUserFavorites();
+    }, [modalVisible, restaurant._id, userId, token]);
 
   useEffect(() => {
     if (activeTab === 'menu') {
@@ -95,6 +127,9 @@ const RestaurantCard: React.FC<RestaurantCardProps> = ({ restaurant, onAddToFavo
       const updatedFavoriteStatus = !isFavorite;
       setIsFavorite(updatedFavoriteStatus);
   
+        // http://localhost:3000/api/users/${userId}
+        // https://yum-fm-90558e78d331.herokuapp.com/api/users/${userId}
+
       // Fetch the user's current favorites list
       const apiUrl = `https://yum-fm-90558e78d331.herokuapp.com/api/users/${userId}`;
       const response = await fetch(apiUrl, {
@@ -107,6 +142,7 @@ const RestaurantCard: React.FC<RestaurantCardProps> = ({ restaurant, onAddToFavo
       if (!response.ok) throw new Error('Failed to fetch user data');
   
       const userData: User = await response.json();
+      console.log(userData);
       let updatedFavorites = userData.favorites_list || [];
       console.log(updatedFavorites);
   
@@ -123,7 +159,7 @@ const RestaurantCard: React.FC<RestaurantCardProps> = ({ restaurant, onAddToFavo
   
       // POST the updated favorites list to the server
       const updateResponse = await fetch(apiUrl, {
-        method: 'POST',
+        method: 'PUT',
         headers: {
           'Authorization': token,
           'Content-Type': 'application/json',

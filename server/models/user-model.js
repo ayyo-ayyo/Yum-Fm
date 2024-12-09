@@ -15,7 +15,7 @@ const userSchema = new Schema({
     phone_number: {type: String, required: false},
     user_name: {type: String, required: true},
     favorites_list: { 
-        type: [ObjectId], 
+        type: [String], 
         required: true,
         default: [] 
     }
