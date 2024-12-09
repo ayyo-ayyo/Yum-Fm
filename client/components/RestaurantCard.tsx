@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { View, Text, StyleSheet, TouchableOpacity, Animated, Modal, Dimensions, ScrollView, Image } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity, Animated, Modal, Dimensions, ScrollView, Image, Alert } from 'react-native';
+import * as SessionInfo from '../app/session_info';
 
 interface Restaurant {
+  _id: string;
   restaurant_id: number;
   restaurant_name: string;
   restaurant_desc: string;
@@ -12,6 +14,15 @@ interface MenuItem {
   _id: string;
   item_name: string;
   item_price: number;
+}
+
+interface User {
+  _id: string;
+  user_name: string;
+  phone_number: string;
+  email: string;
+  address: string;
+  favorites_list: String[];
 }
 
 interface RestaurantCardProps {
@@ -27,6 +38,48 @@ const RestaurantCard: React.FC<RestaurantCardProps> = ({ restaurant, onAddToFavo
   const [isFavorite, setIsFavorite] = useState(false);
   const [menuItems, setMenuItems] = useState<MenuItem[]>([]);
   const animation = useState(new Animated.Value(1))[0];
+  
+  const token = SessionInfo.getAuthToken();
+  if (token === undefined) {
+    throw Error('Undefined token');
+  }
+
+  const userId = SessionInfo.getUserId();
+  if (userId === undefined) {
+  throw new Error('Undefined userId');
+  }
+  // Fetch user's favorites when modal is opened
+  useEffect(() => {
+    const fetchUserFavorites = async () => {
+      if (modalVisible) {
+        try {
+          const apiUrl = `https://yum-fm-90558e78d331.herokuapp.com/api/users/${userId}`;
+          const response = await fetch(apiUrl, {
+            headers: {
+              'Authorization': token,
+              'Content-Type': 'application/json',
+            },
+          });
+  
+          if (!response.ok) throw new Error('Failed to fetch user data');
+  
+          const userData: User = await response.json();
+          
+          // Check if the current restaurant is in the favorites list
+          const isRestaurantFavorite = userData.favorites_list.some(
+            (favId) => favId === restaurant._id
+          );
+          
+          setIsFavorite(isRestaurantFavorite);
+        } catch (error) {
+          console.error('Error checking favorites:', error);
+          Alert.alert('Error', 'Failed to check favorites. Please try again.');
+        }
+      }
+    };
+
+    fetchUserFavorites();
+    }, [modalVisible, restaurant._id, userId, token]);
 
   useEffect(() => {
     if (activeTab === 'menu') {
@@ -68,10 +121,65 @@ const RestaurantCard: React.FC<RestaurantCardProps> = ({ restaurant, onAddToFavo
     setActiveTab(tab);
   };
 
-  const toggleFavorite = () => {
-    setIsFavorite(!isFavorite);
-    onAddToFavorites(restaurant.restaurant_id);
+  const toggleFavorite = async () => {
+    try {
+      // Toggle the favorite status locally for optimistic UI update
+      const updatedFavoriteStatus = !isFavorite;
+      setIsFavorite(updatedFavoriteStatus);
+  
+        // http://localhost:3000/api/users/${userId}
+        // https://yum-fm-90558e78d331.herokuapp.com/api/users/${userId}
+
+      // Fetch the user's current favorites list
+      const apiUrl = `https://yum-fm-90558e78d331.herokuapp.com/api/users/${userId}`;
+      const response = await fetch(apiUrl, {
+        headers: {
+          'Authorization': token,
+          'Content-Type': 'application/json',
+        },
+      });
+  
+      if (!response.ok) throw new Error('Failed to fetch user data');
+  
+      const userData: User = await response.json();
+      console.log(userData);
+      let updatedFavorites = userData.favorites_list || [];
+      console.log(updatedFavorites);
+  
+      // Update the favorites list based on the toggle action
+      if (updatedFavoriteStatus) {
+        // Add the restaurant_id if toggled to "true"
+        updatedFavorites = [...updatedFavorites, restaurant._id];
+      } else {
+        // Remove the restaurant_id if toggled to "false"
+        updatedFavorites = updatedFavorites.filter(
+          (id) => id !== restaurant._id
+        );
+      }
+  
+      // POST the updated favorites list to the server
+      const updateResponse = await fetch(apiUrl, {
+        method: 'PUT',
+        headers: {
+          'Authorization': token,
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ favorites_list: updatedFavorites }),
+      });
+  
+      if (!updateResponse.ok) throw new Error('Failed to update favorites');
+  
+      // Optionally log success or perform further actions
+      console.log('Favorites updated successfully');
+    } catch (error) {
+      console.error('Error updating favorites:', error);
+  
+      // Revert the local state if the operation fails
+      setIsFavorite(!isFavorite);
+      Alert.alert('Error', 'Failed to update favorites. Please try again.');
+    }
   };
+  
 
   const onUploadMenu = () => {
     console.log('Upload menu functionality triggered.');

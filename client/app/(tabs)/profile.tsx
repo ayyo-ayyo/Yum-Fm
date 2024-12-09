@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import { View, Text, StyleSheet, TouchableOpacity, Image, SafeAreaView, TextInput, Modal, Alert, Switch } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity, Image, SafeAreaView, TextInput, Modal, Alert, Switch, ScrollView } from 'react-native';
 import { FontAwesome } from '@expo/vector-icons';
 import RestaurantCard from '../../components/RestaurantCard';
 import { useRouter } from 'expo-router';
 import * as SessionInfo from '../session_info';
+import { ObjectId } from 'mongodb';
 
 interface User {
   _id: string;
@@ -11,8 +12,9 @@ interface User {
   phone_number: string;
   email: string;
   address: string;
-  favorites_list: number[];
+  favorites_list: String[];
 }
+
 
 export default function ProfileScreen() {
   const [activeTab, setActiveTab] = useState<'account' | 'filters'>('account');
@@ -24,7 +26,8 @@ export default function ProfileScreen() {
   const [address, setAddress] = useState<string>('');
   const [isFavoritesModalVisible, setIsFavoritesModalVisible] = useState<boolean>(false);
   const [isLogoutModalVisible, setIsLogoutModalVisible] = useState<boolean>(false);
-  const [favoriteRestaurants, setFavoriteRestaurants] = useState<any[]>([]);
+  const [favoriteRestaurantsID, setFavoriteRestaurants] = useState<any[]>([]);
+  const [favRestaurantDetails, setFavoriteRestaurantsDetails] = useState<any[]>([]);
 
   const router = useRouter();
 
@@ -45,7 +48,7 @@ export default function ProfileScreen() {
     throw new Error('Undefined userId');
   }
 
-  const fetchUserData = async (): Promise<void> => {
+  const fetchUserData = async (): Promise<User> => {
     try {
       const response = await fetch(`https://yum-fm-90558e78d331.herokuapp.com/api/users/${userId}`, {
         headers: {
@@ -65,10 +68,13 @@ export default function ProfileScreen() {
       setEmail(userData.email || '');
       setAddress(userData.address || '');
       setFavoriteRestaurants(userData.favorites_list || []);
-      console.log(userData.favorites_list)
+      console.log(userData);
+      console.log(userData.favorites_list);
+      return userData;
     } catch (error) {
       console.log(error);
       Alert.alert('Error', 'Failed to load user data.');
+      throw error;
     }
   };
 
@@ -80,7 +86,7 @@ export default function ProfileScreen() {
     try {
       console.log("Saving user data:", { name, phone, email, address });
 
-      const response = await fetch(`http://localhost:3000/api/users/${userId}`, { // switch to heroku link after updating
+      const response = await fetch(`https://yum-fm-90558e78d331.herokuapp.com/api/users/${userId}`, { // switch to heroku link after updating
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json'
@@ -110,15 +116,24 @@ export default function ProfileScreen() {
   const toggleFavoritesModal = async (): Promise<void> => {
     if (!isFavoritesModalVisible) {
       try {
-        const restaurantDetails = await Promise.all(
-          favoriteRestaurants.map((id) =>
-            fetch(`http://localhost:3000/api/restaurants/${id}`).then((res) => {
+        // Refresh user data and use the returned data
+        const updatedUserData = await fetchUserData();
+  
+        const favRestaurantDetails = await Promise.all(
+          updatedUserData.favorites_list.map((id) =>
+            fetch(`https://yum-fm-90558e78d331.herokuapp.com/api/restaurants/${id}`, {
+              headers: {
+                'Authorization': token
+              }
+            }).then((res) => {
               if (!res.ok) throw new Error(`Failed to fetch restaurant with ID: ${id}`);
               return res.json();
             })
           )
         );
-        setFavoriteRestaurants(restaurantDetails);
+  
+        console.log(favRestaurantDetails);
+        setFavoriteRestaurantsDetails(favRestaurantDetails); // Update with full details of restaurants
       } catch (error) {
         console.error('Error fetching favorite restaurants:', error);
         Alert.alert('Error', 'Failed to load favorite restaurants.');
@@ -127,7 +142,6 @@ export default function ProfileScreen() {
     setIsFavoritesModalVisible(!isFavoritesModalVisible);
   };
   
-
   const toggleLogoutModal = (): void => {
     setIsLogoutModalVisible(!isLogoutModalVisible);
   };
@@ -256,38 +270,42 @@ export default function ProfileScreen() {
         </View>
       )}
 
-    {/* Modal for Favorites */}
-    <Modal
-      visible={isFavoritesModalVisible}
-      animationType="slide"
-      transparent={true}
-      onRequestClose={toggleFavoritesModal}
-    >
-      <View style={styles.modalOverlay}>
-        <View style={styles.modalContainer}>
-          <Text style={styles.modalTitle}>
-            <FontAwesome name="heart" size={24} color="#D74938" /> Your Favorites
-          </Text>
-          <View style={styles.modalContent}>
-            {/* Check if favorites are loaded */}
-            {favoriteRestaurants.length > 0 ? (
-              favoriteRestaurants.map((restaurant, index) => (
-                <View key={index} style={styles.favoriteItem}>
-                  <Text style={styles.modalText}>{restaurant.name}</Text>
-                  <Text style={styles.modalSubText}>{restaurant.location}</Text>
-                </View>
-              ))
-            ) : (
-              <Text style={styles.modalText}>No favorites found.</Text>
-            )}
-          </View>
-          <TouchableOpacity style={styles.closeButton} onPress={toggleFavoritesModal}>
-            <Text style={styles.closeButtonText}>Close</Text>
-          </TouchableOpacity>
-        </View>
-      </View>
-    </Modal>
+      {/* Modal for Favorites */}
+      <Modal
+        visible={isFavoritesModalVisible}
+        animationType="slide"
+        transparent={true}
+        onRequestClose={toggleFavoritesModal}
+      >
+        <View style={styles.modalOverlay}>
+          <View style={styles.modalContainer}>
+            <Text style={styles.modalTitle}>
+              <FontAwesome name="heart" size={24} color="#D74938" /> Your Favorites
+            </Text>
+            <View style={styles.scrollableModalContent}>
+            <ScrollView>
+              {favRestaurantDetails.length > 0 ? (
+                favRestaurantDetails.map((restaurant) => (
+                  <View key={restaurant._id} style={styles.restaurantCardWrapper}>
+                    <RestaurantCard
+                      restaurant={restaurant}
+                      onAddToFavorites={(id) => console.log(`Add to favorites: ${id}`)}
+                      size="large"
+                    />
+                  </View>
+                ))
+              ) : (
+                <Text style={styles.modalText}>No favorites found.</Text>
+              )}
+            </ScrollView>
 
+            </View>
+            <TouchableOpacity style={styles.closeButton} onPress={toggleFavoritesModal}>
+              <Text style={styles.closeButtonText}>Close</Text>
+            </TouchableOpacity>
+          </View>
+        </View>
+      </Modal>
 
       {/* Modal for Logout Confirmation */}
       <Modal
@@ -482,7 +500,7 @@ const styles = StyleSheet.create({
   },
   modalContainer: {
     backgroundColor: 'white',
-    padding: 20,
+    padding: 40,
     borderRadius: 10,
     width: '80%',
   },
@@ -530,6 +548,14 @@ const styles = StyleSheet.create({
   modalSubText: {
     fontSize: 14,
     color: '#777',
+  },
+  scrollableModalContent: {
+    height: 300, // Fixed height for the scrollable area
+    marginTop: 10,
+    marginBottom: 20,
+  },
+  restaurantCardWrapper: {
+    marginBottom: 15, // Adjust the value for the desired gap
   },
   
 });
