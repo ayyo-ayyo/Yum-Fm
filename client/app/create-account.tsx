@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, Text, TextInput, StyleSheet, TouchableOpacity, Modal, Alert } from 'react-native';
+import { View, Text, TextInput, StyleSheet, TouchableOpacity, Modal } from 'react-native';
 import { useRouter } from 'expo-router';
 import { hashPassword } from './password_hasher';
 
@@ -8,45 +8,55 @@ export default function CreateAccountScreen() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [modalVisible, setModalVisible] = useState(false);
-  const [errorMessage, setErrorMessage] = useState('');
+  const [modalTitle, setModalTitle] = useState('');
+  const [modalMessage, setModalMessage] = useState('');
 
   const handleCreateAccount = async () => {
     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
     if (!email || !password) {
-      setErrorMessage('Please fill out all fields.');
+      setModalTitle('Error');
+      setModalMessage('Please fill out all fields.');
       setModalVisible(true);
       return;
     }
     if (!emailRegex.test(email)) {
-      setErrorMessage('Please enter a valid email address.');
+      setModalTitle('Error');
+      setModalMessage('Please enter a valid email address.');
       setModalVisible(true);
       return;
     }
 
-    // Simulate account creation logic
-    setModalVisible(false);
-
-    // Create the account after hashing the password
-
     const hash = await hashPassword(password);
     const res = await fetch('https://yum-fm-90558e78d331.herokuapp.com/api/signup', {
-      method: "POST",
+      method: 'POST',
       headers: {
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
       },
-      body: JSON.stringify({user_name: email, email: email, password: hash, favorites_list: []})
+      body: JSON.stringify({
+        user_name: email,
+        email: email,
+        password: hash,
+        favorites_list: [],
+      }),
     });
 
-    if (res.status == 400) {
-      Alert.alert("Error", await res.text());
-    }
-    else if (res.status == 201) {
-      router.replace('/login');
-      Alert.alert("Succes", "Account created successfully")
-    }
-    else {
-      Alert.alert("Error", "Unknown error");
+    if (res.status === 400) {
+      setModalTitle('Error');
+      setModalMessage(await res.text());
+      setModalVisible(true);
+    } else if (res.status === 201) {
+      setModalTitle('Success');
+      setModalMessage('Account created successfully.');
+      setModalVisible(true);
+      setTimeout(() => {
+        setModalVisible(false);
+        router.replace('/login');
+      }, 2000); // Redirect after 2 seconds
+    } else {
+      setModalTitle('Error');
+      setModalMessage('Unknown error occurred.');
+      setModalVisible(true);
     }
   };
 
@@ -86,7 +96,7 @@ export default function CreateAccountScreen() {
         <Text style={styles.backToLogin}>Back to Login</Text>
       </TouchableOpacity>
 
-      {/* Error Modal */}
+      {/* Error/Success Modal */}
       <Modal
         animationType="fade"
         transparent={true}
@@ -97,18 +107,14 @@ export default function CreateAccountScreen() {
       >
         <View style={styles.modalOverlay}>
           <View style={styles.modalContent}>
-            <Text style={styles.modalTitle}>
-              {errorMessage === 'Account created successfully!' ? 'Success' : 'Error'}
-            </Text>
-            <Text style={styles.modalMessage}>{errorMessage}</Text>
-            {errorMessage !== 'Account created successfully!' && (
-              <TouchableOpacity
-                style={styles.modalButton}
-                onPress={() => setModalVisible(false)}
-              >
-                <Text style={styles.modalButtonText}>OK</Text>
-              </TouchableOpacity>
-            )}
+            <Text style={styles.modalTitle}>{modalTitle}</Text>
+            <Text style={styles.modalMessage}>{modalMessage}</Text>
+            <TouchableOpacity
+              style={styles.modalButton}
+              onPress={() => setModalVisible(false)}
+            >
+              <Text style={styles.modalButtonText}>OK</Text>
+            </TouchableOpacity>
           </View>
         </View>
       </Modal>
@@ -121,14 +127,14 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     padding: 20,
-    backgroundColor: '#F3E2CF', // Same as Login screen background
+    backgroundColor: '#F3E2CF',
   },
   header: {
     fontSize: 28,
     fontWeight: 'bold',
     textAlign: 'center',
     marginBottom: 30,
-    color: '#D74938', // Match primary color
+    color: '#D74938',
   },
   input: {
     backgroundColor: '#fff',
@@ -161,7 +167,7 @@ const styles = StyleSheet.create({
     fontWeight: '600',
   },
   backToLogin: {
-    color: '#D74938', // Make the text red
+    color: '#D74938',
     fontSize: 16,
     fontWeight: '600',
     textAlign: 'center',

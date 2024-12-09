@@ -84,7 +84,7 @@ export default function ProfileScreen() {
     try {
       console.log("Saving user data:", { name, phone, email, address });
 
-      const response = await fetch(`http://localhost:3000/api/users/${userId}`, { // switch to heroku link after updating
+      const response = await fetch(`https://yum-fm-90558e78d331.herokuapp.com/api/users/${userId}`, { // switch to heroku link after updating
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json'

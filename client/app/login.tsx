@@ -40,7 +40,9 @@ export default function LoginScreen() {
         });
 
         if (res.status != 200) {
-          Alert.alert('Error', await res.text());
+          const errorText = await res.text();
+          setErrorMessage(errorText);
+          setModalVisible(true);
           return;
         }
         
