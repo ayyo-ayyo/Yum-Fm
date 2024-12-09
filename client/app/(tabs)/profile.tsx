@@ -48,7 +48,7 @@ export default function ProfileScreen() {
     throw new Error('Undefined userId');
   }
 
-  const fetchUserData = async (): Promise<void> => {
+  const fetchUserData = async (): Promise<User> => {
     try {
       const response = await fetch(`https://yum-fm-90558e78d331.herokuapp.com/api/users/${userId}`, {
         headers: {
@@ -70,9 +70,11 @@ export default function ProfileScreen() {
       setFavoriteRestaurants(userData.favorites_list || []);
       console.log(userData);
       console.log(userData.favorites_list);
+      return userData;
     } catch (error) {
       console.log(error);
       Alert.alert('Error', 'Failed to load user data.');
+      throw error;
     }
   };
 
@@ -114,16 +116,24 @@ export default function ProfileScreen() {
   const toggleFavoritesModal = async (): Promise<void> => {
     if (!isFavoritesModalVisible) {
       try {
+        // Refresh user data and use the returned data
+        const updatedUserData = await fetchUserData();
+  
         const favRestaurantDetails = await Promise.all(
-          favoriteRestaurantsID.map((id) =>
-            fetch(`https://yum-fm-90558e78d331.herokuapp.com/api/restaurants/${id}`).then((res) => {
+          updatedUserData.favorites_list.map((id) =>
+            fetch(`https://yum-fm-90558e78d331.herokuapp.com/api/restaurants/${id}`, {
+              headers: {
+                'Authorization': token
+              }
+            }).then((res) => {
               if (!res.ok) throw new Error(`Failed to fetch restaurant with ID: ${id}`);
               return res.json();
             })
           )
         );
+  
         console.log(favRestaurantDetails);
-        setFavoriteRestaurantsDetails(favRestaurantDetails); // Full details of restaurants
+        setFavoriteRestaurantsDetails(favRestaurantDetails); // Update with full details of restaurants
       } catch (error) {
         console.error('Error fetching favorite restaurants:', error);
         Alert.alert('Error', 'Failed to load favorite restaurants.');
@@ -131,7 +141,7 @@ export default function ProfileScreen() {
     }
     setIsFavoritesModalVisible(!isFavoritesModalVisible);
   };
-
+  
   const toggleLogoutModal = (): void => {
     setIsLogoutModalVisible(!isLogoutModalVisible);
   };
