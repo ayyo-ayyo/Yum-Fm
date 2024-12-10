@@ -68,6 +68,7 @@ export default function ExploreTab() {
         const mfilters = userData.restrictions.join(','); // Convert filters array to a comma-separated string
 
         const token = SessionInfo.getAuthToken();
+        const baseUrl = process.env.EXPO_PUBLIC_baseUrl;
         if (token === undefined) {
           throw Error('Undefined token');
         }
@@ -134,7 +135,7 @@ export default function ExploreTab() {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.topBar}>
-        <TouchableOpacity style={styles.iconButton}>
+        <TouchableOpacity style={styles.iconButton} onPress={() => router.navigate('/camera')}>
           <Ionicons name="camera-outline" size={24} color="#fff" />
         </TouchableOpacity>
         <TextInput

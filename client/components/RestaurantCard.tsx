@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, Animated, Modal, Dimensions, ScrollView, Image, Alert } from 'react-native';
 import * as SessionInfo from '../app/session_info';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import { router } from 'expo-router';
 
 interface Restaurant {
   _id: string;
@@ -226,7 +227,8 @@ const RestaurantCard: React.FC<RestaurantCardProps> = ({ restaurant, size = 'sma
 
   const onUploadMenu = () => {
     console.log('Upload menu functionality triggered.');
-    // Add code to handle the upload, such as opening a file picker or navigating to an upload page.
+    //go to camera page
+    router.navigate(`/camera?restaurant_id=${restaurant.restaurant_id}`);
   };
 
   return (

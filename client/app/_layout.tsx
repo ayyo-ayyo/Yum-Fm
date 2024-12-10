@@ -1,7 +1,9 @@
 // app/layout.tsx
-import { ThemeProvider } from '@react-navigation/native';
+import { Ionicons } from '@expo/vector-icons';
+import { ThemeProvider, NavigationContainer } from '@react-navigation/native';
 import { useFonts } from 'expo-font';
 import { router, Stack, useRouter } from 'expo-router';
+import { TouchableOpacity } from 'react-native';
 import * as SplashScreen from 'expo-splash-screen';
 import React, { useEffect } from 'react';
 import 'react-native-reanimated';
@@ -37,13 +39,16 @@ export default function RootLayout() {
   };
 
   return (
+    <NavigationContainer>
     <ThemeProvider value={customTheme}>
        <Stack initialRouteName="login">
         <Stack.Screen name="login" options={{ headerShown: false }} />
         <Stack.Screen name="create-account" options={{ headerShown: false }} />
         <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+        
         <Stack.Screen name="+not-found" />
       </Stack>
     </ThemeProvider>
+    </NavigationContainer>
   );
 }
