@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, Animated, Modal, Dimensions, ScrollView, Image, Alert } from 'react-native';
 import * as SessionInfo from '../app/session_info';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 interface Restaurant {
   _id: string;
@@ -8,6 +9,7 @@ interface Restaurant {
   restaurant_name: string;
   restaurant_desc: string;
   restaurant_img: string;
+  rest_fulfilled_filters: String[];
 }
 
 interface MenuItem {
@@ -89,6 +91,35 @@ const RestaurantCard: React.FC<RestaurantCardProps> = ({ restaurant, onAddToFavo
         .catch((error) => console.error('Error fetching menu items:', error));
     }
   }, [activeTab, restaurant.restaurant_id]);
+
+  // Function to format the fulfilled filters for display
+  const renderFulfilledFilters = () => {
+    if (restaurant.rest_fulfilled_filters && restaurant.rest_fulfilled_filters.length > 0) {
+      return (
+        <SafeAreaView style={styles.filtersContainer}>
+          <Text style={styles.filtersText}>
+            {restaurant.rest_fulfilled_filters.join(', ')}
+          </Text>
+        </SafeAreaView>
+      );
+    }
+    return null;
+  };
+
+    // Render fulfilled filters inside Basic Info
+    const renderFiltersInInfoTab = () => {
+      if (restaurant.rest_fulfilled_filters && restaurant.rest_fulfilled_filters.length > 0) {
+        return (
+          <View style={styles.filtersContainer}>
+            <Text style={styles.filtersTitle}>Filters:</Text>
+            <Text style={styles.filtersText}>
+              {restaurant.rest_fulfilled_filters.join(', ')}
+            </Text>
+          </View>
+        );
+      }
+      return null;
+    };
 
   const handlePressIn = () => {
     Animated.spring(animation, {
@@ -188,91 +219,92 @@ const RestaurantCard: React.FC<RestaurantCardProps> = ({ restaurant, onAddToFavo
 
   return (
       <Animated.View style={[styles.restaurantBox, size === 'large' && styles.largeRestaurantBox, { transform: [{ scale: animation }] }]}>
-        <TouchableOpacity style={{flex:1, flexDirection:'row'}}
-          onPressIn={handlePressIn}
-          onPressOut={handlePressOut}
-          onPress={handlePress}
+      <TouchableOpacity style={{flex:1, flexDirection:'row'}} onPressIn={handlePressIn} onPressOut={handlePressOut} onPress={handlePress}>
+        <Image 
+          style={{flex:1}}
+          source={{uri: restaurant.restaurant_img}}
+          width={50}
+          borderTopLeftRadius={15}
+          borderBottomLeftRadius={15}
+        />
+        <View style={{flex:2, marginLeft:5}}>
+          <Text style={styles.restaurantName}>{restaurant.restaurant_name}</Text>
+          <Text style={styles.restaurantDesc}>{restaurant.restaurant_desc}</Text>
+          
+          {/* Render fulfilled filters here */}
+          {renderFulfilledFilters()}
+        </View>
+      </TouchableOpacity>
+
+      {modalVisible && (
+        <Modal
+          transparent
+          visible={modalVisible}
+          animationType="slide"
+          onRequestClose={handleCloseModal}
         >
-          <Image 
-            style={{flex:1}}
-            source={{uri: restaurant.restaurant_img}}
-            width={50}
-            borderTopLeftRadius={15}
-            borderBottomLeftRadius={15}
-           />
-          <View style={{flex:2, marginLeft:5}}>
-            <Text style={styles.restaurantName}>{restaurant.restaurant_name}</Text>
-            <Text style={styles.restaurantDesc}>{restaurant.restaurant_desc}</Text>
-          </View>
-        </TouchableOpacity>
+          <TouchableOpacity style={styles.modalOverlay} onPress={handleCloseModal}>
+            <View style={styles.modalContent} onTouchStart={(e) => e.stopPropagation()}>
+              <TouchableOpacity style={styles.favoriteButton} onPress={toggleFavorite}>
+                <Text style={styles.favoriteButtonText}>
+                  {isFavorite ? '★' : '☆'}
+                </Text>
+              </TouchableOpacity>
 
-        {modalVisible && (
-          <Modal
-            transparent
-            visible={modalVisible}
-            animationType="slide"
-            onRequestClose={handleCloseModal}
-          >
-            <TouchableOpacity style={styles.modalOverlay} onPress={handleCloseModal}>
-              <View style={styles.modalContent} onTouchStart={(e) => e.stopPropagation()}>
-                <TouchableOpacity style={styles.favoriteButton} onPress={toggleFavorite}>
-                  <Text style={styles.favoriteButtonText}>
-                    {isFavorite ? '★' : '☆'}
-                  </Text>
+              <Text style={styles.restaurantName}>{restaurant.restaurant_name}</Text>
+
+              <View style={styles.tabs}>
+                <TouchableOpacity
+                  style={[styles.tab, activeTab === 'info' && styles.activeTab]}
+                  onPress={() => handleTabSwitch('info')}
+                >
+                  <Text style={styles.tabText}>Basic Info</Text>
                 </TouchableOpacity>
-
-                <Text style={styles.restaurantName}>{restaurant.restaurant_name}</Text>
-
-                <View style={styles.tabs}>
-                  <TouchableOpacity
-                    style={[styles.tab, activeTab === 'info' && styles.activeTab]}
-                    onPress={() => handleTabSwitch('info')}
-                  >
-                    <Text style={styles.tabText}>Basic Info</Text>
-                  </TouchableOpacity>
-                  <TouchableOpacity
-                    style={[styles.tab, activeTab === 'menu' && styles.activeTab]}
-                    onPress={() => handleTabSwitch('menu')}
-                  >
-                    <Text style={styles.tabText}>Menu</Text>
-                  </TouchableOpacity>
-                </View>
-
-                <ScrollView contentContainerStyle={styles.tabContent}>
-                  {activeTab === 'info' && (
-                    <View style={styles.infoContent}>
-                      <Text style={styles.restaurantName}>Restaurant Info</Text>
-                      <Text>{restaurant.restaurant_desc}</Text>
-                    </View>
-                  )}
-                  {activeTab === 'menu' && (
-                    <View style={styles.menuContent}>
-                      {menuItems.length > 0 ? (
-                        menuItems
-                          .slice() // create a shallow copy to avoid modifying the original array
-                          .sort((a, b) => a.item_price - b.item_price) // sort by item_price in ascending order
-                          .map((item) => (
-                            <View key={item._id} style={styles.menuItem}>
-                              <Text style={styles.menuItemName}>{item.item_name}</Text>
-                              <Text style={styles.menuItemPrice}>${item.item_price.toFixed(2)}</Text>
-                            </View>
-                          ))
-                      ) : (
-                        <View style={styles.emptyMenuContent}>
-                          <Text style={styles.noMenuText}>There is no menu for this restaurant currently.</Text>
-                          <TouchableOpacity style={styles.uploadButton} onPress={onUploadMenu}>
-                            <Text style={styles.uploadButtonText}>Upload Menu</Text>
-                          </TouchableOpacity>
-                        </View>
-                      )}
-                    </View>
-                  )}
-                </ScrollView>
+                <TouchableOpacity
+                  style={[styles.tab, activeTab === 'menu' && styles.activeTab]}
+                  onPress={() => handleTabSwitch('menu')}
+                >
+                  <Text style={styles.tabText}>Menu</Text>
+                </TouchableOpacity>
               </View>
-            </TouchableOpacity>
-          </Modal>
-        )}
-      </Animated.View>
+
+              <ScrollView contentContainerStyle={styles.tabContent}>
+                {activeTab === 'info' && (
+                  <View style={styles.infoContent}>
+                    <Text style={styles.restaurantName}>Restaurant Info:</Text>
+                    <Text>{restaurant.restaurant_desc}</Text>
+                    {/* Render the filters in the Basic Info tab */}
+                    {renderFiltersInInfoTab()}
+                  </View>
+                )}
+                {activeTab === 'menu' && (
+                  <View style={styles.menuContent}>
+                    {menuItems.length > 0 ? (
+                      menuItems
+                        .slice() // create a shallow copy to avoid modifying the original array
+                        .sort((a, b) => a.item_price - b.item_price) // sort by item_price in ascending order
+                        .map((item) => (
+                          <View key={item._id} style={styles.menuItem}>
+                            <Text style={styles.menuItemName}>{item.item_name}</Text>
+                            <Text style={styles.menuItemPrice}>${item.item_price.toFixed(2)}</Text>
+                          </View>
+                        ))
+                    ) : (
+                      <View style={styles.emptyMenuContent}>
+                        <Text style={styles.noMenuText}>There is no menu for this restaurant currently.</Text>
+                        <TouchableOpacity style={styles.uploadButton} onPress={onUploadMenu}>
+                          <Text style={styles.uploadButtonText}>Upload Menu</Text>
+                        </TouchableOpacity>
+                      </View>
+                    )}
+                  </View>
+                )}
+              </ScrollView>
+            </View>
+          </TouchableOpacity>
+        </Modal>
+      )}
+    </Animated.View>
   );
 };
 
@@ -289,6 +321,7 @@ const styles = StyleSheet.create({
   largeRestaurantBox: {
     width: '90%',
     marginHorizontal: 10,
+    height: 100,
   },
   restaurantName: {
     fontSize: 18,
@@ -300,6 +333,8 @@ const styles = StyleSheet.create({
     fontSize: 14,
     color: '#333',
   },
+
+  // MODAL stuff
   modalOverlay: {
     flex: 1,
     backgroundColor: 'rgba(0, 0, 0, 0.5)',
@@ -313,6 +348,7 @@ const styles = StyleSheet.create({
     padding: 28,
     borderRadius: 20,
   },
+
   favoriteButton: {
     position: 'absolute',
     top: 10,
@@ -380,5 +416,20 @@ const styles = StyleSheet.create({
   uploadButtonText: {
     color: '#fff',
     fontSize: 16,
+  },
+
+  // filters stuff
+  filtersContainer: {
+    marginTop: 10,
+  },
+  filtersTitle: {
+    fontSize: 16,
+    color: '#D74938',
+    fontWeight: 'bold',
+  },
+  filtersText: {
+    fontSize: 14,
+    color: '#333',
+    marginTop: 5,
   },
 });
