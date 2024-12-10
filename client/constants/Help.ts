@@ -19,9 +19,27 @@ If this is your first time using YumFM, read the "**Signing Up**" section. If yo
 `;
 
 export const indexHelp = `
-# The Explore Page
+# The Home Page
 ---
 
-The explore page contains several sections of restaurants based on your preferences, favorites, and location.
+The home page contains several sections of restaurants based on your preferences, favorites, and location.
 
+## Restaurants Closest To You
+- This section provides a list of restaurants that are nearby to your current location
+- These restaurants also serve food mathcing your dietary restrictions in **Profile -> Filters** and select which restrictions fit your needs!
+
+## Restaurants For You
+- This section provides a list of restaurants that serve food matching your dietary restrictions!
+- To update your dietary restrictions, navigate to **Profile -> Filters** and select which restrictions fit your needs!
+
+## Food Items For You
+- This section provides a list of food items from restaurants that match your dietary restrictions!
+- To update your dietary restrictions, navigate to **Profile -> Filters** and select which restrictions fit your needs!
+
+## Viewing Restaurant Info
+- To view a restaurants info, tap the restaurant's card
+- From here you can:
+\t - Add a restaurant to your favoites list. Tap the **star** in the upper left corner to add/remove from favorites. Favorites can be viewed either on the home page or in the user profile.
+\t - View a **menu** if the restaurant **already** has one. Tap the **menu tab** under the restaurant's name to see the available items.
+\t - Upload a **new menu** if the restaurant does not have one yet. Tap the **menu tab** and then **Upload Menu** to get started!
 `;
