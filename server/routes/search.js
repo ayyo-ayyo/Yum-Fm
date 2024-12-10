@@ -70,9 +70,6 @@ router.get('/search', (req, res) => {
           based on the number of pfilters each document matches with
 */
 function atlasSearch(type, queryStr, mfilters, pfilters) {
-    // TODO: Find a better way of grouping together related information for each data type 
-    //       (ie. the Model, index name, and field to search)
-    
     // Determine the type being searched and set the values accordingly
     switch (type) {
         case 'restaurant':
