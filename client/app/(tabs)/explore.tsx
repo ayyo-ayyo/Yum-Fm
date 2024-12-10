@@ -7,10 +7,12 @@ import * as SessionInfo from '../session_info';
 
 // Define type of Restaurant for TypeScript
 interface Restaurant {
+  _id: string;
   restaurant_id: number;
   restaurant_name: string;
   restaurant_desc: string;
   restaurant_img: string;
+  rest_fulfilled_filters: String[];
 }
 
 export default function ExploreTab() {
@@ -87,7 +89,6 @@ export default function ExploreTab() {
           <View style={styles.resultContainer}>
             <RestaurantCard
               restaurant={item}
-              onAddToFavorites={handleAddToFavorites}
               size="large"
             />
           </View>

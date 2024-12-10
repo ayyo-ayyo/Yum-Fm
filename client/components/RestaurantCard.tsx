@@ -30,8 +30,8 @@ interface User {
 interface RestaurantCardProps {
   restaurant: Restaurant;
   size?: 'small' | 'large';
-  setUserFavorites: (favs: Restaurant[]) => void;
-  favorites: Restaurant[]
+  setUserFavorites?: (favs: Restaurant[]) => void;
+  favorites?: Restaurant[]
 }
 
 const RestaurantCard: React.FC<RestaurantCardProps> = ({ restaurant, size = 'small', setUserFavorites, favorites }) => {
@@ -159,13 +159,15 @@ const RestaurantCard: React.FC<RestaurantCardProps> = ({ restaurant, size = 'sma
       const updatedFavoriteStatus = !isFavorite;
       setIsFavorite(updatedFavoriteStatus);
 
-      if (updatedFavoriteStatus) {
-        setUserFavorites([...favorites, restaurant]);
-      }
-      else {
-        setUserFavorites(favorites.filter(curRest => {
-          return curRest.restaurant_name !== restaurant.restaurant_name;
-        }));
+      if(setUserFavorites && favorites) {
+        if (updatedFavoriteStatus) {
+          setUserFavorites([...favorites, restaurant]);
+        }
+        else {
+          setUserFavorites(favorites.filter(curRest => {
+            return curRest.restaurant_name !== restaurant.restaurant_name;
+          }));
+        }
       }
 
         // http://localhost:3000/api/users/${userId}

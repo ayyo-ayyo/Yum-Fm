@@ -334,7 +334,6 @@ export default function ProfileScreen() {
                   <View key={restaurant._id} style={styles.restaurantCardWrapper}>
                     <RestaurantCard
                       restaurant={restaurant}
-                      onAddToFavorites={(id) => console.log(`Add to favorites: ${id}`)}
                       size="large"
                     />
                   </View>
