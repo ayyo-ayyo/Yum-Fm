@@ -379,7 +379,7 @@ export default function ProfileScreen() {
       {/* Filters Tab */}
       {activeTab === 'filters' && (
         <ScrollView style={styles.filtersSection}>
-          <Text style={styles.filtersTitle}>Filter Preferences</Text>
+          <Text style={styles.filtersTitle}>Disable Restriction Filters</Text>
           <View style={styles.switchContainer}>
             <Text style={styles.switchLabel}>
               Disabling dietary filters means we will not consider your filters when recommending restaurants to you.
