@@ -19,6 +19,7 @@ const HomeScreen: React.FC = () => {
   const [location, setLocation] = useState<Location.LocationObject | null>(null);
   const [restaurants, setRestaurants] = useState<Restaurant[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
+  const [userFavorites, setUserFavorites] = useState<Restaurant[]>([]);
 
   const router = useRouter();
 
@@ -56,6 +57,24 @@ const HomeScreen: React.FC = () => {
         if (!response.ok) throw new Error(`Error fetching data: ${await response.text()}`);
         const data: Restaurant[] = await response.json();
         setRestaurants(data);
+
+        // Get user data
+        const userJSON = await fetch(`https://yum-fm-90558e78d331.herokuapp.com/api/users/${SessionInfo.getUserId()}`, {
+          headers: {
+            'Authorization': token
+          }
+        });
+      
+        const userFavorites = await userJSON.json().then(userData => Promise.all(userData.favorites_list.map((restId: string) => {
+          return fetch(`https://yum-fm-90558e78d331.herokuapp.com/api/restaurants/${restId}`, {
+            headers: {
+              'Authorization': token
+            }
+          }).then(restJSON => restJSON.json());
+        })));
+
+        setUserFavorites(userFavorites);
+
       } catch (error) {
         console.error('Failed to fetch restaurants:', error);
       }
@@ -64,17 +83,12 @@ const HomeScreen: React.FC = () => {
     })();
   }, []);
 
-  const handleAddToFavorites = (id: number) => {
-    console.log(`Add to favorites: Restaurant ID ${id}`);
-    // Logic to add restaurant to favorites
-  };
-
   // Categorize restaurants based on name
   const categories = {
     closest: restaurants.filter((r) => r.restaurant_name[0].toUpperCase() < 'H'),
     forYou: restaurants.filter((r) => r.restaurant_name[0].toUpperCase() >= 'H' && r.restaurant_name[0].toUpperCase() < 'N'),
     foodItems: restaurants.filter((r) => r.restaurant_name[0].toUpperCase() >= 'N' && r.restaurant_name[0].toUpperCase() < 'T'),
-    favorites: restaurants.filter((r) => r.restaurant_name[0].toUpperCase() >= 'T'),
+    favorites: userFavorites
   };
 
   const renderCategory = (title: string, data: Restaurant[]) => (
@@ -87,7 +101,6 @@ const HomeScreen: React.FC = () => {
             <RestaurantCard
               key={restaurant.restaurant_id}
               restaurant={restaurant}
-              onAddToFavorites={handleAddToFavorites}
             />
         ))}
       </ScrollView>
