@@ -1,7 +1,10 @@
-import React, { useEffect, useState } from 'react';
-import { View, Text, StyleSheet, TextInput, TouchableOpacity, ActivityIndicator, Modal, Image, Alert } from 'react-native';
+import React, { useState } from 'react';
+import { View, Text, StyleSheet, TextInput, TouchableOpacity, ActivityIndicator, Modal, Image, ScrollView } from 'react-native';
 import { useRouter } from 'expo-router';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import { loginHelp } from '@/constants/Help';
+import HelpButton from '@/components/HelpButton';
+import HelpModal from '@/components/HelpModal';
 import { hashPassword } from './password_hasher';
 import * as SessionInfo from './session_info';
 
@@ -12,6 +15,8 @@ export default function LoginScreen() {
   const [loading, setLoading] = useState(false);
   const [modalVisible, setModalVisible] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
+  const [helpVisible, setHelpVisible] = useState(false);
+
 
   SessionInfo.logout();
 
@@ -40,7 +45,9 @@ export default function LoginScreen() {
         });
 
         if (res.status != 200) {
-          Alert.alert('Error', await res.text());
+          const errorText = await res.text();
+          setErrorMessage(errorText);
+          setModalVisible(true);
           return;
         }
         
@@ -118,6 +125,15 @@ export default function LoginScreen() {
           </View>
         </View>
       </Modal>
+
+      {/* Help text modal */}
+      <HelpModal 
+        showModal={setHelpVisible} 
+        text={loginHelp}
+        visible={helpVisible}
+      />
+      <HelpButton showModal={setHelpVisible}/>
+
     </SafeAreaView>
   );
 }
@@ -160,6 +176,22 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     alignItems: 'center',
     marginBottom: 10, // Add margin for spacing
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.3,
+    shadowRadius: 3,
+    elevation: 4,
+  },
+  helpButton: {
+    paddingHorizontal: 0, 
+    paddingVertical: 0, 
+    justifyContent: 'center', 
+    alignItems: 'center', 
+    width: 50, height: 50, 
+    borderRadius: 35,
+    position: "absolute",
+    bottom: 50,
+    right: 20,
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.3,
