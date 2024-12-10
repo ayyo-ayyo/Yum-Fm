@@ -5,7 +5,7 @@ export const loginHelp = `
 If this is your first time using YumFM, read the "**Signing Up**" section. If you already have an account, read the "**Logging In**" section.
 
 ## Signing Up
-1. Tap the "**Create Account**" button to begin registering
+1. Tap the "**Don't have an account? Click here to sign up!**" text to begin registering
 2. Enter a valid email and password that you will use to log in
     - **Note:** Passwords can not be reset if forgotten
 3. Tap the "**Sign Up**" button
