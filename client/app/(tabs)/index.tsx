@@ -21,6 +21,7 @@ const HomeScreen: React.FC = () => {
   const [loading, setLoading] = useState<boolean>(true);
   const [userFavorites, setUserFavorites] = useState<Restaurant[]>([]);
 
+
   const router = useRouter();
 
   useEffect(() => {

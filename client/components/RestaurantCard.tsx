@@ -33,7 +33,7 @@ interface RestaurantCardProps {
   size?: 'small' | 'large';
 }
 
-const RestaurantCard: React.FC<RestaurantCardProps> = ({ restaurant, onAddToFavorites, size = 'small' }) => {
+const RestaurantCard: React.FC<RestaurantCardProps> = ({ restaurant, size = 'small' }) => {
   const [isExpanded, setIsExpanded] = useState(false);
   const [modalVisible, setModalVisible] = useState(false);
   const [activeTab, setActiveTab] = useState<'info' | 'menu'>('info');
