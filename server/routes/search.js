@@ -1,6 +1,8 @@
 const express = require('express');
 const Restaurant = require('../models/restaurant-model');
 const MenuItem = require('../models/menuItem-model');
+const Menu = require('../models/menu-model');
+const mongoose = require('mongoose');
 const router = express.Router();
 const tm = require('../token_manager');
 
@@ -68,35 +70,40 @@ router.get('/search', (req, res) => {
           based on the number of pfilters each document matches with
 */
 function atlasSearch(type, queryStr, mfilters, pfilters) {
-    // Define the values that will change depending on type
-    let ModelType;
-    let indexName;
-    let fieldName;
-    let filterName;
-
-    // TODO: Find a better way of grouping together related information for each data type 
-    //       (ie. the Model, index name, and field to search)
-    
     // Determine the type being searched and set the values accordingly
     switch (type) {
         case 'restaurant':
-            ModelType = Restaurant;
-            indexName = 'restaurant_autocomplete';
-            fieldName = 'restaurant_name';
-            filterName = 'rest_fulfilled_filters';
-            break;
+            return executeAtlasQuery(
+                Restaurant,
+                queryStr,
+                'restaurant_autocomplete',
+                'restaurant_name',
+                'rest_fulfilled_filters'
+            );
         case 'menuitem':
-            ModelType = MenuItem;
-            indexName = 'menuitem_autocomplete';
-            fieldName = 'item_name';
-            filterName = 'item_fulfilled_filters';
-            break;
+            return executeAtlasQuery(
+                MenuItem,
+                queryStr,
+                'menuitem_autocomplete',
+                'item_name',
+                'item_fulfilled_filters'
+            ).then(menuItems =>
+                Promise.all(menuItems.map(async (curItem) => {
+                    const matchingMenu = await Menu.findOne({menu_id: curItem.menu_id});
+                    const matchingRest = await Restaurant.findOne({restaurant_id: matchingMenu.restaurant_id});
+                    return {item: curItem, restaurant: matchingRest};
+                }))
+            );
         default:
             return Promise.reject({err_code: 400, reason: 'Invalid "type" parameter'});
     }
 
     // Construct the database query / aggregation pipeline that will return entries that match the name and mandatory filters, 
     // and then sort results by preferred filters
+    
+}
+
+function executeAtlasQuery(ModelType, queryStr, indexName, fieldName, filterName) {
     let searchAggregate = ModelType.aggregate().search({ // Do the initial search
         index: indexName,
         autocomplete: {

@@ -30,9 +30,11 @@ interface User {
 interface RestaurantCardProps {
   restaurant: Restaurant;
   size?: 'small' | 'large';
+  setUserFavorites?: (favs: Restaurant[]) => void;
+  favorites?: Restaurant[]
 }
 
-const RestaurantCard: React.FC<RestaurantCardProps> = ({ restaurant, size = 'small' }) => {
+const RestaurantCard: React.FC<RestaurantCardProps> = ({ restaurant, size = 'small', setUserFavorites, favorites }) => {
   const [isExpanded, setIsExpanded] = useState(false);
   const [modalVisible, setModalVisible] = useState(false);
   const [activeTab, setActiveTab] = useState<'info' | 'menu'>('info');
@@ -156,7 +158,18 @@ const RestaurantCard: React.FC<RestaurantCardProps> = ({ restaurant, size = 'sma
       // Toggle the favorite status locally for optimistic UI update
       const updatedFavoriteStatus = !isFavorite;
       setIsFavorite(updatedFavoriteStatus);
-  
+
+      if(setUserFavorites && favorites) {
+        if (updatedFavoriteStatus) {
+          setUserFavorites([...favorites, restaurant]);
+        }
+        else {
+          setUserFavorites(favorites.filter(curRest => {
+            return curRest.restaurant_name !== restaurant.restaurant_name;
+          }));
+        }
+      }
+
         // http://localhost:3000/api/users/${userId}
         // https://yum-fm-90558e78d331.herokuapp.com/api/users/${userId}
 
