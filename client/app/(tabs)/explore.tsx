@@ -4,13 +4,13 @@ import { Ionicons } from '@expo/vector-icons';
 import { useRouter } from 'expo-router';
 import RestaurantCard from '../../components/RestaurantCard';
 import * as SessionInfo from '../session_info';
-import { router } from 'expo-router';
 
 // Define type of Restaurant for TypeScript
 interface Restaurant {
   restaurant_id: number;
   restaurant_name: string;
   restaurant_desc: string;
+  restaurant_img: string;
 }
 
 export default function ExploreTab() {
@@ -21,10 +21,27 @@ export default function ExploreTab() {
 
   // Handle fetching of search results when pressing "Enter"
   const handleSearch = async () => {
-    const baseURL = process.env.baseUrl;
     if (query) {
       try {
-        const response = await fetch(`https://yum-fm-90558e78d331.herokuapp.com/api/search?type=restaurant&q=${query}`);
+        //const response = await fetch(`https://yum-fm-90558e78d331.herokuapp.com/api/search?type=restaurant&q=${query}`);
+
+        const token = SessionInfo.getAuthToken();
+        const baseUrl = process.env.EXPO_PUBLIC_baseUrl;
+        if (token === undefined) {
+          throw Error('Undefined token');
+        }
+
+        const response = await fetch(`${baseUrl}search?type=restaurant&q=${query}`, {
+          headers: {
+            'Authorization': token
+          }
+        });
+
+        if (response.status == 401) {
+          router.navigate('/login');
+          Alert.alert('Session expired');
+        }
+
         if (!response.ok) {
           throw new Error(`Error: ${response.status}`);
         }
@@ -49,11 +66,8 @@ export default function ExploreTab() {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.topBar}>
-        <TouchableOpacity style={styles.iconButton}>
-          <Ionicons name="camera-outline" size={24} color="#fff" onPress={() => {
-                        router.push('/camera');
-
-                     }} />
+        <TouchableOpacity style={styles.iconButton} onPress={() => router.navigate('/camera')}>
+          <Ionicons name="camera-outline" size={24} color="#fff" />
         </TouchableOpacity>
         <TextInput
           style={styles.searchBar}

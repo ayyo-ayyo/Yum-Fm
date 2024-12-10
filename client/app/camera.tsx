@@ -2,12 +2,12 @@
 // documentation for using expo-camera
 
 import Ionicons from '@expo/vector-icons/Ionicons';
-import { Camera, CameraView, CameraType, useCameraPermissions } from 'expo-camera';
-import { router } from 'expo-router';
+import { CameraView, CameraType, useCameraPermissions } from 'expo-camera';
+import { router, useLocalSearchParams } from 'expo-router';
 import React from 'react';
 import { useState } from 'react';
 import { Button, StyleSheet, Text, TouchableOpacity, View, Image } from 'react-native';
-import * as FileSystem from 'expo-file-system';
+
 
 export default function App() {
   const [facing, setFacing] = useState<CameraType>('back');
@@ -15,6 +15,7 @@ export default function App() {
   const [images, setImages] = useState<string[]>([]);
   
   const cameraRef = React.useRef<CameraView>(null);
+  const params = useLocalSearchParams();
 
   if (!permission) {
     // Camera permissions are still loading.
@@ -86,7 +87,7 @@ export default function App() {
               })
             );
             
-            images.length > 0 && router.push(`../menu?imageList=${imgurImages.join(",")}`)}}>
+            images.length > 0 && router.navigate(`../menu?imageList=${imgurImages.join(",")}&restaurant_id=${params.restaurant_id}`)}}>
             <Ionicons name="checkmark-outline" size={48} color="white" />
           </TouchableOpacity>
         </View>

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, Animated, Modal, Dimensions, ScrollView, Image } from 'react-native';
+import { router } from 'expo-router';
 
 interface Restaurant {
   restaurant_id: number;
@@ -75,7 +76,8 @@ const RestaurantCard: React.FC<RestaurantCardProps> = ({ restaurant, onAddToFavo
 
   const onUploadMenu = () => {
     console.log('Upload menu functionality triggered.');
-    // Add code to handle the upload, such as opening a file picker or navigating to an upload page.
+    //go to camera page
+    router.navigate(`/camera?restaurant_id=${restaurant.restaurant_id}`);
   };
 
   return (
