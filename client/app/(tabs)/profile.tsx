@@ -4,7 +4,7 @@ import { FontAwesome } from '@expo/vector-icons';
 import RestaurantCard from '../../components/RestaurantCard';
 import { useRouter } from 'expo-router';
 import * as SessionInfo from '../session_info';
-import { ObjectId } from 'mongodb';
+import BouncyCheckbox from 'react-native-bouncy-checkbox'; // New import
 
 interface User {
   _id: string;
@@ -13,8 +13,8 @@ interface User {
   email: string;
   address: string;
   favorites_list: String[];
+  restrictions: String[];
 }
-
 
 export default function ProfileScreen() {
   const [activeTab, setActiveTab] = useState<'account' | 'filters'>('account');
@@ -28,6 +28,25 @@ export default function ProfileScreen() {
   const [isLogoutModalVisible, setIsLogoutModalVisible] = useState<boolean>(false);
   const [favoriteRestaurantsID, setFavoriteRestaurants] = useState<any[]>([]);
   const [favRestaurantDetails, setFavoriteRestaurantsDetails] = useState<any[]>([]);
+  const [selectedFilters, setSelectedFilters] = useState<any[]>([]); // Store selected filters
+
+  const dietaryRestrictions = [
+    { name: 'Vegetarian', description: 'No meat, fish, or poultry.' },
+    { name: 'Vegan', description: 'No animal products, including meat, dairy, eggs, or honey.' },
+    { name: 'Gluten-Free', description: 'No wheat, barley, rye, or oats (unless certified gluten-free).' },
+    { name: 'Lactose-Free', description: 'No dairy products containing lactose.' },
+    { name: 'Nut-Free', description: 'No peanuts or tree nuts.' },
+    { name: 'Soy-Free', description: 'No soy products.' },
+    { name: 'Egg-Free', description: 'No eggs or egg-based products.' },
+    { name: 'Keto/Low-Carb', description: 'High fat, very low carb diet.' },
+    { name: 'Paleo', description: 'Focuses on whole foods, excluding grains, legumes, and processed foods.' },
+    { name: 'Halal', description: 'Foods that meet Islamic dietary laws (no pork, alcohol, etc.).' },
+    { name: 'Kosher', description: 'Foods prepared in compliance with Jewish dietary laws.' },
+    { name: 'Low-Sodium', description: 'Minimal salt in foods.' },
+    { name: 'Low-Fat', description: 'Reduced fat content.' },
+    { name: 'Diabetic-Friendly', description: 'Foods that maintain stable blood sugar levels.' },
+    { name: 'Allergen-Free', description: 'Avoidance of specific allergens (e.g., shellfish, sesame, etc.).' },
+  ];
 
   const router = useRouter();
 
@@ -47,6 +66,20 @@ export default function ProfileScreen() {
   if (userId === undefined) {
     throw new Error('Undefined userId');
   }
+
+  const handleFilterChange = (filter: string) => {
+    setSelectedFilters((prevFilters) => {
+      const updatedFilters = prevFilters.includes(filter)
+        ? prevFilters.filter((f) => f !== filter)
+        : [...prevFilters, filter];
+      
+      // Update dietary restrictions in the database
+      updateDietaryRestrictions(updatedFilters);
+  
+      return updatedFilters;
+    });
+  };
+  
 
   const fetchUserData = async (): Promise<User> => {
     try {
@@ -68,6 +101,7 @@ export default function ProfileScreen() {
       setEmail(userData.email || '');
       setAddress(userData.address || '');
       setFavoriteRestaurants(userData.favorites_list || []);
+      setSelectedFilters(userData.restrictions || []);
       console.log(userData);
       console.log(userData.favorites_list);
       return userData;
@@ -140,6 +174,32 @@ export default function ProfileScreen() {
       }
     }
     setIsFavoritesModalVisible(!isFavoritesModalVisible);
+  };
+
+  const updateDietaryRestrictions = async (updatedRestrictions: string[]): Promise<void> => {
+    try {
+      const response = await fetch(`https://yum-fm-90558e78d331.herokuapp.com/api/users/${userId}`, {
+        method: 'PUT',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          restrictions: updatedRestrictions,
+        }),
+      });
+  
+      if (!response.ok) {
+        const errorText = await response.text();
+        console.error("Error saving dietary restrictions:", errorText);
+        throw new Error('Failed to save dietary restrictions');
+      }
+      console.log("Success");
+      console.log(updatedRestrictions);
+      Alert.alert('Success', 'Dietary restrictions updated.');
+    } catch (error) {
+      console.error("Error updating dietary restrictions:", error);
+      Alert.alert('Error', 'Failed to update dietary restrictions.');
+    }
   };
   
   const toggleLogoutModal = (): void => {
@@ -255,21 +315,6 @@ export default function ProfileScreen() {
         </View>
       )}
 
-      {activeTab === 'filters' && (
-        <View style={styles.filtersSection}>
-          <Text style={styles.filtersText}>Filter Preferences</Text>
-          <View style={styles.switchContainer}>
-            <Text style={styles.switchLabel}>Enable Dietary Filters</Text>
-            <Switch
-              value={filtersEnabled}
-              onValueChange={(value) => setFiltersEnabled(value)}
-              trackColor={{ false: "#767577", true: "#D74938" }}
-              thumbColor={filtersEnabled ? "#fff" : "#f4f3f4"}
-            />
-          </View>
-        </View>
-      )}
-
       {/* Modal for Favorites */}
       <Modal
         visible={isFavoritesModalVisible}
@@ -331,6 +376,56 @@ export default function ProfileScreen() {
           </View>
         </View>
       </Modal>
+
+      {/* Filters Tab */}
+      {activeTab === 'filters' && (
+        <ScrollView style={styles.filtersSection}>
+          <Text style={styles.filtersTitle}>Filter Preferences</Text>
+          <View style={styles.switchContainer}>
+            <Text style={styles.switchLabel}>
+              Disabling dietary filters means we will not consider your filters when recommending restaurants to you.
+            </Text>
+            <Switch
+              value={filtersEnabled}
+              onValueChange={(value) => setFiltersEnabled(value)}
+              trackColor={{ false: "#767577", true: "#D74938" }}
+              thumbColor={filtersEnabled ? "#fff" : "#f4f3f4"}
+              style={styles.switchButton}  // Apply the custom style here
+            />
+          </View>
+
+          <View style={styles.container}>
+          <Text style={styles.filtersText}>Food Restrictions</Text>
+
+          {/* Added ScrollView to entire container instead of just here*/}
+          <View style={{ flex: 1 }}>
+            {dietaryRestrictions.map((restriction) => (
+              <View key={restriction.name} style={styles.checkboxContainer}>
+                <View style={styles.checkboxWrapper}>
+                  <BouncyCheckbox
+                    isChecked={selectedFilters.includes(restriction.name)}
+                    onPress={() => handleFilterChange(restriction.name)}
+                    fillColor="#D74938"  // Color of the checked box
+                    // unfillColor="#FFFFFF" // Color of the unchecked box
+                    // bounceEffect={true}  // Adds the bounce animation effect
+                    disableText={false}  // Allows showing the label text
+                    style={styles.bouncyCheckbox}  // Custom style for the checkbox
+                  />
+                </View>
+                <View style={styles.checkboxTextContainer}>
+                  <Text style={styles.checkboxName}>{restriction.name}</Text>
+                  <Text style={styles.checkboxDescription}>{restriction.description}</Text>
+                </View>
+              </View>
+            ))}
+          </View>
+
+
+        </View>
+
+        </ScrollView>
+      )}
+
     </SafeAreaView>
   );
 }
@@ -369,6 +464,8 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     fontSize: 20,
   },
+
+  // account stuff
   accountSection: {
     alignItems: 'center',
     padding: 20,
@@ -471,24 +568,40 @@ const styles = StyleSheet.create({
     fontWeight: '600',
     marginLeft: 10,
   },
+
+
   filtersSection: {
     padding: 20,
+  },
+  filtersTitle: {
+    fontSize: 22,
+    fontWeight: '600',
+    color: '#333',
+    marginBottom: 10,
+    textAlign: 'left', // Aligning title to the left to match other sections
+    marginLeft: 20,
   },
   filtersText: {
     fontSize: 22,
     fontWeight: '600',
     color: '#333',
     marginBottom: 10,
+    marginTop: 20, // Adding some space before the Food Restrictions title
+  },
+  switchLabel: {
+    fontSize: 16,
+    color: '#555',
+    flex: 1, // Ensuring text takes available space and aligns well with switch
+  },
+  switchButton: {
+    alignSelf: "flex-end",  // Adjust this value as needed to move the switch to the left
   },
   switchContainer: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
     marginVertical: 10,
-  },
-  switchLabel: {
-    fontSize: 16,
-    color: '#555',
+    marginLeft: 20,
   },
 
   // Modal styles
@@ -558,4 +671,38 @@ const styles = StyleSheet.create({
     marginBottom: 15, // Adjust the value for the desired gap
   },
   
+  // Filter checkbox list
+  scrollView: {
+    marginTop: 10,
+  },
+  checkboxContainer: {
+    flexDirection: 'row',
+    alignItems: 'flex-start',
+    marginBottom: 20,
+    marginLeft: 10,
+  },
+  checkboxTextContainer: {
+    marginLeft: 10,
+    flex: 1,
+  },
+  checkboxName: {
+    fontSize: 16,
+    fontWeight: '600',
+    color: '#D74938',
+    marginBottom: 5,
+  },
+  checkboxDescription: {
+    fontSize: 14,
+    color: '#555',
+  },
+  checkboxWrapper: {
+    width: 30,            // Set the width of the checkbox container
+    height: 30,           // Set the height of the checkbox container
+    justifyContent: 'center', // Center the checkbox inside the container
+    alignItems: 'center',      // Align the checkbox in the center horizontally and vertically
+    marginRight: 10,           // Space between the checkbox and the label
+  },
+  bouncyCheckbox: {
+    marginRight: -20,
+  },
 });
