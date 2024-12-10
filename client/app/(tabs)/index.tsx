@@ -12,10 +12,12 @@ import { indexHelp } from '@/constants/Help';
 import * as SessionInfo from '../session_info';
 
 interface Restaurant {
+  _id: string;
   restaurant_id: number;
   restaurant_name: string;
   restaurant_desc: string;
   restaurant_img: string;
+  rest_fulfilled_filters: String[];
 }
 
 const HomeScreen: React.FC = () => {
@@ -23,6 +25,7 @@ const HomeScreen: React.FC = () => {
   const [restaurants, setRestaurants] = useState<Restaurant[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
   const [helpVisible, setHelpVisible] = useState(false);
+  const [userFavorites, setUserFavorites] = useState<Restaurant[]>([]);
 
 
   const router = useRouter();
@@ -61,6 +64,24 @@ const HomeScreen: React.FC = () => {
         if (!response.ok) throw new Error(`Error fetching data: ${await response.text()}`);
         const data: Restaurant[] = await response.json();
         setRestaurants(data);
+
+        // Get user data
+        const userJSON = await fetch(`https://yum-fm-90558e78d331.herokuapp.com/api/users/${SessionInfo.getUserId()}`, {
+          headers: {
+            'Authorization': token
+          }
+        });
+      
+        const userFavorites = await userJSON.json().then(userData => Promise.all(userData.favorites_list.map((restId: string) => {
+          return fetch(`https://yum-fm-90558e78d331.herokuapp.com/api/restaurants/${restId}`, {
+            headers: {
+              'Authorization': token
+            }
+          }).then(restJSON => restJSON.json());
+        })));
+
+        setUserFavorites(userFavorites);
+
       } catch (error) {
         console.error('Failed to fetch restaurants:', error);
       }
@@ -69,17 +90,12 @@ const HomeScreen: React.FC = () => {
     })();
   }, []);
 
-  const handleAddToFavorites = (id: number) => {
-    console.log(`Add to favorites: Restaurant ID ${id}`);
-    // Logic to add restaurant to favorites
-  };
-
   // Categorize restaurants based on name
   const categories = {
     closest: restaurants.filter((r) => r.restaurant_name[0].toUpperCase() < 'H'),
     forYou: restaurants.filter((r) => r.restaurant_name[0].toUpperCase() >= 'H' && r.restaurant_name[0].toUpperCase() < 'N'),
     foodItems: restaurants.filter((r) => r.restaurant_name[0].toUpperCase() >= 'N' && r.restaurant_name[0].toUpperCase() < 'T'),
-    favorites: restaurants.filter((r) => r.restaurant_name[0].toUpperCase() >= 'T'),
+    favorites: userFavorites
   };
 
   const renderCategory = (title: string, data: Restaurant[]) => (
@@ -92,7 +108,8 @@ const HomeScreen: React.FC = () => {
             <RestaurantCard
               key={restaurant.restaurant_id}
               restaurant={restaurant}
-              onAddToFavorites={handleAddToFavorites}
+              setUserFavorites={setUserFavorites}
+              favorites={userFavorites}
             />
         ))}
       </ScrollView>
@@ -113,7 +130,7 @@ const HomeScreen: React.FC = () => {
         {renderCategory("Restaurants Closest To You", categories.closest)}
         {renderCategory("Restaurants For You", categories.forYou)}
         {renderCategory("Food Items For You", categories.foodItems)}
-        {renderCategory("Favorites List", categories.favorites)}
+        {renderCategory("Favorites", categories.favorites)}
       </ScrollView>
 
       <HelpModal showModal={setHelpVisible} visible={helpVisible} text={indexHelp}></HelpModal>
