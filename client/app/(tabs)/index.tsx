@@ -6,6 +6,9 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { useRouter } from 'expo-router';
 import * as Location from 'expo-location';
 import RestaurantCard from '../../components/RestaurantCard';
+import HelpModal from '@/components/HelpModal';
+import HelpButton from '@/components/HelpButton';
+import { indexHelp } from '@/constants/Help';
 import * as SessionInfo from '../session_info';
 
 interface Restaurant {
@@ -21,6 +24,7 @@ const HomeScreen: React.FC = () => {
   const [location, setLocation] = useState<Location.LocationObject | null>(null);
   const [restaurants, setRestaurants] = useState<Restaurant[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
+  const [helpVisible, setHelpVisible] = useState(false);
   const [userFavorites, setUserFavorites] = useState<Restaurant[]>([]);
 
 
@@ -128,6 +132,9 @@ const HomeScreen: React.FC = () => {
         {renderCategory("Food Items For You", categories.foodItems)}
         {renderCategory("Favorites", categories.favorites)}
       </ScrollView>
+
+      <HelpModal showModal={setHelpVisible} visible={helpVisible} text={indexHelp}></HelpModal>
+      <HelpButton showModal={setHelpVisible}></HelpButton>
     </SafeAreaView>
   );
 };
