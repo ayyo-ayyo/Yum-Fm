@@ -5,6 +5,9 @@ import RestaurantCard from '../../components/RestaurantCard';
 import { useRouter } from 'expo-router';
 import * as SessionInfo from '../session_info';
 import BouncyCheckbox from 'react-native-bouncy-checkbox'; // New import
+import HelpButton from '@/components/HelpButton';
+import { profileHelp } from '@/constants/Help';
+import HelpModal from '@/components/HelpModal';
 
 interface User {
   _id: string;
@@ -29,6 +32,8 @@ export default function ProfileScreen() {
   const [favoriteRestaurantsID, setFavoriteRestaurants] = useState<any[]>([]);
   const [favRestaurantDetails, setFavoriteRestaurantsDetails] = useState<any[]>([]);
   const [selectedFilters, setSelectedFilters] = useState<any[]>([]); // Store selected filters
+  const [helpVisible, setHelpVisible] = useState(false);
+
 
   const dietaryRestrictions = [
     { name: 'Vegetarian', description: 'No meat, fish, or poultry.' },
@@ -424,6 +429,9 @@ export default function ProfileScreen() {
 
         </ScrollView>
       )}
+
+    <HelpModal showModal={setHelpVisible} visible={helpVisible} text={profileHelp}></HelpModal>
+    <HelpButton showModal={setHelpVisible}></HelpButton>
 
     </SafeAreaView>
   );

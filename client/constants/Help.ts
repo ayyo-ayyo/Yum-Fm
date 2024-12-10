@@ -43,3 +43,13 @@ The home page contains several sections of restaurants based on your preferences
 \t - View a **menu** if the restaurant **already** has one. Tap the **menu tab** under the restaurant's name to see the available items.
 \t - Upload a **new menu** if the restaurant does not have one yet. Tap the **menu tab** and then **Upload Menu** to get started!
 `;
+
+export const searchHelp = `
+# The Search Page
+---
+`;
+
+export const profileHelp = `
+# The Profile Page
+---
+`;

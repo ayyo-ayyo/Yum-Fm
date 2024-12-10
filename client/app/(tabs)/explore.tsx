@@ -4,6 +4,10 @@ import { Ionicons } from '@expo/vector-icons';
 import { useRouter } from 'expo-router';
 import RestaurantCard from '../../components/RestaurantCard';
 import * as SessionInfo from '../session_info';
+import HelpButton from '@/components/HelpButton';
+import { searchHelp } from '@/constants/Help';
+import HelpModal from '@/components/HelpModal';
+
 
 // Define type of Restaurant for TypeScript
 interface Restaurant {
@@ -30,6 +34,8 @@ export default function ExploreTab() {
   const [results, setResults] = useState<Restaurant[]>([]);
   const [filterModalVisible, setFilterModalVisible] = useState(false);
   const [currentFilters, setCurrentFilters] = useState<any[]>([]);
+  const [helpVisible, setHelpVisible] = useState(false);
+
 
   const router = useRouter();
 
@@ -190,6 +196,9 @@ export default function ExploreTab() {
         horizontal={false} // Use vertical scrolling for list
         ItemSeparatorComponent={() => <View style={styles.itemSeparator} />} // Add separator between items
       />
+
+      <HelpModal showModal={setHelpVisible} visible={helpVisible} text={searchHelp}></HelpModal>
+      <HelpButton showModal={setHelpVisible}></HelpButton>
     </SafeAreaView>
   );
 }
