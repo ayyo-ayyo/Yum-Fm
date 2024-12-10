@@ -9,10 +9,12 @@ import RestaurantCard from '../../components/RestaurantCard';
 import * as SessionInfo from '../session_info';
 
 interface Restaurant {
+  _id: string;
   restaurant_id: number;
   restaurant_name: string;
   restaurant_desc: string;
   restaurant_img: string;
+  rest_fulfilled_filters: String[];
 }
 
 const HomeScreen: React.FC = () => {
@@ -102,6 +104,8 @@ const HomeScreen: React.FC = () => {
             <RestaurantCard
               key={restaurant.restaurant_id}
               restaurant={restaurant}
+              setUserFavorites={setUserFavorites}
+              favorites={userFavorites}
             />
         ))}
       </ScrollView>
@@ -122,7 +126,7 @@ const HomeScreen: React.FC = () => {
         {renderCategory("Restaurants Closest To You", categories.closest)}
         {renderCategory("Restaurants For You", categories.forYou)}
         {renderCategory("Food Items For You", categories.foodItems)}
-        {renderCategory("Favorites List", categories.favorites)}
+        {renderCategory("Favorites", categories.favorites)}
       </ScrollView>
     </SafeAreaView>
   );
