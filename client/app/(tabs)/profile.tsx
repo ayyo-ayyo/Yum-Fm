@@ -13,6 +13,7 @@ interface User {
   email: string;
   address: string;
   favorites_list: String[];
+  restrictions: String[];
 }
 
 export default function ProfileScreen() {
@@ -27,7 +28,7 @@ export default function ProfileScreen() {
   const [isLogoutModalVisible, setIsLogoutModalVisible] = useState<boolean>(false);
   const [favoriteRestaurantsID, setFavoriteRestaurants] = useState<any[]>([]);
   const [favRestaurantDetails, setFavoriteRestaurantsDetails] = useState<any[]>([]);
-  const [selectedFilters, setSelectedFilters] = useState<string[]>([]); // Store selected filters
+  const [selectedFilters, setSelectedFilters] = useState<any[]>([]); // Store selected filters
 
   const dietaryRestrictions = [
     { name: 'Vegetarian', description: 'No meat, fish, or poultry.' },
@@ -68,13 +69,17 @@ export default function ProfileScreen() {
 
   const handleFilterChange = (filter: string) => {
     setSelectedFilters((prevFilters) => {
-      if (prevFilters.includes(filter)) {
-        return prevFilters.filter((f) => f !== filter);
-      } else {
-        return [...prevFilters, filter];
-      }
+      const updatedFilters = prevFilters.includes(filter)
+        ? prevFilters.filter((f) => f !== filter)
+        : [...prevFilters, filter];
+      
+      // Update dietary restrictions in the database
+      updateDietaryRestrictions(updatedFilters);
+  
+      return updatedFilters;
     });
   };
+  
 
   const fetchUserData = async (): Promise<User> => {
     try {
@@ -96,6 +101,7 @@ export default function ProfileScreen() {
       setEmail(userData.email || '');
       setAddress(userData.address || '');
       setFavoriteRestaurants(userData.favorites_list || []);
+      setSelectedFilters(userData.restrictions || []);
       console.log(userData);
       console.log(userData.favorites_list);
       return userData;
@@ -168,6 +174,32 @@ export default function ProfileScreen() {
       }
     }
     setIsFavoritesModalVisible(!isFavoritesModalVisible);
+  };
+
+  const updateDietaryRestrictions = async (updatedRestrictions: string[]): Promise<void> => {
+    try {
+      const response = await fetch(`https://yum-fm-90558e78d331.herokuapp.com/api/users/${userId}`, {
+        method: 'PUT',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          restrictions: updatedRestrictions,
+        }),
+      });
+  
+      if (!response.ok) {
+        const errorText = await response.text();
+        console.error("Error saving dietary restrictions:", errorText);
+        throw new Error('Failed to save dietary restrictions');
+      }
+      console.log("Success");
+      console.log(updatedRestrictions);
+      Alert.alert('Success', 'Dietary restrictions updated.');
+    } catch (error) {
+      console.error("Error updating dietary restrictions:", error);
+      Alert.alert('Error', 'Failed to update dietary restrictions.');
+    }
   };
   
   const toggleLogoutModal = (): void => {
