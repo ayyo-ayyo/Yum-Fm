@@ -57,13 +57,23 @@ export default function ExploreTab() {
     if (query) {
       try {
         //const response = await fetch(`https://yum-fm-90558e78d331.herokuapp.com/api/search?type=restaurant&q=${query}`);
+        
+        const userData = await fetchUserData(); // This returns the user object
+        const mfilters = userData.restrictions.join(','); // Convert filters array to a comma-separated string
 
         const token = SessionInfo.getAuthToken();
         if (token === undefined) {
           throw Error('Undefined token');
         }
-
-        const response = await fetch(`https://yum-fm-90558e78d331.herokuapp.com/api/search?type=restaurant&q=${query}`, {
+        console.log(mfilters);
+        let uri;
+        if (userData.restrictions.length == 0){
+          uri = `https://yum-fm-90558e78d331.herokuapp.com/api/search?type=restaurant&q=${query}`
+        } else {
+          uri = `https://yum-fm-90558e78d331.herokuapp.com/api/search?type=restaurant&q=${query}&mfilters=${encodeURIComponent(mfilters)}`
+        }
+        const response = await fetch(uri ,
+        {
           headers: {
             'Authorization': token
           }
