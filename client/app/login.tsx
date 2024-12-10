@@ -2,10 +2,11 @@ import React, { useState } from 'react';
 import { View, Text, StyleSheet, TextInput, TouchableOpacity, ActivityIndicator, Modal, Image, ScrollView } from 'react-native';
 import { useRouter } from 'expo-router';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import Markdown from 'react-native-markdown-display';
 import { loginHelp } from '@/constants/Help';
 import HelpButton from '@/components/HelpButton';
 import HelpModal from '@/components/HelpModal';
+import { hashPassword } from './password_hasher';
+import * as SessionInfo from './session_info';
 
 export default function LoginScreen() {
   const router = useRouter();
@@ -16,6 +17,8 @@ export default function LoginScreen() {
   const [errorMessage, setErrorMessage] = useState('');
   const [helpVisible, setHelpVisible] = useState(false);
 
+
+  SessionInfo.logout();
 
   const handleLogin = async () => {
     const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
@@ -28,15 +31,34 @@ export default function LoginScreen() {
 
     setLoading(true);
 
-    setTimeout(() => {
-      setLoading(false);
-      if (regex.test(email) && password !== '') {
+    setLoading(false);
+    if (regex.test(email) && password !== '') {
+      // Need to validate if the email and password were correct
+      hashPassword(password).then(async (hash) => {
+        console.log(hash);
+        const res = await fetch('https://yum-fm-90558e78d331.herokuapp.com/api/login', {
+          method: "POST",
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({email: email, password: hash})
+        });
+
+        if (res.status != 200) {
+          const errorText = await res.text();
+          setErrorMessage(errorText);
+          setModalVisible(true);
+          return;
+        }
+        
+        const resJSON = await res.json();
+        SessionInfo.login(resJSON._id, resJSON.token);
         router.replace('/(tabs)');
-      } else {
-        setErrorMessage('Invalid email or password.');
-        setModalVisible(true);
-      }
-    }, 2000);
+      });
+    } else {
+      setErrorMessage('Invalid email or password.');
+      setModalVisible(true);
+    }
   };
 
   const handleCreateAccount = () => {
@@ -79,7 +101,7 @@ export default function LoginScreen() {
 
         {/* Create Account Button */}
         <TouchableOpacity style={styles.createAccountButton} onPress={handleCreateAccount}>
-          <Text style={styles.buttonText}>Create Account</Text>
+          <Text style={styles.buttonTextCreateAccount}>Don't have an account? Click here to sign up!</Text>
         </TouchableOpacity>
       </View>
 
@@ -145,17 +167,15 @@ const styles = StyleSheet.create({
     elevation: 3,
   },
   buttonContainer: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
+    flexDirection: 'column', // Arrange buttons vertically
     marginTop: 15,
   },
   loginButton: {
-    flex: 1,
     backgroundColor: '#D74938',
     paddingVertical: 12,
     borderRadius: 10,
     alignItems: 'center',
-    marginRight: 10,
+    marginBottom: 10, // Add margin for spacing
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.3,
@@ -179,19 +199,16 @@ const styles = StyleSheet.create({
     elevation: 4,
   },
   createAccountButton: {
-    flex: 1,
-    backgroundColor: '#D74938',
     paddingVertical: 12,
-    borderRadius: 10,
     alignItems: 'center',
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.3,
-    shadowRadius: 3,
-    elevation: 4,
   },
   buttonText: {
     color: '#fff',
+    fontSize: 16,
+    fontWeight: '600',
+  },
+  buttonTextCreateAccount: {
+    color: '#D74938', // Make the text red
     fontSize: 16,
     fontWeight: '600',
   },
