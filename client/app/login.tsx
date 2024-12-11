@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { View, Text, StyleSheet, TextInput, TouchableOpacity, ActivityIndicator, Modal, Image, ScrollView } from 'react-native';
+import React, { useEffect, useState } from 'react';
+import { View, Text, StyleSheet, TextInput, TouchableOpacity, ActivityIndicator, Modal, Image, Animated, Keyboard, Platform} from 'react-native';
 import { useRouter } from 'expo-router';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { loginHelp } from '@/constants/Help';
@@ -17,6 +17,40 @@ export default function LoginScreen() {
   const [errorMessage, setErrorMessage] = useState('');
   const [helpVisible, setHelpVisible] = useState(false);
 
+    // Animated value for moving inputs
+    const moveAnim = useState(new Animated.Value(0))[0];
+
+    useEffect(() => {
+      // Keyboard show listener
+      const keyboardShowListener = Keyboard.addListener(
+        Platform.OS === 'ios' ? 'keyboardWillShow' : 'keyboardDidShow',
+        (event) => {
+          Animated.timing(moveAnim, {
+            toValue: -100, // Adjust this value as needed
+            duration: 200,
+            useNativeDriver: true
+          }).start();
+        }
+      );
+  
+      // Keyboard hide listener
+      const keyboardHideListener = Keyboard.addListener(
+        Platform.OS === 'ios' ? 'keyboardWillHide' : 'keyboardDidHide',
+        () => {
+          Animated.timing(moveAnim, {
+            toValue: 0,
+            duration: 200,
+            useNativeDriver: true
+          }).start();
+        }
+      );
+  
+      // Clean up listeners
+      return () => {
+        keyboardShowListener.remove();
+        keyboardHideListener.remove();
+      };
+    }, [moveAnim]);
 
   SessionInfo.logout();
 
@@ -67,43 +101,55 @@ export default function LoginScreen() {
 
   return (
     <SafeAreaView style={styles.container}>
-      {/* Logo */}
-      <Image
-        source={require('../assets/images/Yum.FM_LOGO.png')}
-        style={styles.logo}
-      />
 
-      {/* Email and Password Inputs */}
-      <TextInput
-        style={styles.input}
-        placeholder="Email"
-        placeholderTextColor="#aaa"
-        value={email}
-        onChangeText={setEmail}
-        keyboardType="email-address"
-        autoCapitalize="none"
-      />
-      <TextInput
-        style={styles.input}
-        placeholder="Password"
-        placeholderTextColor="#aaa"
-        secureTextEntry
-        value={password}
-        onChangeText={setPassword}
-      />
+      {/* Animated container for inputs */}
+      <Animated.View style={[styles.inputContainer, { transform: [{ translateY: moveAnim }] }]}>
+        {/* Logo */}
+        <Image
+          source={require('../assets/images/Yum.FM_LOGO.png')}
+          style={styles.logo}
+        />
+        
+        {/* Email and Password Inputs */}
+        <TextInput
+          style={styles.input}
+          placeholder="Email"
+          placeholderTextColor="#aaa"
+          value={email}
+          onChangeText={setEmail}
+          keyboardType="email-address"
+          autoCapitalize="none"
+        />
+        <TextInput
+          style={styles.input}
+          placeholder="Password"
+          placeholderTextColor="#aaa"
+          secureTextEntry
+          value={password}
+          onChangeText={setPassword}
+        />
+          {/* Buttons Container */}
+        <View style={styles.buttonContainer}>
+          {/* Login Button */}
+          <TouchableOpacity style={styles.loginButton} onPress={handleLogin} disabled={loading}>
+            {loading ? <ActivityIndicator color="#fff" /> : <Text style={styles.buttonText}>Login</Text>}
+          </TouchableOpacity>
 
-      {/* Buttons Container */}
-      <View style={styles.buttonContainer}>
-        {/* Login Button */}
-        <TouchableOpacity style={styles.loginButton} onPress={handleLogin} disabled={loading}>
-          {loading ? <ActivityIndicator color="#fff" /> : <Text style={styles.buttonText}>Login</Text>}
-        </TouchableOpacity>
+          {/* Create Account Button */}
+          <TouchableOpacity style={styles.createAccountButton} onPress={handleCreateAccount}>
+            <Text style={styles.buttonTextCreateAccount}>Don't have an account? Click here to sign up!</Text>
+          </TouchableOpacity>
+        </View>
+      </Animated.View>
 
-        {/* Create Account Button */}
-        <TouchableOpacity style={styles.createAccountButton} onPress={handleCreateAccount}>
-          <Text style={styles.buttonTextCreateAccount}>Don't have an account? Click here to sign up!</Text>
-        </TouchableOpacity>
-      </View>
+      {/* Help text modal */}
+      <HelpModal 
+        showModal={setHelpVisible} 
+        text={loginHelp}
+        visible={helpVisible}
+      />
+      <HelpButton showModal={setHelpVisible}/>
+
 
       {/* Error Modal */}
       <Modal
@@ -126,19 +172,14 @@ export default function LoginScreen() {
         </View>
       </Modal>
 
-      {/* Help text modal */}
-      <HelpModal 
-        showModal={setHelpVisible} 
-        text={loginHelp}
-        visible={helpVisible}
-      />
-      <HelpButton showModal={setHelpVisible}/>
-
     </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
+  inputContainer: {
+    // This allows the inputs to be animated
+  },
   container: {
     flex: 1,
     justifyContent: 'center',

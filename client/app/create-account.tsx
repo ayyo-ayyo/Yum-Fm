@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { View, Text, TextInput, StyleSheet, TouchableOpacity, Modal } from 'react-native';
+import React, { useState, useEffect } from 'react';
+import { View, Text, TextInput, StyleSheet, TouchableOpacity, Modal, Animated, Keyboard, Platform } from 'react-native';
 import { useRouter } from 'expo-router';
 import { hashPassword } from './password_hasher';
 
@@ -11,6 +11,41 @@ export default function CreateAccountScreen() {
   const [modalTitle, setModalTitle] = useState('');
   const [modalMessage, setModalMessage] = useState('');
 
+  // Animated value for moving inputs
+    const moveAnim = useState(new Animated.Value(0))[0];
+
+    useEffect(() => {
+      // Keyboard show listener
+      const keyboardShowListener = Keyboard.addListener(
+        Platform.OS === 'ios' ? 'keyboardWillShow' : 'keyboardDidShow',
+        (event) => {
+          Animated.timing(moveAnim, {
+            toValue: -100, // Adjust this value as needed
+            duration: 200,
+            useNativeDriver: true
+          }).start();
+        }
+      );
+  
+      // Keyboard hide listener
+      const keyboardHideListener = Keyboard.addListener(
+        Platform.OS === 'ios' ? 'keyboardWillHide' : 'keyboardDidHide',
+        () => {
+          Animated.timing(moveAnim, {
+            toValue: 0,
+            duration: 200,
+            useNativeDriver: true
+          }).start();
+        }
+      );
+  
+      // Clean up listeners
+      return () => {
+        keyboardShowListener.remove();
+        keyboardHideListener.remove();
+      };
+    }, [moveAnim]);
+  
   const handleCreateAccount = async () => {
     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
@@ -62,6 +97,13 @@ export default function CreateAccountScreen() {
 
   return (
     <View style={styles.container}>
+      {/* Animated container for content */}
+      <Animated.View 
+        style={[
+          styles.animatedContainer, 
+          { transform: [{ translateY: moveAnim }] }
+        ]}
+      >
       {/* Page Header */}
       <Text style={styles.header}>Create Account</Text>
 
@@ -95,6 +137,7 @@ export default function CreateAccountScreen() {
       <TouchableOpacity onPress={() => router.replace('/login')}>
         <Text style={styles.backToLogin}>Back to Login</Text>
       </TouchableOpacity>
+    </Animated.View>
 
       {/* Error/Success Modal */}
       <Modal
@@ -123,6 +166,9 @@ export default function CreateAccountScreen() {
 }
 
 const styles = StyleSheet.create({
+  animatedContainer: {
+    // This allows the entire block to be animated
+  },
   container: {
     flex: 1,
     justifyContent: 'center',
