@@ -46,19 +46,30 @@ Now the server should be able to access the database, and you can run the server
 
 For the beta release, the server implements several HTTP endpoints/routes that allow the client access to the MongoDB database. 
 
-### New/Modified in Beta Release
-The following have been added following the alpha release:
-
-### `GET /api/login?user_name=<user name>&password=<password>`
-* **Description:** Returns an HTTP response with the corresponding User for the given user name and password.
-
-* **Supported Types**: N/A
-
+### New/Modified in Final Release
 
 ### `POST /api/login`
-* **Description:** Creates a new User who has signed in for the first time. Expects a user_id, user_name, and user_password to be provided in the request body.
+* **Description:** Returns an HTTP response with the corresponding User for the given user name and password. Also includes a login token to be used in future API requests.
+
+* **Body:** Expects a field with "email" and "password".
 
 * **Supported Types**: N/A
+
+### `POST /api/signup`
+* **Description:** Creates a new User who has signed in for the first time. 
+
+* **Body:** Expects a user_name, email, password, and favorites_list to be provided in the request body.
+
+* **Supported Types**: N/A
+
+### `GET /by-restaurant/:restaurant_id`
+
+* **Description:** Returns all of the menu items associated with a particular restaurant_id
+
+* **Supported Types**: N/A
+
+### Included Since Beta Release
+The following have been implemented since the beta release:
 
 ### `GET /api/search?q=<text query>&type=<type>&mfilters=<mfilters>&pfilters=<pfilters>`
 * **Description:** Searches the database for any documents of the given type by name based on the text query. **New in Beta:** Optionally, mfilters is a comma separated list of filters that each type has to fulfill in order to be returned. Optionally, pfilters is a comma separated list of preferred filters to sort the returned documents by, with documents matching more pfilters coming first in the search results.
@@ -95,7 +106,7 @@ The remaining were implemented in the alpha release.
 * **Supported Types:** restaurants, menu items, menus, preferences, restrictions, users
 
 ## Testing the Backend 
-There are several unit tests written in the `server\__tests__` folder. These tests can be executed with the following steps:
+There are several unit and integration tests written in the `server\__tests__` folder. These tests can be executed with the following steps:
 
 1. Open up the project repo and create a new terminal.
 
@@ -103,13 +114,21 @@ There are several unit tests written in the `server\__tests__` folder. These tes
        
         cd server
 
-3. Run all tests 
+3. Install dependencies
+
+        npm install
+
+4. Run all tests 
 
         npm test
 
 The tests are run through Jest, and results will display in the terminal, indicating passing, failing tests, and any assertion errors.
 
-### Test Coverage Summary
+Our latest test results can be seen below:
+
+![results](test_results.png)
+
+### Unit Test Coverage Summary
 * **Route Tests:** Checks that all routes are functioning.
 
     * Ensures that each database route is able to fetch from the corresponding database table, and returning an error code of 404 or 200 depending on the existence of data in the table.
@@ -119,7 +138,7 @@ The tests are run through Jest, and results will display in the terminal, indica
 * **Restaurant Search Tests:** Checks search functionality specifically for restaurant results.
 
     * Tests that a search with a full restaurant name returns the expected restaurant with the correct name and description.
-    * Confirms that a partial search term (e.g., Oce) returns results that include the target restaurant ("Ocean Restaurant").
+    * Confirms that a partial search term (e.g., Pas) returns results that include the target restaurant ("Pasta E Basta").
     * Ensures that a search with a non-existent restaurant name returns an empty array, indicating no results.
     * Validates that searches with filter parameters (mfilters) return only the results matching those filter conditions.*
 
@@ -129,4 +148,18 @@ The tests are run through Jest, and results will display in the terminal, indica
     * Verifies that a partial search term (e.g., sa) returns results that include the target item ("sandwich").
     * Confirms that a search with a non-existent menu item name returns an empty array, indicating no results.
 
+* **Login / Signup Tests:** Checks login and signup functionality
+
+    * Ensures that creating an account with the correct information does correctly create a new user in the database
+    * Ensures that logging in is successful if given information for an account that is known to exist
+    * Ensures that login correctly returns a user id and login token only if successful
+
 These tests provide coverage for valid and invalid inputs across the /search endpoint, ensuring the server’s correct response to various search queries and filter conditions.
+
+### Integration Test Summary
+
+Several of the tests above tested the integration between the login system and other API systems, such as fetching restaurants.
+
+We have also included a full use case integration test in the search.test.js file. In the test named "GET /search should only return results which contain filters that match mfilters":
+- We first test the login system by providing an existing email and password
+- We then test the integration between the login system, search system, and filter system by performing a restaurant search, mimicking if the user began to type "B" with first only the filter Paleo, and then with Paleo and Vegan. To do this, the query has to check that the login token from the login system is valid, it then has to perform a database query to get restaurants beginning with "B" using the search system, and finally filter them based on the filter system. We ensure that the search returns results, and that all of them conform to the user's filters in both cases. This represents a use case where a user logged into the app, and began searching for restaurants to fit their dietary needs, and they received results that matched their preferences.
