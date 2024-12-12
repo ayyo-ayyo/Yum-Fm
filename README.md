@@ -7,6 +7,7 @@ This document will provide an overview of where to find instructions for buildin
 2. [Server Documentation](#server-documentation)
 3. [Our Repository](#our-repository)
 4. [Issue Tracking](#issue-tracking)
+5. [Testing](#testing)
 
 ## Client App Documentation & Release Notes
 [Frontend Release Notes and Documentation](./documentation/FrontendReleaseNotes.md)
@@ -46,3 +47,7 @@ To review our bug-tracking system, please visit our Jira board at the following 
 
 ### Customer and Team Usage
 These instructions are designed for both our development team and customer group to access, track, and contribute to the bug resolution process, ensuring transparency and collaboration.
+
+
+## Testing
+We have included many tests for each of the major componenets of our app. These include both unit tests for individual API calls and integration tests between several of the major systems and mimicks real use cases. Documentation on how to run the tests, what the tests cover (unit/integration tests), latest test results, and instructions can be found in the [Backend Release Notes and Documentation](./documentation/BackendReleaseNotes.md).
