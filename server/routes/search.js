@@ -108,7 +108,7 @@ function executeAtlasQuery(ModelType, queryStr, indexName, fieldName, filterName
         index: indexName,
         autocomplete: {
             query: queryStr,
-            path: fieldName
+            path: fieldName,
         }
     });
 

@@ -19,7 +19,11 @@ interface User {
   restrictions: String[];
 }
 
-export default function ProfileScreen() {
+interface TestProp {
+  test: String;
+};
+
+export default function ProfileScreen(prop: TestProp) {
   const [activeTab, setActiveTab] = useState<'account' | 'filters'>('account');
   const [filtersEnabled, setFiltersEnabled] = useState<boolean>(false);
   const [isEditing, setIsEditing] = useState<boolean>(false);
@@ -33,7 +37,6 @@ export default function ProfileScreen() {
   const [favRestaurantDetails, setFavoriteRestaurantsDetails] = useState<any[]>([]);
   const [selectedFilters, setSelectedFilters] = useState<any[]>([]); // Store selected filters
   const [helpVisible, setHelpVisible] = useState(false);
-
 
   const dietaryRestrictions = [
     { name: 'Vegetarian', description: 'No meat, fish, or poultry.' },

@@ -1,7 +1,8 @@
 import { Tabs } from 'expo-router';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 import { TabBarIcon } from '@/components/navigation/TabBarIcon';
+import { Restaurant } from './explore';
 
 export default function TabLayout() {
   return (
@@ -18,7 +19,7 @@ export default function TabLayout() {
       <Tabs.Screen
         name="index"
         options={{
-          title: 'Home',
+          title: 'Home',          
           tabBarIcon: ({ color, focused }) => (
             <TabBarIcon name={focused ? 'home' : 'home-outline'} color={color} />
           ),
