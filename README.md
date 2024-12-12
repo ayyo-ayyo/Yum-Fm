@@ -1,4 +1,4 @@
-# Beta Release Notes
+# 1.0 Release Notes
 
 This document will provide an overview of where to find instructions for building and running the app/server. These will include any necessary assumptions and prerequisites. This document will also describe where to find our repository and how to view file change logs. Finally, it will identify our issue-tracking database.
 
