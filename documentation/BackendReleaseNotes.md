@@ -1,4 +1,4 @@
-# Backend Beta Release Notes
+# Backend 1.0 Release Notes
 
 This document provides the necessary resources to get the backend server installed and running, as well as configuring the project to interface with the MongoDB database.
 
