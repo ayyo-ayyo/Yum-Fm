@@ -39,8 +39,8 @@ You're all set to enjoy a complete and robust experience with Yum.FM. Enjoy!
 
 For the 1.0 release, the client application has various improved UI changes and functionalities implemented. 
 
-### New/Modified in Beta Release
-The following have been added following the beta release:
+### New/Modified in 1.0 Release
+The following have been added in the 1.0 release:
 
 #### **1\. OpenAI Menu Scanner**
 Our most exciting update for the 1.0 release of Yum.FM is the OpenAI menu scanner. This can be accessed by clicking on the camera icon to the left of the search bar on the search page. Clicking on the camera icon will prompt the user for access to their camera. If allowed, the app will now display the visuals of the user's camera. Simply point the camera at a menu and take a clear picture of it by clicking on the camera icon. You can then view the image by clicking on the popup on the bottom left to ensure the image is elligible. if you don't like the image you've taken, simply return to the camera by clicking on the back button and click on the trash can icon to delete the image. Then reclick a new one. Once you are satisfied with your image, click on the check mark icon on the bottom right. This will lead you to a page that says "Loading...". It might take a few seconds for the menu scanner to illustrate its results, due to it making calls to the OpenAI API. But with a little bit of patience, Voila! You are now looking at a list of all the menu items you took a picture of, where each menu item has a list of all the filters (restrictions and preferences) that it satisifies. Now you can easily pick an item curated to your wants and needs. Bon Appétit!
@@ -74,8 +74,9 @@ These are just some of the bugs + improvements which will be addressed by our te
  https://ishetty.atlassian.net/jira/software/projects/KAN/boards/1
 
 
-## Testing the Frontend 
-There are tests written in multiple folders through the client code. These tests can be executed with the following steps:
+## Testing the Frontend (DEPRECATED)
+### As of the 1.0 release these tests have been deprecated and replaced by those in the server folder. These will not pass anymore as their logic is outdated, but the same functionality is tested in the new tests.
+<br>There are tests written in multiple folders through the client code. These tests can be executed with the following steps:
 
 1. Open up the project repo and create a new terminal.
 
