@@ -1,4 +1,4 @@
-# Frontend Beta Release Notes
+# Frontend 1.0 Release Notes
 
 This document provides the necessary resources to get the frontend installed and running, as well as configuring the project to interface with the server backend.
 
