@@ -27,7 +27,6 @@ const HomeScreen: React.FC = () => {
   const [helpVisible, setHelpVisible] = useState(false);
   const [userFavorites, setUserFavorites] = useState<Restaurant[]>([]);
 
-
   const router = useRouter();
 
   useEffect(() => {

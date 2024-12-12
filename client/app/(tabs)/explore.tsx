@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { View, TextInput, StyleSheet, TouchableOpacity, Keyboard, SafeAreaView, FlatList, Alert, Modal, Text } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { useRouter } from 'expo-router';
@@ -8,9 +8,8 @@ import HelpButton from '@/components/HelpButton';
 import { searchHelp } from '@/constants/Help';
 import HelpModal from '@/components/HelpModal';
 
-
 // Define type of Restaurant for TypeScript
-interface Restaurant {
+export interface Restaurant {
   _id: string;
   restaurant_id: number;
   restaurant_name: string;
@@ -99,12 +98,14 @@ export default function ExploreTab() {
       } catch (error) {
         console.error("Failed to fetch search results:", error);
       } finally {
-        Keyboard.dismiss(); // Dismiss the keyboard after search
+        //Keyboard.dismiss(); // Dismiss the keyboard after search
       }
     } else {
       setResults([]);
     }
   };
+
+  useEffect(() => {handleSearch()}, [query]);
 
   const fetchUserData = async (): Promise<User> => {
     try {
@@ -143,7 +144,6 @@ export default function ExploreTab() {
           placeholder="Search for restaurants..."
           value={query}
           onChangeText={setQuery}
-          onSubmitEditing={handleSearch}
         />
         <TouchableOpacity style={styles.iconButton} onPress={openFiltersModal}>
           <Ionicons name="filter-outline" size={24} color="#fff" />
@@ -195,7 +195,6 @@ export default function ExploreTab() {
         )}
         contentContainerStyle={styles.resultsContainer}
         horizontal={false} // Use vertical scrolling for list
-        ItemSeparatorComponent={() => <View style={styles.itemSeparator} />} // Add separator between items
       />
 
       <HelpModal showModal={setHelpVisible} visible={helpVisible} text={searchHelp}></HelpModal>
@@ -238,9 +237,6 @@ const styles = StyleSheet.create({
     borderRadius: 12, // Rounded corners for the border
     padding: 4, // Padding inside the border
     backgroundColor: 'white', // Background color inside the border
-  },
-  itemSeparator: {
-    height: 16, // Space between items
   },
   modalOverlay: {
     flex: 1,
