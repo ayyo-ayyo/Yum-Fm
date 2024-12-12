@@ -1,12 +1,12 @@
 import React from 'react';
 import { View, Image, TouchableOpacity, Text, StyleSheet } from 'react-native';
-import { useRoute } from '@react-navigation/native';
+import { useLocalSearchParams } from 'expo-router';
 import { Ionicons } from '@expo/vector-icons';
 
 export default function App() {
     const [confirmDelete, setConfirmDelete] = React.useState(false);
-    const route = useRoute();
-    const {uri, imageList} = route.params;
+    const uri = useLocalSearchParams().uri as string;
+    const imageList = useLocalSearchParams().imageList as string[];
     
     const handleDelete = () => {
         if (confirmDelete) {
