@@ -75,7 +75,7 @@ export default function App() {
                   return await fetch("https://api.imgur.com/3/image", {
                     method: "POST",
                     headers: {
-                      Authorization: `Client-ID ${process.env.EXPO_PUBLIC_IMGUR_CLIENT_ID}`
+                      Authorization: `Client-ID 1e86a0f67f1bda6`
                     },
                     body: formData,
                   }).then((response) => {return response.json()})
@@ -94,7 +94,7 @@ export default function App() {
         <View style={{ flex: 1, flexDirection: 'row', overflow: 'scroll', position: 'absolute', bottom: 50}}>
           {images.map((image, index) => (
             <View key={index} style={{ borderColor: 'white', borderWidth: 1}} onTouchEnd={
-              () => router.push({ pathname: '/image', params: { uri: image, imageList: images} })}>
+              () => router.navigate(`/image?uri=${image}&imageList=${images.join(",")}`)}>
               <Image source={{ uri: image }} style={{ width: 100, height: 100 }}></Image>
             </View>
           ))}
