@@ -125,9 +125,9 @@ describe('MenuItems Router', () => {
         await testItem.save()
 
         const token = await getLoginToken();
-        const response = await request(app).put(`/api/menuItems/${newId}`).set('Authorization', token).send({menu_verified: false});
+        const response = await request(app).put(`/api/menuItems/${newId}`).set('Authorization', token).send({item_name: 'new_name'});
         expect(response.status).toBe(200); // Item shouldn't be found
-        expect(response.body.item_name).toBe('test');
+        expect(response.body.item_name).toBe('new_name');
 
         await menuItem.deleteMany({menu_item_id: -99});
     });
