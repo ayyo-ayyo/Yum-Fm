@@ -6,7 +6,7 @@ const connectDB = require('../db');
 const { clearAllTimeouts } = require('../token_manager');
 const User = require('../models/user-model');
 
-/* */
+/* This file has the unit tests for the login/signup system */
 
 beforeAll(async () => {
     await connectDB();  // Connect to DB
