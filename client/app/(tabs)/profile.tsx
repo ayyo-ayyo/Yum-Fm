@@ -8,7 +8,6 @@ import BouncyCheckbox from 'react-native-bouncy-checkbox'; // New import
 import HelpButton from '@/components/HelpButton';
 import { profileHelp } from '@/constants/Help';
 import HelpModal from '@/components/HelpModal';
-import { updateFavoritesList } from '.';
 
 interface User {
   _id: string;
