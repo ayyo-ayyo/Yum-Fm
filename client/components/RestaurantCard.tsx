@@ -257,8 +257,8 @@ const RestaurantCard: React.FC<RestaurantCardProps> = ({ restaurant, size = 'sma
           animationType="slide"
           onRequestClose={handleCloseModal}
         >
-          <TouchableOpacity style={styles.modalOverlay} onPress={handleCloseModal}>
-            <View style={styles.modalContent} onTouchStart={(e) => e.stopPropagation()}>
+          <TouchableOpacity style={styles.modalOverlay} activeOpacity={1} onPress={handleCloseModal}>
+            <View style={styles.modalContent} onStartShouldSetResponder={() => true} onTouchStart={(e) => e.stopPropagation()}>
               <TouchableOpacity style={styles.favoriteButton} onPress={toggleFavorite}>
                 <Text style={styles.favoriteButtonText}>
                   {isFavorite ? '★' : '☆'}
@@ -292,26 +292,33 @@ const RestaurantCard: React.FC<RestaurantCardProps> = ({ restaurant, size = 'sma
                   </View>
                 )}
                 {activeTab === 'menu' && (
-                  <View style={styles.menuContent}>
-                    {menuItems.length > 0 ? (
-                      menuItems
+                <View style={styles.menuContent}>
+                  {menuItems.length > 0 ? (
+                    <ScrollView 
+                      style={styles.menuScrollView}
+                      contentContainerStyle={styles.menuScrollViewContent}
+                      showsVerticalScrollIndicator={true}
+                    >
+                      {menuItems
                         .slice() // create a shallow copy to avoid modifying the original array
-                        .sort((a, b) => a.item_price - b.item_price) // sort by item_price in ascending order
+                        .sort((a, b) => a.item_name.localeCompare(b.item_name)) // alphabetical
                         .map((item) => (
                           <View key={item._id} style={styles.menuItem}>
                             <Text style={styles.menuItemName}>{item.item_name}</Text>
                             <Text style={styles.menuItemPrice}>${item.item_price.toFixed(2)}</Text>
                           </View>
                         ))
-                    ) : (
-                      <View style={styles.emptyMenuContent}>
-                        <Text style={styles.noMenuText}>There is no menu for this restaurant currently.</Text>
-                        <TouchableOpacity style={styles.uploadButton} onPress={onUploadMenu}>
-                          <Text style={styles.uploadButtonText}>Upload Menu</Text>
-                        </TouchableOpacity>
-                      </View>
-                    )}
-                  </View>
+                      }
+                    </ScrollView>
+                  ) : (
+                    <View style={styles.emptyMenuContent}>
+                      <Text style={styles.noMenuText}>There is no menu for this restaurant currently.</Text>
+                      <TouchableOpacity style={styles.uploadButton} onPress={onUploadMenu}>
+                        <Text style={styles.uploadButtonText}>Upload Menu</Text>
+                      </TouchableOpacity>
+                    </View>
+                  )}
+                </View>
                 )}
               </ScrollView>
             </View>
@@ -398,6 +405,8 @@ const styles = StyleSheet.create({
   },
   menuContent: {
     padding: 10,
+    flex: 1,
+    overflow: "hidden",
   },
   menuItem: {
     flexDirection: 'row',
@@ -445,5 +454,13 @@ const styles = StyleSheet.create({
     fontSize: 14,
     color: '#333',
     marginTop: 5,
+  },
+
+  menuScrollView: {
+    maxHeight: "auto", 
+    flex: 1,
+  },
+  menuScrollViewContent: {
+    paddingBottom: 20, 
   },
 });
