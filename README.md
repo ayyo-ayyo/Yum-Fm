@@ -8,6 +8,7 @@ This document will provide an overview of where to find instructions for buildin
 3. [Our Repository](#our-repository)
 4. [Issue Tracking](#issue-tracking)
 5. [Testing](#testing)
+6. [Video](#video)
 
 ## Client App Documentation & Release Notes
 [Frontend Release Notes and Documentation](./documentation/FrontendReleaseNotes.md)
@@ -51,3 +52,6 @@ These instructions are designed for both our development team and customer group
 
 ## Testing
 We have included many tests for each of the major componenets of our app. These include both unit tests for individual API calls and integration tests between several of the major systems and mimicks real use cases. Documentation on how to run the tests, what the tests cover (unit/integration tests), latest test results, and instructions can be found in the [Backend Release Notes and Documentation](./documentation/BackendReleaseNotes.md).
+
+## Video
+YouTube link to a demonstration of Yum.FM: https://www.youtube.com/watch?v=djIt6wyKglQ
